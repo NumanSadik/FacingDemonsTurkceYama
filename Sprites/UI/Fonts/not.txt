@@ -1,0 +1,5 @@
+overworld (ana menüde kullanılmış)
+
+monster (chara)
+
+uidialog (kullanıcı arayüzünde)

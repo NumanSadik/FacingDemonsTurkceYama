@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<spritesheet type="single">
+<sprite name="dialogoverworld">
+    <border x="10" y="-8" z="0" w="16"/>
+</sprite>
+</spritesheet>
