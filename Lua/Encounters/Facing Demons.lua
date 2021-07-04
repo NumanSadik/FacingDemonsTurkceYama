@@ -116,52 +116,52 @@ outro18="[novoice][voice:weakchara][func:QuietMusic][func:Final_7][w:1]Я[w:4].[
 rusoutn={outro1,outro2,outro3,outro4,outro5,outro6,outro7,outro8,outro9,outro10,outro11,outro12,outro13,outro14,outro15,outro16,outro17,outro18}
 --rusoutn={outro18}
 
-outro1 = "[func:DUB,death1/1][noskip][func:head4][func:Music,finale][w:6]D[w:6]-[speed:0.75]damn[waitall:5]..."
-outro2 = "[func:DUB,death1/2][noskip][w:6][waitall:3]*Cough*"
-outro3 = "[func:DUB,death1/3][noskip][func:Final_4][w:6][speed:0.5]Heh,[w:9][speed:0.75] of course[waitall:4]...[speed:1][w:2] \n[func:Final_2]of course[w:10] I had \nno chance against \nyou."
+outro1 = "[func:DUB,death1/1][noskip][func:head4][func:Music,finale][w:6]L[w:6]-[speed:0.75]lanet olsun[waitall:5]..."
+outro2 = "[func:DUB,death1/2][noskip][w:6][waitall:3]*Öhöm*"
+outro3 = "[func:DUB,death1/3][noskip][func:Final_4][w:6][speed:0.5]Heh,[w:9][speed:0.75] tabiki[waitall:4]...[speed:1][w:2] \n[func:Final_2]tabiki[w:10] sana karsi \nkazanamazdım."
 outro4 = "[noskip][func:head4][waitall:5]..."
-outro5 = "[func:DUB,death1/4][noskip][func:Final_4][w:6][speed:0.75]I promised to Rei,[w:6][speed:1.2] \nthat I will be with him[w:12] \n[speed:0.75]until the end[waitall:5]..."
-outro6 = "[func:DUB,death1/5][noskip][w:9][speed:0.75]And,[w:9] ya`know[waitall:3]...[speed:0.75][w:1] \n[func:Final_6]I kept my promise.[w:23] \nI was a good sister."
-outro7 = "[func:DUB,death1/6][noskip][func:Final_4][w:5][speed:0.75]Since my fall,[w:8] \nI wished for death.[w:14][speed:1] \nWished to forget[w:2][speed:1] \nthis everyday[w:1] \nstuffing pain[waitall:5]..."
-outro8 = "[func:DUB,death1/7][noskip][w:7]And now,[w:13] facing my \nend[waitall:5]...[w:10][waitall:2] [func:head4]I [speed:0.33]regret."
-outro9 = "[func:DUB,death1/8][noskip][w:11][speed:1]Regret of doing \n[speed:0.75]nothing.[waitall:1][w:17] Doing \nnothing [w:5]to protect \nmy [speed:0.6]relatives.[w:10][speed:1] \nThose,[w:10] who [waitall:2]saved me."
-outro10 = "[func:DUB,death1/9][noskip][func:deadly][w:12][speed:0.75]I guess[waitall:3]...[waitall:1][w:1][func:smile][speed:0.75] You won [w:22]in \nsome way."
-outro11 = "[func:DUB,death1/10][noskip][func:Final_3][w:8][speed:0.75]Blood[waitall:5]... [speed:0.75][w:1]doesn`t \nstream anymore[waitall:5]..."
-outro12 = "[func:DUB,death1/11][noskip][w:14][waitall:3][func:Final_4]So[waitall:5]...[waitall:2][w:9] \nCalm[waitall:5]..."
+outro5 = "[func:DUB,death1/4][noskip][func:Final_4][w:6][speed:0.75]Rei'ye söz verdim,[w:6][speed:1.2] \nsonuna kadar onunla[w:12] \n[speed:0.75]olacağıma dair[waitall:5]..."
+outro6 = "[func:DUB,death1/5][noskip][w:9][speed:0.75]And,[w:9] ya`know[waitall:3]...[speed:0.75][w:1] \n[func:Final_6]Sözümü tuttum.[w:23] \nİyi bir ablaydım."
+outro7 = "[func:DUB,death1/6][noskip][func:Final_4][w:5][speed:0.75]Düşüşümden beri,[w:8] \nÖlmeyi diledim.[w:14][speed:1] \nBu günleri unutmayı[w:2][speed:1] \ndiledim[w:1]..."
+outro8 = "[func:DUB,death1/7][noskip][w:7]Ve şimdi,[w:13] sonumu \ngörüyorum[waitall:5]...[w:10][waitall:2] [func:head4] [speed:0.33] \nbunu reddediyorum."
+outro9 = "[func:DUB,death1/8][noskip][w:11][speed:1]Onları korumak için \n[speed:0.75]hiç bir şey[waitall:1][w:17] \nYapmadım."
+outro10 = "[func:DUB,death1/9][noskip][func:deadly][w:12][speed:0.75]Sanırım[waitall:3]...[waitall:1][w:1][func:smile][speed:0.75] bir şekilde [w:22] \nsen kazandın."
+outro11 = "[func:DUB,death1/10][noskip][func:Final_3][w:8][speed:0.75]Kan[waitall:5]... [speed:0.75][w:1]artık \nhissetmiyorum[waitall:5]..."
+outro12 = "[func:DUB,death1/11][noskip][w:14][waitall:3][func:Final_4]Çok[waitall:5]...[waitall:2][w:9] \nSakin[waitall:5]..."
 outro13 = "[noskip][waitall:5]..."
-outro14 = "[func:DUB,death1/12][noskip][w:10]I was right.[w:23] \nYou are not[w:7][speed:0.75] \nour [speed:0.5]saviour."
-outro15 = "[func:DUB,death1/13][noskip][w:9][speed:0.75]You are just[waitall:5]...[waitall:2][w:4]\n[func:Final_creepy][color:ff0000]DIRTY[w:2] \nBROTHER KILLER."
-outro16 = "[func:DUB,death1/14][noskip][waitall:3][func:head4][func:Cough2]*bad cough*"
-outro17 = "[func:DUB,death1/15][noskip][waitall:2][w:3]Rei[waitall:5]...[waitall:2][w:5] Mom[waitall:5]...[waitall:2][w:5] Dad[waitall:5]...[waitall:2][w:5] \nPlease,[w:15] forgive me[waitall:5]..."
-outro18 = "[func:DUB,death1/16][func:QuietMusic][noskip][waitall:2][func:Final_7][w:9]I[waitall:5]...[waitall:2][w:6] We`ll meet[waitall:5]...[waitall:4] \nsoon[waitall:5]...[func:dead][w:60][func:WON][next] "
+outro14 = "[func:DUB,death1/12][noskip][w:10]Haklıydım.[w:23] \nKurtarıcımız[w:7][speed:0.75] \ndeğilsin."
+outro15 = "[func:DUB,death1/13][noskip][w:9][speed:0.75]Sen[waitall:5]...[waitall:2][w:4]\n[func:Final_creepy][color:ff0000]DIRTY[w:2] \nPİSLİĞİN TEKİSİN."
+outro16 = "[func:DUB,death1/14][noskip][waitall:3][func:head4][func:Cough2]*öhöm*"
+outro17 = "[func:DUB,death1/15][noskip][waitall:2][w:3]Rei[waitall:5]...[waitall:2][w:5] Anne[waitall:5]...[waitall:2][w:5] Baba[waitall:5]...[waitall:2][w:5] \nLütfen,[w:15] beni affedin[waitall:5]..."
+outro18 = "[func:DUB,death1/16][func:QuietMusic][noskip][waitall:2][func:Final_7][w:9]Ben[waitall:5]...[waitall:2][w:6] yakında[waitall:5]...[waitall:4] \ngörüşeceğiz[waitall:5]...[func:dead][w:60][func:WON][next] "
 
 
 engout={outro1,outro2,outro3,outro4,outro5,outro6,outro7,outro8,outro9,outro10,outro11,outro12,outro13,outro14,outro15,outro16,outro17,outro18}
 
-outro1 = "[noskip][func:head4][func:Music,finale]D[w:3]-damn[waitall:4]..."
-outro2 = "[noskip][waitall:2]*Cough*"
-outro3 = "[noskip][func:Final_4]Heh,[w:3] of course[waitall:4][w:3]...[waitall:1][w:3] \n[func:Final_2]of course I had \nno chance against \nyou."
-outro4 = "[noskip][func:head4][waitall:4][w:3]..."
-outro5 = "[noskip][func:Final_4]I promised to Rei,[w:3] \nthat I will be with him \nuntil the end..."
-outro6 = "[noskip]And,[w:3] ya`know[waitall:4][w:3]...[waitall:1][w:3] \n[func:Final_6]I kept my promise.[w:6] \nI was a good sister."
-outro7 = "[noskip][func:Final_4]Since my fall,[w:3] \nI wished for death.[w:6] \nWished to forget \nthis constant \nsuffocating pain[waitall:4][w:3]..."
-outro8 = "[noskip]And now,[w:3] facing my \nend[waitall:4][w:3]...[waitall:1][w:3] [func:head4]I regret."
-outro9 = "[noskip]I regret doing \n[waitall:2]nothing.[waitall:1][w:6] Doing \nnothing [w:3]to protect \nmy family.[w:6] \nThose,[w:3] who [waitall:2]saved me."
-outro10 = "[noskip][func:deadly]I guess[waitall:4][w:3]...[waitall:1][w:3] [func:smile] You won [w:3]in \nsome way."
-outro11 = "[noskip][func:Final_3][speed:0.75]Blood[waitall:4][w:3]...[speed:0.75][w:3] doesn`t \nstream anymore[waitall:4][w:3]..."
-outro12 = "[noskip][func:Final_4]So[waitall:4][w:3]...[waitall:1][w:3] \nCalm[waitall:4][w:3]..."
-outro13 = "[noskip][waitall:4][w:3]..."
-outro14 = "[noskip]I was right.[w:6] \nYou are not \nour saviour."
-outro15 = "[noskip]You are just[waitall:4][w:3]...[waitall:2][w:3] \n[func:Final_creepy][color:ff0000]DIRTY[w:3] \nBROTHER[w:1] KILLER."
-outro16 = "[noskip][func:head4][waitall:2][func:Cough2]*bad cough*"
-outro17 = "[novoice][voice:weakchara][noskip][speed:0.75]Rei[waitall:4][w:3]...[speed:0.75][w:3] Mom[waitall:4][w:3]...[speed:0.75][w:3] Dad[waitall:4][w:3]...[speed:0.75][w:3] \nPlease,[w:3] forgive me[waitall:4][w:3]..."
-outro18 = "[novoice][voice:weakchara][noskip][func:QuietMusic][func:Final_7][waitall:4][w:3]I...[waitall:2][w:3] We`ll meet[waitall:4][w:3]...[waitall:3][w:3] \nsoon[waitall:4][w:3]...[func:dead][w:60][func:WON][next] "
+outro1 = "[func:DUB,death1/1][noskip][func:head4][func:Music,finale][w:6]L[w:6]-[speed:0.75]lanet olsun[waitall:5]..."
+outro2 = "[func:DUB,death1/2][noskip][w:6][waitall:3]*Öhöm*"
+outro3 = "[func:DUB,death1/3][noskip][func:Final_4][w:6][speed:0.5]Heh,[w:9][speed:0.75] tabiki[waitall:4]...[speed:1][w:2] \n[func:Final_2]tabiki[w:10] sana karsi \nkazanamazdım."
+outro4 = "[noskip][func:head4][waitall:5]..."
+outro5 = "[func:DUB,death1/4][noskip][func:Final_4][w:6][speed:0.75]Rei'ye söz verdim,[w:6][speed:1.2] \nsonuna kadar onunla[w:12] \n[speed:0.75]olacağıma dair[waitall:5]..."
+outro6 = "[func:DUB,death1/5][noskip][w:9][speed:0.75]And,[w:9] ya`know[waitall:3]...[speed:0.75][w:1] \n[func:Final_6]Sözümü tuttum.[w:23] \nİyi bir ablaydım."
+outro7 = "[func:DUB,death1/6][noskip][func:Final_4][w:5][speed:0.75]Düşüşümden beri,[w:8] \nÖlmeyi diledim.[w:14][speed:1] \nBu günleri unutmayı[w:2][speed:1] \ndiledim[w:1]..."
+outro8 = "[func:DUB,death1/7][noskip][w:7]Ve şimdi,[w:13] sonumu \ngörüyorum[waitall:5]...[w:10][waitall:2] [func:head4] [speed:0.33] \nbunu reddediyorum."
+outro9 = "[func:DUB,death1/8][noskip][w:11][speed:1]Onları korumak için \n[speed:0.75]hiç bir şey[waitall:1][w:17] \nYapmadım."
+outro10 = "[func:DUB,death1/9][noskip][func:deadly][w:12][speed:0.75]Sanırım[waitall:3]...[waitall:1][w:1][func:smile][speed:0.75] bir şekilde [w:22] \nsen kazandın."
+outro11 = "[func:DUB,death1/10][noskip][func:Final_3][w:8][speed:0.75]Kan[waitall:5]... [speed:0.75][w:1]artık \nhissetmiyorum[waitall:5]..."
+outro12 = "[func:DUB,death1/11][noskip][w:14][waitall:3][func:Final_4]Çok[waitall:5]...[waitall:2][w:9] \nSakin[waitall:5]..."
+outro13 = "[noskip][waitall:5]..."
+outro14 = "[func:DUB,death1/12][noskip][w:10]Haklıydım.[w:23] \nKurtarıcımız[w:7][speed:0.75] \ndeğilsin."
+outro15 = "[func:DUB,death1/13][noskip][w:9][speed:0.75]Sen[waitall:5]...[waitall:2][w:4]\n[func:Final_creepy][color:ff0000]DIRTY[w:2] \nPİSLİĞİN TEKİSİN."
+outro16 = "[func:DUB,death1/14][noskip][waitall:3][func:head4][func:Cough2]*öhöm*"
+outro17 = "[func:DUB,death1/15][noskip][waitall:2][w:3]Rei[waitall:5]...[waitall:2][w:5] Anne[waitall:5]...[waitall:2][w:5] Baba[waitall:5]...[waitall:2][w:5] \nLütfen,[w:15] beni affedin[waitall:5]..."
+outro18 = "[func:DUB,death1/16][func:QuietMusic][noskip][waitall:2][func:Final_7][w:9]Ben[waitall:5]...[waitall:2][w:6] yakında[waitall:5]...[waitall:4] \ngörüşeceğiz[waitall:5]...[func:dead][w:60][func:WON][next] "
 
 engoutn={outro1,outro2,outro3,outro4,outro5,outro6,outro7,outro8,outro9,outro10,outro11,outro12,outro13,outro14,outro15,outro16,outro17,outro18}
 -----------------------------------------------------------------
 --ruscomm = {"Последний актёр на сцене", "Чара выглядит недовольной", "Осталось только ДРАТЬСЯ", "Ты наполнен ПРЕДАТЕЛЬСТВОМ.", "Пахнет трусом.", "Сотри их в пыль.", "Очередной дурак.", "ДЕРИСЬ или УМРИ.", "Тебе ничего не остаётся.", "Ещё не поздно умереть.", "Чара хихикнула.", "Прячься или дерись.", "Точка невозврата.", "Тебе стоит попытаться сильнее.", "Объясни себе свои действия.", "Присоединяйся к битве.", "Никакой ПОЩАДЫ.", "Тебе придётся уМЕРГеть.", "Чара дрожит.", "Ничего особенного.", "Вступи в шоу и закончи его!", "Новое начало.", "Необычная временная линия.", "Суд.", "Навсегда один.", "Пыль на твоих руках кажется \rнормой.", "Просто ДЕРИСЬ.", "Не останавливайся отныне!"}
 --In any way, who really  cares about this?
---engcomm ={"The last actor on the scene.", "Chara seems quite upset.", "There's only FIGHT.", "You filled with BETRAYAL.", "Smells like a coward.", "Knock 'em dead.", "Just another fool.", "FIGHT or DIE.", "Nothing left for you.", "It's not late to die.", "Chara chuckles.", "Your DETERMINATION increases!", "Hide or fight.", "Point of no return.", "You should try better", "Reason with yourself.", "Join the fight.", "No MERCY.", "You were forced to MERGe.", "Chara trembling.", "Nothing special.", "Enter the show and cut it out!", "New beginning.", "Unusual timeline.", "Judgement.", "Forever alone.", "Dust on your hands\rseems normal.", "Just FIGHT.", "Don't stop from now on!"}
+--engcomm ={"Sahnedeki son aktör.", "Chara üzgün görünüyor.", "Sadece SAVAŞABİLİRSİN.", "İHANET ile doldun.", "Ahmak kokuyor.", "Onu yok et.", "Başka bir aptal.", "SAVAŞ ya da ÖL.", "Sana bir şey kalmadı.", "Ölmek için geç değil.", "Chara sinirli görünüyor.", "KARARLILIĞIN Artıyor!", "Saklan yada savaş.", "Geri dönemezsin.", "Daha iyisini yapmalısın", "Kendince hallet.", "Savaşa katıl.", "MERHAMET yok.", "Ugh...", "Chara.", "Özel bir şey yok.", "Kestik!", "Yeni başlangıç.", "...", "Yargı.", "Sonsuza kadar yalnız.", "Elindeki toz\rnroaml görünüyor.", "Savaş!.", "Durma!"}
 engcom={""}
 ruscom={""}
 herecomments=engcom
@@ -877,7 +877,7 @@ function MenuOptions(amm)
 		if lang=="rus" then
 			Changer.Texts[7].SetText("[font:overworld][instant][novoice]Рекомендовано для мощных ПК")
 			else
-			Changer.Texts[7].SetText("[font:overworld][instant][novoice]Recommended for strong PCs")
+			Changer.Texts[7].SetText("[font:overworld][instant][novoice]Güçlü PClere Önerilir")
 		end
 		else
 		Changer.Texts[7].SetText("[font:overworld][instant][novoice]  ")
@@ -899,7 +899,7 @@ function MyAchi(ingo)
 			if lang=="rus" then
 				Changer.Discs[i].SetText("[font:overworld][instant][novoice][color:888888]Закрыто")
 				else
-				Changer.Discs[i].SetText("[font:overworld][instant][novoice][color:888888]Locked")
+				Changer.Discs[i].SetText("[font:overworld][instant][novoice][color:888888]Kilitli")
 			end
 		end
 		Changer.Names[i].SetText("[font:overworld][instant][novoice]"..NameAchivement(num))
@@ -1031,7 +1031,7 @@ function FullIntro()
 				dial={"[noskip][func:face,yes][next] ","[effect:twitch,1][font:overworld][color:ffffff][func:Peachy][func:DUB,prolog/1]*Вот мы и здесь.", "[func:normal][func:DUB,prolog/2]*С возвращением,[w:3] \nпартнёр.","[func:Peachy]*[waitall:4][w:3]...", "[func:DUB,prolog/3]*Ты почти завершил \nпредначертанное,[w:3] [func:normal]не [func:JUMP]так [func:face,no][func:Vietnam][w:60]"}
 			end
 			elseif lang=="eng" then
-			dial={"[noskip][func:face,yes][next] ","[func:DUB,prolog/1][effect:twitch,1][font:overworld][color:ffffff][func:Peachy]*[waitall:2][w:10]So, [waitall:1][w:10]here we [w:1]are[w:3].", "[func:DUB,prolog/2][func:normal]*Welcome back, \npartner.","[func:Peachy]*[waitall:5]...", "[func:DUB,prolog/3][w:3][speed:1.5]*You almost comp[w:1]le[w:1]ted your \n[speed:1]quest,[w:12] di[func:JUMP]dn`t [func:face,no][func:Vietnam][w:60]"}
+			dial={"[noskip][func:face,yes][next] ","[func:DUB,prolog/1][effect:twitch,1][font:overworld][color:ffffff][func:Peachy]*[waitall:2][w:10]Yani, [waitall:1][w:10]sonunda [w:1]buradayız[w:3].", "[func:DUB,prolog/2][func:normal]*Tekrar hoşgeldin, \npartner.","[func:Peachy]*[waitall:5]...", "[func:DUB,prolog/3][w:3][speed:1.5]*Neredeyse gö[w:1]re[w:1]vini \n[speed:1]tamamladın,[w:12]"}
 		end
 		else
 		if lang=="rus" then
@@ -1041,7 +1041,7 @@ function FullIntro()
 				dial={"[noskip][func:face,yes][next] ","[effect:twitch,1][font:overworld][color:ffffff][func:Peachy][func:checkquick][func:DUB,prolog/1]*Вот мы и здесь.", "[func:normal][func:DUB,prolog/2]*С возвращением,[w:3] \nпартнёр.","[func:Peachy]*[waitall:4][w:3]...", "[func:DUB,prolog/3]*Ты почти завершил \nпредначертанное,[w:3] [func:normal]не так ли?", "[func:Interruption][w:1][func:DUB,prolog/4][func:normal1]*Просто[waitall:4][w:3]...[waitall:1][w:3] хотела убедиться.", "[func:Peachy]*[waitall:4][w:3]...", "[func:DUB,prolog/5]*Позволь задать тебе один \nвопрос.", "[func:normal][func:DUB,prolog/6]*Ты уверен,[w:3] что ты \nвыше последствий?","[func:Peachy][func:DUB,prolog/7]*Что любые твои деяния[waitall:4][w:3]..","[func:normal][noskip][func:DUB,prolog/8]*Останутся безнаказанными?[w:30][func:ph1][func:face,no][next] "}
 			end
 			elseif lang=="eng" then
-			dial={"[noskip][func:face,yes][next] ","[func:DUB,prolog/1][effect:twitch,1][font:overworld][color:ffffff][func:Peachy][func:checkquick]*[waitall:2][w:10]So, [waitall:1][w:10]here we [w:1]are[w:3].", "[func:DUB,prolog/2][func:normal]*Welcome back, \npartner.","[func:Peachy]*[waitall:5]...", "[func:DUB,prolog/3][w:3][speed:1.5]*You almost comp[w:1]le[w:1]ted your \n[speed:1]quest,[w:12] [func:normal]didn`t ya?", "[func:Interruption][w:1][func:DUB,prolog/4][func:normal1]*[w:2]Just [w:15]wanted [w:1]to get[w:1] sure[w:1].", "[func:Peachy]*[waitall:6]...", "[func:DUB,prolog/5]*Let me ask[w:10] one [w:3]thing[w:5].", "[func:DUB,prolog/6][func:normal]*[w:2]Are you so [w:2]sure,[w:5] that [speed:1.5]\nyou`re [w:2]above [w:2][speed:1][w:2]con[w:1]se[w:1]quen[w:1]ces[w:4]?","[func:DUB,prolog/7][func:Peachy]*[w:3]That all [w:1]your [waitall:2]actions[waitall:3]...","[func:DUB,prolog/8][func:normal][noskip]*Will remain [w:10]un[w:1]puni[w:1][waitall:3]shed?[w:30][func:ph1][func:face,no][next] "}
+			dial={"[noskip][func:face,yes][next] ","[func:DUB,prolog/1][effect:twitch,1][font:overworld][color:ffffff][func:Peachy][func:checkquick]*[waitall:2][w:10]Yani, [waitall:1][w:10]sonunda [w:1]buradayız[w:3].", "[func:DUB,prolog/2][func:normal]*Tekrar hoşgeldin, \npartner.","[func:Peachy]*[waitall:5]...", "[func:DUB,prolog/3][w:3][speed:1.5]*neredeyse gö[w:1]rev[w:1]ini \n[speed:1]tamamladin,[w:12] [func:normal]", "[func:Interruption][w:1][func:DUB,prolog/4][func:normal1]*[w:2]Sadece [w:15]emin [w:1]olmak[w:1] istedim[w:1].", "[func:Peachy]*[waitall:6]...", "[func:DUB,prolog/5]*Bir şey[w:10] sormama [w:3]izin ver[w:5].", "[func:DUB,prolog/6][func:normal]*[w:2]Yaptğının [w:2],[w:5] kaderinden [speed:1.5]\nüstün [w:2]old [w:2][speed:1][w:2]uğu[w:1]mu[w:1]düşünüyorsun[w:4]?","[func:DUB,prolog/7][func:Peachy]*[w:3]Yaptıklarının [w:1]tepkisiz [waitall:2]\nkalamaz[waitall:3]...[w:30][func:ph1][func:face,no][next] "}
 		end
 	end
 	dial=EveryDial(dial,"[effect:twitch,1][font:overworld][noskip][color:ffffff]","[novoice]")
@@ -1444,7 +1444,7 @@ function EnteringState(newstate, oldstate)
 		if lang=="rus" then
 			enemies[1].SetVar("currentdialogue", {"[func:NoMercy1]Да,[w:3] именно так[w:3].[w:4].[w:4].[w:4]","[func:head]У меня был запасной \nплан.[w:6]","[func:NoMercy1]Я знала,[w:3] что есть \nшанс,[w:3] [func:Think]что ты \nсможешь выжить.[w:6]","[func:NoMercy1]Ведь ты и более \nстрашные атаки \nпережил,[w:3] [func:head]не так ли?","Поэтому[w:3].[w:4].[w:4].[w:4] [func:NoMercy1]Вот он.[w:6] \nМой запасной план.[w:6]","Я не[w:3].[w:4].[w:4].[w:4] Дам тебе \nатаковать меня.[w:6]","И тогда[w:3].[w:4].[w:4].[w:4] Мы умрем \nвдвоем.[w:6]","И этот чертов цикл \nсхлопнется[w:3].[w:4].[w:4].[w:4] [func:Final_7]\nЕсли я не могу ни \nспасти,[w:3] ни прервать \nего,[w:3] то пусть он \nсгорит в Аду.[w:6]","А теперь[w:3].[w:4].[w:4].[w:4] [func:head]прощай[w:3].[w:4].[w:4].[w:4]","[func:sleepy][next] "})
 			else
-			enemies[1].SetVar("currentdialogue", {"[func:NoMercy1]Yes,[w:3] exactly[w:3].[w:4].[w:4].[w:4]","[func:head]I had a plan B.[w:6]","[func:NoMercy1]I knew that there's a \nsmall chance [func:Think]for you \nto survive this.[w:6]","[func:NoMercy1]You survived from \neven worse things,[w:3] [func:head]\ndidn't you?","That's why[w:3].[w:4].[w:4].[w:4] [func:NoMercy1]This is \nit.[w:6] My plan B.[w:6]","I[w:3].[w:4].[w:4].[w:4] I will not let you \nattack me.[w:6]","And then[w:3].[w:4].[w:4].[w:4] We both \nwill die once.[w:6]","[func:Final_7]And this hellish circle \nfinally will end.[w:6] \nIf I can't safe nor \nend it,[w:3] I prefer it \nto burn in Hell.[w:6]","And now[w:3].[w:4].[w:4].[w:4] [func:head]Good bye.[w:6] \nAnd good riddance[w:3].[w:4].[w:4].[w:4]","[func:sleepy][next] "})
+			enemies[1].SetVar("currentdialogue", {"[func:NoMercy1]Evet,[w:3] aynen[w:3].[w:4].[w:4].[w:4]","[func:head]Bir B planım vardı.[w:6]","[func:NoMercy1]Bundan hayatta \nkalmak için küçük [func:Think]bir şansın \nvardı.[w:6]","[func:NoMercy1]Daha kötü şeylerde \nhayatta kaldın,[w:3] [func:head]\ndeğil mi?","Ve[w:3].[w:4].[w:4].[w:4] [func:NoMercy1]işte \nbu.[w:6] B planım.[w:6]","I[w:3].[w:4].[w:4].[w:4] Bana saldırmana \nizin vermeyeceğim.[w:6]","Ve[w:3].[w:4].[w:4].[w:4] ikimiz de \nöleceğiz.[w:6]","[func:Final_7]Ve bu kısır \ndöngü bitecek.[w:6] \nEğer burayı sona edecek yada \nkurtaramayacaksam,[w:3] Bunu cehennemde \nyanmaya tercih ederim.[w:6]","Ve şimdi[w:3].[w:4].[w:4].[w:4] [func:head]Görüşürüz.[w:6] \nKendine iyi bak[w:3].[w:4].[w:4].[w:4]","[func:sleepy][next] "})
 		end
 		State("ENEMYDIALOGUE")
 	end
@@ -1894,7 +1894,7 @@ if ToHappyEnd>0 then
 		if lang=="rus" then
 			dial={"Чара взяла вас за руку,[w:3] и вы пошли по коридору.","Даже за такой короткий промежуток она успела много вам рассказать.","И о её страхах,[w:3] переживанияx из-за боя,[w:3] ощущений от Искусственной Решимости.","И о страхе вас потерять.","Вы не знали,[w:3] что сказать в ответ.","На деле,[w:3] вы были ужасно смущены таким излишним вниманием к себе.","В отличие от Метты вы были замкнутыми.[w:6] И не очень уверенными в себе.","Лишнее внимание вечно вас беспокоило.","Может быть[w:3].[w:4].[w:4].[w:4] Метта был прав,[w:3] что у вас с Буги много общего[waitall:4][w:3]?..","[waitall:4][w:3]...","[func:HappyCharaMeal11][color:000000]"}
 			else
-			dial={"Chara took your palm in hers and you both went down the hallway","Even in such short period of time she told you about many things","About her fears,[w:3] suffering about the battle,[w:3] feelings of Artificial Determination.[w:6]","And fear of losing you.[w:6]","You can't come up with an answer.[w:6]","In fact,[w:3] you are very shy from all this attention to you.[w:6]","In difference from Metta you was solo-player.[w:6] And not so self-esteemed one.[w:6]","Excessive attention has always bothered you.[w:6]","Maybe[waitall:4][w:3]...[waitall:1][w:3] Metta was right that you have a lot in common with Boogie?[waitall:4][w:3]...[waitall:1][w:3]","[waitall:4][w:3]...[waitall:1][w:3]","[func:HappyCharaMeal11][color:000000]"}
+			dial={"Chara elini tuttu ve ikiniz de koridordan çıktınız","Bu kısa zamanda bile sana bir çok şey anlattı","Korkuları,[w:3] yaşantısı,[w:3] Kararlılığın verdiği his.[w:6]","Ve seni kaybetme korkusu.[w:6]","Buna bir cevap veremezdin.[w:6]","Aynı zamanda,[w:3] bu ilgiye pek alışkın değildin.[w:6]","Metta hariç.[w:6] Hehe.[w:6]","İlgi her zaman seni düşündürdü.[w:6]","Belki de[waitall:4][w:3]...[waitall:1][w:3] Metta haklıydı[waitall:4][w:3]...[waitall:1][w:3]","[waitall:4][w:3]...[waitall:1][w:3]","[func:HappyCharaMeal11][color:000000]"}
 		end
 		for i=1,#dial do
 			dial[i]="[noskip][novoice][voice:uidial]"..dial[i]
@@ -1931,7 +1931,7 @@ if FlashBack>0 then
 			if lang=="rus" then
 				dial={"[func:face,yes][func:SetFaceLost,base_close][waitall:4][w:3]...","[func:SetFaceLost,base_left]Черт,[w:3] зачем я вообще \nстараюсь[waitall:4][w:3]...","[func:SetFaceLost,base_close]Особенно после того,[w:3] как \nты[waitall:4][w:3]...","[func:SetFaceLost,base]Убила меня[waitall:4][w:3]...","[func:SetFaceLost,sobbing_close]Я до сих пор чувствую,[w:3] как \nв горле булькает горячая \nкровь[waitall:4][w:3]...[waitall:1][w:3] [func:SetFaceLost,sobbing] Как немеет тело[waitall:4][w:3]...","[func:SetFaceLost,sobbing_thinking]Зачем я вообще стараюсь[waitall:4][w:3]...[waitall:1][w:3]","[func:SetFaceLost,sobbing][waitall:4][w:3]...[waitall:1][w:3]Перейдем к делу.","[func:face,no][func:fightbegin][next] "}
 				else
-				dial={"[func:face,yes][func:SetFaceLost,base_close][waitall:4][w:3]...","[func:SetFaceLost,base_left]Dammit,[w:3] why am I \neven trying[waitall:4][w:3]?...","[func:SetFaceLost,base_close]Especially after you[waitall:4][w:3]...","[func:SetFaceLost,base]Killed me[waitall:4][w:3]...","[func:SetFaceLost,sobbing_close]I still can feel how blood \nis bubbling in my throat[waitall:4][w:3]...[waitall:1][w:3]","[func:SetFaceLost,sobbing]How my body is getting \nnumb[waitall:4][w:3]...","[func:SetFaceLost,sobbing_thinking]Is there still a point \nin all my efforts?..","[func:SetFaceLost,sobbing][waitall:4][w:3]...[waitall:1][w:3]Let's cut straight to \nthe point.","[func:face,no][func:fightbegin][next] "}
+				dial={"[func:face,yes][func:SetFaceLost,base_close][waitall:4][w:3]...","[func:SetFaceLost,base_left]Lanet olsun,[w:3] neden \ndeniyorum ki[waitall:4][w:3]?...","[func:SetFaceLost,base_close]Özellikle[waitall:4][w:3]...","[func:SetFaceLost,base]öldükten sonra[waitall:4][w:3]...","[func:SetFaceLost,sobbing_close]hala boynumda kanın nasıl \nkaynadığını hissediyorum[waitall:4][w:3]...[waitall:1][w:3]","[func:SetFaceLost,sobbing]Nasıl vücudumu \nkontrol edemediğimi[waitall:4][w:3]...","[func:SetFaceLost,sobbing_thinking]Emeklerimin \nkarşılığını alacak mıyım?..","[func:SetFaceLost,sobbing][waitall:4][w:3]...[waitall:1][w:3]Sadede \ngelelim.","[func:face,no][func:fightbegin][next] "}
 			end
 			WriteSavio()
 			wons=1
@@ -1960,7 +1960,7 @@ if FlashBack>0 then
 			if lang=="rus" then
 				dial={"[func:face,yes][func:SetFaceLost,shocked]Я[waitall:4][w:3]...[waitall:1][w:3] Ты хочешь сказать,[w:3] \nчто однажды я[waitall:4][w:3]...[waitall:1][w:3]","[func:SetFaceLost,shocked2]Такого[waitall:4][w:3]...[waitall:1][w:3] не может \nбыть[waitall:4][w:3]...[waitall:1][w:3]","[func:SetFaceLost,shocked]Но если я действительно \nпроиграла[waitall:4][w:3]...[waitall:1][w:3]","[func:SetFaceLost,base_close][waitall:4][w:3]...[waitall:1][w:3]","[func:SetFaceLost,base]Тогда в чем вообще \nсмысл?","[func:SetFaceLost,base_left]Я здесь,[w:3] чтобы остановить \nтебя со своими новыми \nсилами[waitall:4][w:3]...","Hо если ты уже убил меня[waitall:4][w:3]...[waitall:1][w:3]","[func:SetFaceLost,sobbing_close]То зачем[waitall:4][w:3]...[waitall:1][w:3] [func:SetFaceLost,sobbing_thinking] Зачем \nмне вообще стараться?","[func:fightbegin][func:face,no][next] "}
 				else
-				dial={"[func:face,yes][func:SetFaceLost,shocked]I[waitall:4][w:3]...[waitall:1][w:3] Do you mean I already[waitall:4][w:3]...[waitall:1][w:3]","[func:SetFaceLost,shocked2]That couldn't have happened[waitall:4][w:3]...[waitall:1][w:3]","[func:SetFaceLost,shocked]But if I really died \nonce[waitall:4][w:3]...[waitall:1][w:3]","[func:SetFaceLost,base_close][waitall:4][w:3]...[waitall:1][w:3]","[func:SetFaceLost,base]Then there is no point \ntrying, right?","[func:SetFaceLost,base_left]I am here to stop you with \nmy new powers,[w:3] but if you \nalready killed me once[waitall:4][w:3]...[waitall:1][w:3]","[func:SetFaceLost,sobbing_close]Then why[waitall:4][w:3]...[waitall:1][w:3] [func:SetFaceLost,sobbing_thinking]\nWhy should I care?","[func:fightbegin][func:face,no][next] "}
+				dial={"[func:face,yes][func:SetFaceLost,shocked]Ben[waitall:4][w:3]...[waitall:1][w:3] Çoktan[waitall:4][w:3]...[waitall:1][w:3]","[func:SetFaceLost,shocked2]Bu olmamalıydı[waitall:4][w:3]...[waitall:1][w:3]","[func:SetFaceLost,shocked]Gerçekten \nöldüysem[waitall:4][w:3]...[waitall:1][w:3]","[func:SetFaceLost,base_close][waitall:4][w:3]...[waitall:1][w:3]","[func:SetFaceLost,base]Denemenin anlamı \nyok, değil mi?","[func:SetFaceLost,base_left]Seni yeni güçlerim ile \ndurdurmalıydım,[w:3] fakat beni \nçoktan öldürdüysen[waitall:4][w:3]...[waitall:1][w:3]","[func:SetFaceLost,sobbing_close]Neden[waitall:4][w:3]...[waitall:1][w:3] [func:SetFaceLost,sobbing_thinking]\nNeden umrumda olmalı?","[func:fightbegin][func:face,no][next] "}
 			end
 			
 		end
@@ -2109,7 +2109,7 @@ if MettaLost==false then
 		if lang=="rus" then
 			dial={"[func:LostMettaFace,Bored]С каких пор ты решаешь,[w:3] как играть мою пьесу?","[func:LostMettaFace,Thought]Ты серьезно думал,[w:3] что отклониться от сценария была хорошая идея?","[func:LostMettaFace,Afraid]Ты надеялся,[w:3] что я пощажу тебя и твою жалкую подружку?","[func:LostMettaFace,saw][func:LostMettaAngry][waitall:2]ДА ЧЕРТА С ДВА,[w:3] \rА К Т Ё Р ","[func:LostMettaCalm][func:LostMettaFace,punishment]Ты бы знал,[w:3] как я ненавижу эти ваши нереалистичные разговоры о любви и дружбе[waitall:4][w:3]...[waitall:1][w:3]","[func:LostMettaFace,Afraid]Мол,[w:3] дружба и любовь спасут мир[waitall:4][w:3]...","[func:LostMettaFace,Dispice]Отвратительно.[w:6] [func:LostMettaFace,Afraid]Ты ничему не учишься.[w:6] \n[func:LostMettaFace,punishment]Никогда и не пытался.","Ты как и Блук - никчемный трус.","Стоило сценарию пойти не по твоим правилам и ты возомнил себя Богом?","[func:LostMettaFace,Afraid]Решил,[w:3] что я дам тебе хозяйничать этим телом,[w:3] будто оно тебе принадлежит?","Ты забыл кое-что[waitall:4][w:3]...[waitall:1][w:3]","[waitall:2][func:LostMettaFace,screamer][func:LostMettaAngry]ТЫ [w:4]САМ [w:4]ПРОДАЛ[w:4] СВОЕ [w:4]ТЕЛО [w:4]МНЕ","[func:LostMettaCalm][func:LostMettaFace,Afraid]А теперь[waitall:4][w:3]...[waitall:1][w:3]","[func:LostMettaFace,punishment]Ты нарушил условия контракта.[w:6] \n[func:LostMettaFace,Afraid]А знаешь,[w:3] что делают с актерами,[w:3] не следующими контракту?","[func:LostMettaFace,saw]Их [waitall:2][func:LostMettaAngry]у в о л ь н я ю т","[func:LostMettaCalm][func:LostMettaFace,Afraid][waitall:4][w:3]...[waitall:1][w:3]Мне было приятно проводить с тобой время.","Но теперь я понимаю,[w:3] что это тело достойно большей звезды.","[func:LostMettaFace,Thought]Это тело достойно моего дебюта.","[func:LostMettaFace,Afraid]А ты?","[func:LostMettaFace,Dispice]А ты будешь гнить здесь[waitall:4][w:3]...[waitall:1][w:3]","Долго[waitall:4][w:3]...[waitall:1][w:3] \n[func:LostMettaFace,saw]Бесконечно [waitall:2]д о л г о[waitall:4][w:3]...[waitall:1][w:3][w:30][func:Quiting][w:1800]"}
 			else
-			dial={"[func:LostMettaFace,Bored]Since when are you deciding how to play my script?[w:6]","[func:LostMettaFace,Thought]Did you really think that playing out of character would be a good idea?[w:6]","[func:LostMettaFace,Afraid]Did you hope I would have mercy on you and your pitty girlfriend?[w:6]","[func:LostMettaFace,saw][func:LostMettaAngry][waitall:4]DAMN IT,[w:3] A C T O R","[func:LostMettaCalm][func:LostMettaFace,punishment]If you knew how much I hate these unrealistic conversations of yours about love and friendship[waitall:4][w:3]...[waitall:1][w:3]","[func:LostMettaFace,Afraid]As if love and friendship would save the world.","[func:LostMettaFace,Dispice]Disgusting.[w:6][func:LostMettaFace,Afraid]\nYou learnt nothing.[w:6][func:LostMettaFace,punishment]\nDidn't even try to.[w:6]","You are just like Bloocky - pitty coward.[w:6]","When script went wrong you felt yourself as some God?[w:6]","[func:LostMettaFace,Afraid]Felt like I would let you use this body as if it was still yours?[w:6]","I think you forgot something[waitall:4][w:3]...[waitall:1][w:3]","[waitall:4][func:LostMettaFace,screamer][func:LostMettaAngry]YOU[w:4] GAVE[w:4] UP[w:4] THIS[w:4] BODY [w:4]TO [w:4]ME [w:4]LONG[w:4] TIME [w:4]AGO","[func:LostMettaCalm][func:LostMettaFace,Afraid]And now[waitall:4][w:3]...[waitall:1][w:3]","[func:LostMettaFace,punishment]Your contract has expired.[w:6] And you know what is happening to actors with expired contracts?[w:6]","[func:LostMettaFace,saw]They got [waitall:4][func:LostMettaAngry]fired","[func:LostMettaCalm][func:LostMettaFace,Afraid][waitall:4][w:3]...[waitall:1][w:3]It was nice spending time with you.[w:6]","But now I understand that this body deserves a better star of the show.[w:6]","[func:LostMettaFace,Thought]This body deserves my debut.[w:6]","[func:LostMettaFace,Afraid]And you?[w:6]","[func:LostMettaFace,Dispice]You will be rotting here[waitall:4][w:3]...[waitall:1][w:3]","For long[waitall:4][w:3]...[waitall:1][w:3] [func:LostMettaFace,saw]Eternally [waitall:4]l o n g[waitall:4][w:3]...[waitall:1][w:3][w:90][func:Quiting][w:1800]"}
+			dial={"[func:LostMettaFace,Bored]Senaryomu nasıl oynayacağına sen mi karar veriyorsun?[w:6]","[func:LostMettaFace,Thought]Cidden karakter dışı oynamak iyi bir fikir mi?[w:6]","[func:LostMettaFace,Afraid]Cidden kız arkadaşına nazik davranacağımı mı sandın?[w:6]","[func:LostMettaFace,saw][func:LostMettaAngry][waitall:4]LANET OLSUN,[w:3] A K T Ö R","[func:LostMettaCalm][func:LostMettaFace,punishment]Sevgi ve dostluk hakkındaki konuşlmalarından nefret ediyorum[waitall:4][w:3]...[waitall:1][w:3]","[func:LostMettaFace,Afraid]Sanki ikisi dünyayı kurtaracak.","[func:LostMettaFace,Dispice]İğrenç.[w:6][func:LostMettaFace,Afraid]\nBir şey öğrenmemişsin.[w:6][func:LostMettaFace,punishment]\nDidn't even try to.[w:6]","Blloky gibisin, acınası.[w:6]","Kendini bir tanrı gibi mi hissettin?[w:6]","[func:LostMettaFace,Afraid]Bu vücudu seninmiş gibi kullancağını mı?[w:6]","Sanırım bir şey unuttun[waitall:4][w:3]...[waitall:1][w:3]","[waitall:4][func:LostMettaFace,screamer][func:LostMettaAngry]BU[w:4] VÜCUDU[w:4] UZUN[w:4] ZAMAN[w:4] ÖNCE [w:4]BANA [w:4]VERDİN [w:4]","[func:LostMettaCalm][func:LostMettaFace,Afraid]Ve şimdi[waitall:4][w:3]...[waitall:1][w:3]","[func:LostMettaFace,punishment]Sözleşmen sona erdi.[w:6] Ve sözleşmesi biten aktörlere nolur?[w:6]","[func:LostMettaFace,saw]Kovulurlar [waitall:4][func:LostMettaAngry]","[func:LostMettaCalm][func:LostMettaFace,Afraid][waitall:4][w:3]...[waitall:1][w:3]Seninle vakit geçirmek güzeldi.[w:6]","Fakat bu beden daha iyi bir yıldız hakediyor.[w:6]","[func:LostMettaFace,Thought]Bu vücut beni hakediyor.[w:6]","[func:LostMettaFace,Afraid]Ve sen?[w:6]","[func:LostMettaFace,Dispice]Burda çürüyeceksin[waitall:4][w:3]...[waitall:1][w:3]","Uzun bir zaman[waitall:4][w:3]...[waitall:1][w:3] [func:LostMettaFace,saw]Sonsuza [waitall:4]k a d a r[waitall:4][w:3]...[waitall:1][w:3][w:90][func:Quiting][w:1800]"}
 		end
 		globalstage="7"
 		WriteSavio()
@@ -2278,7 +2278,7 @@ if Titr2.phase>0 then
 		elseif Titr2.phase==2 then
 		if s==0 and t>1000 then
 			local n="Vladimir Ignitio"
-			local s="Creator, script, gamedesign\n(Finally can work on Ignited)"
+			local s="Yaratıcı, senaryo, tasarım\n(Sonunda Ignıted'a çalışabilir)"
 			if lang=="rus" then
 				s="Создатель, сценарий, геймдизайн\n(Теперь займётся Игнайтедом)"
 			end
@@ -2286,7 +2286,7 @@ if Titr2.phase>0 then
 			Titr2.step=1
 			elseif s==1 and t>1250 then
 			local n="Drendy"
-			local s="Co-Creator, programmer\n(Wants not a revolution, but release)"
+			local s="Co-Creator, programmer\n(Ae)"
 			if lang=="rus" then
 				s="Со-создатель, программист\n(Не хочет революцию, но хочет релиз)"
 			end
@@ -2294,7 +2294,7 @@ if Titr2.phase>0 then
 			Titr2.step=2
 			elseif s==2 and t>1500 then
 			local n="The Crystal Horse"
-			local s="Co-Creator, programmer\n(Still praying for prairie)"
+			local s="Co-Creator, programmer\n(dua ediyor)"
 			if lang=="rus" then
 				s="Со-создатель, программист\n(Цок-цокнулся в процессе)"
 			end
@@ -2342,7 +2342,7 @@ if Titr2.phase>0 then
 			elseif s==6 and t>2306 then
 			local s="Чара![w:6] Не порть мой рейтинг лучшего персонажа Подземелья!"
 			if lang=="eng" then
-				s="Chara![w:6] Don't mess up my raiting of best character in Underground!"
+				s="Chara![w:6] Yeraltındaki en iyi reytinglerime bulaşma!"
 			end
 			Titr2.txt2=CreateText("[font:overworld][noskip][novoice][voice:v_asriel]"..s,{80,80},480,"Over",-1)
 			Titr2.txt2.HideBubble()
@@ -2431,7 +2431,7 @@ if Titr2.phase>0 then
 				elseif s==15 and t>3320 then
 				Titr2.step=16
 				local l="keno9988i"
-				local n="For creating Megaloglamour"
+				local n="Megaloglamour için"
 				if lang=="rus" then
 					n="За создание Megaloglamour"
 				end
@@ -2439,7 +2439,7 @@ if Titr2.phase>0 then
 				elseif s==16 and t>3350 then
 				Titr2.step=17
 				local l="BotanicSage"
-				local n="For creating Waters Of Megalovania"
+				local n="Waters Of Megalovania için"
 				if lang=="rus" then
 					n="За создание Waters Of Megalovania"
 				end
@@ -2447,7 +2447,7 @@ if Titr2.phase>0 then
 				elseif s==17 and t>3380 then
 				Titr2.step=18
 				local l="Nickel Dare"
-				local n="For localization of CYF"
+				local n="CYF yerelleştirmesi için"
 				if lang=="rus" then
 					n="За локализацию движка"
 				end
@@ -2469,7 +2469,7 @@ if Titr2.phase>0 then
 			Titr2.step=20
 			elseif s==20 and t>4260 then
 			local n="wonderless."
-			local s="Composer\nBoogie's VO\n(What the fuck is wrong with updating musics?)"
+			local s="Composer\nBoogie ses aktörü\n(Müzik güncellemenin olayı ne?)"
 			if lang=="rus" then
 				s="Композитор\nГолос Бугги\n(Чумба, ты что ебнутый обновлять треки?)"
 			end
@@ -2477,7 +2477,7 @@ if Titr2.phase>0 then
 			Titr2.step=21
 			elseif s==21 and t>4510 then
 			local n="Andriana Mantidfly"
-			local s="Composer\n(Gender is agenda)"
+			local s="Composer\n(Cinsiyeti evet)"
 			if lang=="rus" then
 				s="Композитор\n(Он/Она/Они-чан)"
 			end
@@ -2525,7 +2525,7 @@ if Titr2.phase>0 then
 			elseif s==25 and t>5400 then
 			local s="Дриимурр[waitall:4][w:3]...[waitall:1][w:3] Эх[waitall:4][w:3]...[waitall:1][w:3] Какой же ты пушистый дурак[waitall:4][w:3]...[waitall:1][w:3]"
 			if lang=="eng" then
-				s="Dreemurr[waitall:4][w:3]...[waitall:1][w:3] Eh[waitall:4][w:3]...[waitall:1][w:3] You're such a fluffy dork[waitall:4][w:3]...[waitall:1][w:3]"
+				s="Dreemurr[waitall:4][w:3]...[waitall:1][w:3] Eh[waitall:4][w:3]...[waitall:1][w:3] Tam bir ahmaksın[waitall:4][w:3]...[waitall:1][w:3]"
 			end
 			Titr2.txt2=CreateText("[font:overworld][noskip][novoice][voice:v_toriel]"..s,{80,80},480,"Over",-1)
 			Titr2.txt2.HideBubble()
@@ -2627,7 +2627,7 @@ if Titr2.phase>0 then
 			end
 			elseif s==36 and t>7010 then
 			local n="RSBlasnever"
-			local s="Promo-artist\n(Still stealing Ignitio's money)"
+			local s="Promo-artist\n(Igniyo'nun parasını çalıyor)"
 			if lang=="rus" then
 				s="Промо-художник\n(Крадет деньги у Игнитио)"
 			end
@@ -2635,15 +2635,15 @@ if Titr2.phase>0 then
 			Titr2.step=37
 			elseif s==37 and t>7260 then
 			local n="Alex Lomolom"
-			local s="Overworld's and buttons' sprites\n(Now busy, he's dying)"
+			local s="Overworld ve Buton Spritelar\n(şu an ölüyor)"
 			if lang=="rus" then
 				s="Спрайт оверворлда и меню битвы\n(Сейчас занят, он умирает)"
 			end
 			table.insert(Titr2.Posters,DoPoster(-1,"lom",n,s,7260))
 			Titr2.step=38
 			elseif s==38 and t>7510 then
-			local n="MitMar"
-			local s="Promo-artist\n(Finding reasons to live in cheese)"
+			local n="Mugmann, Numan, SHC, Yesil_51"
+			local s="Çevirmenler\n(Hepsine teşekkürler!)"
 			if lang=="rus" then
 				s="Промо-художник\nМыш (кродетця)"
 			end
@@ -2728,7 +2728,7 @@ if Titr2.phase>0 then
 			if lang=="rus" then
 				dial=dial.."Русский голос Чары"
 			 	else
-				dial=dial.."Russian Chara's VO"
+				dial=dial.."Rus Chara Seslendirmeni"
 			end
 			T.txt1=CreateText("[novoice][instant][font:overworld]"..name,{0,100},240,"Top",-1)
 			T.txt1.progressmode="none"
@@ -2853,7 +2853,7 @@ if Titr2.phase>0 then
 					if lang=="rus" then
 						dial={"[font:overworld]Вообще-то,[w:6] я не люблю фотографироваться.[w:12] Но это фото будет моим любимым.[w:12]\nА ты что думаешь[waitall:4][w:3]...[waitall:1][w:12] Зеркальце?[w:30][func:AllGoesDarkOnceMore]"}
 						else
-						dial={"[font:overworld]Actually,[w:6] I don't like to be photographed.[w:12] But this one will be my favourite.[w:12] What do you think[waitall:4][w:3]...[waitall:1][w:12] Pretty mirror?[w:30][func:AllGoesDarkOnceMore]"}
+						dial={"[font:overworld]Actually,[w:6] Fotoğrafımın çekilmesini sevmem.[w:12] fakat bu favorim olacak.[w:12] Ne düşünüyorsun[waitall:4][w:3]...[waitall:1][w:12] Ayna?[w:30][func:AllGoesDarkOnceMore]"}
 					end
 					local t=CreateText(dial,{80,160},480,"Top",-1)
 					t.HideBubble()
@@ -3054,13 +3054,13 @@ if Titr1.phase>0 then
 				if lang=="rus" then
 					string={"[func:Dub,buggy/1/1][func:BoogyLook,closedeyes]Значит,[w:3] таков конец твоей истории?","[func:Dub,buggy/1/2]В смысле[waitall:4][w:3]...[speed:0.75][w:3] [func:BoogyLook,question]Ты доволен тем,[w:3] что получил?[w:6] [func:BoogyLook,cocky]Или это очередная посредственная постановка?","[func:Dub,buggy/1/3][func:BoogyLook,down]В прошлом мы были не разлей вода[waitall:4][w:3]...[speed:0.75][w:3] [color:8040ff]Метта.","[func:Dub,buggy/1/4][func:BoogyLook,question]Что изменилось?","[func:Titr1NextPhase][next] "}
 					else
-					string={"[func:Dub,buggy/1/1][func:BoogyLook,closedeyes]So,[w:3] is that the ending you wanted?","[func:Dub,buggy/1/2]I mean[waitall:4][w:3]...[speed:0.75][w:3]  [func:BoogyLook,question]Are you satisfied with what you got?[w:6] [func:BoogyLook,cocky]Or was this just child's play for you?","[func:Dub,buggy/1/3][func:BoogyLook,down]We used to be inseparable[waitall:4][w:3]...[speed:0.75][w:3][color:8040ff]Metta[color:ffffff].","[func:Dub,buggy/1/4][func:BoogyLook,question]What has changed?","[func:Titr1NextPhase][next] "}
+					string={"[func:Dub,buggy/1/1][func:BoogyLook,closedeyes]Yani,[w:3] istediğin son bu muydu?","[func:Dub,buggy/1/2]Yani[waitall:4][w:3]...[speed:0.75][w:3]  [func:BoogyLook,question]Aldığından tatmin oldu mu?[w:6] [func:BoogyLook,cocky]yada sadece çocuk oyncağı mıydı?","[func:Dub,buggy/1/3][func:BoogyLook,down]örnek gösterilirdik[waitall:4][w:3]...[speed:0.75][w:3][color:8040ff]Metta[color:ffffff].","[func:Dub,buggy/1/4][func:BoogyLook,question]Ne değişti?","[func:Titr1NextPhase][next] "}
 				end
 				else
 				if lang=="rus" then
 					string={"[func:Dub,buggy/5/1][func:BoogyLook,sad]Я ведь просил,[w:6] не втягивать меня в это снова[waitall:4][w:6]...[speed:0.75][w:6]","[func:Dub,buggy/5/2][func:BoogyLook,sarcastic]Но,[w:6] видимо,[w:6] я тебе необходим.[w:6]","[func:Dub,buggy/5/3][func:BoogyLook,joking]Неужели ты настолько ранимый,[w:6] кузен?[w:6]","[func:Titr1NextPhase][next] "}
 					else
-					string={"[func:Dub,buggy/5/1][func:BoogyLook,sad]I begged you to leave me out,[w:3] didn't I?[w:6] ","[func:Dub,buggy/5/2][func:BoogyLook,sarcastic]But it seems like you need me[waitall:4][w:3]...[w:15]","[func:Dub,buggy/5/3][func:BoogyLook,joking]Are you truly that vulnerable,[w:3] cousin?[w:6] ","[func:Titr1NextPhase][next] "}
+					string={"[func:Dub,buggy/5/1][func:BoogyLook,sad]Beni çıkarman için sana yalvardım,[w:3] değil mi?[w:6] ","[func:Dub,buggy/5/2][func:BoogyLook,sarcastic]Fakat bana ihtiyacın var gibi[waitall:4][w:3]...[w:15]","[func:Dub,buggy/5/3][func:BoogyLook,joking]Cidden mi,[w:3] kuzen?[w:6] ","[func:Titr1NextPhase][next] "}
 				end
 			end
 			if dubbing==true then
@@ -3145,14 +3145,14 @@ if Titr1.phase>0 then
 				if lang=="rus" then
 					string={"[func:Dub,buggy/2/1][func:BoogyLook,dissapointed]Ты всегда любил драму.[w:6] Жил ею.[w:6] Жаждал её.","[func:Dub,buggy/2/2][func:BoogyLook,closedeyes]Но стоит мне представить,[w:3] как ради этой драмы ты готов убить даже меня[waitall:4][w:3]...[speed:0.75][w:3]","[func:Dub,buggy/2/3][func:BoogyLook,base]Я больше не вижу смысла в том,[w:3] чтобы тебя развлекать.","[func:Titr1NextPhase][next] "}
 					else
-					string={"[func:Dub,buggy/2/1][func:BoogyLook,dissapointed]You were always sick for drama.[w:6] You were too keen on it,[w:3] almost obsessed dare i say.","[func:Dub,buggy/2/2][func:BoogyLook,closedeyes]But when I imagine you killing me just for drama[waitall:4][w:3]...[speed:0.75][w:3]","[func:Dub,buggy/2/3][func:BoogyLook,base]I see no sense in satisfying your needs anymore.","[func:Titr1NextPhase][next] "}
+					string={"[func:Dub,buggy/2/1][func:BoogyLook,dissapointed]Her zaman dramalardna bıkmıştın.[w:6] Hiç sevmezdin,[w:3] neredeyse kaderin gibiydi.","[func:Dub,buggy/2/2][func:BoogyLook,closedeyes]Fakat beni drama için öldürmen aklıma gelince[waitall:4][w:3]...[speed:0.75][w:3]","[func:Dub,buggy/2/3][func:BoogyLook,base]Seni tatmin etmek için bir neden göremiyorum.","[func:Titr1NextPhase][next] "}
 
 				end
 				else
 				if lang=="rus" then
 					string={"[func:Dub,buggy/6/1][func:BoogyLook,base]Мне совсем тебя не жаль.[w:9] [func:BoogyLook,sarcastic] Но занятно,[w:3] что ты нашел что-то интересное в этой истеричной девке.","[func:Dub,buggy/6/2][func:BoogyLook,uncertain]Ведь по сути[waitall:4][w:6]...[speed:0.75][w:6] [func:BoogyLook,dissapointed]Когда тебя что-то не устраивает,[w:6] [func:BoogyLook,base]ты становишься таким же.[w:10]","[func:Titr1NextPhase][next] "}
 					else
-					string={"[func:Dub,buggy/6/1][func:BoogyLook,base]I don't feel pity.[w:12] [func:BoogyLook,sarcastic]It's just curious how you found enjoyment in this hysterical gal.[w:3] ","[func:Dub,buggy/6/2][func:BoogyLook,uncertain]Because in fact[waitall:4][w:6]...[speed:0.75][w:12] [func:BoogyLook,dissapointed]When you're unsatisfied,[w:6] [func:BoogyLook,base]you are pretty similar to her.[w:3] ","[func:Titr1NextPhase][next] "}
+					string={"[func:Dub,buggy/6/1][func:BoogyLook,base]Merhamet hissetmiyorum.[w:12] [func:BoogyLook,sarcastic]Sadece bu vahşilikte neyi bulduğunu merak ediyorum.[w:3] ","[func:Dub,buggy/6/2][func:BoogyLook,uncertain]Çünkü[waitall:4][w:6]...[speed:0.75][w:12] [func:BoogyLook,dissapointed]tatmin olmamışken,[w:6] [func:BoogyLook,base]ona benziyorsun.[w:3] ","[func:Titr1NextPhase][next] "}
 				end
 			end
 			if dubbing==true then
@@ -3271,13 +3271,13 @@ if Titr1.phase>0 then
 				if lang=="rus" then
 					string={"[func:Dub,buggy/3/1][func:BoogyLook,base]Я не наивный дурак,[w:3] Метта[waitall:4][w:3]...[speed:0.75][w:6]","[func:Dub,buggy/3/2][func:BoogyLook,uncertain]Я не борюсь за свою жизнь.[w:6] Не боюсь за судьбу этого мира.[w:6]","[func:Dub,buggy/3/3][func:BoogyLook,joking]У меня нет души.[w:6] Я не испытываю таких чувств.","[func:Dub,buggy/3/4][func:BoogyLook,base]Мне просто нет удовольствия тешить твое театральное эго.","[func:Titr1NextPhase][next] "}
 					else
-					string={"[func:Dub,buggy/3/1][func:BoogyLook,base]I am not a fool,[w:3] Metta[waitall:4][w:3]...[speed:0.75][w:3]","[func:Dub,buggy/3/2][func:BoogyLook,uncertain]I let go of my life,[w:3] I don't care about world's fate.","[func:Dub,buggy/3/3][func:BoogyLook,joking]I have no soul.[w:6] I just can't feel those kind of feelings.","[func:Dub,buggy/3/4][func:BoogyLook,base]It's that I don't want to tease that artistic ego of yours.[w:5] ","[func:Titr1NextPhase][next] "}
+					string={"[func:Dub,buggy/3/1][func:BoogyLook,base]Malın teki değilim,[w:3] Metta[waitall:4][w:3]...[speed:0.75][w:3]","[func:Dub,buggy/3/2][func:BoogyLook,uncertain]Hayatımın gitmesine izin verdim,[w:3] dünyanın kaderi umrumda değil.","[func:Dub,buggy/3/3][func:BoogyLook,joking]Bir ruhum yok.[w:6] O hisleri hissedemiyorum.","[func:Dub,buggy/3/4][func:BoogyLook,base]Egonu yok etmek istemiyorum.[w:5] ","[func:Titr1NextPhase][next] "}
 				end
 				else
 				if lang=="rus" then
 					string={"[func:Dub,buggy/7/1][func:BoogyLook,uncertain]Я имею в виду,[w:6] ты так же цепляешься за любые возможности.","[func:Dub,buggy/7/2][func:BoogyLook,down]Например,[w:3] когда на нас напали в переулке,[w:3] а ты защищал меня с картонной коробкой в руках[waitall:4][w:3]...[speed:0.75][w:3]","[func:BoogyLook,closedeyes][func:Dub,buggy/7/3]И для тебя в тот момент даже такой хлам был лучшим инструментом.[w:10]","[func:Titr1NextPhase][next] "}
 					else
-					string={"[func:Dub,buggy/7/1][func:BoogyLook,uncertain]I mean,[w:6] you're clinging on to every corner just to save the ground under your feet.[w:3] ","[func:Dub,buggy/7/2][func:BoogyLook,down]Like when you used a cardboard box to protect me from burglars in that valley[waitall:4][w:6]...[w:15]","[func:BoogyLook,closedeyes][func:Dub,buggy/7/3]Heh,[w:6] that box was the best tool for ya back then.[w:3] ","[func:Titr1NextPhase][next] "}
+					string={"[func:Dub,buggy/7/1][func:BoogyLook,uncertain]Yani,[w:6] hatırlıyor musun...[w:3] ","[func:Dub,buggy/7/2][func:BoogyLook,down]o vadide beni onlardan korumak için bir kutu kullanmıştın[waitall:4][w:6]...[w:15]","[func:BoogyLook,closedeyes][func:Dub,buggy/7/3]Heh,[w:6] o kutu elindeki en iyi şeydi.[w:3] ","[func:Titr1NextPhase][next] "}
 				end
 			end
 			if dubbing==true then
@@ -3407,7 +3407,7 @@ if Titr1.phase>0 then
 						string[#string-1]="[func:Dub,buggy/4/4]Ты больше не мой кузен.[w:9] [func:BoogyLook,death]А значит,[w:15][speed:0.5][novoice][voice:lowbuggy] мне нет смысла жить дальше[w:20]"
 					end
 					else
-					string={"[func:Dub,buggy/4/1][func:BoogyLook,closedeyes]That's why[waitall:4][w:3]...[speed:0.75][w:3] [func:BoogyLook,cocky]You should leave me out of your scripts.","[func:Dub,buggy/4/2]I don't wanna play by your rules.","[func:Dub,buggy/4/3][func:BoogyLook,base]I don't wanna play with the pure evil that replaced my family.","[func:Dub,buggy/4/4]You're no longer my cousin now.[w:15] [speed:0.5][novoice][voice:lowbuggy][func:BoogyLook,death]And that's why I don't care about my life anymore.","[func:Titr1NextPhase][next] "}
+					string={"[func:Dub,buggy/4/1][func:BoogyLook,closedeyes]Bu yüzden[waitall:4][w:3]...[speed:0.75][w:3] [func:BoogyLook,cocky]Beni senaryolarından çıkar.","[func:Dub,buggy/4/2]Sana göre yaşamak istemiyorum.","[func:Dub,buggy/4/3][func:BoogyLook,base]Ailemi yok eden şeytanla oynamak istemiyorum.","[func:Dub,buggy/4/4]Artık kuzenim değilsim.[w:15] [speed:0.5][novoice][voice:lowbuggy][func:BoogyLook,death]Ve bu yüzden artık hayatım umrumda değil.","[func:Titr1NextPhase][next] "}
 				end
 				else
 				if lang=="rus" then
@@ -3416,7 +3416,7 @@ if Titr1.phase>0 then
 						string[#string-1]="[func:Dub,buggy/8/3][func:BoogyLook,dissapointed]Задумайся.[w:12] [func:BoogyLook,closedeyes]Поговорим об этом[waitall:4][w:8]...[speed:0.75][w:8] [speed:0.5][func:BoogyLook,death][novoice][voice:lowbuggy]при следующей встрече.[w:10]"
 					end
 					else
-					string={"[func:Dub,buggy/8/1][func:BoogyLook,base]Nevermind[waitall:4][w:3]...[speed:0.75][w:9] [func:BoogyLook,uncertain]I just wanted to remember the old days before dying.[w:6] ","[func:Dub,buggy/8/2][func:BoogyLook,confused]But think about it,[w:12] aren't you an instrument as well as that box?[w:16] [func:BoogyLook,closedeyes]You know[waitall:4][w:6]...[speed:0.75][w:9]","[func:Dub,buggy/8/3][func:BoogyLook,joking]How this world works.[w:12] And who is pulling the strings from above.[w:9] ","[func:Dub,buggy/8/4][func:BoogyLook,dissapointed]Consider it.[w:18] [func:BoogyLook,closedeyes]We could discuss it[waitall:4][w:6]...[speed:0.75][w:9][novoice][voice:lowbuggy][func:BoogyLook,death][speed:0.5] next time we meet~[w:12]","[func:Titr1NextPhase][next] "}
+					string={"[func:Dub,buggy/8/1][func:BoogyLook,base]Boşver[waitall:4][w:3]...[speed:0.75][w:9] [func:BoogyLook,uncertain]Sadece ölmeden önce eskileri hatırlamak istedim.[w:6] ","[func:Dub,buggy/8/2][func:BoogyLook,confused]But think about it,[w:12] Sen de o kutu gibisin, değil mi?[w:16] [func:BoogyLook,closedeyes]Biliyorsun[waitall:4][w:6]...[speed:0.75][w:9]","[func:Dub,buggy/8/3][func:BoogyLook,joking]nasıl bu dünyanın çalıştığını.[w:12] Ve kimin kuklaları yönettiğini.[w:9] ","[func:Dub,buggy/8/4][func:BoogyLook,dissapointed]Bunu düşün.[w:18] [func:BoogyLook,closedeyes]Bunu tartışabilirdik[waitall:4][w:6]...[speed:0.75][w:9][novoice][voice:lowbuggy][func:BoogyLook,death][speed:0.5] next time we meet~[w:12]","[func:Titr1NextPhase][next] "}
 				end
 			end
 			if dubbing==true then
@@ -3808,7 +3808,7 @@ if Titr1.phase>0 then
 						if lang=="rus" then
 							dialy={"[waitall:4][w:3]...[waitall:2][w:3]Приветствую.","[func:MTT,Thought]Что-то ты зачастил ко мне,[w:6] дорогуша[waitall:4][w:3]...","[func:MTT,Lonely]Так одиноко в мире,[w:6] который ты сам и уничтожил?","[func:MTT,Cute]Как мило[waitall:4][w:3]...[waitall:2][w:3] [func:MTT,okey]Мне почти тебя жалко.","Ты знаешь,[w:6] что случается здесь[waitall:4][w:3]...","В конце пути.[w:9] В эпилоге сценария.","[func:MTT,Bored]Я даю тебе выбор.[w:9] Ты знаешь,[w:6] чего я хочу.","[func:MTT,calm]Я хочу,[w:6] чтобы ты освободил себя от этого скучного сценария[waitall:4][w:3]...","[func:MTT,okey]Но коль твоя воля будет такова[waitall:4][w:3]...","[func:MTT,calm]Я приму любой твой выбор.","[func:MTT,okey]Давай[waitall:4][w:3]...[waitall:2][w:3] [func:MTT,Forget]забудем об этом сценарии.","И перейдем[waitall:4][w:3]...[waitall:2][w:3][func:MTT,proposal] к следующему.","[func:choice][next] "}
 							else
-							dialy={"[waitall:4][w:3]...[waitall:2][w:3]Greetings.","[func:MTT,Thought]You're so often to come here,[w:6] darling[waitall:4][w:3]...","[func:MTT,Lonely]Are you so lonely in the world you destroyed?","[func:MTT,Cute]So sweet[waitall:4][w:3]...[waitall:2][w:3] [func:MTT,okey]I almost felt sorry for you.","You know what happens there[waitall:4][w:3]...","In the end of your way.[w:9] In the epilogue of script.","[func:MTT,Bored]I give you a choice.[w:9] You know what I want.","[func:MTT,calm]I want you to free yourself from this boring script[waitall:4][w:3]...","[func:MTT,okey]But if you decide other[waitall:4][w:3]...","[func:MTT,calm]I accept your every choice.","[func:MTT,okey]Let's[waitall:4][w:3]...[waitall:2][w:3] [func:MTT,Forget]Get rid of this script.","And move[waitall:4][w:3]...[waitall:2][w:3] [func:MTT,proposal]To the next one.","[func:choice][next] "}
+							dialy={"[waitall:4][w:3]...[waitall:2][w:3]Selamlar.","[func:MTT,Thought]Buraya çok sık geliyorsun,[w:6] tatlım[waitall:4][w:3]...","[func:MTT,Lonely]Yok ettiğin dünyada çok mu yalnızsın?","[func:MTT,Cute]Ne kadar tatlı[waitall:4][w:3]...[waitall:2][w:3] [func:MTT,okey]Neredeyse senin için üzgün hissettim.","Orada nolduğunu biliyorsun[waitall:4][w:3]...","Yolunun sonunda.[w:9] Senaryonun kapanışında.","[func:MTT,Bored]I give you a choice.[w:9] Ne istediğimi biliyorsun.","[func:MTT,calm]Kendini bu sıkıcı senaryodan kurtarmanı istiyorum[waitall:4][w:3]...","[func:MTT,okey]Fakat başka bir şey istersen[waitall:4][w:3]...","[func:MTT,calm]Bir şey demem","[func:MTT,okey]Hadi[waitall:4][w:3]...[waitall:2][w:3] [func:MTT,Forget]Bu senaryoyu çöpe at.","Ve[waitall:4][w:3]...[waitall:2][w:3] [func:MTT,proposal]Diğerine geç.","[func:choice][next] "}
 						end
 					end
 					normalend=true
@@ -3818,7 +3818,7 @@ if Titr1.phase>0 then
 					if lang=="rus" then
 						dialy={"[func:MTT,okey]Хм[waitall:4][w:3]...","Я смотрю,[w:6] [func:MTT,calm]тебе очень интересует всё,[w:6] что может предложить эта истеричка[waitall:4][w:3]?..","[func:MTT,Bored]Не могу осуждать,[w:6] дорогуша.[w:9] [func:MTT,okey]Я сам такой.","В следующий раз[waitall:4][w:3]...[waitall:3][w:3] [func:MTT,calm]Выжми максимум драмы.","[func:MTT,proposal][color:ff20a0][waitall:3]Договорились?[w:30][func:EVERYTHINGEVERYWHERE][w:6000]"}
 						else
-						dialy={"[func:MTT,okey]Hm[waitall:4][w:3]...","I see,[w:6] [func:MTT,calm]you're interested in everything this hysteria can give you[waitall:4][w:3]?..","[func:MTT,Bored]Can't blame you,[w:6] darling.[w:9] I am as well.","Next time[waitall:4][w:3]...[waitall:3][w:3] [func:MTT,calm]Give me all her drama.","[func:MTT,proposal][color:ff20a0][waitall:3]Deal?[w:30][func:EVERYTHINGEVERYWHERE][w:6000]"}
+						dialy={"[func:MTT,okey]Hm[waitall:4][w:3]...","Görüyorum,[w:6] [func:MTT,calm]Bu maceranın sana verecekleri ile çok ilgisin[waitall:4][w:3]?..","[func:MTT,Bored]Seni suçlayamam,[w:6] tatlım.[w:9] ben de ilgiliyim.","Bir dahakine[waitall:4][w:3]...[waitall:3][w:3] [func:MTT,calm]Tüm dramasını bana ver.","[func:MTT,proposal][color:ff20a0][waitall:3]Anlaştık?[w:30][func:EVERYTHINGEVERYWHERE][w:6000]"}
 					end
 					dialy=EveryDial(dialy,"[font:mtt][effect:twitch,1][waitall:2][noskip][color:ffffff]","")
 				end
@@ -3903,7 +3903,7 @@ if FadedChara==1 then
 	if lang=="rus" then
 		dial={"[noskip][waitall:4][w:1][func:MovePlayerToTheSpot][w:2]...[waitall:1][w:3]\nВаша Душа наконец свободна от влияния УР[w:6]\nОднако какой ценой?","[func:RaiseFade][noskip]При виде бездыханного тела Чары,[w:3] ваши ноги дрожат и подкашиваются.","[func:RaiseFade][noskip]Внутри вас растет какое-то странное,[w:3] скользкое ощущение.","[func:RaiseFade][noskip]Вы не можете больше смотреть на Чару в таком виде[waitall:4][w:3]...","[func:RaiseFade][noskip][starcolor:000000][color:ffff00][instant]Побег","[func:RaiseFade][noskip]Вы сбегаете...","[color:000000][func:RaiseFade][w:90000] "}
 		else
-		dial={"[noskip][func:MovePlayerToTheSpot][waitall:4][w:3]...[waitall:1][w:3]\nYour Soul is finally free from LV at last.[w:6]\nBut at what cost?","[func:RaiseFade]At sight of Chara's breathless body your legs shrud.","[func:RaiseFade]Some tinglish and gross arouse builds inside you.","[func:RaiseFade]You can't look at Chara anymore[waitall:4][w:3]...","[starcolor:000000][color:ffff00][func:RaiseFade][instant]Flee","[func:RaiseFade]You fled[waitall:4][w:3]...","[color:000000][func:RaiseFade][w:90000] "}
+		dial={"[noskip][func:MovePlayerToTheSpot][waitall:4][w:3]...[waitall:1][w:3]\nEn azından ruhun SEVGİ'Den kurtuldu.[w:6]\nFakat ne pahasına?","[func:RaiseFade]...","[func:RaiseFade]Garip bir his içinde büyüdü.","[func:RaiseFade]Artık Chara'ya bakamıyorsun bile[waitall:4][w:3]...","[starcolor:000000][color:ffff00][func:RaiseFade][instant]Kaç","[func:RaiseFade]Kaçtın[waitall:4][w:3]...","[color:000000][func:RaiseFade][w:90000] "}
 	end
 	for i=1,#dial do
 		dial[i]="[noskip][novoice][voice:uidial]"..dial[i]
@@ -3915,7 +3915,7 @@ if FadedChara==1 then
 	if lang=="rus" then
 		dial={"[noskip]Вы бежите по коридору,[w:3] глухо рыдая и стирая слезы рукавами.","[noskip]Ваша одежда намокла от слёз.[w:6]\nИ пропахла пылью монстров.","[noskip]Пока УР притуплял ваши эмоции,[w:3] вас мало беспокоила мораль.","[noskip]Но сейчас эти чувства сожаления и ужаса единомоментно захлестнули вас вновь.","[noskip]Если бы не жертва Чары,[w:3] вы бы давно сошли с ума от отчаяния в другой ситуации.","[noskip]Вы добегаете до Точки сохранения.[w:6]\nВаша дрожащая рука тянется к меню[waitall:4][w:3]...","[func:Sound,saved][noskip][waitall:4][w:3]...","[func:Sound,OverMenuMove][noskip][waitall:6][w:5]......","[noskip]Загрузить предыдущее сохранение?","[novoice][func:Sound,OverMenuConf][w:60][func:FuckingEndGame]"}
 		else
-		dial={"You run through the corridor,[w:3] sobbing and wiping your tears with sleeves.","Your clothes got wet from tears.[w:6]\nAnd stinks with monster's dust.","While LV was numbing your feelings,[w:3] you didn't bother with morals.","But now those feelings of sorrow and regret have returned.","You would have gone mad if Chara didn't sacrifice herself.","You get to the Save point.[w:6] \nWith trembling hands you reach to it.","[func:Sound,saved][waitall:4][w:3]...","[func:Sound,OverMenuMove][noskip][waitall:6][w:5]......","Load your previous save?","[novoice][func:Sound,[w:3]OverMenuConf][w:60][func:FuckingEndGame] "}
+		dial={"Koridor boyunca koştun,[w:3] gözyaşlarını kolunla silerken.","Gözyaşlarından dolayı kıyafetlerin ıslandı.[w:6]\nVe canavar tozları üstüne yapıştı.","SEVGİ hislerini etkilerken,[w:3] kendin olamadın.","Fakat şimdi o pişmanlık hissi geri döndü.","Chara kendisini feda etmeseydi delirebilirdin.","Save noktasına geldim.[w:6] \nTitreyen ellerinle ona ulaştın.","[func:Sound,saved][waitall:4][w:3]...","[func:Sound,OverMenuMove][noskip][waitall:6][w:5]......","Eski kayıt dosyanı yükle?","[novoice][func:Sound,[w:3]OverMenuConf][w:60][func:FuckingEndGame] "}
 	end
 	if Achivements[6]=="0" then
 		dial[#dial]="[novoice][func:Sound,OverMenuConf][w:60][func:GotAchivement6][w:90][func:FuckingEndGame]"
@@ -3940,7 +3940,7 @@ if Reminder==false then
 		if lang=="rus" then
 			Text={"[noskip][effect:none][w:5][starcolor:000000][novoice][voice:epic][instant]ДАЖЕ[instant:stop][w:5] [instant]НЕ[instant:stop][w:5] [instant]СМЕЙ[instant:stop][w:5] [instant]МЕНЯ[instant:stop][w:5] [instant]ДУРИТЬ,[instant:stop][w:10] [instant]АКТЁР[instant:stop][w:120][func:ShadowTarget][w:90][next] ","[func:NoTargeting][func:state,ENEMYDIALOGUE]"}
 			else
-			Text={"[noskip][effect:none][w:5][starcolor:000000][novoice][voice:epic][instant]DON'T[instant:stop][w:5] [instant]EVEN[instant:stop][w:5] [instant]DARE[instant:stop][w:5] [instant]TO[instant:stop][w:5] [instant]FOOL[instant:stop][w:5] [instant]ME,[instant:stop][w:10] [instant]ACTOR[instant:stop][w:120][func:ShadowTarget][w:90][next] ","[func:NoTargeting][func:state,ENEMYDIALOGUE]"}
+			Text={"[noskip][effect:none][w:5][starcolor:000000][novoice][voice:epic][instant]SAKIN[instant:stop][w:5] [instant]BENİ[instant:stop][w:5] [instant]KANDIRMAYI[instant:stop][w:5] [instant]DENEME[instant:stop][w:5] [instant]AKTÖR![w:120][func:ShadowTarget][w:90][next] ","[func:NoTargeting][func:state,ENEMYDIALOGUE]"}
 		end
 		arenasize={535,140}
 		targeting.sprite.color={0,0,0,1}
@@ -4585,7 +4585,7 @@ if NoGameTime==false then
 			if lang=="rus" then
 				dial={"[func:introboogy,base]Что же[waitall:4][w:3]...[speed:0.75][w:3] Так начался наш рассказ.[w:3]","[func:introboogy,closedeyes][func:NoGame]Давным-давно жили два человека.[w:3]","[func:NoGame]Столь решительны,[w:6] сколь могущественны.[w:3]","[func:NoGame]Первый был радостным дитя с горящей жаждой свободы.[w:11]","Это дитя было окружено любовью и признанием монстров.[w:3]","Пусть она и была чужаком в Подземелье,[w:6] [func:NoGame]она нашла здесь семью и счастье.","[func:NoGame]Второе дитя было здесь новеньким." ,"Со страстью истинного актёра,[w:6] это дитя отправилось в путешествие в поисках выхода наружу.","И на своем пути оно нашло новых друзей и встретило первого дитя.[w:9] [func:NoGame]Они стали лучшими партнёрами.","[func:NoGame][func:introboogy,base][waitall:4][w:3]...","[func:introboogy,sarcastic]Ты тоже находишь эту историю клишированной,[w:3] да?","[func:introboogy,joking]Что же,[w:6] это не конец.[w:12] Рассказ продолжался.[w:3]","[func:introboogy,cocky][func:NoGame]Второе дитя обладало силой управлять самим временем.","Дитя вернуло мир к нулю лишь для того,[w:3] чтобы найти новые концовки своей миссии.","[func:NoGame][func:introboogy,joking]И со временем эта миссия стала целью жизни этого дитя.","[func:NoGame][func:introboogy,dissapointed]Дитя уничтожило всё Подземелье лишь для того,[w:3] чтобы найти ещё один путь.[w:49]","[func:introboogy,base][func:NoGame]И в этот момент терпение первого дитя лопнуло.[w:6] [func:NoGame]Она вышла на бой с другим человеком[waitall:4][w:3]...","[func:introboogy,down][func:NoGame]Но провалилась.[w:12] [func:NoGame]Позорно.[w:12] Она пала и не могла вновь подняться.","[func:NoGame][func:introboogy,uncertain]Но второе дитя было не остановить.","[func:NoGame]Отчаявшись остановить это дитя,[w:3] [func:NoGame]первое использовало свой последний шанс[waitall:4][w:3]...","[func:NoGame][speed:0.5]И с этой силой [func:NoGame][w:15]у неё появилась ещё одна попытка.[w:25]","[func:NoGame][next] "}
 				else
-				dial={"[func:introboogy,base]So[waitall:4][w:3]...[speed:0.75][w:3] Thus the story has began.","[func:introboogy,closedeyes][func:NoGame]Once upon a time,[w:3] there were two humans.","[func:NoGame]Both equally determined and powerful.","[func:NoGame]The first one was a cheerful child with a burning desire for freedom.","This child was lovingly accepted by all monsters in the Underground.","Even if she felt like a stranger at first,[w:3] [func:NoGame]she found happiness and family down here.","[func:NoGame]The second child was a new one here.","With the passion of the greatest actor,[w:3] this new child went on a journey to find a way out from here.","They too met new friends,[w:3][func:NoGame] and became the best partners with the first human.[w:1]","[func:NoGame][func:introboogy,base][waitall:4][w:3]...","[func:introboogy,sarcastic]You think this is too cliche as I do,[w:3] right?","[func:introboogy,joking]But,[w:2] that wasn't the end.[w:4] The story continued.","[func:NoGame][func:introboogy,cocky]The second child possessed the power to change the past itself.","They brought the world back to zero just to find other ways to complete his quest.","[func:NoGame][func:introboogy,joking]And eventually it appeared that this mission became the child's utter goal.","[func:NoGame][func:introboogy,dissapointed]This child destroyed the whole Underground on their search for new ways.[w:41]","[func:NoGame][func:introboogy,base]And that's the moment when first child lost all her patience.[w:6] [func:NoGame]She confronted another human[waitall:4][w:3]...[speed:1][w:3]","[func:NoGame][func:introboogy,down]But failed.[w:12] [func:NoGame]Miserably.[w:12] She had fallen down and couldn't come back.","[func:NoGame][func:introboogy,uncertain]But second child was unstoppable.","[func:NoGame]After giving up on trying to stop this child,[w:6] [func:NoGame]the first one used her last chance[waitall:4][w:3]...[speed:1][w:3][w:15]","[novoice][voice:lowbuggy][func:NoGame][speed:0.5]And with that power [w:15][func:NoGame]she might have another shot now.[w:25]","[func:NoGame][next] "}
+				dial={"[func:introboogy,base]So[waitall:4][w:3]...[speed:0.75][w:3] Hikaye başladı.","[func:introboogy,closedeyes][func:NoGame]Evvel zaman önce,[w:3] iki insan vardı.","[func:NoGame]İkisi de eşitçe güçlüydü.","[func:NoGame]Birincisi içi özgürlük ateşi ile yanan mutlu bir insandı.","Bu insan yeraltında sorgusuz sualsiz sevgi gördü.","İlk başta bir yabancı gibi hissetse de,[w:3] [func:NoGame]burda bir aile ve mutluluk buldu.","[func:NoGame]İkinci insan burda yeniydi.","Bir aktör edasıyla,[w:3] Bu yeni insan burdan çıkmak için bir yolculuğa çıktı.","Yeni insan yeni kişilerle tanıştı,[w:3][func:NoGame] ve ilk insan ile partner oldu.[w:1]","[func:NoGame][func:introboogy,base][waitall:4][w:3]...","[func:introboogy,sarcastic]Bunun klişe olduğunu düşünüyorsun,[w:3] değil mi?","[func:introboogy,joking]Fakat,[w:2] bu son değildi.[w:4] Hikaye devam etti.","[func:NoGame][func:introboogy,cocky]İkinci çocuk geçmişi değiştirme gücünü elde etti.","Sadece görevini başka nasıl tamamlayabileceği düşüncesiyle dünyayı sürekli sıfırladı.","[func:NoGame][func:introboogy,joking]Ve sonunda bu görev onun yegane amacı oldu.","[func:NoGame][func:introboogy,dissapointed]Bu insan arayışı boyunca tüm yeraltını yok etti.[w:41]","[func:NoGame][func:introboogy,base]Ve o an ilk insan sabrını yitirdi.[w:6] [func:NoGame]O öbür insanla savaştı[waitall:4][w:3]...[speed:1][w:3]","[func:NoGame][func:introboogy,down]Fakat kaybetti.[w:12] [func:NoGame]Acınası halde.[w:12] Düşüp tekrar kalkamayabilirdi.","[func:NoGame][func:introboogy,uncertain]Fakat ikinci insan durdurulamazdı.","[func:NoGame]İlk insanı durdurmaya pes ettikten sonra,[w:6] [func:NoGame]İlk insan son şansını kullandı[waitall:4][w:3]...[speed:1][w:3][w:15]","[novoice][voice:lowbuggy][func:NoGame][speed:0.5]Ve bu güç ile [w:15][func:NoGame]başka bir şansı olabilir.[w:25]","[func:NoGame][next] "}
 			end
 			for i=1,#dial do
 				if i<10 then
@@ -5413,7 +5413,7 @@ if MyState=="MENU" then
 					if lang=="rus" then
 						m={"Язык: [color:ff2040]РУССКИЙ","Озвучка: "..OnOff(dubbing),"Счётчик смертей: "..OnOff(ShowDeathCounter),"Сложность: "..Differ(diff),"Кровь: "..OnOff(blooding), "СТЕРЕТЬ прогресс"}
 						else
-						m={"Language: [color:ff2040]ENGLISH","Dubbing: "..OnOff(dubbing),"Death counter: "..OnOff(ShowDeathCounter),"Difficulty: "..Differ(diff),"Blood: "..OnOff(blooding),"ERASE the progress"}
+						m={"Language: [color:ff2040]TÜRKÇE","Seslendirme: "..OnOff(dubbing),"Ölüm sayacı: "..OnOff(ShowDeathCounter),"Zorluk: "..Differ(diff),"Kan: "..OnOff(blooding),"ilerlemeyi SİL"}
 					end	
 					Changer.Texts[i]=CreateText("[font:overworld][instant][novoice]"..m[i],{160,360-(i-1)*30},480,"BelowBullet",-1)
 					if i==4 then
@@ -5693,7 +5693,7 @@ if MyState=="MENU" then
 				Changer.Texts[8].SetText("[font:overworld][instant][novoice]НЕТ")
 				Changer.Texts[9].SetText("[font:overworld][instant][novoice]ДА")
 				else
-				Changer.Texts[7].SetText("[font:overworld][instant][novoice][color:ff2010]Difficulty change resets the battle progress.\nAre you sure?")
+				Changer.Texts[7].SetText("[font:overworld][instant][novoice][color:ff2010]Zoruluk değişimi ilerlemeni siler.\nEmin misin?")
 				Changer.Texts[8].SetText("[font:overworld][instant][novoice]NO")
 				Changer.Texts[9].SetText("[font:overworld][instant][novoice]YES")
 			end
@@ -5726,7 +5726,7 @@ if MyState=="MENU" then
 					Changer.Texts[8].SetText("[font:overworld][instant][novoice]НЕТ")
 					Changer.Texts[9].SetText("[font:overworld][instant][novoice]ДА")
 					else
-					Changer.Texts[7].SetText("[font:overworld][instant][novoice][color:ff2010]Difficulty change resets the battle progress.\nAre you sure?")
+					Changer.Texts[7].SetText("[font:overworld][instant][novoice][color:ff2010]Zorluk değişimi ilerlemeni siler.\nEmin misin?")
 					Changer.Texts[8].SetText("[font:overworld][instant][novoice]NO")
 					Changer.Texts[9].SetText("[font:overworld][instant][novoice]YES")
 				end
@@ -5761,18 +5761,18 @@ if MyState=="MENU" then
 				OverText[3].SetText("[font:overworld][instant][novoice]".."Дополнительно")
 				OverText[4].SetText("[font:overworld][instant][novoice]".."Выйти")
 				else
-				Changer.Texts[1].SetText("[font:overworld][instant][novoice]".."Language: [color:ff2040]ENGLISH")
-				Changer.Texts[2].SetText("[font:overworld][instant][novoice]".."Dubbing: "..OnOff(dubbing))
-				Changer.Texts[3].SetText("[font:overworld][instant][novoice]".."Death counter: "..OnOff(ShowDeathCounter))
-				Changer.Texts[4].SetText("[font:overworld][instant][novoice]".."Difficulty: "..Differ(diff))
-				Changer.Texts[5].SetText("[font:overworld][instant][novoice]".."Blood: "..OnOff(blooding))
-				Changer.Texts[6].SetText("[font:overworld][instant][novoice]".."ERASE progress")
+				Changer.Texts[1].SetText("[font:overworld][instant][novoice]".."Dil: [color:ff2040]ENGLISH")
+				Changer.Texts[2].SetText("[font:overworld][instant][novoice]".."Seslendirme: "..OnOff(dubbing))
+				Changer.Texts[3].SetText("[font:overworld][instant][novoice]".."Ölüm sayacı: "..OnOff(ShowDeathCounter))
+				Changer.Texts[4].SetText("[font:overworld][instant][novoice]".."Zorluk: "..Differ(diff))
+				Changer.Texts[5].SetText("[font:overworld][instant][novoice]".."Kan: "..OnOff(blooding))
+				Changer.Texts[6].SetText("[font:overworld][instant][novoice]".."ilerlemeyi SİL")
 				Changer.Text.SetText("[font:overworld][instant][novoice][color:ff2040]Options")
 				Changer.Text.MoveTo(310-Changer.Text.GetTextWidth()/2,430)
-				OverText[1].SetText("[font:overworld][instant][novoice]".."Begin")
-				OverText[2].SetText("[font:overworld][instant][novoice]".."Options")
-				OverText[3].SetText("[font:overworld][instant][novoice]".."Extra")
-				OverText[4].SetText("[font:overworld][instant][novoice]".."Exit")
+				OverText[1].SetText("[font:overworld][instant][novoice]".."Başla")
+				OverText[2].SetText("[font:overworld][instant][novoice]".."Ayarlar")
+				OverText[3].SetText("[font:overworld][instant][novoice]".."Ekstralar")
+				OverText[4].SetText("[font:overworld][instant][novoice]".."Çıkış")
 			end
 			ReDoLanguage(lang)
 			WriteSavio()
@@ -5782,14 +5782,14 @@ if MyState=="MENU" then
 				if lang=="rus" then
 					Changer.Texts[2].SetText("[font:overworld][instant][novoice]Озвучка: "..OnOff(dubbing))
 					else
-					Changer.Texts[2].SetText("[font:overworld][instant][novoice]Dubbing: "..OnOff(dubbing))
+					Changer.Texts[2].SetText("[font:overworld][instant][novoice]Seslendirme: "..OnOff(dubbing))
 				end
 				else
 				dubbing=true
 				if lang=="rus" then
 					Changer.Texts[2].SetText("[font:overworld][instant][novoice]Озвучка: "..OnOff(dubbing))
 					else
-					Changer.Texts[2].SetText("[font:overworld][instant][novoice]Dubbing: "..OnOff(dubbing))
+					Changer.Texts[2].SetText("[font:overworld][instant][novoice]Seslendirme: "..OnOff(dubbing))
 				end
 			end
 			WriteSavio()
@@ -5802,7 +5802,7 @@ if MyState=="MENU" then
 			if lang=="rus" then
 				Changer.Texts[3].SetText("[font:overworld][instant][novoice]Счётчик смертей: "..OnOff(ShowDeathCounter))
 				else
-				Changer.Texts[3].SetText("[font:overworld][instant][novoice]Death counter: "..OnOff(ShowDeathCounter))
+				Changer.Texts[3].SetText("[font:overworld][instant][novoice]Ölüm sayacı: "..OnOff(ShowDeathCounter))
 			end
 			WriteSavio()
 			elseif InState==4 then
@@ -5814,7 +5814,7 @@ if MyState=="MENU" then
 			if lang=="rus" then
 				Changer.Texts[4].SetText("[font:overworld][instant][novoice]".."Сложность: "..Differ(diff))
 				else
-				Changer.Texts[4].SetText("[font:overworld][instant][novoice]".."Difficulty: "..Differ(diff))
+				Changer.Texts[4].SetText("[font:overworld][instant][novoice]".."Zorluk: "..Differ(diff))
 			end
 			WriteSavio()
 			elseif InState==5 then
@@ -5827,7 +5827,7 @@ if MyState=="MENU" then
 			if lang=="rus" then
 				Changer.Texts[5].SetText("[font:overworld][instant][novoice]".."Кровь: "..OnOff(blooding))
 				else
-				Changer.Texts[5].SetText("[font:overworld][instant][novoice]".."Blood: "..OnOff(blooding))
+				Changer.Texts[5].SetText("[font:overworld][instant][novoice]".."Kan: "..OnOff(blooding))
 			end
 			elseif InState==6 then
 			if lang=="rus" then
@@ -5835,9 +5835,9 @@ if MyState=="MENU" then
 				Changer.Texts[8].SetText("[font:overworld][instant][novoice]НЕТ")
 				Changer.Texts[9].SetText("[font:overworld][instant][novoice]ДА")
 				else
-				Changer.Texts[7].SetText("[font:overworld][instant][novoice][color:ff2010]This will reset current progress.\nAre you sure?")
-				Changer.Texts[8].SetText("[font:overworld][instant][novoice]NO")
-				Changer.Texts[9].SetText("[font:overworld][instant][novoice]YES")
+				Changer.Texts[7].SetText("[font:overworld][instant][novoice][color:ff2010]Bu ilerlemeni sıfırlayacak.\nEmin misin?")
+				Changer.Texts[8].SetText("[font:overworld][instant][novoice]HAYIR")
+				Changer.Texts[9].SetText("[font:overworld][instant][novoice]EVET")
 			end
 			Changer.Texts[8].MoveTo(260-Changer.Texts[8].GetTextWidth()/2,60)
 			Changer.Texts[9].MoveTo(370-Changer.Texts[9].GetTextWidth()/2,60)
@@ -5971,7 +5971,7 @@ if MyState=="MENU" then
 					dial={"[noskip][func:face,yes][next] ","[effect:twitch,1][font:overworld][color:ffffff][func:DUB,prolog/4][func:normal1]*Просто[waitall:4][w:3]...[waitall:1][w:3] хотела убедиться.", "[func:Peachy]*[waitall:4][w:3]...", "[func:DUB,prolog/5]*Позволь задать тебе один \nвопрос.", "[func:normal][func:DUB,prolog/6]*Ты уверен,[w:3] что ты \nвыше последствий?","[func:Peachy][func:DUB,prolog/7]*Что любые твои деяния[waitall:4][w:3]..","[func:normal][noskip][func:DUB,prolog/8]*Останутся безнаказанными?[w:30][func:ph1][func:face,no][next] "}
 				end
 				else
-				dial={"[noskip][func:face,yes][next] ","[func:DUB,prolog/1][effect:twitch,1][font:overworld][color:ffffff][func:DUB,prolog/4][func:normal1]*[w:2]Just [w:15]wanted [w:1]to get[w:1] sure[w:1].", "[func:Peachy]*[waitall:6]...", "[func:DUB,prolog/5]*Let me ask[w:10] one [w:3]thing[w:5].", "[func:DUB,prolog/6][func:normal]*[w:2]Are you so [w:2]sure,[w:5] that [speed:1.5]\nyou`re [w:2]above [w:2][speed:1][w:2]con[w:1]se[w:1]quen[w:1]ces[w:4]?","[func:DUB,prolog/7][func:Peachy]*[w:3]That all [w:1]your [waitall:2]actions[waitall:3]...","[func:DUB,prolog/8][func:normal][noskip]*Will remain [w:10]un[w:1]puni[w:1][waitall:3]shed?[w:30][func:ph1][func:face,no][next] "}
+				dial={"[noskip][func:face,yes][next] ","[func:DUB,prolog/1][effect:twitch,1][font:overworld][color:ffffff][func:DUB,prolog/4][func:normal1]*[w:2]Sadece [w:15]emin [w:1]olmak[w:1] istedim[w:1].", "[func:Peachy]*[waitall:6]...", "[func:DUB,prolog/5]*Bir şey[w:10] sormama [w:3]izin ver[w:5].", "[func:DUB,prolog/6][func:normal]*[w:2]Kaderinden [w:2]üstün,[w:5] olduğuna [speed:1.5]\ne [w:2]mi [w:2][speed:1][w:2]n [w:1]mi[w:1]si[w:1]n[w:4]?","[func:DUB,prolog/7][func:Peachy]*[w:3]Yaptığın [w:1]şeyler[waitall:3]...","[func:DUB,prolog/8][func:normal][noskip]*Cezasız [w:10]kal[w:1]am[w:1][waitall:3]az.[w:30][func:ph1][func:face,no][next] "}
 			end
 			dial=EveryDial(dial,"[effect:twitch,1][font:overworld][color:ffffff]","[novoice][noskip]")
 			else
@@ -6042,7 +6042,7 @@ if GlobalSaveTimer>0 then
 		if lang=="rus" then
 			dial="[noskip][font:overworld][novoice][w:75][waitall:6][w:6]...[waitall:2][w:4]но впредь вам некуда было вернуться."
 			else
-			dial="[noskip][font:overworld][novoice][w:75][waitall:6][w:6]...[waitall:2][w:4]but you had nowhere to come back anymore."
+			dial="[noskip][font:overworld][novoice][w:75][waitall:6][w:6]...[waitall:2][w:4]Fakat artık geri dönemezsin."
 		end
 		local t=CreateText(dial,{80,140},480,"Top",-1)
 		t.HideBubble()
@@ -6317,7 +6317,7 @@ if GetGlobal("Playerisdead")==true then
 			else
 			phase=1.5
 			if lang=="eng" then
-				comm="So she wants to play hard[waitall:4][w:3]...[waitall:1][w:3] \nOkay,[w:3] daddy."
+				comm="Demek zor yolu seçti[waitall:4][w:3]...[waitall:1][w:3] \nTamam,[w:3] babalık."
 				else
 				comm="Значит,[w:3] она хочет сыграть \rпо-взрослому[waitall:4][w:3]...[waitall:1][w:3] \nХорошо,[w:3] папик."
 			end
@@ -6401,13 +6401,13 @@ if not GetGlobal("choicen") or GetGlobal("choicen")==false then
 				if lang=="rus" then
 					dial={"[waitall:4][w:3]...","[waitall:4][w:3]...[waitall:2][w:3][func:MTT,calm]Конечно.[w:9] [func:MTT,okey]Выбор твой.","[waitall:4][w:3]...[waitall:2][w:3]в конце концов,[w:6] [func:MTT,NotNew]ты такой же идиот,[w:6] как и он.","[func:MTT,Thought]И почему я думал,[w:6] что ты будешь другим,[w:6] дорогуша?","[func:MTT,NothingNew]Какая теперь разница.","[func:MTT,NotNew]Я боюсь,[w:6] [func:MTT,Afraid]что твоего отказа не было в сценарии.","[func:MTT,NotPlaying]А актеры,[w:6] что играют не по сценарию,[w:6] [func:MTT,punishment]должны быть наказаны.","[func:MTT,Afraid]Ничего личного.[w:9] [func:MTT,Bisiness]Просто бизнес.","[func:MTT,NotPersonal]Хотя,[w:6] кого я обманываю?\n[w:15][func:MTT,saw1][waitall:3][func:SetMusic,none][w:10][func:Mttsaw][w:10][color:8040ff]Это личное.[w:6][next] ","[func:MTT,EYE][func:PlayerGetsKilled][color:ff00ff][waitall:1]Так возвращайся же к нулю,[w:3] актёр![w:6000] "}
 					else
-					dial={"[waitall:4][w:3]...","[waitall:4][w:3]...[waitall:2][w:3][func:MTT,calm]Of course.[w:9] [func:MTT,okey]It was up to you.","[waitall:4][w:3]...[waitall:2][w:3]in the end,[w:6] [func:MTT,NotNew]you are a fool like him.","[func:MTT,Thought]And why have I even thought that you will be different,[w:6] darling?","[func:MTT,NothingNew]Now there's no difference.","[func:MTT,NotNew]I am afraid,[w:6][func:MTT,Afraid] your disagreement wasn't in script.","[func:MTT,NotPlaying]And actors not playing by script [func:MTT,punishment]should be punished.","[func:MTT,Afraid]Nothing personal.[w:9] \n[func:MTT,Bisiness]Just business.","[func:MTT,NotPersonal]Oh,[w:6] who am I lying to?[w:15][waitall:3][color:8040ff][func:MTT,saw1][func:SetMusic,none][w:10][func:Mttsaw][w:10] \nIt IS personal.[w:6][next] ","[func:MTT,EYE][func:PlayerGetsKilled][color:ff00ff][waitall:1]Thus come back to zero now,[w:3] actor![w:6000] "}
+					dial={"[waitall:4][w:3]...","[waitall:4][w:3]...[waitall:2][w:3][func:MTT,calm]Tabiki.[w:9] [func:MTT,okey]İş sana düştü.","[waitall:4][w:3]...[waitall:2][w:3]en sonunda,[w:6] [func:MTT,NotNew]onun gibi bir zavallısın.","[func:MTT,Thought]Neden farklı olacağını düşündüm ki,[w:6] tatlım?","[func:MTT,NothingNew]Artık bir fark yok.","[func:MTT,NotNew]Korkarım ki,[w:6][func:MTT,Afraid] bunu reddetmen senaryoda yok.","[func:MTT,NotPlaying]Ve senaryoya uymayan [func:MTT,punishment]oyuncular cezalandırılmalı.","[func:MTT,Afraid]Kişisel değil.[w:9] \n[func:MTT,Bisiness]Sadece iş.","[func:MTT,NotPersonal]Oh,[w:6] kime yalan söylüyorum ki?[w:15][waitall:3][color:8040ff][func:MTT,saw1][func:SetMusic,none][w:10][func:Mttsaw][w:10] \nBU KİŞİSEL.[w:6][next] ","[func:MTT,EYE][func:PlayerGetsKilled][color:ff00ff][waitall:1]Kariyerin bitti,[w:3] aktör![w:6000] "}
 				end
 				else
 				if lang=="rus" then
 					dial={"[waitall:4][w:3]...[waitall:2][w:3][func:MTT,calm]Хм.","[func:MTT,Thought]Полагаю,[w:9] [func:MTT,NothingNew]мы вновь скоро встретимся.","[func:MTT,NotPlaying]И всё-таки мне интересно[waitall:4][w:3]...","[func:MTT,punishment]Что ты нашел в ней?[w:9] [func:MTT,Just]Она же просто самоуверенная истеричка.","[func:MTT,Afraid]Полагаю,[w:6] тебе просто нравится смотреть за её страданиями,[w:6] ха?","[func:MTT,NotPersonal]Хе-хе[waitall:4][w:3]...[waitall:2][w:3] [func:MTT,Bisiness]До встречи[waitall:4][w:3]...[waitall:2][w:3][func:MTT,saw1][func:SetMusic,none][w:10][func:Mttsaw] [waitall:4][color:8040ff]актёр.[w:6][next] ","[func:MTT,EYE][func:PlayerGetsKilled][w:6000] "}
 					else
-					dial={"[waitall:4][w:3]...[waitall:2][w:3][func:MTT,calm]Hm.","[func:MTT,Thought]I guess,[w:9] [func:MTT,NothingNew]we will meet again soon.","[func:MTT,NotPlaying]But still I wonder[waitall:4][w:3]...","[func:MTT,punishment]What did you find in her?[w:9] [func:MTT,Just]She is just a nasty hysteria.","[func:MTT,Afraid]I guess,[w:6] you just like to watch her suffer,[w:6] huh?","[func:MTT,NotPersonal]He-he[waitall:4][w:3]...[waitall:2][w:3] [func:MTT,Bisiness]See you soon[waitall:4][w:3]...[waitall:2][w:3][func:MTT,saw1][func:SetMusic,none][w:10][func:Mttsaw][color:8040ff] [waitall:4]actor.[w:6][next] ","[func:MTT,EYE][func:PlayerGetsKilled][w:6000] "}
+					dial={"[waitall:4][w:3]...[waitall:2][w:3][func:MTT,calm]Hm.","[func:MTT,Thought]Sanırım,[w:9] [func:MTT,NothingNew]tekrar görüşeceğiz.","[func:MTT,NotPlaying]Fakat hala düşünüyorum[waitall:4][w:3]...","[func:MTT,punishment]Onda ne buldun?[w:9] [func:MTT,Just]O sadece iğrenç bir figüran.","[func:MTT,Afraid]Sanırım,[w:6] onun acı çekmesini seviyorsun,[w:6] ha?","[func:MTT,NotPersonal]He-he[waitall:4][w:3]...[waitall:2][w:3] [func:MTT,Bisiness]Yakında görüşürüz[waitall:4][w:3]...[waitall:2][w:3][func:MTT,saw1][func:SetMusic,none][w:10][func:Mttsaw][color:8040ff] [waitall:4]akör.[w:6][next] ","[func:MTT,EYE][func:PlayerGetsKilled][w:6000] "}
 				end
 			end
 			for i=1,#dial do
@@ -6427,13 +6427,13 @@ if not GetGlobal("choicen") or GetGlobal("choicen")==false then
 				if lang=="rus" then
 					dial={"Отлично[waitall:4][w:3]...","[func:MTT,calm]Я никогда в тебе не сомневался.","Мы будем вечно вместе,[w:6] правда?[w:9]\n[func:MTT,okey]Ты ведь не предашь меня,[w:6] как тот глупец?","Я[waitall:4][w:3]...[func:MTT,calm][waitall:2][w:3] Так рад.[w:9]\n[func:MTT,proposal]Пойдем со мной.","Впереди у нас[waitall:4][w:3]...[waitall:2][w:3][color:ff20a0]целая [func:EVERYTHINGEVERYWHERE][w:6]вечность.[w:180]"}
 					else
-					dial={"Perfect[waitall:4][w:3]...","[func:MTT,calm]I always believed in you.","We will be together forever,[w:6] right?[w:9] [func:MTT,okey]You will not betray me like that fool?","I am[waitall:4][w:3]...[waitall:2][w:3] [func:MTT,calm]I am so happy.[w:9] \n[func:MTT,proposal]Come with me.","We have[waitall:4][w:3]...[waitall:2][w:3] [color:ff20a0]everything [func:EVERYTHINGEVERYWHERE][w:6]everywhere.[w:180]"}
+					dial={"Perfect[waitall:4][w:3]...","[func:MTT,calm]Sana her zaman inandım.","Sonsuza kadar beraber olacağız,[w:6] değil mi?[w:9] [func:MTT,okey]O zavallı gibi bana ihanet etmeyecek misin?","Ben[waitall:4][w:3]...[waitall:2][w:3] [func:MTT,calm]Çok mutluuym.[w:9] \n[func:MTT,proposal]Benimle gel.","Burda[waitall:4][w:3]...[waitall:2][w:3] [color:ff20a0]her şey [func:EVERYTHINGEVERYWHERE][w:6]her yerde.[w:180]"}
 				end
 				else
 				if lang=="rus" then
 					dial={"[func:MTT,proposal]Отлично[waitall:4][w:3]...","[func:MTT,calm]Я знал,[w:6] что рано или поздно ты поймешь[waitall:4][w:3]...","[func:MTT,NotNew]Она не заслуживает твоего внимания.","Она не заслуживает [waitall:3]ничего[w:3].","Ты же[waitall:4][w:3]...[waitall:2][w:3] [func:MTT,calm]Должен блистать.","[func:MTT,proposal]Пойдём,[w:6] дорогуша[waitall:4][w:3]...[waitall:2][w:3] [color:ff20a0]У нас много дел.[w:30][func:EVERYTHINGEVERYWHERE][w:6000]"}
 					else
-					dial={"[func:MTT,proposal]Great[waitall:4][w:3]...","[func:MTT,calm]I knew that you will get it sooner or later.","[func:MTT,NotNew]She doesn't deserve your attention.","She doesn't deserve anything.","And you[waitall:4][w:3]...[waitall:2][w:3] [func:MTT,calm]should be the star.","[func:MTT,proposal]Come on, darling[waitall:4][w:3]...[waitall:2][w:3] We have a lot to do.[w:30][func:EVERYTHINGEVERYWHERE][w:6000] "}
+					dial={"[func:MTT,proposal]Harika[waitall:4][w:3]...","[func:MTT,calm]Eninde sonunda geleceğini biliyordum.","[func:MTT,NotNew]O seni haketmiyor.",",O bir şey haketmiyor.","Ve sen[waitall:4][w:3]...[waitall:2][w:3] [func:MTT,calm]yıldız olmalısın.","[func:MTT,proposal]Hadi ama, tatım[waitall:4][w:3]...[waitall:2][w:3] Yapcak çok şeyimiz var.[w:30][func:EVERYTHINGEVERYWHERE][w:6000] "}
 				end
 			end
 			for i=1,#dial do
@@ -6710,7 +6710,7 @@ if systemfight then
 					if lang=="rus" then
 						dial={ "[func:LostKidFace,shocked,+]Ч-[w:9]что?!-",  "[func:LostKidFace,shocked2,+][func:SAVEMUSIC]Я увернулась,[w:6] пусть \nи не хотела,[w:6] но[waitall:4][w:3]...[waitall:1][w:3]",  "[func:LostKidFace,shocked3,+]Твой взгляд[waitall:4][w:3]...[waitall:1][w:3] \nУ меня сработал \nинстинкт \nсамосохранения[waitall:4][w:3]...[waitall:1][w:3]", "[func:LostKidFace,base_close,-]По какой-то \nпричине[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,gloomy,+] Этот \nвзгляд меня \nвымораживает[waitall:4][w:3]...[waitall:1][w:3]",  "[func:LostKidFace,base_left,+]Я даже не увидела \nтвой удар[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,confused,+] \nЧто это было?", "[func:LostKidFace,base_close,-][waitall:4][w:3]...[waitall:1][w:3]", "[func:LostKidFace,hope_base,+]Кажется[waitall:4][w:3]...[waitall:1][w:3] Я поняла.",  "[func:LostKidFace,hope_cheers,+]В дело вмешался \nкукловод.[w:9] \nМне льстит,[w:6] что мне \nоказана такая честь.",  "[func:LostKidFace,hope_close,-]Партнёр[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_determined,+] \nНе смей \nподдаваться!",  "[func:LostKidFace,hope_question,+]Если ты все ещё \nвнутри и \nотказываешься меня \nубивать[waitall:4][w:3]...[waitall:1][w:3]",  "[func:LostKidFace,hope_smile,+]Я думаю,[w:6] я могу \nдать тебе шанс.",  "[func:LostKidFace,hope_cheers,+]Вдвоем мы \nсправимся.[w:9] \nПросто не \nпереставай бороться \nс ним!","[func:LostKidFace,hope_base,+][next] "}
 						else
-						dial={"[func:LostKidFace,shocked,+]W-wha?-", "[func:LostKidFace,shocked2,+][func:SAVEMUSIC]I did dodge even if I \ndidn't want to,[w:3] but[waitall:4][w:3]...", "[func:LostKidFace,shocked3,+]Your glance[waitall:4][w:3]...[waitall:1][w:3] \nSelf-defense did it \ninstead of me[waitall:4][w:3]...", "[func:LostKidFace,base_close,-]For some reason[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,gloomy,+]\nI am feared down to \nthe bones with this \nglance[waitall:4][w:3]...", "[func:LostKidFace,base_left,+]I didn't even see \nyour slash[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,confused,+]\nWhat was it?", "[func:LostKidFace,base_close,-][waitall:4][w:3]...", "[func:LostKidFace,hope_base,+]I think[waitall:4][w:3]...[waitall:1][w:3] I got it.", "[func:LostKidFace,hope_cheers,+]Puppeteer joined the \ngame.[w:6] I am pleased \nby such high \nappraisal.", "[func:LostKidFace,hope_close,-]Partner[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_determined,+]You can't \ngive up just yet!", "[func:LostKidFace,hope_question,+]If you still here and \nrefuse to kill me[waitall:4][w:3]...", "[func:LostKidFace,hope_smile,+]I think I can give you \nsecond chance.", "[func:LostKidFace,hope_cheers,+]Together we will deal \nwith him.[w:6] Just don't \nstop struggling \nagainst him!","[func:LostKidFace,hope_base,+][next] "}
+						dial={"[func:LostKidFace,shocked,+]N-Ne?-", "[func:LostKidFace,shocked2,+][func:SAVEMUSIC]İstemesem \nde yana çekildim,[w:3] fakat[waitall:4][w:3]...", "[func:LostKidFace,shocked3,+]Fakat[waitall:4][w:3]...[waitall:1][w:3] \nBenim yerime \nrefleksimdi o[waitall:4][w:3]...", "[func:LostKidFace,base_close,-]Nedense[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,gloomy,+]\nŞu an korkuyu \niliklerimde \nhissediyorum[waitall:4][w:3]...", "[func:LostKidFace,base_left,+]Slashini görmedim \nbile[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,confused,+]\nO da neydi?", "[func:LostKidFace,base_close,-][waitall:4][w:3]...", "[func:LostKidFace,hope_base,+]Sanırım[waitall:4][w:3]...[waitall:1][w:3] Anladım.", "[func:LostKidFace,hope_cheers,+]Kuklacı oyuna \nkatıldı.[w:6] Ve beni \nkullanmaya \nçalışıyor.", "[func:LostKidFace,hope_close,-]Partner[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_determined,+]Henüz \npes edemezsin!", "[func:LostKidFace,hope_question,+]Eğer hala ordaysan \nve beni ö ldürmek istemiyorsan[waitall:4][w:3]...", "[func:LostKidFace,hope_smile,+]Sanırım sana ikinci \nbir şans verebilirim.", "[func:LostKidFace,hope_cheers,+]Beraber onu \nyeneceğiz.[w:6] Sadece \nkontrolü \nkaybetme!","[func:LostKidFace,hope_base,+][next] "}
 					end
 					for i=1,#dial do
 						dial[i]="[noskip][effect:none]"..dial[i].."[w:20][next] "
@@ -6721,7 +6721,7 @@ if systemfight then
 					if lang=="rus" then
 						dials={"Это[waitall:4][w:3]...[waitall:1][w:3] Было близко","Почему же я не вижу \nудары[waitall:4][w:3]?..[waitall:1][w:3]","От тебя исходит \nужасающая аура[waitall:4][w:3]...[waitall:1][w:3] \nНоги сами \nдвижутся."}
 						else
-						dials={"That[waitall:4][w:3]...[waitall:1][w:3] Was close.","Why do I not see \nslashes tho[waitall:4][w:3]?..[waitall:1][w:3]","I feel horific \naura around you[waitall:4][w:3]...[waitall:1][w:3] \nMy legs moved \nby themselves."}
+						dials={"That[waitall:4][w:3]...[waitall:1][w:3] Bu yakındı.","Neden slashler \ngörmüyorum[waitall:4][w:3]?..[waitall:1][w:3]","Etrafında korkunç \nbir aura görüyorum[waitall:4][w:3]...[waitall:1][w:3] \nBacaklarım kendi \nkendine hareket ediyor."}
 					end
 					dial=dials[math.random(#dials)]
 					dial={dial}
@@ -6733,7 +6733,7 @@ if systemfight then
 					if lang=="rus" then
 						dials={{"Кгх[waitall:4][w:3]...[waitall:1][w:3]","Я[waitall:4][w:3]...[waitall:1][w:3] Я в порядке, \nпартнёр[waitall:4][w:3]...[waitall:1][w:3] \nНе переживай"},{"Это[waitall:4][w:3]...[waitall:1][w:3]","Это просто \nцарапина[waitall:4][w:3]...[waitall:1][w:3] \nБлять[waitall:4][w:3]...[waitall:1][w:3] Ргх"},{"Ха[waitall:4][w:3]...[waitall:1][w:3] Ха[waitall:4][w:3]...[waitall:1][w:3]","Дышать[waitall:4][w:3]...[waitall:1][w:3] \nРовно[waitall:4][w:3]...[waitall:1][w:3]","Уф."},{"Эта боль ничто, \nправда[waitall:4][w:3]...[waitall:1][w:3]","Твою мать, но как же \nбольно[waitall:4][w:3]...[waitall:1][w:3]"}}
 						else
-						dials={{"Ugh[waitall:4][w:3]...[waitall:1][w:3] ","I[waitall:4][w:3]...[waitall:1][w:3] I am fine, \npartner[waitall:4][w:3]...[waitall:1][w:3] \nDon't worry"},{"This[waitall:4][w:3]...[waitall:1][w:3]","This is just a \nscrap[waitall:4][w:3]...[waitall:1][w:3] \nShit[waitall:4][w:3]...[waitall:1][w:3] Rgh."},{"Ha[waitall:4][w:3]...[waitall:1][w:3] Ha[waitall:4][w:3]...[waitall:1][w:3]","Breathe[waitall:4][w:3]...[waitall:1][w:3] \nCalmly[waitall:4][w:3]...[waitall:1][w:3]","Huff."},{"This pain is nothing, \nI swear[waitall:4][w:3]...[waitall:1][w:3]","But, damn, it hurts a \nlittle tho[waitall:4][w:3]...[waitall:1][w:3]"}}
+						dials={{"Ugh[waitall:4][w:3]...[waitall:1][w:3] ","I[waitall:4][w:3]...[waitall:1][w:3] Ben iyiyim, \npartner[waitall:4][w:3]...[waitall:1][w:3] \nEndişelenme"},{"Bu[waitall:4][w:3]...[waitall:1][w:3]","Bu bir \nçöp[waitall:4][w:3]...[waitall:1][w:3] \nHassiktir[waitall:4][w:3]...[waitall:1][w:3] Rgh."},{"Ha[waitall:4][w:3]...[waitall:1][w:3] Ha[waitall:4][w:3]...[waitall:1][w:3]","Nefes al[waitall:4][w:3]...[waitall:1][w:3] \nSakince[waitall:4][w:3]...[waitall:1][w:3]","Huff."},{"Bu acı bir hiçg, \nCiddiyim[waitall:4][w:3]...[waitall:1][w:3]","Fakat, ugh, bu birazcık \nacıtıyor[waitall:4][w:3]...[waitall:1][w:3]"}}
 					end
 					local dial=dials[math.random(#dials)]
 					dial[#dial+1]="[noskip][func:LostKidFace,hope_base,+][next] "
@@ -7077,7 +7077,7 @@ if not GetGlobal("fightbegin") then
 					if quick==true then
 						dial={"[noskip][func:TakeKnife][func:head][effect:none][novoice][waitall:5]ДО [color:ff0000][func:Devil,night]ДНА![w:10][next] "}
 						else
-						dial={"[func:DUB,prolog/17][noskip]It is such a vivid \nday [w:1]today.","[func:DUB,prolog/18][noskip]I [w:2]smell [w:1][waitall:2]scent[waitall:1] [w:5]of my\nboiling [waitall:2]blood.","[func:DUB,prolog/19][noskip]And even if all my \npals [w:6]are gone[waitall:5]...","[func:DUB,prolog/20][noskip]I [waitall:2]still[waitall:1][w:7] have [speed:1.5]a reason[speed:1]\nto con[w:1]quer.","[func:DUB,prolog/21][func:Peachy][noskip]Almost forgot,[w:15] [func:normal]I made \na poem for you.","[func:DUB,prolog/22][noskip][func:Peachy][w:3]It begins [w:10]like \n[w:6]this:","[func:DUB,prolog/23][noskip]A mag[w:1]ni[w:1]fi[w:1]cent day[w:4] \ncomes to its end[waitall:4][w:3]...","[func:DUB,prolog/24][noskip]Birds [w:4]are still \nsinging,[w:5]\nigno[w:1]ring[w:1] the threat[waitall:4][w:3]...","[func:DUB,prolog/25][noskip]And feeling the \npower, \n[w:7]that`s not \neven [w:1]yours[waitall:4][w:3]...","[func:DUB,prolog/26][noskip][func:TakeKnife][func:head][effect:none][novoice][color:ff0000]BE [w:1]REA[w:1]DY [w:2]TO [w:1]SUF[w:1]FER [w:2]\nFOR [w:1]EACH [w:1]YOUR[w:2]\n[waitall:2]AB[func:Devil,night]U[w:5]SE![w:20][next] "}
+						dial={"[func:DUB,prolog/17][noskip]Bugün çok canlı \nbir [w:1]gün.","[func:DUB,prolog/18][noskip]Kaynayan [w:2]kanımın [w:1][waitall:2]kokusunu[waitall:1] [w:5]\nvücudumda [waitall:2]hissediyorum.","[func:DUB,prolog/19][noskip]Dostlarım artık \nyok olmuş [w:6]olsa bile[waitall:5]...","[func:DUB,prolog/20][noskip]Hala [waitall:2]sana karşı[waitall:1][w:7] çıkmak [speed:1.5]için bir[speed:1]\nnedenim[w:1]var.","[func:DUB,prolog/21][func:Peachy][noskip]Neredeyse unutuyordum,[w:15] [func:normal]Sana bir \nşiir yazdım.","[func:DUB,prolog/22][noskip][func:Peachy][w:3]Şöyle [w:10]başlıyor \n[w:6]...","[func:DUB,prolog/23][noskip]Ha[w:1]ri[w:1]ka[w:1]bir gün[w:4] \ndaha bitmek üzere[waitall:4][w:3]...","[func:DUB,prolog/24][noskip]Kuşlar [w:4]hala \ncıvıldıyor,[w:5]\nve tehlikeyi[w:1]göz ardı[w:1] ediyorlar[waitall:4][w:3]...","[func:DUB,prolog/25][noskip]Ve senin bile \nolmayan \ngücünü[w:7] \nhissediyorlar[waitall:4][w:3]...","[func:DUB,prolog/26][noskip][func:TakeKnife][func:head][effect:none][novoice][color:ff0000]HER [w:1]HA[w:1]RE[w:2]KE[w:1]TİN [w:1]İÇİB [w:2]\nACI [w:1]ÇEK[w:1]MEYE[w:2]\n[waitall:2]HAZ[func:Devil,night]IR[w:5]LAN![w:20][next] "}
 					end
 				end
 				dial=EveryDial(dial,"[effect:twitch,1][noskip]","[novoice]")
@@ -7089,7 +7089,7 @@ if not GetGlobal("fightbegin") then
 						dial={"[func:LostKidFace,base_up,+][waitall:4][w:3]...[waitall:1][w:3]Я даже от страха \nсмерти забыла свою \nречь[waitall:4][w:3]...","[func:LostKidFace,base_left,+]Что-то там о пыли,[w:3] \nдне[waitall:4][w:3]...","[func:LostKidFace,base_close,-]Какая разница.","[func:LostKidFace,base,+]Слушай,[w:3] это \nочевидно, что я не \nсправлюсь,[w:3] раз уже \nоднажды проиграла.","[func:LostKidFace,confused,+]Это убийственная \nбессмыслица.[w:6] \nБуквально.","[func:LostKidFace,base_close,-]Поэтому вместо боя \nдавай поговорим.","[func:LostKidFace,base_left,+]Ну,[w:3] я буду говорить,[w:3] \nа ты уклоняться от \nнелепых потуг,[w:3] \nкоторые называют \nатаками.","[func:Achivement][func:SetMusic,lost][next] "}
 						comm="Занятно.[w:6]\nНесколько сюжетных поворотов моему шоу не помешают."
 						else
-						dial={"[func:LostKidFace,base_up,+][waitall:4][w:3]...[waitall:1][w:3]Scared of death I \neven forgot my \nspeech[waitall:4][w:3]...","[func:LostKidFace,base_left,+]Something 'bout dust \nand day[waitall:4][w:3]...","[func:LostKidFace,base_close,-]Whatever.","[func:LostKidFace,base,+]Look,[w:3] it's obvious I \nam not gonna make it \nout alive after I \ndied already.","[func:LostKidFace,confused,+]This would be a \ndead-end.[w:6] \nLiterally.","[func:LostKidFace,base_close,-]So let's chit-talk \na little.","[func:LostKidFace,base_left,+]Well,[w:3] I will talk and \nyou will be dodging \nthose pathetic \nnon-sense called \nattacks.","[func:Achivement][func:SetMusic,lost][next] "}
+						dial={"[func:LostKidFace,base_up,+][waitall:4][w:3]...[waitall:1][w:3]Uhm... \nAslında hiç \nrepliğimi unutmamıştım[waitall:4][w:3]...","[func:LostKidFace,base_left,+]Toz ve güneş ile \nalakalıydı[waitall:4][w:3]...","[func:LostKidFace,base_close,-]Her neyse.","[func:LostKidFace,base,+]Baksana,[w:3] zaten bir kere \nöldükten sonra \ntekrar sağ çıkamayacağım \nçok belli.","[func:LostKidFace,confused,+]Bu bir \nkısır döngü.[w:6] \nCidden.","[func:LostKidFace,base_close,-]Birazcık \nsohbet edelim.","[func:LostKidFace,base_left,+]Kısaca,[w:3] seninle konuşurken \no atak denilen \nmantıksız \nşeylerden \nkaçacaksın.","[func:Achivement][func:SetMusic,lost][next] "}
 						comm="Intriguing.[w:6] \nSome plot twist will be good addition to the show."
 					end
 					enemies[1].SetVar("dodge",false)
@@ -7167,7 +7167,7 @@ if GetGlobal("phase1")==1 then
 					dial={"[next] ","[func:face,yes][font:overworld][effect:twitch,1][func:NoMercy1][color:ffffff][func:DUB,prolog/9]*[waitall:4][w:3]... Ясно.", "[func:DUB,prolog/10]*[effect:twitch,1]Хех[waitall:4][w:3]...[waitall:1][w:3]\n[func:Danger]Даже смешно отчасти.", "[func:NoMercy1][waitall:4][w:3]...","[func:DUB,prolog/11]*Я не буду утруждать \nсебя разъяснениями терминов.","[noskip][func:DUB,prolog/12]*На самом деле,[w:3] ты и \nтак их знаешь[waitall:4][w:3]...[waitall:1]\n[w:12][func:Danger1]Не так ли?=)[w:50][func:ph2][func:face,no][next] "}
 				end
 				elseif lang=="eng" then
-				dial={"[next] ","[func:DUB,prolog/9][func:face,yes][font:overworld][effect:twitch,1][func:NoMercy1][color:ffffff]*[waitall:5]...[waitall:1] I [w:8][waitall:2]see.", "[func:DUB,prolog/10][effect:twitch,1]*Heh[waitall:5]...[waitall:1][w:5]\n[func:Danger]It`s funny [w:12]in [w:1]a [w:1]way[w:4].", "[func:NoMercy1][waitall:5]...","[func:DUB,prolog/11]*[w:5]I won`t bother my[waitall:2]self [waitall:1][w:4]with\n[speed:1.5]teaching [speed:1]you [waitall:2]manners[w:3].","[func:DUB,prolog/12][noskip]*[w:1]In fact,[w:9] you already\nknow [w:1]them[waitall:5]...[waitall:1]\n[w:14][func:Danger1]Don`t [w:3]you?=)[w:50][func:ph2][func:face,no][next] "}
+				dial={"[next] ","[func:DUB,prolog/9][func:face,yes][font:overworld][effect:twitch,1][func:NoMercy1][color:ffffff]*[waitall:5]...[waitall:1] Oh, [w:8][waitall:2]anlıyorum.", "[func:DUB,prolog/10][effect:twitch,1]*Heh[waitall:5]...[waitall:1][w:5]\n[func:Danger]Bu [w:12]bir [w:1]şekilde [w:1]komik[w:4].", "[func:NoMercy1][waitall:5]...","[func:DUB,prolog/11]*[w:5]Kendimi[waitall:2]sana [waitall:1][w:4]terbiye\n[speed:1.5]kuralları [speed:1]öğreterek [waitall:2]yormayacağım[w:3].","[func:DUB,prolog/12][noskip]*[w:1]Zaten[w:9] onları\nöğrenemezsin [w:1]biliyorsun[waitall:5]...[waitall:1]\n[w:14][func:Danger1]Değil [w:3]mi?=)[w:50][func:ph2][func:face,no][next] "}
 			end
 			dial=EveryDial(dial,"[noskip][font:overworld][effect:twitch,1][color:ffffff]","[novoice]")
 			enemies[5].SetVar("currentdialogue",dial)
@@ -7202,7 +7202,7 @@ if GetGlobal("phase1")==2 then
 					dial={"[func:face,yes][next] ","[effect:twitch,1][font:overworld][color:ffffff][func:NoMercy1][func:DUB,prolog/13][waitall:2]*вздох*","[func:NoMercy1][func:DUB,prolog/14]*Вечно тянуть момент \nневозможно.","[func:DUB,prolog/15][w:3]*И раз мой мир обречён \nопять исчезнуть[waitall:4][w:3]...","[func:NoMercy1][func:DUB,prolog/16]*Я хотя бы попробую \nзаставить исчезнуть [w:3]\n[color:ff0000][waitall:2]тебя[color:ffffff].","[func:fightbegin][func:face,no][next] "}
 				end
 				elseif lang=="eng" then
-				dial={"[func:face,yes][next] ","[func:DUB,prolog/13][effect:twitch,1][font:overworld][color:ffffff][func:NoMercy1][w:9][waitall:2]*sigh*","[func:DUB,prolog/14][func:NoMercy1]*[w:9]Nothing [w:1]can last \n[w:1]fo[w:1]re[w:1]ver[w:2].","[func:DUB,prolog/15]*And if my world is \nde[w:1]sti[w:1]ned [w:9]to fade [w:1]away[waitall:5]...","[func:DUB,prolog/16][func:NoMercy1]*[w:4]Then I [speed:1.25]will at least try[speed:1]\n to fade [w:12][color:ff0000][waitall:2]you[waitall:1][w:14] [color:ffffff]away[w:5].","[func:fightbegin][func:face,no][next] ","[func:fightbegin][func:face,no][next] "}
+				dial={"[func:face,yes][next] ","[func:DUB,prolog/13][effect:twitch,1][font:overworld][color:ffffff][func:NoMercy1][w:9][waitall:2]*hüff*","[func:DUB,prolog/14][func:NoMercy1]*[w:9]Hiç bir şey [w:1]sonsuza kadar \n[w:1]sü[w:1]re[w:1]mez[w:2].","[func:DUB,prolog/15]*Ve dünyamın \nka[w:1]de[w:1]ri [w:9]toz olmak [w:1]ise[waitall:5]...","[func:DUB,prolog/16][func:NoMercy1]*[w:4]En azından [speed:1.25][color:ff0000][waitall:2]SENİ[speed:1]\ntoz etmeyi  [w:12]deneyeceğim[waitall:1][w:14].","[func:fightbegin][func:face,no][next] ","[func:fightbegin][func:face,no][next] "}
 			end
 			dial=EveryDial(dial,"[noskip][font:overworld][effect:twitch,1][color:ffffff]","[novoice]")
 			enemies[5].SetVar("currentdialogue",dial)
@@ -7758,7 +7758,7 @@ if fighting==true then
 			if lang=="rus" then
 				BattleDialog("[noskip][color:8040ff][waitall:4][w:3]...[waitall:1][w:3]Я же говорил.[w:6]\nУ тебя нет ни шанса,[w:3] дорогуша.[w:60][func:LostHadLost]")
 				else
-				BattleDialog("[noskip][color:8040ff][waitall:4][w:3]...[waitall:1][w:3]As I said.[w:6]\nYou had no chance,[w:3] darling.[w:60][func:LostHadLost]")
+				BattleDialog("[noskip][color:8040ff][waitall:4][w:3]...[waitall:1][w:3]Dediğim gibi.[w:6]\nBir şansın yoktu,[w:3] tatlım.[w:60][func:LostHadLost]")
 			end
 		end
 		if misstime==140 and wons==1 and enemies[1].GetVar("LostGotMissed")==false then
@@ -8188,8 +8188,8 @@ function HandleSpare()
 				comm="[waitall:4][w:3]...[waitall:1][w:3]Это что,[w:3] какой-то эксперимент,[w:3] актёр?"
 				t={"[func:closedyesend]Я так и знала-[w:6]\n[func:head4]Погоди[waitall:4][w:3]...","[func:QuietMusic][func:Suprise1][func:SetMusic,star]Ты пощадил меня[waitall:4][w:3]?..[waitall:1][w:3]\n[func:head4]В смысле[waitall:4][w:3]...","Я не понимаю,[w:3]\nпочему[waitall:4][w:3]...[waitall:1][w:3]\n[func:thoughtsleft]Почему именно я?","[func:sad]Тебе нравится\nсмотреть,[w:3] как я\nстрадаю?[w:9] [func:head4]Или что?","[func:Look][next] "}
 				else
-				comm="[waitall:4][w:3]...[waitall:1][w:3]Is this some sort of experiment,[w:3] actor?"
-				t={"[func:closedyesend]As I expected-[w:6][func:head4]\nWait[waitall:4][w:3]...","[func:QuietMusic][func:Suprise1][func:SetMusic,star]Did you spare me[waitall:4][w:3]?..[waitall:1][w:3] [func:head4]\nBut why[waitall:4][w:3]...","I don't get it,[w:3] why[waitall:4][w:3]...[waitall:1][w:3] [func:thoughtsleft]\nWhy me?","[func:sad]Do you like to see \nme suffer?[w:12] [func:head4]\nOr what?","[func:Look][next] "}
+				comm="[waitall:4][w:3]...[waitall:1][w:3]Bu bir tarz deney mi,[w:3] aktör?"
+				t={"[func:closedyesend]Beklediğim gib-[w:6][func:head4]\nBekle[waitall:4][w:3]...","[func:QuietMusic][func:Suprise1][func:SetMusic,star]Beni bağışladın mı[waitall:4][w:3]?..[waitall:1][w:3] [func:head4]\nNeden[waitall:4][w:3]...","Anlamıyorum,[w:3] neden[waitall:4][w:3]...[waitall:1][w:3] [func:thoughtsleft]\nNeden ben?","[func:sad]Acı çekişimi izlemek \nzevk mi veriyor?[w:12] [func:head4]\n...","[func:Look][next] "}
 			end
 			elseif mercy==2 then
 			if lang=="rus" then
@@ -8197,7 +8197,7 @@ function HandleSpare()
 				t={"[func:head4]И опять[waitall:4][w:3]...[waitall:1][w:3]","Никогда не думала,[w:3]\n[func:sad]что буду надеяться\nна то,[w:3] что ты\nударишь.","[func:head4]Знаешь,[w:3] это же был\nриторический\nвопрос[waitall:4][w:3]...[waitall:1][w:3]","[func:Suprise1][speed:0.75]В чем мне резон\nщадить тебя?[w:8] [func:head]\nЯ же сказала,[w:4]\nя не дура,[w:4]\nчтобы верить тебе."}
 				else
 				comm="I am getting nervous now.[w:6] [color:8040ff]\nDid you decide to betray me?"
-				t={"[func:head4]And again[waitall:4][w:3]...","Never thought [func:sad]I \nwould wait for \nyour hit.","[func:head4]You know,[w:3] I said \nabout mercy in \nrhetorical way[waitall:4][w:3]...","[func:Suprise1][speed:0.[w:6]75]Why do I even need \nto spare you?[w:6][w:8][func:head] \nAs I said before,[w:3] \nI am not a fool \nto believe you."}
+				t={"[func:head4]Ve yine[waitall:4][w:3]...","Asla [func:sad]bana \nvurman için bekleyeceğimi \ndüşünmezdim.","[func:head4]Biliyorsun,[w:3] Merhamet \nhakkında \nkonuşmuştum[waitall:4][w:3]...","[func:Suprise1][speed:0.[w:6]75]Neden seni \nbağışlamam gereksin?[w:6][w:8][func:head] \nDaha önce dediğim gibi,[w:3] \nSana inanacak bir \nzavallı değilim."}
 			end
 			elseif mercy==3 then
 			if lang=="rus" then
@@ -8205,22 +8205,22 @@ function HandleSpare()
 				t={"[func:head4]Хватит[waitall:4][w:3]...","Серьезно,[w:6] [func:Look]хватит.[w:12]\n[func:sad]Это уже действует\nмне на нервы.","[func:head4]Если бы ты\n[speed:0.75][w:3]действительно[speed:1][w:3]\nхотел что-то\nизменить,[w:3] [func:Suprise1]тебя бы\nздесь не было\nсейчас!","[func:NoMercy1]Я знаю, как это\nбывает.[w:6] [func:Think]Ты щадишь\nменя,[w:3] а я убиваю\nтебя.","[func:NoMercy1]А в конце концов[w:3]\nвсё возвращается на\nкруги своя,[w:3][speed:0.75] ничего\nне меняя[waitall:4][w:3]...","[func:head4]Тот,[w:3] кто стоит над\nнами всеми,[w:3] не\nпозволит тебе\nсоскочить,[w:3] [func:Suprise1]ты же\nпонимаешь это?","[func:head4]Зачем давать мне\nложную надежду,[w:3]\nпартнёр[waitall:4][w:3]...","[waitall:4][w:3]...[waitall:1][w:3][func:sad]Если это все ещё\nты,[w:3] конечно же[waitall:4][w:3]...","[func:Look][next] "}
 				else
 				comm="[speed:0.75][color:8040ff]Do not you dare, darling..."
-				t={"[func:head4]Quit it[waitall:4][w:3]...","I am serious,[w:3] [func:Look]quit it.[w:6] [func:sad]\nIt's already getting \non my nerves.","[func:head4]If you [speed:0.[w:6]75][w:3]really[speed:1][w:3] want to \nchange something,[w:3] [func:Suprise1]\nyou wouldn't be \nhere now!","[func:NoMercy1]I know how it works.[w:6] [func:Think]\nYou spare me and I \nkill you after that.","[func:NoMercy1]And in the end you \nreturn never \nchanging anything[waitall:4][w:3]...","[func:head4]The one behind all \nof us won't let you \nbe,[w:3] [func:Suprise1]are you aware \nof that?","[func:head4]Why are you giving \nme this false hope,[w:3] \npartner[waitall:4][w:3]?..","[waitall:4][w:3]...[waitall:1][w:3][func:sad]If it's you \nwho is doing the \ntalking,[w:3] of course[waitall:4][w:3]...","[func:Look][next] "}
+				t={"[func:head4]Git[waitall:4][w:3]...","Ciddiyim,[w:3] [func:Look]git artık.[w:6] [func:sad]\nÇoktan \nyoruldum bile.","[func:head4]Cidden [speed:0.[w:6]75][w:3]bir şeyi[speed:1][w:3] değiştirmek \nistiyorsan,[w:3] [func:Suprise1]\nşu an burda \nolmamalısın!","[func:NoMercy1]Nasıl çalıştığını biliyorujm.[w:6] [func:Think]\nBeni bağışlıyorsun ve \nsonra seni öldürüyorum.","[func:NoMercy1]Ve en sonunda \nhiç bir şey \ndeğişmiyor[waitall:4][w:3]...","[func:head4]Bu \ngerçekleşmeyece,[w:3] [func:Suprise1]bunu \nbiliyor musun?","[func:head4]Neden bana umut \nveriyorsun,[w:3] \npartner[waitall:4][w:3]?..","[waitall:4][w:3]...[waitall:1][w:3][func:sad]Eğer konuşan \nsen olsaydın,[w:3] tabiki[waitall:4][w:3]...","[func:Look][next] "}
 			end
 			elseif mercy==4 then
 			if lang=="rus" then
 				comm="[color:8040ff]Послушай[waitall:4][w:3]...[waitall:1][w:3] Ещё один раз[waitall:4][w:3]...[waitall:1][w:3] \nИ я заставлю тебя пожалеть.[w:6]"
 				t={"[func:Peachy]Хорошо.","[func:mercy]Я вижу в твоих\nглазах смирение и\nрешительность.","[func:sad]Как бы странно это\nни звучало[waitall:4][w:3]...","[func:mercy]Я хочу дать тебе\nшанс.[w:6] [func:Peachy]Но меня нельзя\nзадобрить просто\nпощадой.","[func:mercy]Нужно сделать\nчто-то большее.[w:6]\nОсвободить меня от\nэтого цикла смертей.","[func:Peachy]Этот мир обречен,[w:3]\nдаже если я отпущу\nтебя с миром.[w:6]\nПоэтому я здесь.","Чтобы дать этому\nмиру шанс[waitall:4][w:3]...[waitall:1][w:3]\n[func:head4]Один из нас должен\nумереть.","[func:Suprise1]Понимаешь?","[func:head4]Я даю тебе\nпоследний шанс.[w:6]\nЯ вижу тебя\nнасквозь.[w:9]\nТвои намерения.","[func:Suprise1]Я знаю,[w:3] чего ты\nхочешь достичь.","[func:QuietMusic][func:head4]Так что просто\nпродолжай\nсражаться.","[func:NoMercy1]Третьего нам не\nдано."}
 				else
-				comm="[color:8040ff]Listen[waitall:4][w:3]...[waitall:1][w:3] One more time[waitall:4][w:3]...[waitall:1][w:3] \nAnd I will make you sorry for this.[w:6]"
-				t={"[func:Peachy]'lright.","[func:mercy]I see the humility \nand determination \nin your eyes.","[func:sad]As strange as it is[waitall:4][w:3]...","[func:mercy]I want to give you a \nchance.[w:6] [func:Peachy]But you \ncan't be forgiven by \njust sparing me.","[func:mercy]You need to do \nsomething bigger.[w:6] \nFree me from this \nkilling spread of you.","[func:Peachy]This world is doomed \neven if I would let \nyou be without a \nfight.[w:6] \nThat's why I am here.","To give this world \nnew hope[waitall:4][w:3]...[waitall:1][w:3] [func:head4]One of us \nshould be knocked \ndead.","[func:Suprise1]Got it?","[func:head4]I give you one last \nchance.[w:6] I see you \nthrough.[w:6] \nAll your intentions.","[func:Suprise1]I know what you are \ntrying to accomplish.","[func:QuietMusic][func:head4]So just continue \nthe fight.","[func:NoMercy1]There's nothing in \nbetween."}
+				comm="[color:8040ff]Dinle[waitall:4][w:3]...[waitall:1][w:3] Bunu bir kere daha[w:3]yaparsan[waitall:1][w:3] \nbunu yaptığına pişman ederim.[w:6]"
+				t={"[func:Peachy]Pekala.","[func:mercy]Özlerinde \nkararlılığını \ngörüyorum.","[func:sad]Garip olsa da[waitall:4][w:3]...","[func:mercy]Sana bir şans \nvermek istiyorum.[w:6] [func:Peachy]Fakat sadece \nbeni bağışlayarak \ndüzelemezsin.","[func:mercy]Daha büyük bir \nşey yapmalısın.[w:6] \nBeni bu soykırım \nselselesinde bırak.","[func:Peachy]Sen bir savaş \nolmadan ölsen bile \nbu dünya \nyok olacak.[w:6] \nİşte bu yüzden burayadayım.","Bu dünyaya yeni \nbir umut olmak için[waitall:4][w:3]...[waitall:1][w:3] [func:head4]Birimiz \nölmeli.","[func:Suprise1]Anladın?","[func:head4]Sana son bir \nşans veriyorum.[w:6] Yaptıklarını \nbiliyorum.[w:6] \nHer öldürüşün.","[func:Suprise1]Ne yapmaya \nçalıştığını biliyorum.","[func:QuietMusic][func:head4]Kısava savaşmaya \ndevam et.","[func:NoMercy1]Bunun ortası \nyok."}
 			end
 			elseif mercy==5 then
 			glitchedmercy=1
 			if lang=="rus" then
 				t={"[func:head4]Кх[waitall:4][w:3]...","Знаешь,[w:3] [func:sad]это было \nбольнее,[w:3] чем я \nрассчитывала[waitall:4][w:3]...","[func:head4][waitall:4][w:3]...","[func:NoMercy1]Хе-хе[waitall:4][w:3]...[waitall:1][w:3] [func:head]Ха-ха!","Я же говорила,[w:3] что \nвижу тебя насквозь!","Я знала,[w:3] что ты \nатакуешь.[w:6] Что тот,[w:3] \nкто дергает за \nниточки,[w:3] не даст \nмне уйти!","Я обыграла тебя,[w:3] \nчертов клоун за \nкулисами!","[func:NoMercy1]Сила моей Души \nзапечатана твоей \nРешительностью.","Но если моя Душа \nсломается,[w:3] то,[w:3] что \nхранится внутри \nнеё,[w:3] взорвется.","[func:head]Остатки магии \nуничтожат тебя.[w:6] \nТы умрешь прямо \nсейчас.","[noskip][func:NoMercy1]Извини,[w:3] партнёр[waitall:4][w:3]...[waitall:1][w:3] \n[func:ShowSoul]Это будет больно,[w:3] \nно поверь[waitall:4][w:3]...","[noskip][func:Bad][speed:0.5]Это того стоит.","[func:head][func:CrashSoul]"}
 				else
-				t={"[func:head4]Augh[waitall:4][w:3]...","You know[waitall:4][w:3]...[waitall:1][w:3] [func:sad]it hurts \nmore than I \nbargained for[waitall:4][w:3]...","[func:head4][waitall:4][w:3]...","[func:NoMercy1]He-he[waitall:4][w:3]...[waitall:1][w:3] [func:head]Ha-ha!","As I said,[w:3] I see you \nthrough!","I knew that you \nwill fight.[w:6] That the \none pulling the \nstrings will not let \nme be!","I beat you,[w:3] damn \njester behind the \ncurtains!","[func:NoMercy1]The power of my \nSoul is sealed by \nyour Determination.[w:6] \nBut if it would broke,[w:3] \nsomething inside of \nit will blow up.","[func:head]Leftovers of my \nmagic will destroy \nyou.[w:6] \nYou will perish right \nnow.","[noskip][func:NoMercy1]Sorry,[w:3] partner[waitall:4][w:3]...[waitall:1][w:3] [func:ShowSoul]\nIt will hurt,[w:3] but \nbelieve me[waitall:4][w:3]...","[noskip][func:Bad][speed:0.[w:6]5]It is worth all the \npain.","[func:head][func:CrashSoul]"}
+				t={"[func:head4]Agh[waitall:4][w:3]...","Biliyorsun[waitall:4][w:3]...[waitall:1][w:3] [func:sad]düşündüğümden \nfazla \nacıttı[waitall:4][w:3]...","[func:head4][waitall:4][w:3]...","[func:NoMercy1]He-he[waitall:4][w:3]...[waitall:1][w:3] [func:head]Ha-ha!","Dediğim gibi,[w:3] Seni \nbiliyorum!","Savaşcağını \nbiliyordum.[w:6] İpleri çeken \nkişi benim \nolmama izin \nvermeyecek!","Seni yeneceğim,[w:3] \nPerde arkasındaki \nkuklacı!","[func:NoMercy1]Ruhum senin \nKararlılığından \nkitlendi.[w:6] \nFakat o kırılırsa,[w:3] \niçindeki bir \nşey patlayacak.","[func:head]Sihrimden kalanlar \nseni yok \nedecek.[w:6] \nŞu an acı \nçekeceksin.","[noskip][func:NoMercy1]Üzgünüm,[w:3] partner[waitall:4][w:3]...[waitall:1][w:3] [func:ShowSoul]\nBu acıtacak,[w:3] fakat \ninan bana[waitall:4][w:3]...","[noskip][func:Bad][speed:0.[w:6]5]Bu tüm acıya \ndeğecek.","[func:head][func:CrashSoul]"}
 			end
 			nextwaves={"pisdez"}
 		end
@@ -8235,21 +8235,21 @@ function HandleSpare()
 		if lang=="rus" then
 			BattleDialog("Вы пытаетесь пощадить Чару[waitall:4][w:3]...\n[color:8040ff][w:6]...[waitall:1][w:3]Хватит играть не по сценарию,[w:3] дорогуша.[w:6]\nНе строй из себя героя.")
 			else
-			BattleDialog("You try to spare Chara[waitall:4][w:3]...\n[color:8040ff][w:6]...[waitall:1][w:3]Stop playing hero,[w:3] darling.[w:6]\nIt's against my script,[w:3] do you know that?")
+			BattleDialog("Charayı bağşlamnayı denedin[waitall:4][w:3]...\n[color:8040ff][w:6]...[waitall:1][w:3]Kahramanı oynama,[w:3] tatlım.[w:6]\nBu senaryomda yok,[w:3] ve biliyor musun?")
 		end
 		GotToSpareChara[1]="1"
 		elseif wons==0 and prog>26 and enemies[1].GetVar("hp")>1498 then
 		if lang=="rus" then
 			BattleDialog("[color:8040ff]Ты упустил возможность,[w:3] дорогуша.[w:6]\nТеперь она непреклонна.[w:6] \nХватит отвлекаться от шоу.")
 			else
-			BattleDialog("[color:8040ff]You missed an opportunity,[w:3] darling.[w:6]\nNow she's relentless.[w:6] \nQuit disturbing our show please.")
+			BattleDialog("[color:8040ff]Bir şansı kaçırdın,[w:3] tatlım.[w:6]\nŞimdi o daha da katı.[w:6] \nŞovumuzu bozmayı bırak lütfen.")
 		end
 		GotToSpareChara[2]="1"
 		elseif wons==0 and enemies[1].GetVar("hp")<1499 then
 		if lang=="rus" then
 			BattleDialog("[color:8040ff]Милосердие [w:4]- это роскошь,[w:3] а мы люди бедные.[w:6]\nДавай не разбрасываться ей направо и налево.")
 			else
-			BattleDialog("[color:8040ff]Mercy is luxury for poor and penniless us.[w:6]\nEnough wasting it on left and right.")
+			BattleDialog("[color:8040ff]Merhamet bizim için bir lüks.[w:6]\nVaktini boşa harcama.")
 		end
 		GotToSpareChara[3]="1"
 		elseif wons==1 then
@@ -8521,7 +8521,7 @@ function FadingChara()
 		text={"[waitall:4][w:3]...[speed:0.75][w:3]Наконец-то ты свободен.[w:30][next] ","[speed:0.75][w:3]Свободен от оков этой силы,[w:4] что захватила над тобой контроль.[w:30][next] ","[speed:0.75][w:3]Что не дала тебе свернуть с кривой дорожки.[w:30][next] ","[speed:0.75][w:3]Это не значит,[w:4] что я простила тебя.[w:16]\nВ конце концов,[w:4] это ты начал эту резню[waitall:4][w:3]...[speed:0.5][w:3]\n[color:ff0000]не так ли?[w:30][next] ","[speed:0.75][w:3]Но я умею быть милосердной.[w:8] Ты человек.[w:8] \nИ веры в тебя нет[waitall:4][w:3]...[speed:0.75][w:3][w:30][next] ","[speed:0.75][w:3]Но Азриэль говорил,[w:4] что чем больше силы в человеке,[w:4] \nтем меньше он понимает,[w:4] сколько в нем опасности.[w:30][next] ","[speed:0.75][w:3]Поэтому к людям нужно относиться,[w:4] как к равным.[w:8] \nНаучить их смирению.[w:8] \nНаучить их дружбе.[w:30][next] ","[speed:0.75][w:3]Твоя Душа вновь стала нашим светом во тьме Подземелья.[w:30][next] ","[speed:0.75][w:3]Благодаря тому,[w:4] что ты послушал меня.[w:8] Послушал Азриэля.[w:30][next] ","[speed:0.75][w:3]Так что[waitall:4][w:3]...[speed:0.75][w:3] Не подведи нас снова.[func:Quiet][w:20]\n[color:ff0000][speed:0.5]Партнёр.[w:60][next] "}
 		--text={"[speed:0.75][w:3]Так что[waitall:4][w:3]...[speed:0.75][w:3] Не подведи нас снова.[func:Quiet][w:20]\n[color:ff0000][speed:0.5]Партнёр.[w:60][next] "}
 		else
-		text={"[waitall:4][w:3]...[speed:0.75][w:3]Finally you're free.[w:6]","Free from chains of this power that took control over you.[w:6]","That didn't let you turn back from this path.[w:6]","It doesn't mean I forgave you.[w:6] In the end,[w:3] it was you who began this massacre[waitall:4][w:3]...[waitall:0.75][w:3] [color:ff0000]\ndidn't you?","But I can be merciful.[w:6] You're a human.[w:6] And still there's no hope in our kind[waitall:4][w:3]...[waitall:0.75][w:3]","But Asriel told me that as much there's power in human as less he knows about his destructiveness","That's why they needed to be treated as equal to monsters.[w:6] To teach them humility,[w:3] let them acknowledge the friendship.[w:6]","Your Soul become our light in the darkest pit once again.[w:6]","Because you listened to me.[w:12] \nListened to Asriel.[w:6]","So[waitall:4][w:3]...[speed:0.75][w:3] Don't dissapoint us again.[func:Quiet][w:20] \nPartner.[w:60][next] "}
+		text={"[waitall:4][w:3]...[speed:0.75][w:3]Sonunda özgürsün.[w:6]","Seni ele geçiren o zincirlerden.[w:6]","Geri dönmene izin vermeyen zincirlerden.[w:6]","Bu seni bağışladım anlamına gelmiyor.[w:6] En sonunda,[w:3] bu kargaşayı başlatan sensin[waitall:4][w:3]...[waitall:0.75][w:3] [color:ff0000]\ndeğil mi?","Fakat merhamet gösterebilirim.[w:6] Sen bir insansın.[w:6] Ve hala türümüzde umut yok[waitall:4][w:3]...[waitall:0.75][w:3]","Fakat asriel bana insanların yok ettikleri kadar da güçlü olmadıklarından bahsetti","İşte bu yüzden onların canavarlarla eşit muamele görmesi lazım.[w:6] onlara insanlığı öğretmek için,[w:3] onlara arkadaşlığı öğretmek için.[w:6]","Ruhun bir kere daha bu boşluktaki ışık oldu.[w:6]","Çünkü beni dinledin.[w:12] \nAsrieli'i dinledin.[w:6]","Yani[waitall:4][w:3]...[speed:0.75][w:3] Bizi tekrar pişman etme.[func:Quiet][w:20] \nPartner.[w:60][next] "}
 	end
 	for i=1,#text do
 		text[i]="[color:ffffff][noskip][font:overworld][effect:none][novoice][speed:0.75]"..text[i]
@@ -8607,7 +8607,7 @@ function DoAction(ingo)
 				dial={"[func:LostKidFace,shocked,+]А?![w:6] З-зачем ты себя \nбьешь?!","[func:LostKidFace,shocked2,+][waitall:4][w:3]...[waitall:1][w:3]Значит,[w:3] боль \nзаглушает его?","[func:LostKidFace,base_close,-]Ладно[waitall:4][w:3]...[waitall:1][w:3] Только \nаккуратнее.[w:6] [func:LostKidFace,sobbing_thinking,+]\nПожалуйста.[w:6]"}
 				else
 				BattleDialog("[func:Shake][func:Sound,hurtsound][func:Sound,hurtsound][color:8040ff]Ouch![w:6] We share this body![w:6] So stop beating yourself up,[w:3] you idiot![w:6] \nThis won't help you![w:6]")
-				dial={"[func:LostKidFace,shocked,+]Ah?![w:6] Why are you \nbeating yourself?!","[func:LostKidFace,shocked2,+][waitall:4][w:3]...[waitall:1][w:3]So pain is shutting \nhim off for a little?","[func:LostKidFace,base_close,-]Okay[waitall:4][w:3]...[waitall:1][w:3] But be \nmore gentle.[w:6] [func:LostKidFace,sobbing_thinking,+]\nPlease.[w:6]"}
+				dial={"[func:LostKidFace,shocked,+]Ah?![w:6] Neden kendine \nvuruyorsun?!","[func:LostKidFace,shocked2,+][waitall:4][w:3]...[waitall:1][w:3]Acı onu bi süreliğine\nbayılttı mı?","[func:LostKidFace,base_close,-]Tamam[waitall:4][w:3]...[waitall:1][w:3] Fakat \ndaha saygılı ol.[w:6] [func:LostKidFace,sobbing_thinking,+]\nLütfen.[w:6]"}
 			end
 			PlayerHurtedHimself=1
 			else
@@ -8615,8 +8615,8 @@ function DoAction(ingo)
 				BattleDialogue(GiveRandom({"[func:Shake1][func:Sound,hurtsound][func:Sound,hurtsound][color:8040ff]А ты настырный,[w:3] раз продолжаешь себя избивать,[w:3] чтобы меня остановить[waitall:4][w:3]...","[func:Shake1][func:Sound,hurtsound][func:Sound,hurtsound][color:8040ff]Я так долго выбирал тебе лак,[w:3] дорогуша,[w:3] чтобы сейчас ты ломал себе ногти?!","[func:Shake1][func:Sound,hurtsound][func:Sound,hurtsound][color:8040ff]Ты не думал,[w:3] каково Чаре смотреть,[w:3] как ты ломаешь себе руки?[w:6]\nПостыдился бы при людях[waitall:4][w:3]...","[func:Shake1][func:Sound,hurtsound][func:Sound,hurtsound][color:8040ff]Мне плевать,[w:3] если ты откусишь себе язык.[w:3]\nКостно*язычие* не мой конек.","[func:Shake1][func:Sound,hurtsound][func:Sound,hurtsound][color:8040ff]Рви волосы сколько тебе угодно.[w:6]\nТолько не все.[w:6]\nЯ ими слишком дорожу"}))
 				dial=GiveRandom({{"[func:LostKidFace,sobbing_smile,+]Я верю в тебя,[w:3] \nпартнёр[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,sobbing_thinking,+]\nНе сдавайся,[w:3] прошу \nтебя[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,sobbing_close,-]Как бы глубоки ни \nбыли твои раны[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,sobbing_smile,+]\nЯ рядом.[w:6] \nВерь в меня.[w:6]"},{"[func:LostKidFace,sobbing_close,-]Я знаю,[w:3] что это \nбольно[waitall:4][w:3]...[waitall:1][w:3] \nНо,[w:3] пожалуйста,[w:3] [func:LostKidFace,sobbing_thinking,+]\nдержись,[w:3] партнёр[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,sobbing,+]Раньше твои \nстрадания были бы \nприятны,[w:3] но сейчас[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,sobbing_thinking,+]\nЭто ужасное \nзрелище[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,sobbing_thinking,+]Я-я ведь просила \nаккуратнее[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,shocked3,+]Ауч[waitall:4][w:3]...[waitall:1][w:3] Должно быть \nэто больно[waitall:4][w:3]...[waitall:1][w:3]"}})
 				else
-				BattleDialog({"[func:Shake1][func:Sound,hurtsound][func:Sound,hurtsound][color:8040ff]So stubborn you are,[w:3] still beating yourself to stop me[waitall:4][w:3]...[waitall:1][w:3]","[func:Shake1][func:Sound,hurtsound][func:Sound,hurtsound][color:8040ff]A couple more broken fingers and I I won't be able to hold my chainsaw.[w:6] \nDo not play with me[waitall:4][w:3]...[waitall:1][w:3]","[func:Shake1][func:Sound,hurtsound][func:Sound,hurtsound][color:8040ff]I don't care if you bite off your tongue.[w:6] \nI always was bad at *tongue*ing things out.[w:6]","[func:Shake1][func:Sound,hurtsound][func:Sound,hurtsound][color:8040ff]I spent so much time choosing polish for you,[w:3] darling,[w:3] and you are simply breaking your nails now?![w:6]","[func:Shake1][func:Sound,hurtsound][func:Sound,hurtsound][color:8040ff]Tear hair however you want.[w:6] \nBut leave some.[w:6] I am still too keen on them.[w:6]","[func:Shake1][func:Sound,hurtsound][func:Sound,hurtsound][color:8040ff]Didn't you think how Chara feels when you're breaking your arms in front of her? I am so disgraced by you[waitall:4][w:3]...[waitall:1][w:3]"})
-				dial=GiveRandom({{"[func:LostKidFace,sobbing_smile,+]I believe in you,[w:3] \npartner[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,sobbing_thinking,+]\nDon't fall down,[w:3] I \nbeg you[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,sobbing_close,-]Even if your wounds \nwould be deep as \ndarkest pit[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,sobbing_smile,+]\nI will always be \naround.[w:6] \nPut your trust in me.[w:6]"},{"[func:LostKidFace,sobbing_close,-]I know it hurts[waitall:4][w:3]...[waitall:1][w:3] \nBut,[w:3] I beg you,[w:3] [func:LostKidFace,sobbing_thinking,+]\nhold on,[w:3] partner[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,sobbing,+]Not so long ago your \ntortures would be \nnice,[w:3] but now[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,sobbing_thinking,+]\nThis is horrific[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,sobbing_thinking,+]I-I did ask you to \nbe more gentle,[w:3] \ndidn't I?[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,shocked3,+]Ouch[waitall:4][w:3]...[waitall:1][w:3] It must hurt[waitall:4][w:3]...[waitall:1][w:3]"}})
+				BattleDialog({"[func:Shake1][func:Sound,hurtsound][func:Sound,hurtsound][color:8040ff]Çok inatçısın,[w:3] hala beni durdurmak için kendini yırtıyorsun[waitall:4][w:3]...[waitall:1][w:3]","[func:Shake1][func:Sound,hurtsound][func:Sound,hurtsound][color:8040ff]Birkaç parmağın daha kırılırsa testeremi tutamam.[w:6] \nBenimle oynama[waitall:4][w:3]...[waitall:1][w:3]","[func:Shake1][func:Sound,hurtsound][func:Sound,hurtsound][color:8040ff]Dilini ısırırsan umrunda olmaz.[w:6] \nZaten bu konularda kötüyüm.[w:6]","[func:Shake1][func:Sound,hurtsound][func:Sound,hurtsound][color:8040ff]Seni güzelleştirirken çok zaman harcadım,[w:3] tarlım,[w:3] ve şimdi kendini heba mı ediyorsun?![w:6]","[func:Shake1][func:Sound,hurtsound][func:Sound,hurtsound][color:8040ff]İstediğini yap.[w:6] \nFakat birazdan dur.[w:6] Daha fazla rezillik istemiyorum.[w:6]","[func:Shake1][func:Sound,hurtsound][func:Sound,hurtsound][color:8040ff]Sen kollarını kırarken charanın ne hissedeceğini düşünmedin mi? Yazık[waitall:4][w:3]...[waitall:1][w:3]"})
+				dial=GiveRandom({{"[func:LostKidFace,sobbing_smile,+]Hala sana inanıyorum,[w:3] \npartner[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,sobbing_thinking,+]\nSakın yenilme,[w:3] Sana \nyalvarıyorum[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,sobbing_close,-]Yaraların \nen karanlık çukur kadar \nderin olsa da[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,sobbing_smile,+]\nHer zaman yanında \nolacağım.[w:6] \nBana g,ven.[w:6]"},{"[func:LostKidFace,sobbing_close,-]Biliyorum acıtıyor[waitall:4][w:3]...[waitall:1][w:3] \nFakat,[w:3] yalvarıyorum,[w:3] [func:LostKidFace,sobbing_thinking,+]\ndayan,[w:3] partner[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,sobbing,+]Az önce işkencen \niyi olabilirdi \nFakat,[w:3] şimdi[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,sobbing_thinking,+]\nBu dehşet verici[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,sobbing_thinking,+]S-sana daha \nkiar olmanı,[w:3] \nistemiştim, değil mi?[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,shocked3,+]Ah[waitall:4][w:3]...[waitall:1][w:3] Bu acıtıyor olmalı[waitall:4][w:3]...[waitall:1][w:3]"}})
 			end
 		end
 		dial[#dial+1]="[noskip][func:LostKidFace,hope_base,+][next] "
@@ -8633,39 +8633,39 @@ function DoAction(ingo)
 				dial={"[func:LostKidFace,flirt1,+]Т.[w:6].[w:6]Ты что?[w:6] Зачем ты \nхвалишь мои волосы \nв такой момент??[w:6] \nНапряжение тебе \nмозг расплавило \nили что???"}
 				else
 				BattleDialog("[color:8040ff]Are you flirting while the ghost is possessing your body because it turns you on?[w:6] Because I see no other reason.[w:6]")
-				dial={"[func:LostKidFace,flirt1,+]Y[waitall:4][w:3]...[waitall:1][w:3]You what?[w:6] Why are \nyou complementing my \nhair all of a sudden??[w:6] \nDid battle tension \nmelt away your brain \nor what???"}
+				dial={"[func:LostKidFace,flirt1,+]S[waitall:4][w:3]...[waitall:1][w:3]Sen ne?[w:6] Neden durduk yere \nsaçımı \növüyorsun??[w:6] \nBu sava \nbeynini falan mı \neritti???"}
 			end
 			elseif PlayerFlirtCount==2 then
 			if lang=="rus" then 
 				dial={"[func:LostKidFace,flirt2,-]Ну прекрати![w:6] Мне \nнеловко![w:6] Мне надо \nсосредоточиться,[w:3] а \nты отвлекаешь меня \nвсякими[waitall:4][w:3]...[waitall:1][w:3] всякими[waitall:4][w:3]...[waitall:1][w:3] \nМгх!"}
 				BattleDialog("[color:8040ff]Серьезно,[w:3] хватит.[w:6]\nЭто нелепо.[w:6]\nИ даже глупо.")
 				else
-				dial={"[func:LostKidFace,flirt2,-]Quit it![w:6] I feel \nawkward already![w:6] \nI need to focus,[w:3] and \nyou are disturbing \nme with some sort \nof[waitall:4][w:3]...[waitall:1][w:3] of[waitall:4][w:3]...[waitall:1][w:3] Mphf!"}
-				BattleDialog("[color:8040ff]I mean it,[w:3] stop.[w:6] \nIt's silly.[w:6] Even dumb.[w:6]")
+				dial={"[func:LostKidFace,flirt2,-]Bunu boşver![w:6] Zaten \ngarip hissediyorum![w:6] \nOdaklanmam lazım,[w:3] ve \nbeni bir şekilde \nrahatsız \nedi[waitall:4][w:3]...[waitall:1][w:3]yor[waitall:4][w:3]...[waitall:1][w:3] Mphf!"}
+				BattleDialog("[color:8040ff]Yani,[w:3] dur.[w:6] \nBu çok saçma.[w:6]")
 			end
 			elseif PlayerFlirtCount==3 then
 			if lang=="rus" then
 				dial={"[func:LostKidFace,flirt3,+]Т-ты идиот,[w:3] \nпартнёр[waitall:4][w:3]...[waitall:1][w:3] Нельзя \nтакое говорить \nдевушке,[w:3] когда они \nне наедине[waitall:4][w:3]...[waitall:1][w:3]","Только если ты не \nхочешь[waitall:4][w:3]...[waitall:1][w:3] Боже[waitall:4][w:3]...[waitall:1][w:3] \nИзврат.[w:6]"}
 				else
-				dial={"[func:LostKidFace,flirt3,+]Y-you are an idiot,[w:3] \npartner[waitall:4][w:3]...[waitall:1][w:3] \nYou can't say such \nthings to a girl when \nthey're not alone[waitall:4][w:3]...[waitall:1][w:3]","But if you want to \nbe[waitall:4][w:3]...[waitall:1][w:3] God[waitall:4][w:3]...[waitall:1][w:3] You perv."}
+				dial={"[func:LostKidFace,flirt3,+]S-Sen bir salaksın,[w:3] \npartner[waitall:4][w:3]...[waitall:1][w:3] \nYalnız değilken \nbir kıza böyle \nşeyler söylememelisin[waitall:4][w:3]...[waitall:1][w:3]","Fakat istiyorsan \n[waitall:4][w:3]...[waitall:1][w:3] Allahım[waitall:4][w:3]...[waitall:1][w:3] Seni sapık."}
 			end
 			elseif PlayerFlirtCount==4 then
 			if lang=="rus" then
 				dial={"[func:LostKidFace,flirt4,+]Д-да,[w:3] я знаю,[w:3] что \nпальто отпад.[w:6] \nАзриэль помогал его \nвыбрать среди того \nхлама[waitall:4][w:3]...[waitall:1][w:3] \nЯ им очень дорожу[waitall:4][w:3]...[waitall:1][w:3]"}
 				else
-				dial={"[func:LostKidFace,flirt4,+]Y-yeah,[w:3] I know this \ncoat is hot.[w:6] \nAsriel helped me to \npick it out of all \nthat trash in \nWaterfall[waitall:4][w:3]...[waitall:1][w:3] \nI treasure it a lot[waitall:4][w:3]...[waitall:1][w:3]"}
+				dial={"[func:LostKidFace,flirt4,+]E-evet,[w:3] bu ceketin \ngüzel olduğunu biliyorum.[w:6] \nAsriel bunu Şelale'deki \nçöplükten \nçıkarmama yardım \netti[waitall:4][w:3]...[waitall:1][w:3] \nHehe[waitall:4][w:3]...[waitall:1][w:3]"}
 			end
 			elseif PlayerFlirtCount==5 then
 			if lang=="rus" then
 				dial={"[func:LostKidFace,flirt5,+]Н-ну ладно[waitall:4][w:3]...[waitall:1][w:3] Раз ты \nнастаиваешь,[w:3] можем \nнемного расколоть \nмежду нами лёд[waitall:4][w:3]...[waitall:1][w:3] \nХе-хе[waitall:4][w:3]...[waitall:1][w:3]"}
 				else
-				dial={"[func:LostKidFace,flirt5,+]Al-lright[waitall:4][w:3]...[waitall:1][w:3] If you \ninsist,[w:3] we can try \nbreaking the ice \nbetween us[waitall:4][w:3]...[waitall:1][w:3] \nHe-he[waitall:4][w:3]...[waitall:1][w:3]"}
+				dial={"[func:LostKidFace,flirt5,+]T-Tamam[waitall:4][w:3]...[waitall:1][w:3] İstiyor \nisen,[w:3] aramızdaki \nbuzları \neritebiliriz[waitall:4][w:3]...[waitall:1][w:3] \nHe-he[waitall:4][w:3]...[waitall:1][w:3]"}
 			end
 			elseif PlayerFlirtCount>5 then
 			if lang=="rus" then
 				dial=GiveRandom({{"[func:LostKidFace,flirt5,+]Неплохо,[w:3] но я \nзнаю лучше.[w:6] \nТы был бы отличным \nтроном.[w:6] \nДля такой королевы,[w:3] \nкак я,[w:3] хе-хе[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,flirt5,+]Ты мне,[w:3] кажется,[w:3] \nкого-то напоминаешь,[w:3] \nпартнёр[waitall:4][w:3]...[waitall:1][w:3] \nДа,[w:3] точно,[w:3] мою \nбудущую любовь всей \nжизни,[w:3] хе-хе[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,flirt5,+]Партнёр,[w:3] ты прямо \nкак магнит.[w:6] Меня \nтак и тянет к тебе,[w:3] \nхе-хе[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,flirt5,+]Я вижу,[w:3] твои колени \nничем не заняты.[w:6] \nМогу ли я на них \nприсесть?"},{"[func:LostKidFace,flirt5,+]Напомни,[w:3] \nпожалуйста,[w:3] чем ты \nсегодня вечером \nзанят? \nНу,[w:3] не считая меня,[w:3] \nхе-хе[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,flirt5,+]Партнёр,[w:3] ты не \nустал? Ты каждый \nдень пробегаешь в \nмоих мыслях,[w:3] хе-хе[waitall:4][w:3]...[waitall:1][w:3]"}})
 				else
-				dial=GiveRandom({{"[func:LostKidFace,flirt5,+]Good,[w:3] but I know \nthe better one.[w:6] \nYou would be a nice \nthrone.[w:6] \nFor a queen like me,[w:3] \nhe-he[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,flirt5,+]You looks so familiar,[w:3] \npartner[waitall:4][w:3]...[waitall:1][w:3] \nOh,[w:3] right,[w:3] you look \nlike the love of my \nwhole life,[w:3] he-he[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,flirt5,+]Partner,[w:3] you are \nalmost like a magnet.[w:6] \nI can't push you \naway,[w:3] he-he[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,flirt5,+]I see,[w:3] you have \na very free lap.[w:6] \nMay I have a sit?"},{"[func:LostKidFace,flirt5,+]Remind me,[w:3] please,[w:3] \nyou will be busy \nthis evening? Don't \ncount me,[w:3] of course,[w:3] \nhe-he[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,flirt5,+]Partner,[w:3] don't you \nget tired? \nYou are always \nrushing into my mind,[w:3] \nhe-he[waitall:4][w:3]...[waitall:1][w:3]"}})
+				dial=GiveRandom({{"[func:LostKidFace,flirt5,+]İyi,[w:3] fakat daha iyisini \nbiliyorum.[w:6] \nİyi bir taht \nolabilirsin.[w:6] \nBenim gibi bir kraliçe için,[w:3] \nhe-he[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,flirt5,+]Tanıdık görünüyorsun,[w:3] \npartner[waitall:4][w:3]...[waitall:1][w:3] \nOh,[w:3] doğru,[w:3] hayatımın \naşkı gibi \ngörünüyorsun,[w:3] he-he[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,flirt5,+]Partner,[w:3] bir \nmıknatıs gibisin.[w:6] \nSeni uzağa \nitemiyorum,[w:3] he-he[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,flirt5,+]Görüyorum,[w:3] kucağın \nboş gibi.[w:6] \nOturabilir miyim?"},{"[func:LostKidFace,flirt5,+]Hatırlat beni,[w:3] lütfen,[w:3] \nbu akşam \nboş musun? Beni \nsayma,[w:3] tabiki,[w:3] \nhe-he[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,flirt5,+]Partner,[w:3] yorulmuyor \nmusun? \nHer zaman \naklımı çeliyorsun,[w:3] \nhe-he[waitall:4][w:3]...[waitall:1][w:3]"}})
 			end
 		end
 		if PlayerFlirtCount>2 then
@@ -8676,9 +8676,9 @@ function DoAction(ingo)
 				end
 				BattleDialog(GiveRandom(randoms))
 				else
-				local randoms={"[color:8040ff]With me you was the best lover[waitall:4][w:3]...[waitall:1][w:3] \nAnd now I pity your attempts","[color:8040ff]I allow this nonsense just because of my keen on soap dramas",{"[color:8040ff]Your words have touched me[waitall:4][w:3]...[waitall:1][w:3] \nBe mine,[w:3] senpai?","[color:8040ff]Pffha,[w:3] you should seen yourself now from the outside"}}
+				local randoms={"[color:8040ff]Benimle en iyi sevgiliydin[waitall:4][w:3]...[waitall:1][w:3] \nArtık hareketlerini kınıyorum","[color:8040ff]Drama sevdiğim için bu saçmalığa izin verecxeğim",{"[color:8040ff]Kırıldım[waitall:4][w:3]...[waitall:1][w:3] \nBenim olur musun,[w:3] senpai?","[color:8040ff]Pffha,[w:3] kendini görmeliydin!"}}
 				if enemies[1].GetVar("hp")<1500 then
-					table.insert(randoms,"[color:8040ff]Even Chara with wounded stomach doesn't understand why do you flirt right now.[w:6]")
+					table.insert(randoms,"[color:8040ff]Chara bile neden flört ettiğini anlamıyor gibi.[w:6]")
 				end
 				BattleDialog(GiveRandom(randoms))
 			end
@@ -8701,7 +8701,7 @@ function DoAction(ingo)
 				dial={"[func:LostKidFace,1feed1,+][waitall:4][w:3]...[waitall:1][w:3]Ты хочешь \nнапоить меня чаем[waitall:4][w:3]?..[waitall:1][w:3]","В смысле[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,1feed2,+] Эм[waitall:4][w:3]...[waitall:1][w:3]","Л-ладно[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,1feed3,+] *глоть*[w:6][func:CheckWound][w:6] \nВкусно[waitall:4][w:3]...[waitall:1][w:3]"}
 				else
 				BattleDialog("[color:8040ff]You shared a cup of tea with Chara.[w:6] \nIsn't it hot?[w:6] \nToo bad.[w:6]")
-				dial={"[func:LostKidFace,1feed1,+][waitall:4][w:3]...[waitall:1][w:3]Do you want to \nfeed me with tea[waitall:4][w:3]?..[waitall:1][w:3]","I mean[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,1feed2,+]Uhm[waitall:4][w:3]...[waitall:1][w:3]","O-okay[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,1feed3,+]*gulp*[w:6][func:CheckWound][w:6] \nTasty[waitall:4][w:3]...[waitall:1][w:3]"}
+				dial={"[func:LostKidFace,1feed1,+][waitall:4][w:3]...[waitall:1][w:3]Bana çay mı vermek \nistiyorsun[waitall:4][w:3]?..[waitall:1][w:3]","Yani[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,1feed2,+]Uhm[waitall:4][w:3]...[waitall:1][w:3]","T-tamam[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,1feed3,+]*glüp*[w:6][func:CheckWound][w:6] \nGüzel[waitall:4][w:3]...[waitall:1][w:3]"}
 			end
 			elseif PlayerHasItems==4 then
 			PlayerHasItems=3
@@ -8713,7 +8713,7 @@ function DoAction(ingo)
 				dial={"[func:LostKidFace,foodfeed1,+][waitall:4][w:3]...[waitall:1][w:3]А-а-м.[w:6][w:6][func:CheckWound][w:6] ","[func:LostKidFace,foodfeed2,+] Знаешь,[w:3] в горло не \nлезут пончики \nМаффет от \nвоспоминаний о \nПаукексе[waitall:4][w:3]...[waitall:1][w:3] \nНо ладно.[w:6]"}
 				else
 				BattleDialog("[color:8040ff]You bite a piece of Spider donut with Chara.[w:6] \nSadly,[w:3] you didn't choke by spider.[w:6]")
-				dial={"[func:LostKidFace,foodfeed1,+][waitall:4][w:3]...[waitall:1][w:3]A-a-m[w:6][func:CheckWound][w:6] ","[func:LostKidFace,foodfeed2,+]Y'know,[w:3] it's hard to \neat Muffet's donuts \nwhen I think about \nSpiderdonut[waitall:4][w:3]...[waitall:1][w:3] \nBut okay.[w:6]"}
+				dial={"[func:LostKidFace,foodfeed1,+][waitall:4][w:3]...[waitall:1][w:3]A-a-m[w:6][func:CheckWound][w:6] ","[func:LostKidFace,foodfeed2,+]Biliyorsun,[w:3] Spiderdonut'ları \ndüşünürken Muffet'ın \ndonutlarını yemek \nzor[waitall:4][w:3]...[waitall:1][w:3] \nFakat sorun yok.[w:6]"}
 			end
 			elseif PlayerHasItems==3 then
 			PlayerHasItems=2
@@ -8725,7 +8725,7 @@ function DoAction(ingo)
 				dial={"[func:LostKidFace,foodfeed1,+][waitall:4][w:3]...[waitall:1][w:3]*сёрб*[w:6][func:CheckWound][w:6] ","[func:LostKidFace,foodfeed2,+]Паста Папайруса[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,sobbing_close,-] \nБудто[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,sobbing_smile_close2,-] вернулась \nдомой[waitall:4][w:3]...[waitall:1][w:3] \nМгх.[w:6]"}
 				else
 				BattleDialog("[color:8040ff]You feed Chara with lasagna.[w:6] \nWait,[w:3] is she a Tamagotchi,[w:3] by any chance?")
-				dial={"[func:LostKidFace,foodfeed1,+][waitall:4][w:3]...[waitall:1][w:3] *slurp*[w:6][func:CheckWound][w:6] ","[func:LostKidFace,foodfeed2,+]Papyrus' pasta[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,sobbing_close,-]It \nfeels like[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,sobbing_smile_close2,-]I \ncame back home[waitall:4][w:3]...[waitall:1][w:3] \nMgh.[w:6]"}
+				dial={"[func:LostKidFace,foodfeed1,+][waitall:4][w:3]...[waitall:1][w:3] *Şlürp*[w:6][func:CheckWound][w:6] ","[func:LostKidFace,foodfeed2,+]Papyrus'un makarnası[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,sobbing_close,-]Şey gibi \nhissettirdi[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,sobbing_smile_close2,-]Eve geri \ndönmüşüm gibi[waitall:4][w:3]...[waitall:1][w:3] \nMgh.[w:6]"}
 			end
 			elseif PlayerHasItems==2 then
 			PlayerHasItems=1
@@ -8737,7 +8737,7 @@ function DoAction(ingo)
 				dial={"[func:LostKidFace,drinkfeed1,+][waitall:4][w:3]...[waitall:1][w:3] *глоть*[w:6][func:CheckWound][w:6] ","[func:LostKidFace,drinkfeed2,+]Фуф[waitall:4][w:3]...[waitall:1][w:3] Сложно \nсказать,[w:3] насколько \nэто неправильно \nчувствуется[waitall:4][w:3]...[waitall:1][w:3]"}
 				else
 				BattleDialog({"[color:8040ff]You feed Chara with holy water[waitall:4][w:3]...[w:6]\n...[waitall:1][w:3]That was weird.[w:6]","[color:8040ff][w:3]You have no food left.[w:6]\nI can advice to give her your snowman piece.[w:6]"})
-				dial={"[func:LostKidFace,drinkfeed1,+][waitall:4][w:3]...[waitall:1][w:3]*gulp*[w:6][func:CheckWound][w:6] ","[func:LostKidFace,drinkfeed2,+]Huff[waitall:4][w:3]...[waitall:1][w:3] It's hard to \nsay how weird it \nfeels[waitall:4][w:3]...[waitall:1][w:3]"}
+				dial={"[func:LostKidFace,drinkfeed1,+][waitall:4][w:3]...[waitall:1][w:3]*glüp*[w:6][func:CheckWound][w:6] ","[func:LostKidFace,drinkfeed2,+]Huff[waitall:4][w:3]...[waitall:1][w:3] Bunun ne \ngarip hissettirdiğini \nsöyleyemem[waitall:4][w:3]...[waitall:1][w:3]"}
 			end
 			elseif PlayerHasItems==1 then
 			if enemies[1].GetVar("hp")<1500 then
@@ -8748,16 +8748,16 @@ function DoAction(ingo)
 					BattleDialog({"[color:8040ff][waitall:4][w:3]...[waitall:1][w:3]Ты все-таки кинул снеговика.[w:30]\nВау[waitall:4][w:3]...[waitall:1][w:3] Я поражен.","[color:8040ff]У тебя больше нет предметов.[w:6] И пироги из ниоткуда не появятся,[w:3] это я тебе обещаю."})
 					dial={"[func:LostKidFace,snowfeed1,+][waitall:4][w:3]...[waitall:1][w:3]А-а-ам","[func:LostKidFace,snowfeed2,+] !!!","[func:LostKidFace,snowfeed4,+]К-какого?[w:6]![w:6].[w:6].[w:6] Партнёр,[w:3] \nты издева-[func:LostKidFace,snowfeed3,+][func:CheckWound][w:6]  \nО[waitall:4][w:3]...[waitall:1][w:3] Оно всё-таки \nлечит[waitall:4][w:3]...[waitall:1][w:3]","[func:LostKidFace,snowfeed4,+]Но как мне стереть \nэту белую[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,snowfeed5,+] \nмокрую[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,snowfeed3,+]снег[waitall:4][w:3]?..[waitall:1][w:3]"}
 					else
-					BattleDialog({"[color:8040ff][noskip]You DID give her snowman piece.[w:6]\nWow[waitall:4][w:3]...[waitall:1][w:3] I am impressed","[color:8040ff][noskip]You have no food left for certain.[w:6] \nAnd there's no pies to appear from nowhere,[w:3] I can bet.[w:6]"})
-					dial={"[func:LostKidFace,snowfeed1,+][waitall:4][w:3]...[waitall:1][w:3]А-а-m","[func:LostKidFace,snowfeed2,+]!!!","[func:LostKidFace,snowfeed4,+]W-what?[w:6]![w:6].[w:6].[w:6] Partner,[w:3] \nare you kidd-[func:LostKidFace,snowfeed3,+][func:CheckWound][w:6] \nOh[waitall:4][w:3]...[waitall:1][w:3] It really heals[waitall:4][w:3]...[waitall:1][w:3]","[func:LostKidFace,snowfeed4,+]But how am I \nsupposed to clean \nthis white[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,snowfeed5,+]\nsticky[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,snowfeed3,+]snow[waitall:4][w:3]?..[waitall:1][w:3]"}
+					BattleDialog({"[color:8040ff][noskip]ONA bir kardan adam parçası verdin.[w:6]\nVay[waitall:4][w:3]...[waitall:1][w:3] Etkilendim","[color:8040ff][noskip]Yiyeceğin kalmadı.[w:6] \nVe hiçlikten bir turta çıkmayacak,[w:3] Bahse girerim.[w:6]"})
+					dial={"[func:LostKidFace,snowfeed1,+][waitall:4][w:3]...[waitall:1][w:3]А-а-m","[func:LostKidFace,snowfeed2,+]!!!","[func:LostKidFace,snowfeed4,+]N-ne?[w:6]![w:6].[w:6].[w:6] Partner,[w:3] \nbu bir şa-[func:LostKidFace,snowfeed3,+][func:CheckWound][w:6] \nOh[waitall:4][w:3]...[waitall:1][w:3] Cidden iyileştirdi[waitall:4][w:3]...[waitall:1][w:3]","[func:LostKidFace,snowfeed4,+]Fakat bu \nyapışkan \nbeyaz[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,snowfeed5,+]\nkarı[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,snowfeed3,+]nasıl[waitall:4][w:3]temizleyeceğim[waitall:1][w:3]"}
 				end
 				elseif diff==1 then
 				if lang=="rus" then
 					dial={"[func:LostKidFace,snowfeed1,+][waitall:4][w:3]...[waitall:1][w:3]А-а-ам","[func:LostKidFace,snowfeed2,+] !!!","[func:LostKidFace,snowfeed4,+]К-какого?[w:6]![w:6].[w:6].[w:6] Партнёр,[w:3] \nты издева-[func:LostKidFace,snowfeed3,+][func:CheckWound][w:6]  \nО[waitall:4][w:3]...[waitall:1][w:3] Оно всё-таки \nлечит[waitall:4][w:3]...[waitall:1][w:3]","[func:LostKidFace,snowfeed4,+]Но как мне стереть \nэту белую[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,snowfeed5,+] \nмокрую[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,snowfeed3,+]снег[waitall:4][w:3]?..[waitall:1][w:3]"}
 					BattleDialog({"[color:8040ff][waitall:4][w:3]...[waitall:1][w:3]Ты все-таки кинул снеговика.[w:30]\nВау[waitall:4][w:3]...[waitall:1][w:3] Я поражен.","[color:8040ff]У тебя больше нет предметов.[w:6] И пироги из ниоткуда не появятся,[w:3] это я тебе обещаю.","[noskip][color:8040ff][waitall:4][w:3]...[waitall:1][w:3]Чтобы я сдох[waitall:4][w:3]...[waitall:1][w:3]\nТут куча пирогов за колонной[waitall:4][w:3]..."})
 					else
-					BattleDialog({"[color:8040ff]You DID give her snowman piece.[w:6]\nWow[waitall:4][w:3]...[waitall:1][w:3] I am impressed","[color:8040ff][noskip]You have no food left for certain.[w:6] \nAnd there's no pies to appear from nowhere,[w:3] I can bet.[w:6]","[noskip][color:8040ff][waitall:4][w:3]...[waitall:1][w:3]As I live and breathe[waitall:4][w:3]...[waitall:1][w:3] There's a pile of pies behind the pillars[waitall:4][w:3]...[waitall:1][w:3]"})
-					dial={"[func:LostKidFace,snowfeed1,+][waitall:4][w:3]...[waitall:1][w:3]А-а-m","[func:LostKidFace,snowfeed2,+]!!!","[func:LostKidFace,snowfeed4,+]W-what?[w:6]![w:6].[w:6].[w:6] Partner,[w:3] \nare you kidd-[func:LostKidFace,snowfeed3,+][func:CheckWound][w:6] \nOh[waitall:4][w:3]...[waitall:1][w:3] It really heals[waitall:4][w:3]...[waitall:1][w:3]","[func:LostKidFace,snowfeed4,+]But how am I \nsupposed to clean \nthis white[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,snowfeed5,+]\nsticky[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,snowfeed3,+]snow[waitall:4][w:3]?..[waitall:1][w:3]"}
+					BattleDialog({"[color:8040ff][noskip]ONA bir kardan adam parçası verdin.[w:6]\nVay[waitall:4][w:3]...[waitall:1][w:3] Etkilendim","[color:8040ff][noskip]Yiyeceğin kalmadı.[w:6] \nVe hiçlikten bir turta çıkmayacak,[w:3] Bahse girerim.[w:6]"})
+					dial={"[func:LostKidFace,snowfeed1,+][waitall:4][w:3]...[waitall:1][w:3]А-а-m","[func:LostKidFace,snowfeed2,+]!!!","[func:LostKidFace,snowfeed4,+]N-ne?[w:6]![w:6].[w:6].[w:6] Partner,[w:3] \nbu bir şa-[func:LostKidFace,snowfeed3,+][func:CheckWound][w:6] \nOh[waitall:4][w:3]...[waitall:1][w:3] Cidden iyileştirdi[waitall:4][w:3]...[waitall:1][w:3]","[func:LostKidFace,snowfeed4,+]Fakat bu \nyapışkan \nbeyaz[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,snowfeed5,+]\nkarı[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,snowfeed3,+]nasıl[waitall:4][w:3]temizleyeceğim[waitall:1][w:3]"}
 				end
 			end
 			PlayerHasItems=0
@@ -8767,8 +8767,8 @@ function DoAction(ingo)
 					BattleDialog("[color:8040ff]Вы кормите Чару пирогом из-за колонны[waitall:4][w:3]...[waitall:1][w:3]\nНет,[w:3] серьезно,[w:3] откуда они там[waitall:4]?.." )
 					dial={"[func:LostKidFace,foodfeed1,+][waitall:4][w:3]...[waitall:1][w:3]*хрум*[w:6][func:CheckWound][w:6] ","[func:LostKidFace,foodfeed2,+]Неужели Азриэль \nпрятал все свои \nпироги от гнева \nмамы здесь[waitall:4][w:3]...[waitall:1][w:3]","[func:LostKidFace,flirt3,+]Иначе откуда их \nздесь столько[waitall:4][w:3]...[waitall:1][w:3]"}
 					else
-					BattleDialog({"[color:8040ff]You feed Chara with pie from behind the pillars[waitall:4][w:3]...[waitall:1][w:3]","[color:8040ff][w:3]No,[w:3] I mean it,[w:3] how did they appear there[waitall:4][w:3]?.."})
-					dial={"[func:LostKidFace,foodfeed1,+][waitall:4][w:3]...[waitall:1][w:3]*chum*[w:6][func:CheckWound][w:6] ","[func:LostKidFace,foodfeed2,+]Did Asriel really hid \nall his pies from \nmom's rage here[waitall:4][w:3]?..[waitall:1][w:3]","[func:LostKidFace,flirt3,+]If no,[w:3] I can't \nunderstand why \nthere's so many of \nthem[waitall:4][w:3]...[waitall:1][w:3]"}
+					BattleDialog({"[color:8040ff]Charaya bir turta verdin[waitall:4][w:3]...[waitall:1][w:3]","[color:8040ff][w:3]Hayır,[w:3] Yani,[w:3] sende ondan var mıydı[waitall:4][w:3]?.."})
+					dial={"[func:LostKidFace,foodfeed1,+][waitall:4][w:3]...[waitall:1][w:3]*ham*[w:6][func:CheckWound][w:6] ","[func:LostKidFace,foodfeed2,+]Asriel cidden \nbu turtaları \nannemden mi gizledi[waitall:4][w:3]?..[waitall:1][w:3]","[func:LostKidFace,flirt3,+]Hayır ise,[w:3] Neden burda \nbu kadar çok \nolduğunu \nanlamadım[waitall:4][w:3]...[waitall:1][w:3]"}
 				end
 				if enemies[1].GetVar("hp")<1500 then
 					enemies[1].SetVar("hp",enemies[1].GetVar("hp")+360)
@@ -8778,8 +8778,8 @@ function DoAction(ingo)
 					BattleDialog("[color:8040ff]Я же сказал,[w:3] нет у тебя предметов.")	
 					dial={"[func:LostKidFace,flirt3,+]Партнёр,[w:3] не трать \nход на то,[w:3] чтобы в \nочередной раз \nглянуть в карманы,[w:3] \nпожалуйста[waitall:4][w:3]...[waitall:1][w:3]","[func:LostKidFace,hope_cheers,+]Я сильная,[w:3] я \nсправлюсь.[w:6]"}
 					else
-					BattleDialog("As I said,[w:3] you have no food left.[w:6]")
-					dial={"[func:LostKidFace,flirt3,+]Partner,[w:3] don't waste \nyour turn to check \nyour pockets once \nagain,[w:3] please[waitall:4][w:3]...[waitall:1][w:3]","[func:LostKidFace,hope_cheers,+]I am strong,[w:3] I can \ntake it.[w:6]"}
+					BattleDialog("Dediğim gibi,[w:3] yemeğin kalmadı.[w:6]")
+					dial={"[func:LostKidFace,flirt3,+]Partner,[w:3] ceplerini \nkontrol ederek \nvaktini \nboşa harcama,[w:1] lütfen[waitall:4][w:3]...[waitall:1][w:3]","[func:LostKidFace,hope_cheers,+]Güçlüyüm,[w:3] Bunu \nkaldırabilirim.[w:6]"}
 				end
 			end
 		end
@@ -8796,24 +8796,24 @@ function DoAction(ingo)
 				BattleDialog("[color:8040ff]Значит вы теперь на одной стороне[waitall:4][w:3]...[waitall:1][w:3]\nНу,[w:3] ваше право.")
 				dial={"[func:LostKidFace,hope_question,+]Твоя душа[waitall:4][w:3]...[waitall:1][w:3] \nрезонирует,[w:3] когда \nты щадишь меня[waitall:4][w:3]...[waitall:1][w:3]","[func:LostKidFace,hope_close,-]Я чувствую это[waitall:4][w:3]...[waitall:1][w:3]","[waitall:4][w:3]...[waitall:1][w:3]","[func:LostKidFace,hope_determined,+]Не сдавайся![w:6] \nМы справимся![w:6]"}
 				else
-				BattleDialog("[color:8040ff]So you are on the same side now[waitall:4][w:3]...[waitall:1][w:3] \nWell,[w:3] I have no againsts.")
-				dial={"[func:LostKidFace,hope_question,+]Your soul[waitall:4][w:3]...[waitall:1][w:3] it \nresonates when \nyou're sparing me[waitall:4][w:3]...[waitall:1][w:3]","[func:LostKidFace,hope_close,-]I can feel it[waitall:4][w:3]...[waitall:1][w:3]","[waitall:4][w:3]...[waitall:1][w:3]","[func:LostKidFace,hope_determined,+]Hang on![w:6] \nWe can handle it![w:6]"}
+				BattleDialog("[color:8040ff]Demek onunla aynı taraftansın[waitall:4][w:3]...[waitall:1][w:3] \nPekala,[w:3] Karşı gelmeyeceğim.")
+				dial={"[func:LostKidFace,hope_question,+]Ruhun[waitall:4][w:3]...[waitall:1][w:3] \nbeni bağışlayınca \nparlıyor[waitall:4][w:3]...[waitall:1][w:3]","[func:LostKidFace,hope_close,-]Hissediyorum[waitall:4][w:3]...[waitall:1][w:3]","[waitall:4][w:3]...[waitall:1][w:3]","[func:LostKidFace,hope_determined,+]Dayan![w:6] \nBunu başarabiliriz![w:6]"}
 			end
 			elseif Player.lv>9 then
 			if lang=="rus" then
 				BattleDialog(GiveRandom({"[color:8040ff]Чем чаще ты пропускаешь ход,[w:3] тем легче становится моя работа.","[color:8040ff]Ты не сможешь никого спасти,[w:3] если сам в смертельной опасности.","[color:8040ff]Занятно,[w:3] как бесцельна была твоя пощада раньше и как она твое спасение сейчас.","[color:8040ff]Прекрати барахтаться [w:3]- так будет проще нам обоим","[color:8040ff]Когда я покончу с тобой,[w:3] она [w:3]- следующая.[w:6] Не тешь себя надеждами,[w:3] если что[waitall:4][w:3]...","[color:8040ff]Твое милосердие однажды привело тебя ко мне.[w:6] С чего бы ты вдруг изменил решение?"}))
 				dial=GiveRandom({{"[func:LostKidFace,hope_cheers,+]Прошу,[w:3] сохраняй \nрешимость![w:6] [func:LostKidFace,hope_smile,+] \nНе дай этому \nпоглотить тебя![w:6]"},{"[func:LostKidFace,hope_close,-]Мы зашли так \nдалеко[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_cheers,+] вместе.[w:6] [func:LostKidFace,hope_smile,+] \nНе смей меня \nбросать снова,[w:3] \nпартнёр![w:6]"},{"[func:LostKidFace,hope_smile,+]Когда я наконец \nсмогла тебя понять[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_sobbing,+]\nЯ не хочу снова \nпотерять тебя![w:6]"},{"[func:LostKidFace,hope_close,-]Помни[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_cheers,+] Мы все на \nтвоей стороне![w:6][func:LostKidFace,hope_sobbing,+] \nТы не одинок![w:6]"}})
 				else
-				dial=GiveRandom({{"[func:LostKidFace,hope_cheers,+]Please,[w:3] stay \ndetermined![w:6] [func:LostKidFace,hope_smile,+]\nDon't let it \noverwhelm you again![w:6]"},{"[func:LostKidFace,hope_close,-]We came so far[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_cheers,+]\ntogether.[w:6] [func:LostKidFace,hope_smile,+]\nDon't you dare to \nleave me again,[w:3] \npartner![w:6]"},{"[func:LostKidFace,hope_smile,+]When I finally can \nunderstand you[waitall:4][w:3]...[waitall:1][w:3][func:LostKidFace,hope_sobbing,+]\nI don't want to \nloose you again![w:6]"},{"[func:LostKidFace,hope_close,-]Remember[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_cheers,+]We all \ncheer for you![w:6] [func:LostKidFace,hope_sobbing,+]\nYou are not alone![w:6]"}})
-				BattleDialog(GiveRandom({"[color:8040ff]The more often you skip a turn,[w:3] the easier my job becomes.","[color:8040ff]You can't save anyone if you can't save yourserl.","[color:8040ff]Interesting,[w:3] how your useless Sparing now your only way out,[w:3] isn't it?","[color:8040ff]Stop struggling - make it easier for both of us.[w:6]","[color:8040ff]When I will put an end to you,[w:3] she - next in the line.[w:6] Don't have too high hopes,[w:3] just in case.[w:6]","[color:8040ff]Your mercy once lead you to me.[w:6] Why did you change your opinion now?"}))
+				dial=GiveRandom({{"[func:LostKidFace,hope_cheers,+]Lütfen,[w:3] azimli \nkal![w:6] [func:LostKidFace,hope_smile,+]\nOnun tekrar seni \nele geçirmesine izin verme![w:6]"},{"[func:LostKidFace,hope_close,-]Çok uzağa geldik[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_cheers,+]\nberaber.[w:6] [func:LostKidFace,hope_smile,+]\nBeni sakın \nbırakma,[w:3] \npartner![w:6]"},{"[func:LostKidFace,hope_smile,+]Seni sonunda \nanlıyorum[waitall:4][w:3]...[waitall:1][w:3][func:LostKidFace,hope_sobbing,+]\nSeni tekrar \nkaybedemem![w:6]"},{"[func:LostKidFace,hope_close,-]Hatırla[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_cheers,+]Seni \ndestekliyoruz![w:6] [func:LostKidFace,hope_sobbing,+]\nYalnız değilsin![w:6]"}})
+				BattleDialog(GiveRandom({"[color:8040ff]Ne kadar sıra atlarsan,[w:3] işim o kadar kolaylaşır.","[color:8040ff]Kendini kurtaramazsan başkasını kurtarmazsın.","[color:8040ff]İlginç,[w:3] Merhamet artık tek çıkış yolumuz,[w:3] değil mi?","[color:8040ff]Dayanmayı bırak - bunu ikimiz için de kolaylaştır.[w:6]","[color:8040ff]Seni alt edince,[w:3] sırada o olacak.[w:6] Umutlanma,[w:3] bu arada.[w:6]","[color:8040ff]Merhametin beni sana yönlendirdi.[w:6] Neden şimdi fikrini değiştiriyorsun?"}))
 			end
 			else
 			if lang=="rus" then
 				BattleDialog(GiveRandom({"[color:8040ff]Ты упёртый.[w:6] Но я не могу позволить вам меня одолеть.","[color:8040ff]Не думал,[w:3] что мы окажемся на равных.[w:6] И всё же[waitall:4][w:3]...[waitall:1][w:3]\nВы проиграете.[w:6] Я знаю.","[color:8040ff]Столько Решимости потрачено и всё это будет напрасно,[w:3] когда я растопчу твою личность","[color:8040ff]Чем ближе ты к единице,[w:3] тем проще мне тебя захватить.[w:6] Задумайся о своих шансах."}))
 				dial=GiveRandom({{"[func:LostKidFace,hope_close,-]Мы почти сделали \nэто[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_determined,+] \nБудет трудно,[w:3] [func:LostKidFace,hope_cheers,+] но я \nверю в тебя.[w:6] [func:LostKidFace,hope_sobbing,+] \nКак Азриэль верил в \nтебя[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,hope_cheers,+]Ты был как часть \nмоей семьи для \nродителей[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_sobbing,+] \nЯ уверенa,[w:3] они \nгордились бы тобой \nсейчас![w:6]"},{"[func:LostKidFace,hope_close,-]Король и Папайрус \nсмогли тебя принять \nв прошлом[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_cheers,+] Смогут \nи сейчас.[w:6] [func:LostKidFace,hope_sobbing,+] Ты им как \nбрат,[w:3] который \nобъединяет их[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,hope_determined,+]Андайн и Альфис \nценили твою \nстойкость![w:6] \nНе дай их словам \nбыть напрасными,[w:3] \nпартнёр![w:6]"},{"[func:LostKidFace,hope_close,-]Я[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_cheers,+] Партнёр,[w:3] я не \nмогу представить \nсвой <дом> без \nтебя[waitall:4][w:3]...[waitall:1][w:3]","[func:LostKidFace,hope_sobbing,+]Давай исполним мою \nмечту вместе[waitall:4][w:3]...[waitall:1][w:3] \nНе сдавайся[waitall:4][w:3]...[waitall:1][w:3]"}})
 				else
-				BattleDialog(GiveRandom({"[color:8040ff]You're stubborn.[w:6] I will no give up so easy however.[w:6]","[color:8040ff]I couldn't imagine you will be equal to me.[w:6] But still[waitall:4][w:3]...[waitall:1][w:3] You'll eventually loose.[w:6] \nI know it.[w:6]","[color:8040ff]So much Determination would be wasted for nothing when I destroy your personality.[w:6]","[color:8040ff]The closer you are to 1 LV,[w:3] the easier it is for me to overwhelm you.[w:6] Consider your chances.[w:6] "}))
-				dial=GiveRandom({{"[func:LostKidFace,hope_close,-]We are close to an \nend[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_determined,+]\nIt will be hard,[w:3] [func:LostKidFace,hope_cheers,+]but \nI believe in you.[w:6] [func:LostKidFace,hope_sobbing,+]\nLike Asriel did.[w:6]"},{"[func:LostKidFace,hope_cheers,+]You were almost like \na family to Asgore \nand Toriel[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_sobbing,+]\nI'm sure,[w:3] they \nwould be proud of \nyou now![w:6]"},{"[func:LostKidFace,hope_close,-]The King and Papyrus \ncould accept you \nbefore[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_cheers,+]And they \nwould after.[w:6] ","[func:LostKidFace,hope_sobbing,+]They treated you as \ntheir brother whose \nconnects them[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,hope_determined,+]Undyne and Alphys \nadmired your \npersistence![w:6] \nDon't let their words \nbecame a waste,[w:3] \npartner![w:6]"},{"[func:LostKidFace,hope_close,-]I[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_cheers,+]I can't imagine \nmy <home> without \nyou[waitall:4][w:3]...[waitall:1][w:3]","[func:LostKidFace,hope_sobbing,+]Let my dream become \ntrue together[waitall:4][w:3]...[waitall:1][w:3] \nDon't give up[waitall:4][w:3]...[waitall:1][w:3]"}})
+				BattleDialog(GiveRandom({"[color:8040ff]Çok inatçısın.[w:6] Ama ben de öyle kolay pes etmem.[w:6]","[color:8040ff]Benle eşit olmanı düşünemem.[w:6] Fakat yine[waitall:4][w:3]...[waitall:1][w:3] Sonunda kaybedeceksin.[w:6] \nBiliyorum.[w:6]","[color:8040ff]Kişiliğini yok edersem büyük bir oranda Kararlılık boşa gider.[w:6]","[color:8040ff]Ne kadar 1 LV'e yaklaşırsan,[w:3] seni ele geçirme şansım artar.[w:6] Seçeneklerini düşün.[w:6] "}))
+				dial=GiveRandom({{"[func:LostKidFace,hope_close,-]Bir sona \nyakınız[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_determined,+]\nBu zor olucak,[w:3] [func:LostKidFace,hope_cheers,+]fakat \nsana inanıyorum.[w:6] [func:LostKidFace,hope_sobbing,+]\nAsriel gibi.[w:6]"},{"[func:LostKidFace,hope_cheers,+]Toriel ve Asgore'a \nbir aile \ngibiydin[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_sobbing,+]\nEminim,[w:3] burda olsalardı \nsana \ngurulanırlardı![w:6]"},{"[func:LostKidFace,hope_close,-]Kral ve Papyrus \nseni kabul \nederdi[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_cheers,+]Seni \ndesteklerdiler.[w:6] ","[func:LostKidFace,hope_sobbing,+]Seni \nkendi kardeşleri \ngibi gördüler[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,hope_determined,+]Undyne ve Alphys \nkararlılığını \ntebrik etti![w:6] \nOnları \npişman etme,[w:3] \npartner![w:6]"},{"[func:LostKidFace,hope_close,-]B[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_cheers,+]Ben \ <home>imi sensin \ndüşünemem[waitall:4][w:3]...[waitall:1][w:3]","[func:LostKidFace,hope_sobbing,+]Hayalimi \ngerçekleştir[waitall:4][w:3]...[waitall:1][w:3] \nPes etme[waitall:4][w:3]...[waitall:1][w:3]"}})
 			end
 		end
 		dial[#dial+1]="[noskip][func:LostKidFace,hope_base,+][next] "
@@ -8875,7 +8875,7 @@ function Differ(ingo)
 		if lang=="rus" then
 			outgo="[color:ff00ff]Верующий"
 			else
-			outgo="[color:ff00ff]Believer"
+			outgo="[color:ff00ff]Sadık"
 		end
 		elseif ingo==2 then
 		if lang=="rus" then
@@ -8887,13 +8887,13 @@ function Differ(ingo)
 		if lang=="rus" then
 			outgo="[color:ff8888]Атеист"
 			else
-			outgo="[color:ff8888]Atheist"
+			outgo="[color:ff8888]Ateist"
 		end
 		elseif ingo==4 then
 		if lang=="rus" then
 			outgo="[color:ff0000]Тебя поимели"
 			else
-			outgo="[color:ff0000]Dunked on"
+			outgo="[color:ff0000]Potalanmış"
 		end
 	end
 	return outgo
@@ -8905,25 +8905,25 @@ function ShowDiffer(ingo)
 		if lang=="rus" then
 			outgo="[color:ff00ff]Ваша вера вам окупилась"
 			else
-			outgo="[color:ff00ff]Your faith has paid itself off"
+			outgo="[color:ff00ff]İnancını karşılığını aldın"
 		end
 		elseif ingo==2 then
 		if lang=="rus" then
 			outgo="[color:ffffff]Любая вера хороша в меру"
 			else
-			outgo="[color:ffffff]Faith is good in measure"
+			outgo="[color:ffffff]İnanmak iyidir"
 		end
 		elseif ingo==3 then
 		if lang=="rus" then
 			outgo="[color:ff8888]Вы отвергли бога"
 			else
-			outgo="[color:ff8888]You denied the God"
+			outgo="[color:ff8888]Tanrıyı reddettin"
 		end
 		elseif ingo==4 then
 		if lang=="rus" then
 			outgo="[color:ff0000]Бог отверг вас =)"
 			else
-			outgo="[color:ff0000]God denied you =)"
+			outgo="[color:ff0000]Tanrı seni reddetti =)"
 		end
 	end
 	return outgo
@@ -8937,41 +8937,41 @@ function NameAchivement(ingo)
 		if lang=="rus" then
 			outgo="Аутофобия"
 			else
-			outgo="Autophobia"
+			outgo="Otofobi"
 		end
 		elseif ingo==2 then
 		if lang=="rus" then
 			outgo="Новая пьеса"
 			else
-			outgo="New play"
+			outgo="Yeni oyun"
 		end
 		c=""
 		elseif ingo==3 then
 		if lang=="rus" then
 			outgo="На лезвии"
 			else
-			outgo="Cut it off"
+			outgo="Kes gitsin"
 		end
 		c=""
 		elseif ingo==4 then
 		if lang=="rus" then
 			outgo="Потерянное дитя"
 			else
-			outgo="Lost child"
+			outgo="Kayıp çocuk"
 		end
 		c=""
 		elseif ingo==5 then
 		if lang=="rus" then
 			outgo="Дивный новый мир"
 			else
-			outgo="Brand new world"
+			outgo="Yeni dünya"
 		end
 		c=""
 		elseif ingo==6 then
 		if lang=="rus" then
 			outgo="Жертвенность"
 			else
-			outgo="Vengeance"
+			outgo="İntikam"
 		end
 		c=""
 		elseif ingo==7 then
@@ -8985,35 +8985,35 @@ function NameAchivement(ingo)
 		if lang=="rus" then
 			outgo="Бог вас не услышал"
 			else
-			outgo="God denied you"
+			outgo="Tanrı seni reddetti"
 		end
 		c=""
 		elseif ingo==9 then
 		if lang=="rus" then
 			outgo="Не ты первый..."
 			else
-			outgo="Nor the last..."
+			outgo="Sonuncu da değil..."
 		end
 		c=""
 		elseif ingo==10 then
 		if lang=="rus" then
 			outgo="Неприкосновенный"
 			else
-			outgo="One punch child"
+			outgo="Tek yumruk çocuk"
 		end
 		c=""
 		elseif ingo==11 then
 		if lang=="rus" then
 			outgo="Пустой звук"
 			else
-			outgo="Baloney speak"
+			outgo="Boş konuşmak"
 		end
 		c=""
 		elseif ingo==12 then
 		if lang=="rus" then
 			outgo="Открытые раны"
 			else
-			outgo="Open wounds"
+			outgo="Açık yaralar"
 		end
 		c=""
 	end
@@ -9029,83 +9029,83 @@ function DiscAchivement(ingo)
 		if lang=="rus" then
 			outgo="Последний враг на вашем пути повержен"
 			else
-			outgo="The last enemy was eliminated"
+			outgo="Son düşman yok edildi"
 		end
 		elseif ingo==2 then
 		if lang=="rus" then
 			outgo="Перестать играть наскучивший сценарий"
 			else
-			outgo="Stop playing boring script"
+			outgo="Sıkıcı senaryoyu oynamayı bırak"
 		end
 		c=""
 		elseif ingo==3 then
 		if lang=="rus" then
 			outgo="С каких пор ты здесь главный?"
 			else
-			outgo="Since when you're the one in control?"
+			outgo="Ne zamandır kontrol sende?"
 		end
 		c=""
 		elseif ingo==4 then
 		if lang=="rus" then
 			outgo="Воля к битве исчезла без следа"
 			else
-			outgo="Battle will withered away"
+			outgo="Bu savaş..."
 		end
 		c=""
 		elseif ingo==5 then
 		if lang=="rus" then
 			outgo="Несмотря ни на что... Вы все ещё вы"
 			else
-			outgo="Despite everything... It's still you"
+			outgo="Her şeye rağmen, sen hala sensin"
 		end
 		c=""
 		elseif ingo==6 then
 		if lang=="rus" then
 			outgo="Такова цена вашей свободы"
 			else
-			outgo="This is the price for freedom"
+			outgo="Özgürlüğün bedeli bu"
 		end
 		c=""
 		elseif ingo==7 then
 		if lang=="rus" then
 			outgo="Съесть все предметы в течение первой фазы"
 			else
-			outgo="Eat every item during Phase 1"
+			outgo="Aşama 1 sırasına her eşyanı ye"
 		end
 		c=""
 		elseif ingo==8 then
 		if lang=="rus" then
 			outgo="Попробовать молитву на высшей сложности"
 			else
-			outgo="Try Praying on highest difficulty"
+			outgo="En yüksek zorlukta dua etmeyi dene"
 		end
 		c=""
 		elseif ingo==9 then
 		if lang=="rus" then
 			outgo="Умереть на фазе 1.5"
 			else
-			outgo="Die on Phase 1.5"
+			outgo="Aşama 1.5'da öl"
 		end
 		c=""
 		elseif ingo==10 then
 		if lang=="rus" then
 			outgo="Пройти игру без получения урона"
 			else
-			outgo="Complete the game without getting hit"
+			outgo="Hasar almadan oyunu bitir"
 		end
 		c=""
 		elseif ingo==11 then
 		if lang=="rus" then
 			outgo="Прочитать все варианты текста пощады Чары"
 			else
-			outgo="Read all Spare Chara lines"
+			outgo="Tüm Pacifist textlerini oku"
 		end
 		c=""
 		elseif ingo==12 then
 		if lang=="rus" then
 			outgo="Дойти до эпилога с <10 ОЗ"
 			else
-			outgo="Get to the epilogue with less than 10 HP"
+			outgo="10'dan az can ile oyunun sonuna gel"
 		end
 		c=""
 	end
@@ -9196,8 +9196,8 @@ function ReadyGlobalSave(ingo)
 			enemies[1].SetVar("currentdialogue",{" [next] ","[effect:none][noskip][func:TakeKnife][func:head][effect:none][novoice][color:ff0000][func:DUB,prolog/26]СЕЙЧАС ВЫПЬЕШЬ \n[waitall:2]ЧАШУ ИЗ БОЛИ\nДО [waitall:4][func:Devil,night]ДНА![w:10]","[next] "})
 			comm="Последний актер на сцене!"
 			else
-			enemies[1].SetVar("currentdialogue",{" [next] ","[effect:none][func:DUB,prolog/26][noskip][func:TakeKnife][func:head][effect:none][novoice][color:ff0000]BE [w:1]REA[w:1]DY [w:2]TO [w:1]SUF[w:1]FER [w:2]\nFOR [w:1]EACH [w:1]YOUR[w:2]\n[waitall:2]AB[func:Devil,night]U[w:5]SE![w:20]","[next] "})
-			comm="The last actor is on the scene!"
+			enemies[1].SetVar("currentdialogue",{" [next] ","[effect:none][func:DUB,prolog/26][noskip][func:TakeKnife][func:head][effect:none][novoice][color:ff0000]YAP[w:1]TIK[w:1]LAR[w:2]IN[w:1]IN[w:1] BE[w:2]\nDEL [w:1]İNİ [w:1]ÖDE[w:2]\n[waitall:2]ME [func:Devil,night]ZAM[w:5]ANI![w:20]","[next] "})
+			comm="Son aktör sahnede!"
 		end
 		elseif ingo=="2" then
 		SetGlobal("pray",2)
@@ -9219,7 +9219,7 @@ function ReadyGlobalSave(ingo)
 			comm="Чара разочарована в вас."
 			else
 			comm="Chara seems disappointed in you."
-			enemies[1].SetVar("currentdialogue",{" [next] ","[effect:none][func:Devil]So let's not get \ndistracted.","[next] "})
+			enemies[1].SetVar("currentdialogue",{" [next] ","[effect:none][func:Devil]Dikkatimiz \ndağılmasın.","[next] "})
 		end
 		elseif ingo=="3" then
 		blood.Set("1.2/chara/check_blood")
@@ -9232,7 +9232,7 @@ function ReadyGlobalSave(ingo)
 			comm="Значит,[w:3] она хочет сыграть по-взрослому[waitall:4][w:3]...[waitall:1][w:3] \nХорошо,[w:3] папик."
 			else
 			comm="So she wants to play hard[waitall:4][w:3]...[waitall:1][w:3] \nOkay,[w:3] daddy."
-			enemies[1].SetVar("currentdialogue",{" [next] ","[effect:none][func:Bloodshed][func:trigered]Let the bloodshed \nbegin!!","[next] "})
+			enemies[1].SetVar("currentdialogue",{" [next] ","[effect:none][func:Bloodshed][func:trigered]Katliam \nbaşlasın!!","[next] "})
 		end
 		SetGlobal("pray",4)
 		enemies[1].SetVar("dodge",false)
@@ -9283,8 +9283,8 @@ function ReadyGlobalSave(ingo)
 			enemies[1].SetVar("currentdialogue",{" [next] ","[effect:none][noskip][func:tired][waitall:2][w:5]Я просто хочу \nпокоя[waitall:4][w:3]...","[next] "})
 			comm="Сейчас,[w:3] актер![w:6] Нападай!"
 			else
-			enemies[1].SetVar("currentdialogue",{" [next] ","[effect:none][noskip][func:tired][waitall:2][w:5]I just want peace[waitall:4][w:3]...","[next] "})
-			comm="The time has come,[w:3] actor![w:6] \nImpact her!"
+			enemies[1].SetVar("currentdialogue",{" [next] ","[effect:none][noskip][func:tired][waitall:2][w:5]Sadece barış istiyorum[waitall:4][w:3]...","[next] "})
+			comm="Zamanımız geldi,[w:3] aktör![w:6] \nSaldır!"
 		end
 		cursefade=6000
 		elseif ingo=="5" then
@@ -9374,7 +9374,7 @@ function ReadyGlobalSave(ingo)
 		if lang=="rus" then
 			comm="Это кажется интересным.[w:6]\nДавай не спешить,[w:3] дорогуша.[w:6] Пусть выговорится."
 			else
-			comm="This seems interesting.[w:6]\nLet’s not hurry,[w:3] darling.[w:6] Let her talk."
+			comm="This seems interesting.[w:6]\Acele etmeyelim,[w:3] tatlım.[w:6] konuşmasına iizn ver."
 		end
 		SetGlobal("facial_expression",60)
 	end
@@ -9437,7 +9437,7 @@ function Gotcha()
 		if lang=="rus" then
 			enemies[1].SetVar("currentdialogue", {"[noskip][func:head4]И[w:4].[w:4].[w:4].[w:4] [func:NoMercy1]Попался!"})
 			else
-			enemies[1].SetVar("currentdialogue", {"[noskip][func:head4]And.[w:4].[w:4].[w:4] [func:NoMercy1]Gotcha!"})
+			enemies[1].SetVar("currentdialogue", {"[noskip][func:head4]Ve.[w:4].[w:4].[w:4] [func:NoMercy1]Gotcha!"})
 		end
 		nextwaves = {"nothing"}
 		State("ENEMYDIALOGUE")
@@ -9474,7 +9474,7 @@ function HappyCharaMeal1()
 	if lang=="rus" then
 		dial={"[func:LostKidFace,hope_question,+]Значит[waitall:4][w:3]...[waitall:1][w:3] \nВсё кончено?","[func:HappyCharaMeal2]"}
 		else
-		dial={"[func:LostKidFace,hope_question,+]Then[waitall:4][w:3]...[waitall:1][w:3] It's over?","[func:HappyCharaMeal2]"}
+		dial={"[func:LostKidFace,hope_question,+]Yani[waitall:4][w:3]...[waitall:1][w:3] Bitti mi?","[func:HappyCharaMeal2]"}
 	end
 	for i=1,#dial do
 		dial[i]="[noskip][effect:none]"..dial[i]
@@ -9650,7 +9650,7 @@ function HappyCharaMeal13()
 	if lang=="rus" then
 		dial={"[func:CharaDownFaces,hope_base]* Это будет наше первое обещание.","[func:CharaDownFaces,hope_smile]* Впереди нас ждет ещё много обещаний,[w:3] но давай никогда не забывать об этом одном.","* Давай пообещаем[waitall:4][w:3]...[waitall:1][w:3] [func:CharaDownFaces,hope_cheers]Что никогда не бросим это будущее,[w:3] что создали?","[func:CharaDownFaces,hope_close]* В последний миг[waitall:4][w:3]...[waitall:1][w:3] [func:CharaDownFaces,hope_cheers]Я хочу знать,[w:3] что спасла тех,[w:3] кого люблю.","[func:CharaDownFaces,hope_close]* Мой дом.[w:6] Мою семью.[w:6] Моих друзей.","[func:LowerMusic][w:30][func:CharaDownFaces,hope_deathsmile]* И тебя.[w:30][func:ToHappyTitrs][w:600][next] "}
 		else
-		dial={"[func:CharaDownFaces,hope_base]* Let this be our first promise","[func:CharaDownFaces,hope_smile]* We will have a plenty of them in future,[w:3] but let's not forget about this one.[w:6]","* Let's promise[waitall:4][w:3]...[waitall:1][w:3] [func:CharaDownFaces,hope_cheers]That we will never give up on future we created?","[func:CharaDownFaces,hope_close]* In the last moment[waitall:4][w:3]...[waitall:1][w:3] [func:CharaDownFaces,hope_cheers]I want to know that I saved those who I love.[w:6]","[func:CharaDownFaces,hope_close]* My home.[w:6] My family.[w:6] My friends.[w:6]","[func:LowerMusic][w:30][func:CharaDownFaces,hope_deathsmile]* And you.[w:30][func:ToHappyTitrs][w:600][next] "}
+		dial={"[func:CharaDownFaces,hope_base]* Bunun ilk sözümüz olmasına izin ver","[func:CharaDownFaces,hope_smile]* We will have a plenty of them in future,[w:3] but let's not forget about this one.[w:6]","* Let's promise[waitall:4][w:3]...[waitall:1][w:3] [func:CharaDownFaces,hope_cheers]That we will never give up on future we created?","[func:CharaDownFaces,hope_close]* In the last moment[waitall:4][w:3]...[waitall:1][w:3] [func:CharaDownFaces,hope_cheers]I want to know that I saved those who I love.[w:6]","[func:CharaDownFaces,hope_close]* My home.[w:6] My family.[w:6] My friends.[w:6]","[func:LowerMusic][w:30][func:CharaDownFaces,hope_deathsmile]* And you.[w:30][func:ToHappyTitrs][w:600][next] "}
 	end
 	for i=1,#dial do
 		dial[i]="[noskip][font:overworld]"..dial[i]
