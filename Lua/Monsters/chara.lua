@@ -1,4 +1,4 @@
-﻿-- A basic monster script skeleton you can copy and modify for your own creations.
+-- A basic monster script skeleton you can copy and modify for your own creations.
 commentater = {"Последний актёр на сцене", "Чара выглядит недовольной", "Осталось только ДРАТЬСЯ", "Ты наполнен ПРЕДАТЕЛЬСТВОМ.", "Пахнет трусом.", "Сотри их в пыль.", "Очередной дурак.", "ДЕРИСЬ или УМРИ.", "Тебе ничего не остаётся.", "Ещё не поздно умереть.", "Чара хихикнула.", "Прячься или дерись.", "Точка невозврата.", "Тебе стоит попытаться сильнее.", "Объясни себе свои действия.", "Присоединяйся к битве.", "Никакой ПОЩАДЫ.", "Тебе придётся уМЕРГеть.", "Чара дрожит.", "Ничего особенного.", "Вступи в шоу и закончи его!", "Новое начало.", "Необычная временная линия.", "Суд.", "Навсегда один.", "Пыль на твоих руках кажется \rнормой.", "Просто ДЕРИСЬ.", "Не останавливайся отныне!"}
 comments=commentater
 comments={"Последний актёр на сцене"}
@@ -49,7 +49,7 @@ function Lang(ingo)
 		commands = {"ПРОВЕРИТЬ", "МОЛИТВА"}
 		else
 		name = "Chara Dreemurr"
-		commands = {"INSPECT", "PRAY"}
+		commands = {"İNCELE", "DUA ET"}
 	end
 end
 
@@ -135,7 +135,7 @@ function HappyCharaMeal2()
 	if Encounter.GetVar("lang")=="rus" then
 		dial={"Вы утвердительно киваете и подбегаете ближе к Чаре.","[func:HappyCharaMeal3]"}
 		else
-		dial={"You nod in agreement and run closer to Chara.","[func:HappyCharaMeal3]"}
+		dial={"Başınla onaylayıp Chara'ya yaklaştın.","[func:HappyCharaMeal3]"}
 	end
 	for i=1,#dial do
 		dial[i]="[noskip][novoice][voice:uidial]"..dial[i]
@@ -148,7 +148,7 @@ function HappyCharaMeal4()
 	if Encounter.GetVar("lang")=="rus" then
 		dial={"Вы спрашиваете Чару,[w:3] в порядке ли она.","[func:HappyCharaMeal5]"}
 		else
-		dial={"You ask Chara if she is alright.","[func:HappyCharaMeal5]"}
+		dial={"Chara'ya iyi olup olmadığını sordun.","[func:HappyCharaMeal5]"}
 	end
 	for i=1,#dial do
 		dial[i]="[noskip][novoice][voice:uidial]"..dial[i]
@@ -161,7 +161,7 @@ function HappyCharaMeal6()
 	if Encounter.GetVar("lang")=="rus" then
 		dial={"Вы соглашаетесь взять[next]","[func:HappyCharaMeal7]"}
 		else
-		dial={"You agree to take[next]","[func:HappyCharaMeal7]"}
+		dial={"Almayı kabul ettin[next]","[func:HappyCharaMeal7]"}
 	end
 	for i=1,#dial do
 		dial[i]="[noskip][novoice][voice:uidial]"..dial[i]
@@ -174,7 +174,7 @@ function HappyCharaMeal8()
 	if Encounter.GetVar("lang")=="rus" then
 		dial={"[w:3].[w:4].[w:4].[w:4]Вы послушно открываете рот и Чара кладет вам на язык кусочек шоколада.[w:6]\nОн будто тает во рту[waitall:4][w:3]...","[health:19]Вы восстановили ОЗ[waitall:4][w:3]...[waitall:1][w:3] \nПросто ОЗ","[func:HappyCharaMeal9]"}
 		else
-		dial={"[waitall:4][w:3]...[waitall:1][w:3]You obediently open your mouth and Chara puts a piece of chocolate on your tongue.[w:6]It seems to melt in your mouth.[w:6].[w:6]","[health:19]You regain HP[waitall:4][w:3]...[waitall:1][w:3] HP itself","[func:HappyCharaMeal9]"}
+		dial={"[waitall:4][w:3]...[waitall:1][w:3]Ağzını açtın, Chara dilinin üzerine bir miktar çikolata koydu.[w:6]Ağzında erimişe benziyor.[w:6].[w:6]","[health:19]CP'ni geri kazandın[waitall:4][w:3]...[waitall:1][w:3] HP itself","[func:HappyCharaMeal9]"}
 	end
 	for i=1,#dial do
 		dial[i]="[noskip][novoice][voice:uidial]"..dial[i]
@@ -203,7 +203,7 @@ function LostHasLost()
 	if lang=="rus" then
 		dial={"[waitall:4][w:3]...[waitall:1][w:3]\nНу и трепло[waitall:4][w:3]...","Теперь[waitall:4][w:3]...[waitall:1][w:3] \nЧто касается тебя,[w:3] дорогуша[waitall:4][w:3]...[waitall:1][w:3]","[func:LostToMetta1]"}
 		else
-		dial={"[waitall:4][w:3]...[waitall:1][w:3]\nSuch a ballooney[waitall:4][w:3]...[waitall:1][w:3]","Now[waitall:4][w:3]...[waitall:1][w:3]\nWhat about you,[w:3] darling[waitall:4][w:3]...[waitall:1][w:3]","[func:LostToMetta1]"}
+		dial={"[waitall:4][w:3]...[waitall:1][w:3]\nBalon gibi[waitall:4][w:3]...[waitall:1][w:3]","Şimdi[waitall:4][w:3]...[waitall:1][w:3]\nSana ne demeli,[w:3] aşkım[waitall:4][w:3]...[waitall:1][w:3]","[func:LostToMetta1]"}
 	end
 	for i=1,#dial do
 		dial[i]="[noskip][color:8040ff]"..dial[i]
@@ -319,7 +319,7 @@ function WON()
 		if lang=="rus" then
 			BattleDialog("[noskip][waitall:1]Ты победил![w:10]\nТы получил 0 М и 50000 ОП\nТвой УР вырос![func:Level20][w:1800] ")
 			else
-			BattleDialog("[noskip][waitall:1]You won![w:10]\nYou got 0 G and 50000 EXP\nYour LV raised![func:Level20][w:1800] ")
+			BattleDialog("[noskip][waitall:1]Kazandın![w:10]\n0 Altın ve 50000 TP aldın\nSV'n yükseldi![func:Level20][w:1800] ")
 		end
 		elseif wons==1 then
 		local dial={}
@@ -327,25 +327,25 @@ function WON()
 			if lang=="rus" then
 				dial={"[noskip][color:8040ff]Значит ей ещё было что сказать?[w:6]\nЖаль.[w:6] В следующий раз послушаем.[w:6]","[noskip][color:8040ff]Идем дальше.[w:6]\nТвой УР повышен и все дела.[w:6]\nНе будем задерживаться.[func:Level20][w:1800] "}
 				else
-				dial={"[noskip][color:8040ff]So she had something else to say?[w:6]\nPity.[w:6] We will listen to it other time.[w:6]","[noskip][color:8040ff]Come on.[w:6]\nYour LV raised and etc.[w:6]\nLet's not waster our time.[func:Level20][w:1800] "}
+				dial={"[noskip][color:8040ff]Yani söyleyecek bir şeyi mi var?[w:6]\nYazık.[w:6] Başka bir zaman dinleriz.[w:6]","[noskip][color:8040ff]Hadi ama.[w:6]\nSV'n yükseldi falan filan.[w:6]\nHadi zamanımızı boşa harcamayalım.[func:Level20][w:1800] "}
 			end
 			elseif lost<19 then
 			if lang=="rus" then
 				dial={"[waitall:4][w:3]...[waitall:1][w:3]Вопреки тому,[w:6] что мне было интересно,[w:6] эта сказка и правда затянулась.[w:6]","Ты всё правильно сделал.[w:6]\nТвой УР повышен и все дела.[w:6]\nНе будем задерживаться.[w:6][func:Level20][w:1800] "}
 				else
-				dial={"[waitall:4][w:3]...[waitall:1][w:3]Even if I was curious,[w:6] this tale still wasting too much time.[w:6]","You did everything right.[w:6]\nYour LV raised and etc.[w:6]\nLet's not waste our time.[w:6][func:Level20][w:1800] "}
+				dial={"[waitall:4][w:3]...[waitall:1][w:3]Meraklı olsam da,[w:6] bu hikaye hala çok fazla zaman alıyor.[w:6]","Her şeyi doğru yaptın.[w:6]\nSV'n yükseldi falan filan.[w:6]\nHadi zamanımızı boşa harcamayalım.[w:6][func:Level20][w:1800] "}
 			end
 			elseif lost<21 then
 			if lang=="rus" then
 				dial={"Слава Богу[waitall:4][w:3]...[waitall:1][w:3] Ещё бы немного,[w:6] и я точно её убил.[w:6]\nКакая же она мерзкая[waitall:4][w:3]...[waitall:1][w:3] Даже на эмоции смогла пробить.[w:6]","Я не хочу больше здесь оставаться.[w:6]\nИдем дальше.[w:6][func:Level20][w:1800] "}
 				else
-				dial={"Golly[waitall:4][w:3]...[waitall:1][w:3] A little more of this and I would kill her for sure.[w:6]\nShe's such a gross[waitall:4][w:3]...[waitall:1][w:3] Even touched my feelings somehow.[w:6]","I don't want to stay here any longer.[w:6]\nCome on.[w:6][func:Level20][w:1800] "}
+				dial={"Şükürler olsun[waitall:4][w:3]...[waitall:1][w:3] Birazcık daha bundan ve onu kesinlikle öldüreceğim.[w:6]\nZaten çok iğrençti[waitall:4][w:3]...[waitall:1][w:3] Duygularıma dokunmuş olmasına rağmen bir şekilde.[w:6]","Burada daha fazla kalmak istemiyorum.[w:6]\nHadi.[w:6][func:Level20][w:1800] "}
 			end
 			else
 			if lang=="rus" then
 				dial={"Ты был на грани моего терпения.[w:6] \nЧто это значит?[w:6] Тебе не нравится моя постановка?[w:6] Выскажись.[w:6]","Я с радостью учту твои замечания в следующей постановке.[w:6]\nА пока закончим эту.[w:6] Да?[w:6][func:Level20][w:1800] "}
 				else
-				dial={"You were on edge of my patience.[w:6] \nWhat was that? [w:6]Do you not like my play?[w:6] Spit it out.[w:6]","I will gladly listen to your notices in next script.[w:6]\nAs for now,[w:3] let's end this one.[w:6] Yeah?[w:6][func:Level20][w:1800] "}
+				dial={"Sabrımın sınırındaydın.[w:6] \nBuda neydi böyle? [w:6]Oyunumu beğenmedin mi?[w:6] Dilindekileri tükür bakalım.[w:6]","Memnuniyetle sonraki oyunum için uyarılarını dinleyeceğim.[w:6]\nAma şimdi,[w:3] bunu bitirelim.[w:6] Evet?[w:6][func:Level20][w:1800] "}
 			end
 		end
 		for i=1,#dial do
@@ -747,79 +747,79 @@ function HandleAttack()
 		comments = commentater
 	if GetGlobal("progress") == 1 then
 		Encounter.SetVar("evadelevel",1)
-		neng={'"Did she dodge?",[w:3]\n right?', "[func:NoMercy1]Look,[w:3] you're not \nmy prince,[w:3] \nand I'm not \nyour princess.", "[func:Bad]I can defend \nmyself." ,"[func:head][next]"}
+		neng={'"Kaçındı mı?",[w:3]\n değil mi?', "[func:NoMercy1]Bak,[w:3] ne sen benim prensimsin,[w:3] ne de ben senin prensesin.", "[func:Bad]Kendi başımın çağresine bakabilirim." ,"[func:head][next]"}
 		nrus={'"Как она \nувернулась?", \n[w:3]верно?', "[func:NoMercy1]Послушай,[w:3] ты же \nне принц,[w:3] а я \nне твоя принцесса.", "[func:Bad]Я умею за себя \nпостоять.","[func:head][next]"}
 		ruscom="Настало время для первого акта."
-		engcom="It's time for the first act."
+		engcom="İlk eylemini yapma zamanı."
 		wav={"phase1/k_random1"}
 	elseif GetGlobal("progress") == 2 then
 		nrus={"[func:NoMercy1]Позволь задать \nтебе вопрос.", "Ты серьезно \nдумаешь,[w:3] \n[func:head]что я настолько \nглупа?" }
-		neng={"[func:NoMercy1]Let me ask \nyou a question.", "Who do you think \nI am [func:head]to be \nso foolish?"  }
+		neng={"[func:NoMercy1]Sana bir soru sormama izin ver.", "Kim olduğumu düşünüyorsun \nSence bir [func:head]aptal mıyım?"  }
 		ruscom="Вопрос с подвохом?"
-		engcom="Is it rhetorical question?"
+		engcom="Bu retorik bir soru muydu?"
 		wav={"phase1/rain"}
 	elseif GetGlobal("progress") == 3 then
 		nrus={"[func:NoMercy1][waitall:2]Всё,[waitall:1] [w:3]что ты \nнатворил на \nпути сюда[waitall:5][w:3]...[waitall:1][w:5]\nВся эта кровь \nна твоих руках[waitall:5][w:3]...", "Разве я настолько \nдура,[w:3] \n[func:head]чтобы верить тебе?" }
-		neng={"[func:NoMercy1][speed:0.55]Everything [speed:1][w:3]you \nhave done on \nyour way there[waitall:5][w:3]...[waitall:1][w:5] \nAll this dust on \nyour hands[waitall:5][w:3]...", "Am I the damn fool \n[func:head]to believe in you?" }
+		neng={"[func:NoMercy1][speed:1][w:3]Yolunda yaptığın [speed:0.55]her şey[waitall:5][w:3]...[waitall:1][w:5] \nElindeki tüm bu toz[waitall:5][w:3]...", "[func:head]Sana inanabilecek kadar lanet olası bir aptal mıydım?" }
 		ruscom="Чара истерично хихикает."
-		engcom="Chara hysterically laughs."
+		engcom="Chara histerik olarak gülüyor."
 		wav={"phase1/random"}
 	elseif GetGlobal("progress") == 4 then
 		nrus={"Мой ответ - [w:6][waitall:2]нет.", "[func:Think]Взгляни вокруг.[w:6] \nТы и я.[w:6] \nОдин на один.", "[func:NoMercy1]Этот коридор \nпропах запахом \nчеловеческой крови.", "На моих руках уже \nесть кровь людей. \n[w:6]Ты - [w:6]не первый [w:6]\nи не последний.", "[func:head]Но только ты \nпричинил столько \nболи.", "И это мой повод \nне опускать руки." }
-		neng={"My answer - [w:6]no.", "Look around.[w:6]\n[func:Think]It's only you \nand me now.[w:6] \nOne per one.", "[func:NoMercy1]This corridor stinks \nwith the smell of \nhuman blood.", "My hands are dirty \nfrom their blood \nas well.[w:6] You [w:6]are \nnot the first \n[w:6]nor the last.", "[func:head]But only you \ncaused so much pain.", "And that's my reason \nto conquer once \nagain."}
+		neng={"Cevabım - [w:6]hayır.", "Etrafına bak.[w:6]\n[func:Think]Şu an sadece sen ve ben varız.[w:6] \nBire bir.", "[func:NoMercy1]Bu koridor insan kanı kokuyor.", "Benimki onlarınki ile kirlendi.[w:6] Sen [w:6]ilk yada sonuncu değilsin.", "[func:head]Ama sadece sen bu kadar acıya neden oldun.", "Ve bu benim bir kez daha savaşma nedenim."}
 		ruscom="Не забывай о своей миссии."
 		engcom="Do not forget about your mission."
 		wav={"phase1/k_5_new"}
 	elseif GetGlobal("progress") == 5 then
 		nrus={"[func:NoMercy1]И знаешь,[w:3] что?", "[func:head]С меня хватит \nпритворства.", "[func:sad]Это ведь не \nвпервые?[w:6] \nЯ чувствую, [w:3]будто \nвсё повторяется \nраз за разом.", "[func:head4]Это не похоже на \nСбросы.[w:6] \[func:sad]Временная \nлиния остается \nвсё той же.", "[func:head4]Будто меняется[waitall:4][w:3]...[waitall:1][w:5]\n[func:Suprise1]Сам [w:3][waitall:3]мир.", "[func:NoMercy1]Это ведь[waitall:4][w:3]...[waitall:1][w:5] \n[func:head]Твоих рук дело?" }
-		neng={"[func:NoMercy1]And ya know what?", "[func:head]I am done with \nall this acting.", "[func:sad]It's not the first \ntime,[w:3]is it? [w:6]I feel \nlike everything is \nrepeating every time.", "[func:head4]It is not Resets.[w:6] [func:sad]\nThe timeline  is still \nthe same.", "[func:head4]It feels like[waitall:4][w:3]...[waitall:1][w:5] [func:Suprise1]the\nwhole [waitall:2]world [waitall:1][w:5]is \nchanging.", "[func:NoMercy1]It is your fault[waitall:4][w:3]...[waitall:1][w:5] [func:head]\nRight?"}
+		neng={"[func:NoMercy1]Ve biliyor musun?", "[func:head]Bütün bunlar yeterli.", "[func:sad]Bu ne ilki, nede sonuncusu, [w:3]değil mi? [w:6]Her şey tekrarlanıyormuş gibi hissediyorum.", "[func:head4]Sıfırlamadan bahsetmiyorum.[w:6] [func:sad]\nZaman çizelgesi hala aynı.", "[func:head4]Şey gibi hissetiriyor[waitall:4][w:3]...[waitall:1][w:5] [func:Suprise1]y,bütün [waitall:2]dünyanın [waitall:1][w:5]değişimi.", "[func:NoMercy1]bu senin suçun[waitall:4][w:3]...[waitall:1][w:5] [func:head]\nDeğil mi?"}
 		ruscom="В её словах есть смысл."
-		engcom="She has a point."
+		engcom="Doğru bir noktaya vardı."
 		wav={"phase1/k_random2"}
 	elseif GetGlobal("progress") == 6 then
 		nrus={"[func:sad]Ты тоже это \nчувствуешь[waitall:5]...", "[func:head4]Тем не менее[waitall:4]...[waitall:1][w:4] [func:NoMercy1]Есть\nкое-что важнее,[w:10]\nчем мои \nпредчувствия.", "[func:mercy]Ты ведь чувствуешь? [w:15]\n[waitall:2][func:head]Грехи,[waitall:1][w:5] что ползут \nпо твоей спине?"}
-		neng={"[func:sad]So you do feel \nthe same[waitall:4][w:3]...", "[func:head4]Nevertheless[waitall:4][w:3]...[waitall:1][w:4]\n[func:NoMercy1]There's something \nmore important than\nmy prejudgments.", "[func:mercy]Do you feel them?[w:15] [func:head]\n[waitall:2]Sins[waitall:1][w:5] on your back?"}
+		neng={"[func:sad]Yani, aynı hissediyorsun[waitall:4][w:3]...", "[func:head4]Yine de[waitall:4][w:3]...[waitall:1][w:4]\n[func:NoMercy1]Burada benim önyargımdan daha önemli bir şey var.", "[func:mercy]Onları hissediyor musun?[w:15] [func:head]\n[waitall:1][w:5]Sırtında karıncalanan[waitall:2]günahlarını?"}
 		ruscom="Нас не одурачить этой пугалкой."
-		engcom="She can't fool us with those nasty words."
+		engcom="Bu sözlerle bizi kandıramaz."
 		wav={"phase1/warning"}
 	elseif GetGlobal("progress") == 7 then
 		nrus={"[func:NoMercy1]Так вот.[w:15] Мой тебе \nсовет [w:4]- не \nповорачивайся.", "[func:head]Иначе нож в ту же \nсекунду пронзит \nтвою глотку.", "Я не отпущу тебя \nбез достойной \nбитвы.[w:6] \nТы отплатишь за \nсвои грехи." }
-		neng={"[func:NoMercy1]So I have an advice \nfor ya.[w:6] \n[waitall:2]Do not turn around.", "[func:head]Because in that very \nmoment knife will \npierce your thin \nneck.", "I will not let you go \nwithout proper \nfight.[w:6] You will pay \nfor your actions."}
+		neng={"[func:NoMercy1]Yanisi senin için bir tavsiyem var.[w:6] \n[waitall:2]Arkana bakma.", "[func:head]Çünkü her bakışında yüzünde bir bıçak belirecek.", "Uygun bir savaş olmadan gitmene izin vermeyeceğim.[w:6] Yaptıklarını ödeyeceksin."}
 		ruscom="Ну,[w:3] этот совет был хорошим,[w:3] кажется."
-		engcom="Welp,[w:3] that advice was solid,[w:3] I wonder."
+		engcom="Napalım,[w:3] bu tavsiye çok katıydı,[w:3] merak ediyorum acaba arkamı dönersem."
 		wav={"phase1/Quickly"}
 	elseif GetGlobal("progress") == 8 then
 		nrus={"[func:sad]Кому я это говорю[waitall:4][w:3]...",  "[func:head4]Ты ведь не слышишь.[w:15] \n[func:sad]Не хочешь [w:5]или \nне можешь [w:5]- не \nважно.", "[func:Final_7]Полагаю[waitall:4][w:3]...[waitall:1][w:4] \n[func:NoMercy1]Мы оба знаем,[w:3] \n[func:head]что будет в конце."}
-		neng={"[func:sad]Why do I even \nbother[waitall:4][w:3]...", "[func:head4]You don't listen.[w:15] [func:sad]\nDoesn't matter \nif you can't \n[w:6]or you don`t want to", "[func:Final_7]I guess[waitall:4][w:3]...[waitall:1][w:3] [func:NoMercy1]We both \nknow the [func:head]final act \nof our story."}
+		neng={"[func:sad]Neden zahmet ediyorum ki[waitall:4][w:3]...", "[func:head4]Dinlemiyorsun bile.[w:15] [func:sad]\nyapamıyorsan [w:6]yada yapmak istemiyorsan[w:15] bunun pek bir önemi yok", "[func:Final_7]Düşünüyorum da[waitall:4][w:3]...[waitall:1][w:3] [func:NoMercy1]Sanırım ikimizde hikayemizin sonunu biliyoruz."}
 		ruscom="Осторожнее.[w:6] \nЧто-то с ней не так[waitall:4][w:3]..."
-		engcom="Beware[waitall:4][w:3]...[waitall:1][w:3] \nSomething is off about her."
+		engcom="Dikkatli ol[waitall:4][w:3]...[waitall:1][w:3] \nOnun hakkında bir şeyler yanlış gibi."
 		wav={"phase1/Reaction"}
 	elseif GetGlobal("progress") == 9 then
 		nrus={"[func:head4]Ты думаешь, [w:3]что я \nнаивная[waitall:4][w:3]...[waitall:1][w:3]\nпредсказуемая и \nжалкая.", "[func:Look]Думаешь,[w:3] [func:Lookleft]что я \nвообразила из себя \nсудью,[w:3] \n[func:sad]хотя сама ничем \nне лучше тебя[waitall:4][w:3]...", "[func:head4]Может,[w:3] ты и прав.","[func:head][next]"}
-		neng={"[func:head4]You think, I am \nnaive[waitall:4][w:3]...[waitall:1][w:3] predictable \nand pity.", "[func:Look]You think,[w:3] [func:Lookleft]I imagined \nmyself as some judge\nof you and [func:sad]still \nI am not better than \nyou[waitall:4][w:3]...", "[func:head4]Maybe,[w:3] you have a \npoint.","[func:head][next]"}
+		neng={"[func:head4]Saf olduğumu[waitall:4][w:3]...[waitall:1][w:3] tahmin edilebilir ve zavallı olduğumu düşünüyorsun.", "[func:Look]Düşünüyorsun ki,[w:3] [func:Lookleft]Seni biraz yargılayacağım ve [func:sad]hala senden daha iyi değilim[waitall:4][w:3]...", "[func:head4]Belki de,[w:3] doğru bir noktaya değindin.","[func:head][next]"}
 		ruscom="Конечно,[w:3] прав."
-		engcom="Of course,[w:3] I have."
+		engcom="Elbette,[w:3] değindim."
 		wav={"phase1/BeFast"}
 	elseif GetGlobal("progress") == 10 then
 		nrus={"Но я не одинока.", "[func:DramaIn][func:head4]Точнее[waitall:4][w:4]...[waitall:1][w:3] Была.[w:15]\nНо пусть их и нет \nсо мной[waitall:4][w:4]...", "[func:Final_3]Я чувствую их \nвнутри своей Души.", "[func:Final_4]Каждого,[w:3] кого я \nлюбила и уважала,[w:3]\nи они отвечали \nтем же[waitall:4][w:3]...", "[func:Peachy]Каждый из \nних [w:5]-[w:5] [func:mercy]моя \nсемья.", "[func:DramaOut][func:Peachy]Я многому у них \nнаучилась[waitall:4][w:4]...", "[noskip][func:NoMercy1]Например.[w:16] [speed:0.5][func:head]Этому.[w:30][next]"}
-		neng={"But I'm not alone.", "[func:DramaIn][func:head4]Well[waitall:4][w:4]...[waitall:1][w:3] I was[waitall:4][w:4]...[waitall:1][w:15] \nBut even if they are \nnot beside me now[waitall:4][w:4]...", "[func:Final_4]I feel them inside \nmy very soul.", "[func:head4]I feel everyone I \nloved and respected", "[func:Peachy]Every one of them[w:9] [func:mercy]\nis my family.", "[func:DramaOut][func:Peachy]I learned a lot from \nthem.", "[noskip][func:NoMercy1]For example. [w:15][func:head][waitall:2]This.[w:30][next]"}
+		neng={"Ama yalnız değilim.", "[func:DramaIn][func:head4]Well[waitall:4][w:4]...[waitall:1][w:3] Öyleydim[waitall:4][w:4]...[waitall:1][w:15] \nAma şu an yanımda olmasalarda[waitall:4][w:4]...", "[func:Final_4]Ruhumun derinliklerinde onları hissediyorum.", "[func:head4]Herkesi hissediyorum değer verdiğim ve saygı duyduğum", "[func:Peachy]Her birini[w:9] [func:mercy]\nailem olarak.", "[func:DramaOut][func:Peachy]Onlardan çok fazla şey öğrendim.", "[noskip][func:NoMercy1]Örneğin. [w:15][func:head][waitall:2]Bu.[w:30][next]"}
 		ruscom="Ну конечно,[w:3] сила любви.[w:6]\nКак я раньше не понял."
-		engcom="Of course,[w:3] power of love.[w:6]\nShould have guessed before."
+		engcom="Elbette,[w:3] sevginin gücü.[w:6]\nDaha önceden tahmin etmeliydim."
                 --Encounter.SetVar("wavetime",11)
 		wav={"phase1/bones0"}
 		Encounter.SetVar("evadelevel",2)
 	elseif GetGlobal("progress") == 11 then
 		nrus={"[func:Peachy]Понимаешь,[w:3][func:mercy] я ещё \nне совсем привыкла \nк этой[waitall:4][w:3]...[waitall:1][w:3] силе.", "[func:Remember]Моя решимость \nрезонирует внутри \nмоей души[waitall:4][w:3]...", "[func:Peachy]Я чувствую,[w:3] как \nони[waitall:4][w:3]...[waitall:1][w:3] [func:Remember]поддерживают \nменя. \n[w:6]Заботятся обо мне.", "[func:Peachy]И их сила[waitall:4][w:3]...[waitall:1][w:3] \n[func:mercy]Передалась мне.", "[func:NoMercy1]Ну что?[w:9] [func:head]Готов \nко второму раунду?"}
-		neng={"[func:Peachy]Sorry,[w:3] [func:mercy]I am still not \nso good with this[waitall:4][w:3]...[waitall:1][w:3] \npower.", "[func:Remember]My Determination \nresonates \nwithin my soul[waitall:4][w:3]...[waitall:1]", "[func:Peachy]It feels like[waitall:4][w:3]...[waitall:1][w:3] [func:Remember]they \ncheer for me.[w:6] \nCare about me.", "[func:Peachy]And their power[waitall:4][w:3]...[waitall:1][w:3] [func:mercy]\nIs now mine.", "[func:NoMercy1]So? [w:9][func:head]Are you ready \nfor the round two?"}
+		neng={"[func:Peachy]Üzgünüm,[w:3] [func:mercy]Bunda hala pek iyi değilim[waitall:4][w:3]...[waitall:1][w:3] \ngüç.", "[func:Remember]Ruhum ve azmimle yankılanıyor[waitall:4][w:3]...[waitall:1]", "[func:Peachy]Şey gibi hissettiriyor[waitall:4][w:3]...[waitall:1][w:3] [func:Remember]beni destekliyorlarmış gibi.[w:6] \nBeni önemsiyorlarmış gibi.", "[func:Peachy]Ve onların güçleri[waitall:4][w:3]...[waitall:1][w:3] [func:mercy]\nŞimdi benim.", "[func:NoMercy1]Yani? [w:9][func:head]İkinci tura hazır mısın?"}
 		ruscom="Она адаптируется к новым силам.[w:6]\nУ нас всё меньше времени,[w:3] \rдорогой актер."
-		engcom="She is adapting to new powers.[w:6] \nWe have not so much time left,[w:3] \rdear actor."
+		engcom="Yeni güçlerie alışıyor.[w:6] \nPek zamanımız kalmadı,[w:3] \rsevgili aktör."
 		wav={"phase1/bullettest_touhou"}
 		--Encounter.SetVar("wavetimer", 13.0)
 	elseif GetGlobal("progress") == 12 then
 		nrus={"[func:head4]Эта сила[waitall:4][w:3]...", "[func:Final_5]Я будто слышу в \nушах его голос[waitall:4][w:3]...", "[func:Peachy]Такой родной\nи близкий[waitall:4][w:3]...", "Папайрус[waitall:5]...", "[waitall:4][w:3]...", "[func:mercy]Да,[w:3] я совсем забыла \nпро тебя,[w:3] извини.", "[func:NoMercy1]Итак,[w:6][func:head] на чем мы \nостановились?"}
-		neng={"[func:head4]This power[waitall:4][w:3]...", "[func:Final_5]I felt like I heared \nhis voice in my \nhead[waitall:4][w:3]...", "[func:Peachy]So close and caring[waitall:4][w:3]...", "Papyrus[waitall:4][w:3]...", "[waitall:4][w:3]...", "[func:mercy]Yeah,[w:3] I almost forgot \nabout you,[w:3] no \noffensive.", "[func:NoMercy1]So,[w:6] [func:head]shall we \nproceed?"}
+		neng={"[func:head4]Bu güç[waitall:4][w:3]...", "[func:Final_5]Seslerini kafamda duyuyor gibiyim[waitall:4][w:3]...", "[func:Peachy]Çok yakın ve sevevcen[waitall:4][w:3]...", "Papyrus[waitall:4][w:3]...", "[waitall:4][w:3]...", "[func:mercy]Evet,[w:3] az kalsın seni unutuyordum,[w:3] saldırmak için.", "[func:NoMercy1]So,[w:6] [func:head]devam edelim mi?"}
 		ruscom="Мне не нравится новый вектор \rбитвы.[w:6]\nОна стала сильнее."
-		engcom="I don't like this new fight \rvector.[w:6] She became too powerful."
+		engcom="Bu yeni savaşı pek sevmedim.[w:6] Aşırı güçlü hale gelmiş."
 		wav={"phase1/bones1"}
 		--Encounter.SetVar("wavetimer", 13.0)
 	elseif GetGlobal("progress") == 13 then
@@ -1118,7 +1118,7 @@ function HandleAttack()
 		if lang=="rus" then
 			commands = {"ПРОВЕРИТЬ", "МОЛИТВА" , "КОНЦЕНТРАЦИЯ"}
 			else
-			commands={"INSPECT","PRAY","CONCENTRATION"}
+			commands={"İNCELE","DUA ET","CONCENTRATION"}
 		end
 		wav={"phase2/HARD"}
 	elseif GetGlobal("progress") == 54 then
@@ -1224,7 +1224,7 @@ end
 
 -- This handles the commands; all-caps versions of the commands list you have above.
 function HandleCustomCommand(command)
-    if command == "МОЛИТВА" or command=="PRAY" then
+    if command == "МОЛИТВА" or command=="DUA ET" then
 	local pray=GetGlobal("pray")
 	local lang=Encounter.GetVar("lang")
 	SetGlobal("pray",pray+1)
@@ -1330,7 +1330,7 @@ function HandleCustomCommand(command)
 	end
     end
 	
-    if command == "ПРОВЕРИТЬ" or command=="INSPECT" then
+    if command == "ПРОВЕРИТЬ" or command=="İNCELE" then
 	SetInspectChoise()
     end
 	if command == "КОНЦЕНТРАЦИЯ" or command=="CONCENTRATION" then
