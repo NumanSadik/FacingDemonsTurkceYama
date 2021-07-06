@@ -5254,7 +5254,7 @@ if MyState=="MENU" then
 		--Audio.PlaySound("OverMenuConf")
 		if InState==1 then
 			ChangeLanguage(lang)
-			local s="Goal achieved!"
+			local s="Hedef Kazaznıldı!"
 			if lang=="rus" then
 				s="Цель достигнута!"
 			end
@@ -9838,3 +9838,3186 @@ end
 function introboogy(ingo)
 	NoGameBoogy.sprite.Set("boggy/boogie_"..ingo)
 end
+alpha=math.sin(time*math.pi/180)
+			NoGameChara.sprite.alpha=math.sin(time*math.pi/180)
+			else
+			NoGameFrisk.sprite.alpha=1
+			NoGameChara.sprite.alpha=1
+		end
+		elseif NoGameStep==3 then
+		if NoGameStepy==0 then
+			NoGameStepy=1
+			NoGameFriskSoul=CreateProjectileAbs("ut-heart",480,340,"Over")
+			NoGameFriskSoul.sprite.color={1,0,0}
+			NoGameFriskSoul.sprite.alpha=0
+			NoGameFriskSoul.MoveToAbs(NoGameFrisk.absx,NoGameFrisk.absy-14)
+			NoGameCharaSoul=CreateProjectileAbs("ut-heart",480,340,"Over")
+			NoGameCharaSoul.sprite.color={0.5,0,0}
+			NoGameCharaSoul.sprite.alpha=0
+			NoGameCharaSoul.MoveToAbs(NoGameChara.absx-1.5,NoGameChara.absy-14)
+		end
+		if time<91 then
+			NoGameChara.sprite.alpha=math.cos(time*math.pi/180)
+			NoGameFrisk.sprite.alpha=math.cos(time*math.pi/180)
+			NoGameCharaSoul.sprite.alpha=math.sin(time*math.pi/180)
+			NoGameFriskSoul.sprite.alpha=math.sin(time*math.pi/180)
+			else
+			NoGameChara.sprite.alpha=0
+			NoGameFrisk.sprite.alpha=0
+			NoGameCharaSoul.sprite.alpha=1
+			NoGameFriskSoul.sprite.alpha=1
+		end
+		elseif NoGameStep==4 then
+		if time<91 then
+			NoGameFriskSoul.sprite.alpha=math.cos(time*math.pi/180)
+			else
+			if NoGameStepy==0 then
+				NoGameFriskSoul.sprite.alpha=0
+				NoGameStepy=1
+				NoGameExtra=CreateProjectile("1.2/chara/Chara_normal_eyes",360,360,"Top")
+				NoGameExtra.sprite.alpha=0
+				NoGameExtra.sprite.Scale(2,2)
+				elseif time>120 and time<241 then
+				local sin=math.sin((time-120)*math.pi/120)
+				NoGameExtra.MoveToAbs(NoGameCharaSoul.absx+20+30-(time-120)/2,NoGameCharaSoul.absy+100)
+				NoGameExtra.sprite.alpha=sin
+				elseif time>240 and time<270 then
+				NoGameExtra.sprite.Set("1.2/lost child/lost_chocolate5")
+				elseif time>270 and time<391 then
+				local sin=math.sin((time-270)*math.pi/120)
+				NoGameExtra.MoveToAbs(NoGameCharaSoul.absx+20-30+(time-270)/2,NoGameCharaSoul.absy+100)
+				NoGameExtra.sprite.alpha=sin
+			end
+		end
+		elseif NoGameStep==5 then
+		if NoGameStepy==0 then
+			NoGameStepy=1
+			NoGameExtra.Remove()
+			NoGameFriends={}
+			for i=1,6 do
+				local x=NoGameCharaSoul.x+30*math.cos((i*60-30)*math.pi/180)
+				local y=NoGameCharaSoul.y+30*math.sin((i*60-30)*math.pi/180)
+				local n=CreateProjectile("ut-heart",x,y,"Top")
+				n.sprite.alpha=0
+				n.sprite.rotation=180
+				NoGameFriends[i]=n
+			end
+		end
+		if time<46 then
+			local a=0.5*math.sin(time*math.pi/90)
+			for i=1,6 do
+				NoGameFriends[i].sprite.alpha=a
+			end
+			else
+			for i=1,6 do
+				NoGameFriends[i].sprite.alpha=0.5
+			end
+		end
+		elseif NoGameStep==6 then
+		if time<61 then
+			NoGameCharaSoul.sprite.alpha=math.cos(time*math.pi/120)
+			NoGameFriskSoul.sprite.alpha=math.sin(time*math.pi/120)
+			for i=1,6 do
+				NoGameFriends[i].sprite.alpha=NoGameCharaSoul.sprite.alpha/2
+			end
+			else
+			NoGameCharaSoul.sprite.alpha=0
+			NoGameFriskSoul.sprite.alpha=1
+			for i=1,6 do
+				NoGameFriends[i].sprite.alpha=0
+			end
+		end
+		elseif NoGameStep==7 then
+		if NoGameStepy==0 then
+			NoGameStepy=1
+			NoGameExtra=CreateProjectile("overworld/pals",0,0,"Top")
+			NoGameExtra.sprite.alpha=0
+			NoGameExtra.sprite.Scale(2,2)
+		end
+		if time<121 then
+			NoGameExtra.MoveTo(NoGameFriskSoul.x-20+30-time/2,NoGameFriskSoul.y+20+NoGameExtra.sprite.height)
+			NoGameExtra.sprite.alpha=math.sin(time*math.pi/120)
+			else
+			NoGameExtra.sprite.alpha=0
+		end
+		elseif NoGameStep==8 then
+		if time<91 then
+			NoGameFriskSoul.sprite.alpha=math.cos(time*math.pi/180)
+			else
+			NoGameFriskSoul.sprite.alpha=0
+		end
+		elseif NoGameStep==9 then
+		if time<121 then
+			local a=math.sin(time*math.pi/240)
+			NoGameFrisk.sprite.alpha=0.25*a
+			NoGameFriskSoul.sprite.alpha=a
+			NoGameChara.sprite.alpha=0.25*a
+			NoGameCharaSoul.sprite.alpha=a
+			elseif time<181 then
+			NoGameFrisk.sprite.alpha=0.25
+			NoGameFriskSoul.sprite.alpha=1
+			NoGameChara.sprite.alpha=0.25
+			for i=1,6 do
+				NoGameFriends[i].sprite.alpha=0.5*math.sin((time-120)*math.pi/120)
+			end
+			else
+			for i=1,6 do
+				NoGameFriends[i].sprite.alpha=0.5
+			end
+		end
+		elseif NoGameStep==10 then
+		if time<181 then
+			local a=1-math.cos(time*math.pi/360)
+			NoGameFriskSoul.sprite.color={1,0,a}
+			elseif NoGameStepy==0 then
+			NoGameStepy=1
+			NoGameFriskSoul.sprite.color={1,0,1}
+			MakeDing("ut-heart",{NoGameFriskSoul.absx,NoGameFriskSoul.absy},{1,0,1})
+		end
+		elseif NoGameStep==11 then
+		if time>10 and NoGameStepy==0 then
+			NoGameStepy=1
+			NoGameChara.sprite.Set("overworld/chara21")
+			NoGameFriends[1].sprite.Set("ut-heart-broken")
+			Audio.PlaySound("heartbeatbreaker")
+			elseif time>50 and NoGameStepy==1 then
+			NoGameStepy=2
+			NoGameFriends[3].sprite.Set("ut-heart-broken")
+			Audio.PlaySound("heartbeatbreaker")
+			elseif time>90 and NoGameStepy==2 then
+			NoGameStepy=3
+			NoGameFriends[6].sprite.Set("ut-heart-broken")
+			Audio.PlaySound("heartbeatbreaker")
+			elseif time>130 and NoGameStepy==3 then
+			NoGameStepy=4
+			NoGameFriends[4].sprite.Set("ut-heart-broken")
+			Audio.PlaySound("heartbeatbreaker")
+			elseif time>170 and NoGameStepy==4 then
+			NoGameStepy=5
+			NoGameFriends[2].sprite.Set("ut-heart-broken")
+			Audio.PlaySound("heartbeatbreaker")
+			elseif time>210 and NoGameStepy==5 then
+			NoGameStepy=6
+			NoGameFriends[5].sprite.Set("ut-heart-broken")
+			Audio.PlaySound("heartbeatbreaker")
+			elseif time>300 and NoGameStepy==6 then
+			NoGameStepy=7
+			NoGameIngoChara=CreateProjectile("overworld/chara22",NoGameChara.x,NoGameChara.y)
+			NoGameIngoChara.sprite.alpha=0
+			NoGameIngoChara.sprite.Scale(3,3)
+			Audio.PlaySound("bonedust")
+			elseif time>300 and time<361 then
+			local a=math.cos((time-300)*math.pi/120)
+			for i=1,6 do
+				NoGameFriends[i].sprite.alpha=0.5*a
+			end
+			local a=0.125+0.125*math.cos((time-300)*math.pi/60)
+			NoGameChara.sprite.alpha=a
+			NoGameIngoChara.sprite.alpha=0.25-a
+			elseif time>360 and NoGameStepy==7 then
+			NoGameStepy=8
+			NoGameIngoChara.Remove()
+			NoGameChara.sprite.Set("overworld/chara22")
+			NoGameChara.sprite.alpha=0.25
+			for i=1,6 do
+				NoGameFriends[i].Remove()
+			end
+		end
+		elseif NoGameStep==12 then
+		if NoGameStepy==0 then
+			NoGameStepy=1
+			NoGameChara.sprite.Set("overworld/chara3")
+			NoGameCover=CreateProjectileAbs("overworld/beforebattle",320,240,"Top")
+			NoGameCover.sprite.alpha=0
+			elseif time<61 then
+			local a=math.cos(time*math.pi/120)
+			local b=math.sin(time*math.pi/120)
+			NoGameFriskSoul.sprite.alpha=a
+			NoGameCharaSoul.sprite.alpha=a
+			NoGameFrisk.sprite.alpha=0.25+0.75*b
+			NoGameChara.sprite.alpha=0.25+0.75*b
+			else
+			NoGameFriskSoul.sprite.alpha=0
+			NoGameCharaSoul.sprite.alpha=0
+			NoGameFrisk.sprite.alpha=1
+			NoGameChara.sprite.alpha=1
+		end
+		elseif NoGameStep==13 then
+		if NoGameStepy==0 then
+			NoGameStepy=1
+			Audio.PlaySound("BeginBattle2")
+			NoGameFriskSoul.sprite.alpha=1
+			NoGameCharaSoul.sprite.alpha=1
+			NoGameCover.sprite.alpha=1
+			elseif time>10 and NoGameStepy==1 then
+			NoGameStepy=2
+			Audio.PlaySound("BeginBattle2")
+			NoGameCover.sprite.alpha=0
+			NoGameFriskSoul.sprite.alpha=0
+			NoGameCharaSoul.sprite.alpha=0
+			elseif time>20 and NoGameStepy==2 then
+			NoGameStepy=3
+			Audio.PlaySound("BeginBattle2")
+			NoGameCover.sprite.alpha=1
+			NoGameFriskSoul.sprite.alpha=1
+			NoGameCharaSoul.sprite.alpha=1
+			NoGameSaves={{NoGameFriskSoul.absx,NoGameFriskSoul.absy},{NoGameCharaSoul.absx,NoGameCharaSoul.absy}}
+			elseif time>60 and NoGameStepy==3 then
+			NoGameStepy=4
+			Audio.PlaySound("BeginBattle3")
+			elseif time>60 and time<90 then
+			local x1=320+20
+			local x2=320-112
+			local y1=240-1
+			local y2=240-3
+			local p1=NoGameSaves[1]
+			local p2=NoGameSaves[2]
+			local New=0.5-0.5*math.cos((time-60)*math.pi/30)
+			local Old=1-New
+			NoGameFriskSoul.MoveToAbs(p1[1]*Old+x1*New,p1[2]*Old+y1*New)
+			NoGameCharaSoul.MoveToAbs(p2[1]*Old+x2*New,p2[2]*Old+y2*New)
+			elseif time>90 then
+			local x1=320+20
+			local x2=320-112
+			local y1=240-1
+			local y2=240-3
+			NoGameFriskSoul.MoveToAbs(x1,y1)
+			NoGameCharaSoul.MoveToAbs(x2,y2)
+		end
+		elseif NoGameStep==14 then
+		if NoGameStepy==0 then
+			NoGameStepy=1
+			NoGameCharaSoul.sprite.Set("ut-heart-broken")
+			NoGameFriskSoul.sprite.alpha=0
+			Audio.PlaySound("heartbeatbreaker")
+		end
+		elseif NoGameStep==15 then
+		if NoGameStepy==0 then
+			NoGameStepy=1
+			Audio.PlaySound("heartsplosion")
+			elseif time>10 and NoGameStepy==1 then
+			NoGameStepy=2
+			NoGameCharaSoul.sprite.Set("ut-heart")
+			NoGameCharaSoul.sprite.alpha=0
+			NoGameSplits={}
+			for i=1,6 do
+				local piece = CreateProjectile("system/piece1",NoGameCharaSoul.x,NoGameCharaSoul.y,"Over")
+				piece.SetVar("x",math.random(27)/3-5)
+				piece.SetVar("y",(math.random(57)-9)/8)
+				piece.SetVar("rot",math.random(20))
+				table.insert(pieces,piece)
+				piece.SetVar("rotation",math.random(20))
+				piece.sprite.rotation=math.random(360)
+				piece.sprite.color=NoGameCharaSoul.sprite.color
+			end
+		end
+		elseif NoGameStep==16 then
+		if NoGameStepy==0 then
+			NoGameStepy=1
+			Audio.PlaySound("saved")
+			NoGameChara.sprite.Set("overworld/chara2")
+			NoGameCover.sprite.alpha=0
+			local p1=NoGameSaves[1]
+			local p2=NoGameSaves[2]
+			NoGameChara.sprite.alpha=0.25
+			NoGameFrisk.sprite.alpha=0.25
+			NoGameCharaSoul.sprite.alpha=1
+			NoGameFriskSoul.sprite.alpha=1
+			NoGameFriskSoul.MoveToAbs(p1[1],p1[2])
+			NoGameCharaSoul.MoveToAbs(p2[1],p2[2])
+		end
+		elseif NoGameStep==17 then
+		if NoGameStepy==0 then
+			NoGameStepy=1
+			NoGameChara.sprite.Set("overworld/chara4")
+		end
+		elseif NoGameStep==18 then
+		if time<61 then
+			local a=0.25-0.25*math.cos(time*math.pi/60)
+			NoGameCharaSoul.sprite.color={0.5+0.5*a,0,0}
+			elseif time>61 and NoGameStepy==0 then
+			NoGameStepy=1
+			NoGameCharaSoul.sprite.color={1,0,0}
+			MakeDing("ut-heart",{NoGameCharaSoul.absx,NoGameCharaSoul.absy},{1,0,0})
+			elseif time>150 and time<180 then
+			NoGameCharaSoul.sprite.alpha=math.cos((time-150)*math.pi/60)
+			NoGameFriskSoul.sprite.alpha=NoGameCharaSoul.sprite.alpha
+			NoGameChara.sprite.alpha=0.25+0.75*math.sin((time-150)*math.pi/60)
+			NoGameFrisk.sprite.alpha=NoGameChara.sprite.alpha
+			elseif time>180 then
+			NoGameCharaSoul.sprite.alpha=0
+			NoGameFriskSoul.sprite.alpha=0
+			NoGameChara.sprite.alpha=1
+			NoGameFrisk.sprite.alpha=1
+		end
+		elseif NoGameStep==19 then
+		if NoGameStepy==0 then
+			NoGameStepy=1
+			Audio.PlaySound("BeginBattle2")
+			NoGameCover.sprite.alpha=1
+			NoGameFriskSoul.sprite.alpha=1
+			NoGameCharaSoul.sprite.alpha=1
+			elseif time>10 and NoGameStepy==1 then
+			NoGameStepy=2
+			Audio.PlaySound("BeginBattle2")
+			NoGameCover.sprite.alpha=0
+			NoGameFriskSoul.sprite.alpha=0
+			NoGameCharaSoul.sprite.alpha=0
+			elseif time>20 and NoGameStepy==2 then
+			NoGameStepy=3
+			Audio.PlaySound("BeginBattle2")
+			NoGameCover.sprite.alpha=1
+			NoGameFriskSoul.sprite.alpha=1
+			NoGameCharaSoul.sprite.alpha=1
+		end
+		elseif NoGameStep==20 then
+		if time<121 then
+			if NoGameStepy==0 then
+				NoGameStepy=1
+				Audio.PlaySound("BeginBattle3")
+			end
+			local x1=320+20
+			local x2=320-110
+			local y1=240-1
+			local y2=240-3
+			local p1=NoGameSaves[1]
+			local p2=NoGameSaves[2]
+			local New=0.5-0.5*math.cos(time*math.pi/120)
+			local Old=1-New
+			NoGameFriskSoul.MoveToAbs(p1[1]*Old+x1*New,p1[2]*Old+y1*New)
+			NoGameCharaSoul.MoveToAbs(p2[1]*Old+x2*New,p2[2]*Old+y2*New)
+			else
+			local x1=320+20
+			local x2=320-110
+			local y1=240-1
+			local y2=240-3
+			NoGameFriskSoul.MoveToAbs(x1,y1)
+			NoGameCharaSoul.MoveToAbs(x2,y2)
+		end
+		elseif NoGameStep==21 then
+		if NoGameStepy==0 then
+			NoGameStepy=1
+			NoGameCover.Remove()
+			NoGameChara.Remove()
+			NoGameFrisk.Remove()
+			NoGameBoogy.Remove()
+			OpenMenu()
+			NAME.MoveToAbs(320,240)
+			NAME.sprite.alpha=0
+			NAME.sprite.layer="Over"
+			OverText={}
+			OverButtons={}
+			for i=1,4 do
+				OverButtons[i]=CreateProjectileAbs("system/menu_button0",-133,310-(i-1)*82.5,"BelowBullets")
+				OverButtons[i].sprite.color={1,1,1,0}
+				OverButtons[i].sprite.Scale(2,2)
+			end
+			NAME.sprite.SendToTop()
+			NAME.sprite.alpha=0
+			for i=1,4 do
+				local txt=""
+				if lang=="rus" then
+					local names={"Начать","Опции","Дополнительно","Выйти"}
+					txt="[font:overworld][novoice][instant][speed:0.75]"..names[i]
+					elseif lang=="eng" then
+					local names={"Başla","Ayarlar","Fazladan","Çıkış"}
+					txt="[font:overworld][novoice][instant][speed:0.75]"..names[i]
+				end
+				OverText[i]=CreateText(txt,{-240,310-(i-1)*82.5-8},480,"Top")
+				OverText[i].color={0.25,0,0.25}
+				OverText[i].HideBubble()
+				OverText[i].progressmode="none"
+			end
+			elseif time>60 and time<120 then
+			local a=1-0.5*math.sin((time-60)*math.pi/120)
+			NoGameCharaSoul.sprite.Scale(a,a)
+			NoGameFriskSoul.sprite.Scale(a,a)
+			elseif time>120 and time<150 then
+			local a=0.5
+			NoGameCharaSoul.sprite.Scale(a,a)
+			NoGameFriskSoul.sprite.Scale(a,a)
+			elseif time>150 then
+			if NoGameStepy==1 then
+				NoGameStepy=2
+				SetMusic("menu")
+				NewAudio.SetVolume("menu",0)
+				elseif time<271 then
+				NAME.sprite.alpha=math.sin((time-150)*math.pi/240)
+				elseif time>270 and NoGameStepy==2 then
+				NoGameStepy=3
+				NAME.sprite.layer="BelowBullet"
+				NoGameCharaSoul.sprite.Remove()
+				NoGameFriskSoul.sprite.Remove()
+				elseif time>330 and time<391 then
+				NAME.MoveToAbs(320,330-90*math.cos((time-330)*math.pi/60))
+				elseif time>390 and time<420 then
+				NAME.MoveToAbs(320,420)
+				elseif time>420 and time<511 then
+				local a=1-math.cos((time-420)*math.pi/180)
+				OverBac.sprite.color={a,a,a,1}
+				NewAudio.SetVolume("menu",a)
+				elseif time>510 and time<571 then
+				local a=1
+				OverBac.sprite.color={a,a,a,1}
+				NewAudio.SetVolume("menu",a)
+				elseif time>570 and time<661 then
+				for i=1,4 do
+					local t=time-550-i*10
+					if t<0 then
+						t=0
+						elseif t>60 then
+						t=60
+					end
+					local sin=math.sin(t*math.pi/120)
+					local x=-380+380*sin
+					OverText[i].color={0.25*sin,0,0.25*sin}
+					OverButtons[i].sprite.alpha=sin
+					OverText[i].MoveTo(80+x,OverText[i].y)
+					OverButtons[i].MoveToAbs(187+x,OverButtons[i].absy)
+				end
+				elseif time>660 and time<780 then
+				for i=1,4 do
+					local t=60
+					local sin=math.sin(t*math.pi/120)
+					local x=-380+380*sin
+					OverText[i].color={0.25*sin,0,0.25*sin}
+					OverButtons[i].sprite.alpha=sin
+					OverText[i].MoveTo(80+x,OverText[i].y)
+					OverButtons[i].MoveToAbs(187+x,OverButtons[i].absy)
+				end
+				elseif time>780 then
+				fPlayer=CreateProjectileAbs("system/heart",290,OverText[1].y+10,"Top")
+				fPlayer.sprite.scale(2,2)
+				MyState="MENU"
+				MenuWords(1)
+				NoGameStepy=0
+				NoGameStep=0
+				NoGameTime=false
+				PlayerHasPlayedThisGame=true
+				WriteSavio()
+				--NewAudio.Play("menu")
+				Audio.PlaySound("OverMenuMove")
+				BackSprites(currentspr)
+			end
+		end		
+	end
+	if NoGameStep>0 and NoGameStep<21 and NoGameText.isactive then
+		NoGameText.MoveTo(320-NoGameText.GetTextWidth()/2,110)
+	end
+end
+if OverMenuTime==false then
+	else
+	OverMenuTime=OverMenuTime+1
+	local time=OverMenuTime
+	if time==1 then
+		OpenMenu()
+		Player.MoveTo(7000,7000,true)
+		OverBac=CreateProjectileAbs("system/menu",320,240,"BelowPlayer")
+		OverBac.sprite.Scale(2,2)
+		OverBac.sprite.color={0,0,0,1}
+		OverText={}
+		OverButtons={}
+		for i=1,4 do
+			OverButtons[i]=CreateProjectileAbs("system/menu_button0",-133,310-(i-1)*82.5,"BelowBullets")
+			OverButtons[i].sprite.color={1,1,1,0}
+			OverButtons[i].sprite.Scale(2,2)
+		end
+		NAME.sprite.SendToTop()
+		NAME.sprite.alpha=0
+		for i=1,4 do
+			local txt=""
+			if lang=="rus" then
+				local names={"Начать","Опции","Дополнительно","Выйти"}
+				txt="[font:overworld][novoice][instant][speed:0.75]"..names[i]
+				elseif lang=="eng" then
+				local names={"Başla","Ayarlar","Fazladan","Çıkış"}
+				txt="[font:overworld][novoice][instant][speed:0.75]"..names[i]
+			end
+			OverText[i]=CreateText(txt,{-240,310-(i-1)*82.5-8},480,"Top")
+			OverText[i].color={0.25,0,0.25}
+			OverText[i].HideBubble()
+			OverText[i].progressmode="none"
+		end
+	end
+	if firsttime==true and time>0 and time<(1+#AllMusics) then
+		local i=time
+		NewAudio.CreateChannel(AllMusics[i])
+		if AllMusics[i]=="SAVE1" then
+			NewAudio.PlayMusic(AllMusics[i],AllMusics[i],false,1)
+			else
+			NewAudio.PlayMusic(AllMusics[i],AllMusics[i],true,1)
+		end
+		NewAudio.Stop(AllMusics[i])
+	end
+	if time==30 and firsttime==true then
+		firsttime=false
+		time=1
+		OverMenuTime=1
+	end
+	if time==60 then
+		SetMusic("menu")
+		NewAudio.SetVolume("menu",0)
+	end
+	if time>60 and time<121 then
+		local a=math.sin(((time-60)*math.pi/120))
+		NAME.sprite.alpha=a
+	end
+	if time>60 and time<241 then
+		local a=(time-60)/180
+		NewAudio.SetVolume("menu",a)
+	end
+	if time>180 and time<241 then
+		local alpha=math.sin((time-180)*math.pi/120)
+		OverBac.sprite.color={alpha,alpha,alpha,1}
+	end
+	if time>270 and time<361 then
+		for i=1,4 do
+			local t=time-250-i*10
+			if t<0 then
+				t=0
+				elseif t>60 then
+				t=60
+			end
+			local sin=math.sin(t*math.pi/120)
+			local x=-380+380*sin
+			OverText[i].color={0.25*sin,0,0.25*sin}
+			OverButtons[i].sprite.alpha=sin
+			OverText[i].MoveTo(80+x,OverText[i].y)
+			OverButtons[i].MoveToAbs(187+x,OverButtons[i].absy)
+		end
+	end
+	if time==420 then
+		fPlayer=CreateProjectileAbs("system/heart",290,OverText[1].y+10,"Top")
+		fPlayer.sprite.scale(2,2)
+		MyState="MENU"
+		MenuWords(1)
+		OverMenuTime=false
+		--NewAudio.Play("menu")
+		Audio.PlaySound("OverMenuMove")
+		BackSprites(currentspr)
+	end
+end
+			
+
+
+
+
+
+if pressedC==true then
+	olimp=olimp+1
+	
+	local speed=animquickness
+	legs.MoveTo(0*math.sin(olimp*math.pi/speed),0*math.sin(olimp*math.pi/180)+60)
+	body.MoveTo(0*math.sin(olimp*math.pi/speed)+legs.x,legs.y+6*math.sin(olimp*math.pi/speed*2)-3)
+	head.MoveTo(3*math.sin(olimp*math.pi/speed)+body.x,body.y+6*math.sin(olimp*math.pi/speed*2))
+	
+end
+if not happyending or happyending==false then
+	else happyending=happyending+1
+	local hen=happyending
+	if hen==1 then
+		lock=CreateProjectile("empty",0,0)
+		whitefone=CreateProjectile("titr/white",320-lock.absx,240-lock.absy)
+		whitefone.sprite.alpha=0
+	end
+	if hen==120 then
+		Audio.PlaySound("happy")
+	end
+	if hen<390 then
+		whitefone.sprite.alpha=hen/390
+	end
+	if hen>449 then
+		whitefone.sprite.color={1-(hen-450)/120,1-(hen-450)/120,1-(hen-450)/120}
+	end
+	if hen==570 then
+		happyending=false
+	end
+end
+if not trueend then
+	else
+	if trueend==0 then
+		blackfone=CreateProjectile("empty",0,0)
+		blackfone.sprite.Set("bg")
+		blackfone.sprite.color={0,0,0}
+		blackfone.sprite.Scale(10,10)
+		blackfone.sprite.alpha=0
+	end
+	if trueend<301 then
+		blackfone.sprite.alpha=math.sin(trueend*math.pi/600)
+	end
+	if trueend==600 then
+		State("DONE")
+	end
+	trueend=trueend+1
+end
+if enemydial==true then
+	State("ENEMYDIALOGUE")
+end
+if MyState=="MENU" then
+	if Input.Up==1 and InState>1  then
+		InState=InState-1
+		Audio.PlaySound("OverMenuMove")
+		MenuWords(InState)
+	end
+	if Input.Down==1 and InState<4 then
+		InState=InState+1
+		Audio.PlaySound("OverMenuMove")
+		MenuWords(InState)
+	end
+	if Input.Confirm==1 then
+		--Audio.PlaySound("OverMenuConf")
+		if InState==1 then
+			ChangeLanguage(lang)
+			local s="Goal achieved!"
+			if lang=="rus" then
+				s="Цель достигнута!"
+			end
+			Achiventor.txt.SetText("[font:overworld][novoice][instant]"..s)
+			Achiventor.txt.MoveTo(Achiventor.spr.x+45-Achiventor.txt.GetTextWidth(),600)
+			
+			if globalstage=="0" or globalstage=="5" then
+				MyState="Beginning"
+				logotimer=-60
+				NewStart()
+				else
+				MyState="GlobalChoice"
+				local r={"Да", "Нет","Вы хотите начать с последнего сохранения?"}
+				if lang=="eng" then
+					r={"EVET","HAYIR","Son kayıttan başlamak ister misin?"}
+				end
+				GlobalChoiceCover=CreateProjectileAbs("system/globalstagecover",320,240,"Top")
+				GlobalChoiceCover.sprite.Scale(2,2)
+				GlobalChoicePlayer=CreateProjectile("system/heart",0,0,"Top")
+				GlobalChoicePlayer.sprite.Scale(2,2)
+				GlobalChoiceText1=CreateText("[novoice][instant][font:overworld]"..r[3],{80,280},480,"Top",-1)
+				GlobalChoiceText2=CreateText("[novoice][instant][font:overworld]"..r[1],{200,200},480,"Top",-1)
+				GlobalChoiceText3=CreateText("[novoice][instant][font:overworld]"..r[2],{420,200},480,"Top",-1)
+				fPlayer.MoveToAbs(150,190)
+				GlobalChoicePlayer.MoveToAbs(150,190)
+				GlobalChoiceText1.MoveTo(320-GlobalChoiceText1.GetTextWidth()/2,280)
+				GlobalChoiceText2.MoveTo(200-GlobalChoiceText3.GetTextWidth()/2,180)
+				GlobalChoiceText3.MoveTo(440-GlobalChoiceText2.GetTextWidth()/2,180)
+				GlobalChoiceText1.HideBubble()
+				GlobalChoiceText1.progressmode="none"
+				GlobalChoiceText1.color={1,0.1,0.2}
+				GlobalChoiceText2.HideBubble()
+				GlobalChoiceText2.progressmode="none"
+				GlobalChoiceText2.color={1,0.1,0.2}
+				GlobalChoiceText3.HideBubble()
+				GlobalChoiceText3.progressmode="none"
+				GlobalChoiceText3.color={0.25,0,0.25}
+			end	
+			Audio.PlaySound("OverMenuConf")
+			elseif InState==2 then
+			Audio.PlaySound("OverMenuConf")
+			MyState="CHANGING"
+			MyTimer=1
+			elseif InState==3 then
+			ChoosingSong.go=true
+			ChoosingSong.old="menu"
+			MyState="CHANGING"
+			MyTimer=1
+			Audio.PlaySound("OverMenuConf")
+			elseif InState==4 then
+			Audio.PlaySound("OverMenuConf")
+			quittimer=1
+			MyState="Quiting!"
+			OutBlack=CreateProjectile("overworld/beforebattle",0,0,"Top")
+			OutBlack.sprite.alpha=0
+		end
+	end
+	elseif MyState=="GlobalChoice" then
+	if fPlayer.x>0 and Input.Left==1 then
+		fPlayer.MoveToAbs(200-50,fPlayer.absy)
+		GlobalChoicePlayer.MoveToAbs(150,190)
+		Audio.PlaySound("OverMenuMove")
+		GlobalChoiceText2.color={1,0.1,0.2}
+		GlobalChoiceText3.color={0.25,0,0.25}
+		elseif fPlayer.x<0 and Input.Right==1 then
+		fPlayer.MoveToAbs(440-50,fPlayer.absy)
+		GlobalChoicePlayer.MoveToAbs(390,190)
+		Audio.PlaySound("OverMenuMove")
+		GlobalChoiceText2.color={0.25,0,0.25}
+		GlobalChoiceText3.color={1,0.1,0.2}
+	end
+	if Input.Confirm==1 then
+		Audio.PlaySound("OverMenuConf")
+		if fPlayer.x>0 then
+			MyState="Beginning"
+			logotimer=-60
+			globalstage="-1"
+			WriteSavio()
+			NewStart()
+			else
+			MyState="Beginning"
+			GlobalSaveTimer=1
+			ReadyGlobalSave(globalstage)
+		end
+	end
+	elseif MyState=="CHANGING" then
+	if ChoosingSong.go==true then
+		local p=ChoosingSong
+		if p.now==p.old then
+			if p.time<60 then
+				ChoosingSong.time=p.time+1
+				NewAudio.SetVolume(p.old,math.sin(ChoosingSong.time*math.pi/120))
+			end
+			else
+			if p.time>1 then
+				ChoosingSong.time=p.time-1
+				NewAudio.SetVolume(p.old,math.sin(ChoosingSong.time*math.pi/120))
+				else
+				NewAudio.Pause(p.old)
+				ChoosingSong.old=p.now
+				NewAudio.Play(p.now)
+				NewAudio.SetVolume(p.now,0)
+			end
+		end
+	end
+	if MyTimer>0 then
+		local t=MyTimer
+		if t<91 then
+			local x=-6
+			if t<60 then
+				x=-6*math.sin(t*math.pi/120)
+			end
+			for i=1,4 do
+				OverButtons[i].Move(x,0)
+				OverText[i].MoveTo(OverButtons[i].absx-107,OverText[i].absy)
+			end
+			fPlayer.MoveTo(OverButtons[InState].x+103,OverButtons[InState].y)
+			elseif t==91 then
+			Changer={}
+			Changer.bg=CreateProjectileAbs("system/bg",320,240,"BelowBullet")
+			Changer.bg.sprite.alpha=0
+			elseif t>91 and t<151 then
+			Changer.bg.sprite.alpha=math.sin((t-90)*math.pi/120)
+			Changer.bg.sprite.Scale(2,2)
+			elseif t==151 then
+			Changer.Button=CreateProjectileAbs("system/menu_button0",320,600,"BelowBullet")
+			Changer.Button.sprite.Scale(2,2)
+			fPlayer.sprite.alpha=0
+			local txt=""
+			local m={}
+			if lang=="rus" then
+				m={"Опции", "Экстра"}
+				else
+				m={"Ayarlar","Fazladan"}
+			end
+			txt="[novoice][instant][font:overworld][color:ff2040]"..m[InState-1]
+			Changer.Exit=CreateProjectileAbs("system/settings_exit",117,600,"BelowBullet")
+			Changer.Exit.sprite.Scale(2,2)
+			Changer.Text=CreateText(txt,{320,320},480,"Top",-1)
+			Changer.Text.HideBubble()
+			Changer.Text.MoveTo(310-Changer.Text.GetTextWidth()/2,600)
+			Changer.Text.progressmode="none"
+			elseif t>151 and t<181 then
+			local sin=math.sin((t-150)*math.pi/60)
+			Changer.Button.MoveToAbs(310,520-80*sin)
+			Changer.Text.MoveTo(Changer.Text.x,510-80*sin)
+			Changer.Exit.MoveToAbs(117,520-80*sin)
+			elseif t==181 then
+			Changer.Settings=CreateProjectileAbs("system/settings_scroll",130,220,"BelowBullet")
+			Changer.Settings.sprite.Scale(2,2)
+			if InState==2 then
+				Changer.Texts={}
+				for i=1,6 do
+					local txt=""
+					local m={}
+					if lang=="rus" then
+						m={"Язык: [color:ff2040]РУССКИЙ","Озвучка: "..OnOff(dubbing),"Счётчик смертей: "..OnOff(ShowDeathCounter),"Сложность: "..Differ(diff),"Кровь: "..OnOff(blooding), "СТЕРЕТЬ прогресс"}
+						else
+						m={"Dil: [color:ff2040]TÜRKÇE","Seslendirme: "..OnOff(dubbing),"Ölüm sayacı: "..OnOff(ShowDeathCounter),"Zorluk: "..Differ(diff),"Kan: "..OnOff(blooding),"İlerlemeyi SİL"}
+					end	
+					Changer.Texts[i]=CreateText("[font:overworld][instant][novoice]"..m[i],{160,360-(i-1)*30},480,"BelowBullet",-1)
+					if i==4 then
+						Changer.Texts[4].SetText("[font:overworld][instant][novoice]"..m[i])
+					end
+					Changer.Texts[i].HideBubble()
+					Changer.Texts[i].progressmode="none"
+				end
+				Changer.Texts[7]=CreateText("[novoice]    ",{160,180},320,"Top",-1)
+				Changer.Texts[7].HideBubble()
+				Changer.Texts[7].progressmode="none"
+				Changer.Texts[8]=CreateText("[novoice]    ",{160,160},320,"Top",-1)
+				Changer.Texts[8].HideBubble()
+				Changer.Texts[8].progressmode="none"
+				Changer.Texts[9]=CreateText("[novoice]    ",{160,120},320,"Top",-1)
+				Changer.Texts[9].HideBubble()
+				Changer.Texts[9].progressmode="none"
+				MyTimer=-1
+				MyState="Ayarlar"
+				SaveInState=InState
+				InState=1
+				fPlayer.MoveToAbs(130,Changer.Texts[1].y+10)
+				Changer.Scroller=CreateProjectileAbs("system/settings_w",fPlayer.absx,fPlayer.absy,"BelowBullet")
+				Changer.Scroller.sprite.Scale(2,2)
+				MenuOptions(1)
+				elseif InState==3 then
+				Changer.Texts={}
+				for i=1,5 do
+					local txt=""
+					local m={}	
+					local c=""
+					if clmd=="_color" then
+						c=" (Colored)"
+					end
+					if lang=="rus" then
+						m={"Музыка:","  "..NameMusic(songs[1]),"  "..NameMusic(songs[2]),"  "..NameMusic(songs[3]), "Достижения"}
+						else
+						m={"Müzik:","  "..NameMusic(songs[1]),"  "..NameMusic(songs[2]),"  "..NameMusic(songs[3]),"Başarımlar "}
+					end	
+					Changer.Texts[i]=CreateText("[font:overworld][instant][novoice]"..m[i],{160,360-(i-1)*30},480,"BelowBullet",-1)
+					Changer.Texts[i].HideBubble()
+					Changer.Texts[i].progressmode="none"
+				end
+				fPlayer.MoveToAbs(130,Changer.Texts[1].y+10)
+				Changer.Scroller=CreateProjectileAbs("system/settings_w",fPlayer.absx,fPlayer.absy,"BelowBullet")
+				Changer.Scroller.sprite.Scale(2,2)
+				MenuExtras(1)
+				SaveInState=InState
+				InState=1
+				MyState="Extras"
+			end
+		end
+		MyTimer=t+1
+		elseif MyTimer<0 then
+		local t=-MyTimer
+		if t==1 then
+			local sin=math.sin(t*math.pi/60)
+			for i=1,#Changer.Texts do
+				Changer.Texts[i].Remove()
+			end
+			Changer.Scroller.Remove()
+			Changer.Settings.Remove()
+			Changer.Exit.Remove()
+			fPlayer.sprite.alpha=1
+			fPlayer.MoveTo(OverButtons[SaveInState].x+43,OverButtons[SaveInState].y)
+			elseif t<31 then
+			Changer.Text.MoveTo(Changer.Text.x,440+80*math.sin(t*math.pi/60))
+			Changer.Button.MoveToAbs(Changer.Button.absx,440+80*math.sin(t*math.pi/60))
+			elseif t>30 and t<61 then
+			Changer.bg.sprite.alpha=1-math.sin((t-30)*math.pi/60)
+			--Changer.bg.sprite.alpha=math.sin(t*math.pi/60)
+			elseif t>61 and t<151 then
+			local x=6
+			if (t-60)<60 then
+				x=6*math.sin((t-60)*math.pi/120)
+			end
+			for i=1,4 do
+				OverButtons[i].Move(x,0)
+				OverText[i].MoveTo(OverButtons[i].absx-107,OverButtons[i].absy-8)
+			end
+			fPlayer.MoveToAbs(OverButtons[SaveInState].absx+103,OverButtons[SaveInState].absy)
+			elseif t==151 then
+			MyState="MENU"
+			ChoosingSong.go=false
+			NewAudio.SetVolume("menu",1)
+			InState=SaveInState
+			Changer.bg.Remove()
+			MenuWords(InState)
+			MyTimer=1
+		end
+		MyTimer=-t-1
+	end
+	elseif MyState=="Extras" then
+	if ChoosingSong.go==true then
+		local p=ChoosingSong
+		if p.now==p.old then
+			if p.time<60 then
+				ChoosingSong.time=p.time+1
+				NewAudio.SetVolume(p.old,math.sin(ChoosingSong.time*math.pi/120))
+			end
+			else
+			if p.time>1 then
+				ChoosingSong.time=p.time-1
+				NewAudio.SetVolume(p.old,math.sin(ChoosingSong.time*math.pi/120))
+				else
+				NewAudio.Pause(p.old)
+				ChoosingSong.old=p.now
+				NewAudio.Play(p.now)
+				NewAudio.SetVolume(p.now,0)
+			end
+		end
+	end
+	if Input.Down==1 and InState<5 then
+		if InState==1 then
+			InState=5
+			Audio.PlaySound("OverMenuMove")
+			MenuExtras(InState)
+			elseif InState<4 then
+			InState=InState+1
+			Audio.PlaySound("OverMenuMove")
+			MenuExtras(InState)
+		end
+	end
+	if Input.Up==1 and InState>0 then
+		if InState==5 then
+			InState=1
+			Audio.PlaySound("OverMenuMove")
+			MenuExtras(InState)
+			elseif InState==1 then
+			InState=0
+			Audio.PlaySound("OverMenuMove")
+			MenuExtras(InState)
+			elseif InState>2 then
+			InState=InState-1
+			Audio.PlaySound("OverMenuMove")
+			MenuExtras(InState)
+		end
+	end
+	if Input.Cancel==1 then
+		if InState>1 and InState<5 then
+			InState=1
+			Audio.PlaySound("OverMenuConf")
+			MenuExtras(InState)
+			else
+			Audio.PlaySound("OverMenuConf")
+			MyTimer=-1
+			MyState="CHANGING"
+		end
+	end
+			
+	if Input.Confirm==1 then
+		Audio.PlaySound("OverMenuConf")
+		if InState==0 then
+			MyTimer=-1
+			MyState="CHANGING"
+			elseif InState==1 then
+			InState=2
+			Audio.PlaySound("OverMenuConf")
+			MenuExtras(InState)
+			elseif InState==2 then
+			if songs[1]=="night" then
+				songs[1]="insa"
+				else
+				songs[1]="night"
+			end
+			if lang=="rus" then
+				Changer.Texts[2].SetText("[font:overworld][instant][novoice]  "..NameMusic(songs[1]))
+				else
+				Changer.Texts[2].SetText("[font:overworld][instant][novoice]  "..NameMusic(songs[1]))
+			end
+			ChoosingSong.now=songs[1]
+			WriteSavio()
+			elseif InState==3 then
+			if songs[2]=="blood" then
+				songs[2]="insane"
+				else
+				songs[2]="blood"
+			end
+			if lang=="rus" then
+				Changer.Texts[3].SetText("[font:overworld][instant][novoice]  "..NameMusic(songs[2]))
+				else
+				Changer.Texts[3].SetText("[font:overworld][instant][novoice]  "..NameMusic(songs[2]))
+			end
+			ChoosingSong.now=songs[2]
+			WriteSavio()
+			elseif InState==4 then
+			if songs[3]=="fires" then
+				songs[3]="devil"
+				else
+				songs[3]="fires"
+			end
+			if lang=="rus" then
+				Changer.Texts[4].SetText("[font:overworld][instant][novoice]  "..NameMusic(songs[3]))
+				else
+				Changer.Texts[4].SetText("[font:overworld][instant][novoice]  "..NameMusic(songs[3]))
+			end
+			ChoosingSong.now=songs[3]
+			WriteSavio()
+			elseif InState==5 then	
+			MyState="Achivements"
+			Changer.Bilds={}
+			Changer.Names={}
+			Changer.Discs={}
+			for i=1,3 do
+				Changer.Bilds[i]=CreateProjectileAbs("empty",191,490-130*i,"Top")
+				Changer.Names[i]=CreateText("",{252,480-130*i},320,"Top",-1)
+				Changer.Discs[i]=CreateText("",{160,430-130*i},400,"Top",-1)
+				Changer.Names[i].HideBubble()
+				Changer.Names[i].progressmode="none"
+				Changer.Discs[i].HideBubble()
+				Changer.Discs[i].progressmode="none"
+			end
+			for i=1,5 do
+				Changer.Texts[i].MoveTo(Changer.Texts[i].x+700,Changer.Texts[i].y)
+			end
+			InState=1
+			MyAchi(InState)
+			if lang=="rus" then
+				Changer.Text.SetText("[font:overworld][instant][novoice]Достижения")
+				Changer.Text.MoveTo(310-Changer.Text.GetTextWidth()/2,Changer.Text.y)
+				else
+				Changer.Text.SetText("[font:overworld][instant][novoice]Achivements")
+				Changer.Text.MoveTo(310-Changer.Text.GetTextWidth()/2,Changer.Text.y)
+			end
+		end
+	end
+	elseif MyState=="Achivements" then
+	if ChoosingSong.go==true then
+		local p=ChoosingSong
+		if p.now==p.old then
+			if p.time<60 then
+				ChoosingSong.time=p.time+1
+				NewAudio.SetVolume(p.old,math.sin(ChoosingSong.time*math.pi/120))
+			end
+			else
+			if p.time>1 then
+				ChoosingSong.time=p.time-1
+				NewAudio.SetVolume(p.old,math.sin(ChoosingSong.time*math.pi/120))
+				else
+				NewAudio.Pause(p.old)
+				ChoosingSong.old=p.now
+				NewAudio.Play(p.now)
+				NewAudio.SetVolume(p.now,0)
+			end
+		end
+	end
+	if Input.Up==1 and InState>0 then
+		InState=InState-1
+		Audio.PlaySound("OverMenuMove")
+		MyAchi(InState)
+	end
+	if Input.Down==1 and InState<10 then
+		InState=InState+1
+		Audio.PlaySound("OverMenuMove")
+		MyAchi(InState)
+	end
+	if (Input.Confirm==1 and InState==0) or Input.Cancel==1 then
+		for i=1,3 do
+			Changer.Bilds[i].Remove()
+			Changer.Names[i].Remove()
+			Changer.Discs[i].Remove()
+		end
+		for i=1,5 do
+			Changer.Texts[i].MoveTo(Changer.Texts[i].x-700,Changer.Texts[i].y)
+		end
+		MyState="Extras"
+		InState=5
+		MenuExtras(5)
+		Audio.PlaySound("OverMenuConf")
+	end
+	elseif MyState=="Ayarlar" then
+	if Input.Cancel==1 then
+		Audio.PlaySound("OverMenuConf")
+		if SaveDiff!=diff and globalstage!="0" and globalstage!="5" then
+			if lang=="rus" then
+				Changer.Texts[7].SetText("[font:overworld][instant][novoice][color:ff2010]Смена сложности обнуляет прогресс в битве.\nВы уверены?")
+				Changer.Texts[8].SetText("[font:overworld][instant][novoice]НЕТ")
+				Changer.Texts[9].SetText("[font:overworld][instant][novoice]ДА")
+				else
+				Changer.Texts[7].SetText("[font:overworld][instant][novoice][color:ff2010]Zoruluk değişimi ilerlemeni siler.\nEmin misin?")
+				Changer.Texts[8].SetText("[font:overworld][instant][novoice]NO")
+				Changer.Texts[9].SetText("[font:overworld][instant][novoice]YES")
+			end
+			Changer.Texts[8].MoveTo(260-Changer.Texts[8].GetTextWidth()/2,60)
+			Changer.Texts[9].MoveTo(370-Changer.Texts[9].GetTextWidth()/2,60)
+			MyState="CHOOSING"
+			MyChoice(8)
+			ChoiseMatter="Diff"
+			else
+			MyTimer=-1
+			MyState="CHANGING"
+		end
+	end
+	if Input.Up==1 and InState>0 then
+		InState=InState-1
+		Audio.PlaySound("OverMenuMove")
+		MenuOptions(InState)
+	end
+	if Input.Down==1 and InState<6 then
+		InState=InState+1
+		Audio.PlaySound("OverMenuMove")
+		MenuOptions(InState)
+	end
+	if Input.Confirm==1 then
+		Audio.PlaySound("OverMenuConf")
+		if InState==0 then
+			if SaveDiff!=diff and globalstage!=0 and globalstage!=5 then
+				if lang=="rus" then
+					Changer.Texts[7].SetText("[font:overworld][instant][novoice][color:ff2010]Смена сложности обнуляет прогресс в битве.\nВы уверены?")
+					Changer.Texts[8].SetText("[font:overworld][instant][novoice]НЕТ")
+					Changer.Texts[9].SetText("[font:overworld][instant][novoice]ДА")
+					else
+					Changer.Texts[7].SetText("[font:overworld][instant][novoice][color:ff2010]Zorluk değişimi ilerlemeni siler.\nEmin misin?")
+					Changer.Texts[8].SetText("[font:overworld][instant][novoice]NO")
+					Changer.Texts[9].SetText("[font:overworld][instant][novoice]YES")
+				end
+				Changer.Texts[8].MoveTo(260-Changer.Texts[8].GetTextWidth()/2,60)
+				Changer.Texts[9].MoveTo(370-Changer.Texts[9].GetTextWidth()/2,60)
+				MyState="CHOOSING"
+				MyChoice(8)
+				ChoiseMatter="Diff"
+				else
+				MyTimer=-1
+				MyState="CHANGING"
+			end
+			elseif InState==1 then
+			if lang=="rus" then
+				lang="eng"
+				herecomments=engcom
+				elseif lang=="eng" then
+				lang="rus"
+				herecomments=ruscom
+			end
+			if lang=="rus" then
+				Changer.Texts[1].SetText("[font:overworld][instant][novoice]".."Язык: [color:ff2040]РУССКИЙ")
+				Changer.Texts[2].SetText("[font:overworld][instant][novoice]".."Озвучка: "..OnOff(dubbing))
+				Changer.Texts[3].SetText("[font:overworld][instant][novoice]".."Счётчик смертей: "..OnOff(ShowDeathCounter))
+				Changer.Texts[4].SetText("[font:overworld][instant][novoice]".."Сложность: "..Differ(diff))
+				Changer.Texts[5].SetText("[font:overworld][instant][novoice]".."Кровь: "..OnOff(blooding))
+				Changer.Texts[6].SetText("[font:overworld][instant][novoice]".."СТЕРЕТЬ прогресс")
+				Changer.Text.SetText("[font:overworld][instant][novoice][color:ff2040]Опции")
+				Changer.Text.MoveTo(310-Changer.Text.GetTextWidth()/2,430)
+				OverText[1].SetText("[font:overworld][instant][novoice]".."Начать")
+				OverText[2].SetText("[font:overworld][instant][novoice]".."Опции")
+				OverText[3].SetText("[font:overworld][instant][novoice]".."Дополнительно")
+				OverText[4].SetText("[font:overworld][instant][novoice]".."Выйти")
+				else
+				Changer.Texts[1].SetText("[font:overworld][instant][novoice]".."Dil: [color:ff2040]TÜRKÇE")
+				Changer.Texts[2].SetText("[font:overworld][instant][novoice]".."Seslendirme: "..OnOff(dubbing))
+				Changer.Texts[3].SetText("[font:overworld][instant][novoice]".."Ölüm sayacı: "..OnOff(ShowDeathCounter))
+				Changer.Texts[4].SetText("[font:overworld][instant][novoice]".."Zorluk: "..Differ(diff))
+				Changer.Texts[5].SetText("[font:overworld][instant][novoice]".."Kan: "..OnOff(blooding))
+				Changer.Texts[6].SetText("[font:overworld][instant][novoice]".."ilerlemeyi SİL")
+				Changer.Text.SetText("[font:overworld][instant][novoice][color:ff2040]Ayarlar")
+				Changer.Text.MoveTo(310-Changer.Text.GetTextWidth()/2,430)
+				OverText[1].SetText("[font:overworld][instant][novoice]".."Başla")
+				OverText[2].SetText("[font:overworld][instant][novoice]".."Ayarlar")
+				OverText[3].SetText("[font:overworld][instant][novoice]".."Ekstralar")
+				OverText[4].SetText("[font:overworld][instant][novoice]".."Çıkış")
+			end
+			ReDoLanguage(lang)
+			WriteSavio()
+			elseif InState==2 then
+			if dubbing==true then
+				dubbing=false
+				if lang=="rus" then
+					Changer.Texts[2].SetText("[font:overworld][instant][novoice]Озвучка: "..OnOff(dubbing))
+					else
+					Changer.Texts[2].SetText("[font:overworld][instant][novoice]Seslendirme: "..OnOff(dubbing))
+				end
+				else
+				dubbing=true
+				if lang=="rus" then
+					Changer.Texts[2].SetText("[font:overworld][instant][novoice]Озвучка: "..OnOff(dubbing))
+					else
+					Changer.Texts[2].SetText("[font:overworld][instant][novoice]Seslendirme: "..OnOff(dubbing))
+				end
+			end
+			WriteSavio()
+			elseif InState==3 then
+			if ShowDeathCounter==true then
+				ShowDeathCounter=false
+				else
+				ShowDeathCounter=true
+			end
+			if lang=="rus" then
+				Changer.Texts[3].SetText("[font:overworld][instant][novoice]Счётчик смертей: "..OnOff(ShowDeathCounter))
+				else
+				Changer.Texts[3].SetText("[font:overworld][instant][novoice]Ölüm sayacı: "..OnOff(ShowDeathCounter))
+			end
+			WriteSavio()
+			elseif InState==4 then
+			diff=diff+1
+			if diff==5 then
+				diff=1
+			end
+			Changer.Texts[7].SetText("[font:overworld][instant][novoice]"..ShowDiffer(diff))
+			if lang=="rus" then
+				Changer.Texts[4].SetText("[font:overworld][instant][novoice]".."Сложность: "..Differ(diff))
+				else
+				Changer.Texts[4].SetText("[font:overworld][instant][novoice]".."Zorluk: "..Differ(diff))
+			end
+			WriteSavio()
+			elseif InState==5 then
+			if blooding==true then
+				blooding=false
+				else
+				blooding=true
+			end
+			WriteSavio()
+			if lang=="rus" then
+				Changer.Texts[5].SetText("[font:overworld][instant][novoice]".."Кровь: "..OnOff(blooding))
+				else
+				Changer.Texts[5].SetText("[font:overworld][instant][novoice]".."Kan: "..OnOff(blooding))
+			end
+			elseif InState==6 then
+			if lang=="rus" then
+				Changer.Texts[7].SetText("[font:overworld][instant][novoice][color:ff2010]Это приведёт к сбросу текущего прогресса.\nВы уверены?")
+				Changer.Texts[8].SetText("[font:overworld][instant][novoice]НЕТ")
+				Changer.Texts[9].SetText("[font:overworld][instant][novoice]ДА")
+				else
+				Changer.Texts[7].SetText("[font:overworld][instant][novoice][color:ff2010]Bu ilerlemeni sıfırlayacak.\nEmin misin?")
+				Changer.Texts[8].SetText("[font:overworld][instant][novoice]HAYIR")
+				Changer.Texts[9].SetText("[font:overworld][instant][novoice]EVET")
+			end
+			Changer.Texts[8].MoveTo(260-Changer.Texts[8].GetTextWidth()/2,60)
+			Changer.Texts[9].MoveTo(370-Changer.Texts[9].GetTextWidth()/2,60)
+			MyState="CHOOSING"
+			ChoiseMatter="ERASE"
+			MyChoice(8)
+		end
+		WriteSavio()
+	end
+	elseif MyState=="CHOOSING" then
+	if Input.Left==1 and fPlayer.x>0 then
+		MyChoice(8)
+		Audio.PlaySound("OverMenuMove")
+		elseif Input.Right==1 and fPlayer.x<0 then
+		MyChoice(9)
+		Audio.PlaySound("OverMenuMove")
+	end
+	if Input.Confirm==1 then
+		Audio.PlaySound("OverMenuConf")
+		if ChoiseMatter=="ERASE" then
+			if fPlayer.x>0 then
+				SavioWrite.Delete()
+				State("DONE")
+				else
+				MyState="Ayarlar"
+				Changer.Texts[7].SetText("")
+				Changer.Texts[8].SetText("")
+				Changer.Texts[9].SetText("")
+				MenuOptions(6)
+			end
+			elseif ChoiseMatter=="Diff" then
+			if fPlayer.x>0 then
+				globalstage="0"
+				MyTimer=-1
+				MyState="CHANGING"
+				else
+				MyState="Ayarlar"
+				Changer.Texts[7].SetText("")
+				Changer.Texts[8].SetText("")
+				Changer.Texts[9].SetText("")
+				MenuOptions(InState)
+			end
+		end
+	end
+	elseif MyState=="DownFight" then
+	if Input.Right>0 and Input.Left==0 then
+		Player.Move(2,0,true)
+		elseif Input.Right==0 and Input.Left>0 then
+		Player.Move(-2,0,true)
+	end
+	if Input.Up>0 and Input.Down==0 then
+		Player.Move(0,2,true)
+		elseif Input.Up==0 and Input.Down>0 then
+		Player.Move(0,-2,true)
+	end
+	if Player.absx>632 then
+		Player.MoveToAbs(632,Player.absy,true)
+	end
+	if Player.absx<8 then
+		Player.MoveToAbs(8,Player.absy,true)
+	end
+	if Player.absy>82 then
+		Player.MoveToAbs(Player.absx,82,true)
+	end
+	if Player.absy<8 then
+		Player.MoveToAbs(Player.absx,8,true)
+	end
+	if PlayerHasFlirted==0  then
+		if alltimer%6==0 then
+			if not GetGlobal("curse") then
+				else
+				SetGlobal("curse",GetGlobal("curse")+1)
+				if GetGlobal("curse")==MaxHP-1 then
+					Possess()
+					Player.hp=1
+				end
+			end
+		end
+		else
+		if alltimer%12==0 then
+			if not GetGlobal("curse") then
+				else
+				SetGlobal("curse",GetGlobal("curse")+1)
+				if GetGlobal("curse")==MaxHP-1 then
+					Possess()
+					Player.hp=1
+				end
+			end
+		end
+	end
+	local button=0
+	--lastbutton=0
+	for i=1,4 do
+		local b=buttons[i]
+		--48
+		if b.x+52>Player.absx and b.x-52<Player.absx and Player.absy>7 and Player.absy<43 then
+			button=i
+		end
+	end
+	if lastbutton==button then
+		else
+		if button>0 then
+			Audio.PlaySound("menumove")
+		end
+		lastbutton=button
+		RedoBut(lastbutton)
+	end
+	if Input.Confirm==1 and lastbutton>0 then
+		DoAction(lastbutton)
+		MyState="NONE"
+	end
+	elseif MyState=="ToLostKidChoice" then
+	if Input.Left==1 and fPlayer2.absx!=100 then
+		fPlayer2.MoveToAbs(100,390)
+		ChoiceText1.color={1,0.1,0.2}
+		ChoiceText2.color={0.25,0,0.25}
+		Audio.PlaySound("OverMenuMove")
+		elseif Input.Right==1 and fPlayer2.absx!=400 then
+		fPlayer2.MoveToAbs(400,390)
+		ChoiceText1.color={0.25,0,0.25}
+		ChoiceText2.color={1,0.1,0.2}
+		Audio.PlaySound("OverMenuMove")
+	end
+	if Input.Confirm==1 and (fPlayer2.absx==100 or fPlayer2.absx==400) then
+		local dial={}
+		if fPlayer2.absx>320 then
+			if lang=="rus" then
+				if dubbing==true then
+					dial={"[noskip][func:face,yes][next] ","[effect:twitch,1][font:overworld][color:ffffff][func:DUB,prolog/4][func:normal1][w:5]*Просто[waitall:2]...[w:3][waitall:1] хотела убедиться.", "[func:Peachy]*[waitall:6]...", "[func:DUB,prolog/5][w:4]*Позволь задать тебе один \nвопрос.", "[func:normal][func:DUB,prolog/6][w:4][speed:1.2]*Ты уверен,[w:3] что [speed:1.3]ты \nвыше последствий?","[func:Peachy][func:DUB,prolog/7][w:4]*Что любые твои [w:2][waitall:2]деяния[waitall:5]...","[func:normal][noskip][func:DUB,prolog/8][w:2]*Останутся [w:2]безнаказанными?[w:30][func:ph1][func:face,no][next] "}
+					else
+					dial={"[noskip][func:face,yes][next] ","[effect:twitch,1][font:overworld][color:ffffff][func:DUB,prolog/4][func:normal1]*Просто[waitall:4][w:3]...[waitall:1][w:3] хотела убедиться.", "[func:Peachy]*[waitall:4][w:3]...", "[func:DUB,prolog/5]*Позволь задать тебе один \nвопрос.", "[func:normal][func:DUB,prolog/6]*Ты уверен,[w:3] что ты \nвыше последствий?","[func:Peachy][func:DUB,prolog/7]*Что любые твои деяния[waitall:4][w:3]..","[func:normal][noskip][func:DUB,prolog/8]*Останутся безнаказанными?[w:30][func:ph1][func:face,no][next] "}
+				end
+				else
+				dial={"[noskip][func:face,yes][next] ","[func:DUB,prolog/1][effect:twitch,1][font:overworld][color:ffffff][func:DUB,prolog/4][func:normal1]*[w:2]Sadece [w:15]emin [w:1]olmak[w:1] istedim[w:1].", "[func:Peachy]*[waitall:6]...", "[func:DUB,prolog/5]*Bir şey[w:10] sormama [w:3]izin ver[w:5].", "[func:DUB,prolog/6][func:normal]*[w:2]Kaderinden [w:2]üstün,[w:5] olduğuna [speed:1.5]\ne [w:2]mi [w:2][speed:1][w:2]n [w:1]mi[w:1]si[w:1]n[w:4]?","[func:DUB,prolog/7][func:Peachy]*[w:3]Yaptığın [w:1]şeyler[waitall:3]...","[func:DUB,prolog/8][func:normal][noskip]*Cezasız [w:10]kal[w:1]am[w:1][waitall:3]az.[w:30][func:ph1][func:face,no][next] "}
+			end
+			dial=EveryDial(dial,"[effect:twitch,1][font:overworld][color:ffffff]","[novoice][noskip]")
+			else
+			dial={"[noskip][func:face,yes][func:Surprise1][waitall:4][w:3]..[func:JUMP].[func:face,no][func:Vietnam][next] ","[next] "}
+			dial=EveryDial(dial,"[effect:twitch,1][font:overworld][color:ffffff]","")
+		end
+		enemies[5].SetVar("currentdialogue",dial)
+		fPlayer2.Remove()
+		Box.Remove()
+		ChoiceText1.Remove()
+		ChoiceText2.Remove()
+		State("ENEMYDIALOGUE")
+		Audio.PlaySound("OverMenuConf")
+		MyState="NONE"
+	end	
+end
+
+if not quittimer then
+	else quittimer=quittimer+1
+	OutBlack.sprite.alpha=quittimer/60
+	NewAudio.SetVolume("menu",math.cos(math.pi*quittimer/160))
+	if quittimer==120 then
+		State("DONE")
+	end
+end
+if glitchedmercy==0 then
+	else
+	local t=glitchedmercy
+	if t==1 then
+		enemies[1].SetVar("dodge",false)
+		Cover=CreateProjectileAbs("overworld/cover",320,240,"Top")
+		Cover.sprite.color32={39,0,54,0}
+		elseif t>1 and t<31 then
+		Cover.sprite.alpha=math.sin(t*math.pi/60)
+		elseif t==31 then
+		State("NONE")
+		fighting=true
+		RedoBut(1)
+		evadelevel=6
+		forcedfight=true
+		deadlyhit=true
+		charalegs.x=maxright
+		enemies[1].Call("Bubble")
+		SetGlobal("evade",0)
+		elseif t>1030 and t<1091 then
+		Cover.sprite.alpha=math.sin((t-970)*math.pi/120)
+	end
+		
+	glitchedmercy=glitchedmercy+1
+	if t==1300 then
+		glitchedmercy=0
+		Reminder=true
+	end
+end
+if GlobalSaveTimer>0 then
+	local t=GlobalSaveTimer
+	if t<180 then
+		NewAudio.SetVolume("menu",math.cos(t*math.pi/360))
+		elseif t==180 then
+		SetMusic("none")
+	end
+	if t>120 and globalstage=="7" and t<240 then
+		NewAudio.SetVolume("Hits",1-math.cos((t-120)*math.pi/240))
+		elseif t==240 and globalstage=="7" then
+		NewAudio.SetVolume("Hits",1)
+		GlobalSaveTimer=-1
+		local dial=""
+		if lang=="rus" then
+			dial="[noskip][font:overworld][novoice][w:75][waitall:6][w:6]...[waitall:2][w:4]но впредь вам некуда было вернуться."
+			else
+			dial="[noskip][font:overworld][novoice][w:75][waitall:6][w:6]...[waitall:2][w:4]Fakat artık geri dönemezsin."
+		end
+		local t=CreateText(dial,{80,140},480,"Top",-1)
+		t.HideBubble()
+		t.progressmode="none"
+	end
+	if t==1 then
+		GlobalCover=CreateProjectileAbs("overworld/beforebattle",320,240,"Top")
+		GlobalCover.sprite.alpha=0
+		elseif t<121 then
+		GlobalCover.sprite.alpha=math.sin(t*math.pi/240)
+		elseif t==121 then
+		for i=1,4 do
+			OverButtons[i].Remove()
+			OverText[i].Remove()
+		end
+		GlobalChoicePlayer.Remove()
+		GlobalChoiceCover.Remove()
+		GlobalChoiceText1.Remove()
+		GlobalChoiceText2.Remove()
+		GlobalChoiceText3.Remove()
+		fPlayer.Remove()
+		RedoBut(0)
+		Player.MoveTo(0,0,true)
+		NAME.Remove()
+		OverBac.Remove()
+		if globalstage=="7" then
+			NewAudio.PlayMusic("Hits","wind",true,1)
+			NewAudio.SetVolume("Hits",0)
+		end
+		elseif t>240 and t<361 then
+		GlobalCover.sprite.alpha=math.sin((t-120)*math.pi/240)
+		elseif t==390 then
+		State("ENEMYDIALOGUE")
+	end
+	GlobalSaveTimer=GlobalSaveTimer+1
+end
+if logotimer==true then
+	else
+	logotimer=logotimer+1
+	encountertext = "[novoice]"
+	if logotimer>-60 and logotimer<1 then
+		if logotimer==-59 then
+			COVER=CreateProjectileAbs("overworld/beforebattle",320,240,"Top")	
+		end
+		NewAudio.SetVolume("menu",1-math.cos(math.pi*logotimer/120))
+		local alpha=math.sin(math.pi*(logotimer+60)/120)
+		OverBac.sprite.SendToTop()
+		COVER.sprite.alpha=alpha
+	end
+	if logotimer==1 then
+		InMenuTime=0
+		MyState="NONE"
+		OverBac.Remove()
+		NAME.Remove()
+		if globalstage=="0" or globalstage=="5" then
+			else
+			GlobalChoicePlayer.Remove()
+			GlobalChoiceCover.Remove()
+			GlobalChoiceText1.Remove()
+			GlobalChoiceText2.Remove()
+			GlobalChoiceText3.Remove()
+			if globalstage=="-1" then
+				globalstage="0"
+				deaths=0
+				WriteSavio()
+			end
+		end
+		FullIntro()
+		for i=1,4 do
+			OverText[i].Remove()
+			OverButtons[i].Remove()
+		end
+		COVER.Remove()
+		local words={"CANON  [alpha:00]DEĞİL","    DEĞİL"}
+		if lang=="rus" then
+			words={"НЕ [alpha:00]КАНОН","   КАНОН"}
+		end
+		NotCanon1=CreateText({"[novoice][instant][font:overworld]"..words[1]},{260,220},480,"Over",-1)
+		NotCanon1.MoveTo(320-NotCanon1.GetTextWidth(),220)
+		NotCanon1.Scale(2,2)
+		NotCanon1.HideBubble()
+		NotCanon1.progressmode="none"
+		NotCanon1.color={1,0,0}
+		NotCanon1.alpha=0
+		NotCanon2=CreateText({"[novoice][instant][font:overworld]"..words[2]},{NotCanon1.x,220},480,"Over",-1)
+		NotCanon2.Scale(2,2)
+		NotCanon2.HideBubble()
+		NotCanon2.progressmode="none"
+		NotCanon2.color={1,1,1}
+		NotCanon2.alpha=0
+		overworldfonebattle.sprite.alpha=1
+		overworldfonebattle.sprite.SendToTop()
+		overworldigb.sprite.SendToTop()
+		overworldigb.sprite.alpha=0
+		Audio.PlaySound("mus_churchbell")
+		State("NONE")
+		elseif logotimer<241 and logotimer>1  then
+		local sin=math.sin(logotimer*math.pi/240)
+		NotCanon1.alpha=sin
+		NotCanon2.alpha=sin
+		overworldigb.sprite.alpha=0
+		elseif logotimer<481 and logotimer>1 then
+		overworldigb.sprite.alpha=math.sin((logotimer-240)*math.pi/240)
+		elseif logotimer==481 then
+		overworldigb.sprite.alpha=0
+		elseif  logotimer<842 and logotimer>1 then
+		overworldfonebattle.sprite.alpha=math.cos((logotimer-480)*math.pi/720)
+		elseif logotimer==900 then
+		NotCanon1.Remove()
+		NotCanon2.Remove()
+		overworldfonebattle.sprite.alpha=0
+		State("ENEMYDIALOGUE")
+		overworldface.sprite.alpha=1
+		SetMusic("prolog")
+		logotimer=true
+	end
+end
+if epilog == true then
+	if endtimer==0 then
+		nextwaves = {"dummy"}
+		cover=CreateProjectileAbs("overworld/beforebattle",320,240,"BelowBullet")
+		cover.sprite.alpha=0
+		fone1=CreateProjectileAbs("overworld/fone1",320,240,"Top")
+		fone4=CreateProjectileAbs("overworld/fonetop",320,240,"Top")
+		fone2=CreateProjectileAbs("overworld/fone2",320,240,"Top")
+		fone3=CreateProjectileAbs("overworld/fone3",320,240,"Top")
+		chara=CreateProjectileAbs("overworld/dead_chara",521,85.5,"Top")
+		chara.sprite.Scale(2.5,2.5)
+		frisk=CreateProjectileAbs("empty",440,85.5,"Top")
+		frisk.sprite.Set("overworld/frisk")
+		frisk.sprite.Scale(2.5,2.5)
+		chara.sprite.alpha=0
+		fone1.sprite.alpha=0
+		fone2.sprite.alpha=0
+		fone3.sprite.alpha=0
+		fone4.sprite.alpha=0
+		frisk.sprite.alpha=0
+		over=CreateProjectileAbs("overworld/beforebattle",320,240,"Top")
+		over.sprite.alpha=0
+		fPlayer=CreateProjectile("ut-heart",frisk.x,frisk.y)
+		fPlayer.sprite.color={1,0,1}
+		fPlayer.sprite.alpha=0
+		frisk.sprite.Scale(2.5,2.5)
+		elseif endtimer<61 then
+		over.sprite.alpha=endtimer/60
+		elseif endtimer==61 then
+		State("NONE")
+		fone1.sprite.alpha=1
+		fone2.sprite.alpha=1
+		fone3.sprite.alpha=1
+		fone4.sprite.alpha=1
+		frisk.sprite.alpha=1
+		cover.sprite.alpha=1
+		chara.sprite.alpha=1
+		fPlayer.sprite.alpha=1
+		elseif endtimer>120 and endtimer<181 then
+		over.sprite.alpha=(180-endtimer)/60
+		elseif endtimer>240 and endtimer<300 then
+		local rang=2*math.sin((endtimer-240)*math.pi/60)
+		local x=rang*math.sin((endtimer-240)*10)
+		frisk.MoveToAbs(440+x,85.5)
+		elseif endtimer>330 and endtimer<411 then
+		frisk.Move(2,0)
+		local t=endtimer-330
+		if t==1 then
+			frisk.sprite.Set("overworld/friskstep")
+			frisk.sprite.Scale(2.5,2.5)
+			elseif t==27 then
+			frisk.sprite.Set("overworld/frisk")
+			frisk.sprite.Scale(2.5,2.5)
+			elseif t==53 then
+			frisk.sprite.Set("overworld/friskstep")
+			frisk.sprite.Scale(2.5,2.5)
+			elseif t==80 then
+			frisk.sprite.Set("overworld/frisk")
+			frisk.sprite.Scale(2.5,2.5)
+		end
+		elseif endtimer==440 then
+		fPlayer.MoveTo(frisk.x,frisk.y)
+		elseif endtimer>440 and endtimer<500 then
+		local alpha=math.cos((endtimer-440)*math.pi/120)
+		fone1.sprite.alpha=alpha
+		fone2.sprite.alpha=alpha
+		fone3.sprite.alpha=alpha
+		fone4.sprite.alpha=alpha
+		frisk.sprite.alpha=alpha
+		chara.sprite.alpha=alpha
+		elseif endtimer==560 then
+		fPlayer.sprite.color={0.5,0.25,1}
+		Audio.PlaySound("ding")
+		MakeDing("ut-heart",{fPlayer.absx,fPlayer.absy},{0.5,0.25,1})
+		elseif endtimer>620 and endtimer<680 then
+		fPlayer.Move(2,0)
+		elseif endtimer==740 then
+		Titr1.phase=1
+		Titr1.timer=-92
+		elseif endtimer==900 then
+		frisk.Remove()
+		fone1.Remove()
+		fone2.Remove()
+		fone3.Remove()
+		fone4.Remove()
+		chara.Remove()
+		cover.Remove()
+		endtimer=0
+		epilog=false
+		--[[elseif endtimer>109 and endtimer<149 then
+		local timin=endtimer-110
+		if timin%8==4 or timin%8==2 then
+			frisk.Move(3,0)
+			elseif timin%8==0 or timin%8==6 then
+			frisk.Move(-3,0)
+		end
+		elseif endtimer>199 and endtimer<650 then
+		local timin=endtimer-200
+		if timin%90<20 then
+			if timin%90==0 then
+				frisk.sprite.Set("overworld/friskstep")
+			end
+			frisk.Move(2,0)
+			elseif timin%90==20 then
+			frisk.sprite.Set("overworld/frisk")
+		end
+		elseif endtimer>649 and endtimer<700 then
+		elseif endtimer>699 and endtimer<820 then
+		blackfone.sprite.alpha=math.sin((endtimer-699)*math.pi/240)
+		elseif endtimer==940 then
+		fone1.sprite.color={0,0,0}
+		fone2.Remove()
+		fone3.Remove()
+		fone4.sprite.color={0,0,0}
+		enemies[1].Call("SetActive",false)
+		enemies[2].Call("SetActive",false)
+		enemies[5].Call("SetActive",true)
+		local dial=""
+		--dial={"[noskip][waitall:2][effect:twitch,1][font:sans][color:ffffff]Привет.","[waitall:2][noskip][color:ffffff]Я не ждал сегодня посетителей.","[waitall:2][noskip][color:ffffff]...","[waitall:2][noskip][color:ffffff]Твоё выражение лица...","[waitall:2][noskip][color:ffffff]Хмм...","[waitall:2][noskip][color:ffffff]Ты довольно странный монстр.","[waitall:2][color:ffffff][noskip]Чем я могу помо[func:slash][next] "}
+		dial={"[noskip][speed:0.75][font:sans]Привет.[w:12][next] ","[speed:0.75][noskip]Я не ждал сегодня посетителей.[w:5][next] ","[speed:0.75][waitall:2][novoice][noskip][color:ffffff]...[w:5][next] ","[noskip]Твоё выражение лица[waitall:2][novoice]...[w:5][next] ","[noskip][color:ffffff]Ты довольно странный монст-[func:slash][next] "}
+		--enemies[5].SetVar("currentdialogue",{"[noskip][waitall:2][effect:twitch,1][font:sans][waitall:2][color:ffffff][noskip]Чем я могу помо[func:slash][next] "})
+		epilog=false
+		dial=EveryDial(dial,"[font:sans][noskip][speed:0.5]")
+		enemies[5].SetVar("currentdialogue",dial)
+		endtimer=-1
+		State("ENEMYDIALOGUE")]]
+	end
+	endtimer=endtimer+1
+end
+if GetGlobal("Playerisdead")==true then
+	cursefade=6000
+	curse.alpha=0
+	IsCursed=false
+	cursetime=0
+	RedoBut(0)
+	CharaIsRaging=false
+	SetGlobal("Playerisdead",false)
+	Placestompx=Player.absx
+	Placestompy=Player.absy
+	itemamount=12
+	Player.hp=92
+	SetMusic("none")
+	--deathfone=CreateProjectileAbs("overworld/beforebattle",320,240)
+	--deathfone.sprite.alpha=1
+	deaths=deaths+1
+	alldeaths=alldeaths+1
+	WriteSavio()
+	if wons==1 then
+		if phase==1 then
+			if lang=="rus" then
+				comm="Последний актер на сцене!"
+				else
+				comm="The last actor is on the scene!"
+			end
+			else
+			phase=1.5
+			if lang=="eng" then
+				comm="Demek zor yolu seçti[waitall:4][w:3]...[waitall:1][w:3] \nTamam,[w:3] babalık."
+				else
+				comm="Значит,[w:3] она хочет сыграть \rпо-взрослому[waitall:4][w:3]...[waitall:1][w:3] \nХорошо,[w:3] папик."
+			end
+		end
+	end
+	deathtimer=0
+end
+
+if IsCursed==false and cursefade<MAXFADE then
+	cursefade=cursefade+1
+	if cursefade==1 then
+		curse.SetVar("y",curse.y)
+	end
+	if cursefade<40 then
+		curse.y=curse.GetVar("y")+60*math.sin(cursefade*math.pi/80)
+		local alpha=(curse.y*2-67)/67
+		local much=math.sin(cursefade*math.pi/80)
+		curse.color={136*(1+much)/256,0,27*(1+much)/256}
+		elseif cursefade==120 then
+		curse.alpha=0
+		cursetime=0
+		else
+		curse.y=curse.GetVar("y")+60-180*(1-math.cos((cursefade-40)*math.pi/160))
+		curse.alpha=math.sqrt(1-math.sin((cursefade-40)*math.pi/160))
+		local much=2-1.5*math.sin((cursefade-40)*math.pi/160)
+		curse.color={136*(1+much)/256,0,27*(1+much)/256}
+	end
+	elseif IsCursed==true and (cursetime==0 or cursefade>0) then
+	curse.alpha=1
+	curse.color={136/256,0,27/256}
+	cursefade=0
+	curse.x=535
+	curse.y=67
+	cursetime=1
+	curse.Scale(0,0)
+	NewAudio.PlaySound("blip","cursesound",false,1/60)
+	
+	MakeDing("system/curse",{535,70})
+	Audio.PlaySound("ding")
+	elseif IsCursed==true and cursetime>0 then
+	if cursetime<31 then
+		NewAudio.PlaySound("blip","cursesound",false,(cursetime+1)/60)
+		cursetime=cursetime+1
+		curse.alpha=math.sin(cursetime*math.pi/60)
+		if cursetime>0 and cursetime<31 then
+			local much=math.sin((cursetime-0)*math.pi/30)
+			curse.color={136*(1+much)/256,0,27*(1+much)/256}
+		end
+		local extr=6-5*math.sqrt(math.sin(cursetime*math.pi/60))
+		curse.Scale(extr,extr)
+		else
+		curse.y=67+CurseTime(1)
+		local alpha=(curse.y*2-67)/67
+		curse.alpha=alpha*alpha
+	end
+end
+if not GetGlobal("choicen") or GetGlobal("choicen")==false then
+	elseif GetGlobal("choicen")==true then
+	if choicer==1 then
+		choice1.color={1,1,0}
+		choice2.color={1,1,1}
+		elseif choicer==2 then
+		choice2.color={1,1,0}
+		choice1.color={1,1,1}
+	end
+	if Input.Left==1 then
+		fPlayer.MoveToAbs(146,308)
+		choicer=1
+	end
+	if Input.Right==1 then
+		fPlayer.MoveToAbs(434,308)
+		choicer=2
+	end
+	if Input.Confirm==1 then
+		for i=1,5 do
+			enemies[i].Call("SetActive",false)
+		end
+		local dial=""
+		if choicer==2 then
+			if HaveKilledChara==false then
+				if lang=="rus" then
+					dial={"[waitall:4][w:3]...","[waitall:4][w:3]...[waitall:2][w:3][func:MTT,calm]Конечно.[w:9] [func:MTT,okey]Выбор твой.","[waitall:4][w:3]...[waitall:2][w:3]в конце концов,[w:6] [func:MTT,NotNew]ты такой же идиот,[w:6] как и он.","[func:MTT,Thought]И почему я думал,[w:6] что ты будешь другим,[w:6] дорогуша?","[func:MTT,NothingNew]Какая теперь разница.","[func:MTT,NotNew]Я боюсь,[w:6] [func:MTT,Afraid]что твоего отказа не было в сценарии.","[func:MTT,NotPlaying]А актеры,[w:6] что играют не по сценарию,[w:6] [func:MTT,punishment]должны быть наказаны.","[func:MTT,Afraid]Ничего личного.[w:9] [func:MTT,Bisiness]Просто бизнес.","[func:MTT,NotPersonal]Хотя,[w:6] кого я обманываю?\n[w:15][func:MTT,saw1][waitall:3][func:SetMusic,none][w:10][func:Mttsaw][w:10][color:8040ff]Это личное.[w:6][next] ","[func:MTT,EYE][func:PlayerGetsKilled][color:ff00ff][waitall:1]Так возвращайся же к нулю,[w:3] актёр![w:6000] "}
+					else
+					dial={"[waitall:4][w:3]...","[waitall:4][w:3]...[waitall:2][w:3][func:MTT,calm]Tabiki.[w:9] [func:MTT,okey]İş sana düştü.","[waitall:4][w:3]...[waitall:2][w:3]en sonunda,[w:6] [func:MTT,NotNew]onun gibi bir zavallısın.","[func:MTT,Thought]Neden farklı olacağını düşündüm ki,[w:6] tatlım?","[func:MTT,NothingNew]Artık bir fark yok.","[func:MTT,NotNew]Korkarım ki,[w:6][func:MTT,Afraid] bunu reddetmen senaryoda yok.","[func:MTT,NotPlaying]Ve senaryoya uymayan [func:MTT,punishment]oyuncular cezalandırılmalı.","[func:MTT,Afraid]Kişisel değil.[w:9] \n[func:MTT,Bisiness]Sadece iş.","[func:MTT,NotPersonal]Oh,[w:6] kime yalan söylüyorum ki?[w:15][waitall:3][color:8040ff][func:MTT,saw1][func:SetMusic,none][w:10][func:Mttsaw][w:10] \nBU KİŞİSEL.[w:6][next] ","[func:MTT,EYE][func:PlayerGetsKilled][color:ff00ff][waitall:1]Kariyerin bitti,[w:3] aktör![w:6000] "}
+				end
+				else
+				if lang=="rus" then
+					dial={"[waitall:4][w:3]...[waitall:2][w:3][func:MTT,calm]Хм.","[func:MTT,Thought]Полагаю,[w:9] [func:MTT,NothingNew]мы вновь скоро встретимся.","[func:MTT,NotPlaying]И всё-таки мне интересно[waitall:4][w:3]...","[func:MTT,punishment]Что ты нашел в ней?[w:9] [func:MTT,Just]Она же просто самоуверенная истеричка.","[func:MTT,Afraid]Полагаю,[w:6] тебе просто нравится смотреть за её страданиями,[w:6] ха?","[func:MTT,NotPersonal]Хе-хе[waitall:4][w:3]...[waitall:2][w:3] [func:MTT,Bisiness]До встречи[waitall:4][w:3]...[waitall:2][w:3][func:MTT,saw1][func:SetMusic,none][w:10][func:Mttsaw] [waitall:4][color:8040ff]актёр.[w:6][next] ","[func:MTT,EYE][func:PlayerGetsKilled][w:6000] "}
+					else
+					dial={"[waitall:4][w:3]...[waitall:2][w:3][func:MTT,calm]Hm.","[func:MTT,Thought]Sanırım,[w:9] [func:MTT,NothingNew]tekrar görüşeceğiz.","[func:MTT,NotPlaying]Fakat hala düşünüyorum[waitall:4][w:3]...","[func:MTT,punishment]Onda ne buldun?[w:9] [func:MTT,Just]O sadece iğrenç bir figüran.","[func:MTT,Afraid]Sanırım,[w:6] onun acı çekmesini seviyorsun,[w:6] ha?","[func:MTT,NotPersonal]He-he[waitall:4][w:3]...[waitall:2][w:3] [func:MTT,Bisiness]Yakında görüşürüz[waitall:4][w:3]...[waitall:2][w:3][func:MTT,saw1][func:SetMusic,none][w:10][func:Mttsaw][color:8040ff] [waitall:4]akör.[w:6][next] ","[func:MTT,EYE][func:PlayerGetsKilled][w:6000] "}
+				end
+			end
+			for i=1,#dial do
+				dial[i]="[font:mtt][waitall:2][w:3][effect:twitch,1][noskip][color:ffffff]"..dial[i]
+			end
+			HaveKilledChara=false
+			WriteSavio()
+			Mett=CreateText(dial,{80,420},480,"Top",-1)
+			Mett.progressmode="manual"
+			Mett.HideBubble()
+			choice1.Remove()
+			choice2.Remove()
+			fPlayer.Remove()
+			SetGlobal ("choicen",false)
+			elseif choicer==1 then
+			if HaveKilledChara==false then
+				if lang=="rus" then
+					dial={"Отлично[waitall:4][w:3]...","[func:MTT,calm]Я никогда в тебе не сомневался.","Мы будем вечно вместе,[w:6] правда?[w:9]\n[func:MTT,okey]Ты ведь не предашь меня,[w:6] как тот глупец?","Я[waitall:4][w:3]...[func:MTT,calm][waitall:2][w:3] Так рад.[w:9]\n[func:MTT,proposal]Пойдем со мной.","Впереди у нас[waitall:4][w:3]...[waitall:2][w:3][color:ff20a0]целая [func:EVERYTHINGEVERYWHERE][w:6]вечность.[w:180]"}
+					else
+					dial={"Perfect[waitall:4][w:3]...","[func:MTT,calm]Sana her zaman inandım.","Sonsuza kadar beraber olacağız,[w:6] değil mi?[w:9] [func:MTT,okey]O zavallı gibi bana ihanet etmeyecek misin?","Ben[waitall:4][w:3]...[waitall:2][w:3] [func:MTT,calm]Çok mutluuym.[w:9] \n[func:MTT,proposal]Benimle gel.","Burda[waitall:4][w:3]...[waitall:2][w:3] [color:ff20a0]her şey [func:EVERYTHINGEVERYWHERE][w:6]her yerde.[w:180]"}
+				end
+				else
+				if lang=="rus" then
+					dial={"[func:MTT,proposal]Отлично[waitall:4][w:3]...","[func:MTT,calm]Я знал,[w:6] что рано или поздно ты поймешь[waitall:4][w:3]...","[func:MTT,NotNew]Она не заслуживает твоего внимания.","Она не заслуживает [waitall:3]ничего[w:3].","Ты же[waitall:4][w:3]...[waitall:2][w:3] [func:MTT,calm]Должен блистать.","[func:MTT,proposal]Пойдём,[w:6] дорогуша[waitall:4][w:3]...[waitall:2][w:3] [color:ff20a0]У нас много дел.[w:30][func:EVERYTHINGEVERYWHERE][w:6000]"}
+					else
+					dial={"[func:MTT,proposal]Harika[waitall:4][w:3]...","[func:MTT,calm]Eninde sonunda geleceğini biliyordum.","[func:MTT,NotNew]O seni haketmiyor.",",O bir şey haketmiyor.","Ve sen[waitall:4][w:3]...[waitall:2][w:3] [func:MTT,calm]yıldız olmalısın.","[func:MTT,proposal]Hadi ama, tatım[waitall:4][w:3]...[waitall:2][w:3] Yapcak çok şeyimiz var.[w:30][func:EVERYTHINGEVERYWHERE][w:6000] "}
+				end
+			end
+			for i=1,#dial do
+				dial[i]="[font:mtt][waitall:2][w:3][effect:twitch,1][noskip][color:ffffff]"..dial[i]
+			end
+			Mett=CreateText(dial,{80,420},480,"Top",-1)
+			Mett.progressmode="manual"
+			Mett.HideBubble()
+			choice1.Remove()
+			choice2.Remove()
+			fPlayer.Remove()
+			SetGlobal ("choicen",false)
+		end
+	end
+	elseif GetGlobal("choicen")==1 then
+	local yea="YES"
+	local noa="NO"
+	if lang=="rus" then
+		yea="ДА"
+		noa="НЕТ"
+	end
+	choice1=CreateText("[font:overworld][instant][noskip][novoice]"..yea,{176,300},580,"Top",-1)
+	choice1.progressmode="none"
+	choice1.HideBubble()
+	choice2=CreateText("[font:overworld][instant][noskip][novoice]"..noa,{464,300},480,"Top",-1)
+	choice2.progressmode="none"
+	choice2.HideBubble()
+	fPlayer=CreateProjectileAbs("ut-heart",320,308,"Top")
+	fPlayer.sprite.color={1,0,1}
+	SetGlobal("choicen",true)
+	choicer=0
+	fPlayer.sprite.SendToTop()
+end
+if not GetGlobal("MTT") then
+	elseif GetGlobal("MTT")=="SAW" then
+	sawtime=sawtime+1
+	if sawtime%3==0 then
+		if currentspr=="1.2" then
+			mtt.sprite.Set("1.2/MTT/saw"..(((sawtime/3)%2)+1))
+			else
+			mtt.sprite.Set("MTT/saw"..(((sawtime/3)%2)+1))
+		end
+	end
+	mtt.sprite.Scale(3,3)
+	else
+	if currentspr=="1.2" then
+		mtt.sprite.Set("1.2/MTT/"..GetGlobal("MTT"))
+	end
+end
+if deathtimer==false then
+	elseif deathtimer==true then
+	State("ENEMYDIALOGUE")
+	deathtimer=false
+	elseif deathtimer<3 then
+	if deathtimer==1 then
+		deathfone=CreateProjectileAbs("overworld/beforebattle",320,240)
+	end
+	if deathtimer==2 then
+		for i=1,#blooddrop do
+			blooddrop[i].Set("empty")
+		end
+		if wons==0 then
+			if phase==1 then
+				if prog<27 then
+					enemies[1].Call("SendToCenter")
+					enemies[1].SetVar("dodge",true)
+					enemies[1].SetVar("block",false)
+					evadelevel=1
+					prog=0
+					else
+					lgsx=maxleft
+					SetGlobal("evasion",2)
+					enemies[1].SetVar("dodge",true)
+					enemies[1].SetVar("block",false)
+					evadelevel=2
+					prog=27
+					enemies[1].Call("HandleAttack")
+				end
+				elseif phase==1.5 then
+				enemies[1].Call("SendToCenter")
+				prog=43
+				enemies[1].SetVar("dodge",false)
+				enemies[1].SetVar("block",true)
+				ghostsnow={"Asriel_Sprite"}
+				evadelevel=6
+				elseif phase==2 then
+				enemies[1].Call("SendToCenter")
+				prog=51
+				enemies[1].SetVar("dodge",false)
+				enemies[1].SetVar("block",false)
+				evadelevel=6
+			end
+			else
+			prog=0
+		end
+		blooddrop={}
+		enemies[4].Call("Recharge")
+		enemies[1].SetVar("weak",false)
+		enemies[1].SetVar("def",30)
+		if diff<3 then
+			if lang=="rus" then
+				enemies[1].SetVar("commands",{"ПРОВЕРИТЬ", "МОЛИТВА"})
+				else
+				enemies[1].SetVar("commands",{"GÖZLE", "DUA ET"})
+			end
+			else
+			if lang=="rus" then
+				enemies[1].SetVar("commands",{"ПРОВЕРИТЬ"})
+				else
+				enemies[1].SetVar("commands",{"GÖZLE"})
+			end
+		end
+		SetGlobal("charaisdead",0)
+		SetGlobal("cursed",0)
+		Player_ATK=38
+		charasoul.alpha=0
+		charasoul.Set(currentspr.."/chara/chara_soul1")
+		SetGlobal("curse",0)
+		SetGlobal("burn",0)
+		State("NONE")
+		if wons==0 then
+			if phase==1 then
+				nextwaves ={"phase1/nicetomeetya"}
+				else
+				nextwaves ={"phase1.5/easy"}
+			end
+		end
+		SetGlobal("evasion",0)
+		SetGlobal("timing",false)
+		if phase==1 then
+			enemies[1].SetVar("hp",1500)
+			elseif phase==1.5 then
+			enemies[1].SetVar("hp",1499)
+			elseif phase==2 then
+			enemies[1].SetVar("hp",1499)
+		end
+		enemies[2].Call("SetActive",false)
+		enemies[1].Call("SetActive",true)
+		if phase==1 then
+	       		SetGlobal("pray",0)
+			elseif phase==1.5 then
+	       		SetGlobal("pray",4)
+		end
+		if wons==0 then
+			if phase==1 then
+				SetGlobal("facial_expression",23)
+				else
+				SetGlobal("facial_expression",6)
+			end
+		end
+		Wounded(1501,1501,1501)
+		if wons==1 then
+			SetGlobal("facial_expression",6)
+		end
+		BackSprites(currentspr)
+		if currentspr=="1.2" then
+			phone=CreateProjectileAbs("system/lilo/phone",320,160)
+			else
+			phone=CreateProjectileAbs("system/black/phone",320,160)
+		end
+		fdeath=CreateProjectileAbs("ut-heart",Placestompx,Placestompy,"Top")
+		fdeath.sprite.color=Player.sprite.color
+		Player.MoveTo(0,0,true)
+		ReadyGlobalSave(globalstage)
+		if ShowDeathCounter then
+			local text1="[instant][font:overworld][effect:none][novoice] = "..deaths-1
+			local text2="[instant][font:overworld][effect:none][novoice] = "..deaths
+			if alldeaths!=deaths then
+				text1=text1.."  ("..(alldeaths-1)..")"
+				text2=text2.."  ("..alldeaths..")"
+			end
+			DeathsText=CreateText({text1,text2},{0,0},480,"Top",-1)
+			DeathsText.progressmode="none"
+			DeathsText.color={0.5,0.25,1}
+			DeathsText.Scale(2,2)
+			DeathsText.HideBubble()
+			DeathsText.MoveToAbs(Placestompx+12,Placestompy+3-DeathsText.GetTextHeight())
+		end
+	end
+	deathtimer=deathtimer+1
+	elseif deathtimer<120 then
+	if Achiventor.Time==0 then
+		deathtimer=deathtimer+1
+	end
+	if deathtimer==50 then
+		if phase==1.5 and Achivements[9]=="0" then
+			GotAchivement(9)
+		end
+	end
+	if deathtimer==45 then
+		fdeath.sprite.Set("ut-heart-broken")
+	end
+	if deathtimer==40 then
+		Audio.PlaySound("heartbeatbreaker")
+	end
+	if deathtimer==83 then
+		Audio.PlaySound("heartsplosion")
+	end
+	if deathtimer==90 then
+			for i=1,6 do
+				local piece = CreateProjectile("system/piece1",fdeath.x,fdeath.y)
+				piece.SetVar("x",math.random(27)/3-5)
+				piece.SetVar("y",(math.random(57)-9)/8)
+				piece.SetVar("rot",math.random(20))
+				table.insert(pieces,piece)
+				piece.SetVar("rotation",math.random(20))
+				piece.sprite.rotation=math.random(360)
+				piece.sprite.color=fdeath.sprite.color
+			end
+			fdeath.Remove()
+			Player.hp=92
+			if ShowDeathCounter then
+				DeathsText.NextLine()
+			end
+	end
+	elseif deathtimer<150 then
+	deathtimer=deathtimer+1
+	elseif deathtimer<210 then
+	deathtimer=deathtimer+1
+	
+	deathfone.sprite.alpha=1-(deathtimer-150)/60
+	if ShowDeathCounter then
+		DeathsText.alpha=1-(deathtimer-150)/60
+	end
+	elseif deathtimer==210 then
+	if ShowDeathCounter then
+		DeathsText.Remove()
+	end
+	deathtimer=true
+end
+if true then
+	local time=MettaHead.GetVar("time")
+	if time>-10 then
+		if time>-1 then
+			MettaHead.alpha=math.cos(time*math.pi/60)
+		end
+		time=time+1
+		if time==0 then
+			Misc.ShakeScreen(30,60,true)
+		end
+		if time==31 then
+			time=-11
+		end
+		MettaHead.SetVar("time",time)
+	end
+	if time<-10 then
+		MettaHead.SetVar("time",time+1)
+		if time==-11 then
+			MettaHead.alpha=0
+			else
+			MettaHead.alpha=1
+		end
+	end
+end
+if systemfight then
+	if Possessed then
+		if PossessedTime>0 then
+			local time=PossessedTime
+			if time==31 then
+				Player.MoveToAbs(48,25,true)
+				Player.sprite.alpha=1
+				RedoBut(1)
+				Audio.PlaySound("menumove")
+				elseif time==90 then
+				fighting=true
+				Audio.PlaySound("menuconfirm")
+				forcedfight=true
+				local rand=math.random(2)
+				nextwaves={"phase child/"..math.random(7)}
+				if enemies[1].GetVar("LostChildHopes")==false then
+					rand=1
+					enemies[1].SetVar("LostChildHopes",true)
+					local dial={}
+					if lang=="rus" then
+						dial={ "[func:LostKidFace,shocked,+]Ч-[w:9]что?!-",  "[func:LostKidFace,shocked2,+][func:SAVEMUSIC]Я увернулась,[w:6] пусть \nи не хотела,[w:6] но[waitall:4][w:3]...[waitall:1][w:3]",  "[func:LostKidFace,shocked3,+]Твой взгляд[waitall:4][w:3]...[waitall:1][w:3] \nУ меня сработал \nинстинкт \nсамосохранения[waitall:4][w:3]...[waitall:1][w:3]", "[func:LostKidFace,base_close,-]По какой-то \nпричине[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,gloomy,+] Этот \nвзгляд меня \nвымораживает[waitall:4][w:3]...[waitall:1][w:3]",  "[func:LostKidFace,base_left,+]Я даже не увидела \nтвой удар[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,confused,+] \nЧто это было?", "[func:LostKidFace,base_close,-][waitall:4][w:3]...[waitall:1][w:3]", "[func:LostKidFace,hope_base,+]Кажется[waitall:4][w:3]...[waitall:1][w:3] Я поняла.",  "[func:LostKidFace,hope_cheers,+]В дело вмешался \nкукловод.[w:9] \nМне льстит,[w:6] что мне \nоказана такая честь.",  "[func:LostKidFace,hope_close,-]Партнёр[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_determined,+] \nНе смей \nподдаваться!",  "[func:LostKidFace,hope_question,+]Если ты все ещё \nвнутри и \nотказываешься меня \nубивать[waitall:4][w:3]...[waitall:1][w:3]",  "[func:LostKidFace,hope_smile,+]Я думаю,[w:6] я могу \nдать тебе шанс.",  "[func:LostKidFace,hope_cheers,+]Вдвоем мы \nсправимся.[w:9] \nПросто не \nпереставай бороться \nс ним!","[func:LostKidFace,hope_base,+][next] "}
+						else
+						dial={"[func:LostKidFace,shocked,+]N-Ne?-", "[func:LostKidFace,shocked2,+][func:SAVEMUSIC]İstemesem \nde yana çekildim,[w:3] fakat[waitall:4][w:3]...", "[func:LostKidFace,shocked3,+]Fakat[waitall:4][w:3]...[waitall:1][w:3] \nBenim yerime \nrefleksimdi o[waitall:4][w:3]...", "[func:LostKidFace,base_close,-]Nedense[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,gloomy,+]\nŞu an korkuyu \niliklerimde \nhissediyorum[waitall:4][w:3]...", "[func:LostKidFace,base_left,+]Slashini görmedim \nbile[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,confused,+]\nO da neydi?", "[func:LostKidFace,base_close,-][waitall:4][w:3]...", "[func:LostKidFace,hope_base,+]Sanırım[waitall:4][w:3]...[waitall:1][w:3] Anladım.", "[func:LostKidFace,hope_cheers,+]Kuklacı oyuna \nkatıldı.[w:6] Ve beni \nkullanmaya \nçalışıyor.", "[func:LostKidFace,hope_close,-]Partner[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_determined,+]Henüz \npes edemezsin!", "[func:LostKidFace,hope_question,+]Eğer hala ordaysan \nve beni ö ldürmek istemiyorsan[waitall:4][w:3]...", "[func:LostKidFace,hope_smile,+]Sanırım sana ikinci \nbir şans verebilirim.", "[func:LostKidFace,hope_cheers,+]Beraber onu \nyeneceğiz.[w:6] Sadece \nkontrolü \nkaybetme!","[func:LostKidFace,hope_base,+][next] "}
+					end
+					for i=1,#dial do
+						dial[i]="[noskip][effect:none]"..dial[i].."[w:20][next] "
+					end
+					enemies[1].SetVar("currentdialogue",dial)
+					elseif rand==1 then
+					local dials={}
+					if lang=="rus" then
+						dials={"Это[waitall:4][w:3]...[waitall:1][w:3] Было близко","Почему же я не вижу \nудары[waitall:4][w:3]?..[waitall:1][w:3]","От тебя исходит \nужасающая аура[waitall:4][w:3]...[waitall:1][w:3] \nНоги сами \nдвижутся."}
+						else
+						dials={"That[waitall:4][w:3]...[waitall:1][w:3] Bu yakındı.","Neden slashler \ngörmüyorum[waitall:4][w:3]?..[waitall:1][w:3]","Etrafında korkunç \nbir aura görüyorum[waitall:4][w:3]...[waitall:1][w:3] \nBacaklarım kendi \nkendine hareket ediyor."}
+					end
+					dial=dials[math.random(#dials)]
+					dial={dial}
+					dial[#dial+1]="[next] "
+					enemies[1].SetVar("currentdialogue",dial)
+					else
+					local dials={}
+					enemies[1].Call("LostKidFace",{"shocked","+"})
+					if lang=="rus" then
+						dials={{"Кгх[waitall:4][w:3]...[waitall:1][w:3]","Я[waitall:4][w:3]...[waitall:1][w:3] Я в порядке, \nпартнёр[waitall:4][w:3]...[waitall:1][w:3] \nНе переживай"},{"Это[waitall:4][w:3]...[waitall:1][w:3]","Это просто \nцарапина[waitall:4][w:3]...[waitall:1][w:3] \nБлять[waitall:4][w:3]...[waitall:1][w:3] Ргх"},{"Ха[waitall:4][w:3]...[waitall:1][w:3] Ха[waitall:4][w:3]...[waitall:1][w:3]","Дышать[waitall:4][w:3]...[waitall:1][w:3] \nРовно[waitall:4][w:3]...[waitall:1][w:3]","Уф."},{"Эта боль ничто, \nправда[waitall:4][w:3]...[waitall:1][w:3]","Твою мать, но как же \nбольно[waitall:4][w:3]...[waitall:1][w:3]"}}
+						else
+						dials={{"Ugh[waitall:4][w:3]...[waitall:1][w:3] ","I[waitall:4][w:3]...[waitall:1][w:3] Ben iyiyim, \npartner[waitall:4][w:3]...[waitall:1][w:3] \nEndişelenme"},{"Bu[waitall:4][w:3]...[waitall:1][w:3]","Bu bir \nçöp[waitall:4][w:3]...[waitall:1][w:3] \nHassiktir[waitall:4][w:3]...[waitall:1][w:3] Rgh."},{"Ha[waitall:4][w:3]...[waitall:1][w:3] Ha[waitall:4][w:3]...[waitall:1][w:3]","Nefes al[waitall:4][w:3]...[waitall:1][w:3] \nSakince[waitall:4][w:3]...[waitall:1][w:3]","Huff."},{"Bu acı bir hiçg, \nCiddiyim[waitall:4][w:3]...[waitall:1][w:3]","Fakat, ugh, bu birazcık \nacıtıyor[waitall:4][w:3]...[waitall:1][w:3]"}}
+					end
+					local dial=dials[math.random(#dials)]
+					dial[#dial+1]="[noskip][func:LostKidFace,hope_base,+][next] "
+					enemies[1].SetVar("currentdialogue",dial)
+				end
+				if rand==1 then
+					evadelevel=2
+					enemies[1].SetVar("dodge",true)
+					else
+					evadelevel=6
+					enemies[1].SetVar("dodge",false)
+				end
+				PossessedTime=-1
+			end
+			PossessedTime=PossessedTime+1
+		end
+	end
+end
+if IsTalk==true then
+	if voicetime<60 then
+		voicetime=voicetime+2
+		if voicetime>60 then
+			voicetime=60
+		end
+	end
+	if NewAudio.Exists(curmusic) then
+		NewAudio.SetVolume(curmusic,1-0.80*math.sin(voicetime*math.pi/120))
+	end
+	else
+	if voicetime>0 then
+		voicetime=voicetime-1
+		if NewAudio.Exists(curmusic) then
+			NewAudio.SetVolume(curmusic,1-0.80*math.sin(voicetime*math.pi/120))
+		end
+	end
+end
+for i=1,#pieces do
+	local piece=pieces[i]
+	if piece.isactive then
+		if not timerp[i] then
+			timerp[i]=0
+			else timerp[i]=timerp[i]+1
+		end
+		if timerp[i]%piece.GetVar("rot")==0 then
+			piece.sprite.Set("system/piece"..((timerp[i]/piece.GetVar("rot"))%4+1))
+		end
+		piece.Move(piece.GetVar("x"),piece.GetVar("y"))
+		piece.SetVar("y",piece.GetVar("y")-0.1)
+		piece.sprite.rotation=piece.sprite.rotation+piece.GetVar("rotation")
+		if piece.absy<5 then
+			piece.Remove()
+		end
+	end
+end
+		
+if not GetGlobal("world") then
+	else overworldface.sprite.Set(GetGlobal("world"))
+	SetGlobal("world",false)
+	overworldface.sprite.Scale(2,2)
+end
+if introinprogress==true then
+	fPlayer.MoveTo(overworldfrisk.x,overworldfrisk.y)
+end
+num1.Set("system/"..color.."/number/"..math.floor(Player.hp/10))
+num2.Set("system/"..color.."/number/"..Player.hp%10)
+num3.Set("system/"..color.."/number/"..math.floor(MaxHP/10))
+num4.Set("system/"..color.."/number/"..MaxHP%10)
+if not GetGlobal("burn") then
+	elseif GetGlobal("burn")>0 then
+	local burn=GetGlobal("burn")
+	br.Set("burn/1")
+	if burn>Player.hp-1 then
+		SetGlobal("burn",Player.hp-1)
+		burn=Player.hp-1
+	end
+	br.Scale(burn*109/92,1)
+	if burn>0 then
+		burntime=burntime+1
+		num1.color={1,0.5,0.15234375}
+		num2.color={1,0.5,0.15234375}
+		num3.color={1,0.5,0.15234375}
+		num4.color={1,0.5,0.15234375}
+		system.color={1,0.5,0.15234375}
+		br.MoveTo(276+(109/92)*Player.hp-burn/184*109,70)
+	 	if burntime%180==0 and burn-burn%1<3 then 
+			Player.hp=Player.hp-1
+			burntime=burntime-150
+			SetGlobal("burn",burn-1)
+			elseif burntime%(100/(burn-burn%1)-100/(burn-burn%1)%1)==0 then
+			Player.hp=Player.hp-1
+			burntime=burntime-(100/(burn-burn%1)-100/(burn-burn%1)%1)
+			SetGlobal("burn",burn-1)
+		end
+		else
+		burntime=0
+		num1.color={1,1,1}
+		num2.color={1,1,1}
+		num3.color={1,1,1}
+		num4.color={1,1,1}
+		system.color={1,1,1}
+	end
+	elseif GetGlobal("curse")==0 then
+	num1.color={1,1,1}
+	num2.color={1,1,1}
+	num3.color={1,1,1}
+	num4.color={1,1,1}
+	system.color={1,1,1}
+	burntime=0
+	br.Set("burn/0")
+end
+if sleep==true then
+	nextwaves={"nonestatetwo"}
+end
+if knifereload>0 and Achiventor.Time==0 then	
+	knifereload=knifereload-1
+end
+if knifestage==4 or knifestage==5 or knifestage==6 then
+	if knifereload==238 then
+		Audio.PlaySound("knife")
+	end
+	hpknifeone.y=hpknifeone.y+7.5
+	if knifereload<10 then
+		knifestage=10
+		SetGlobal("charaisdead",12)
+	end
+	if hpknifeone.y>280 and knifestage==4 then
+		knifestage=5
+		sleep=false
+		SetGlobal("ending",true)
+		Audio.PlaySound("hit")
+		SetGlobal("facial_expression",1)
+		WasHitted(30)
+		if diff==4 then
+			GotAchivement(10)
+		end
+			
+		for i=1,15 do
+			DoBlood(1)
+		end
+	end
+end
+if GetGlobal("charaisdead")==12 then
+		SetGlobal("charaisdead", 13)
+		local dial={}
+		if lang=="rus" then
+			--enemies[1].SetVar("currentdialogue", rusout)
+			if dubbing==true then
+				dial=rusout
+				else
+				dial=rusoutn
+			end
+			elseif lang=="eng" then
+			if dubbing==true then
+				dial=engout
+				else
+				dial=engoutn
+			end
+		end
+		for i=1,#dial do
+			if i<#dial-1 then
+				if dubbing==false then
+					dial[i]="[effect:none][noskip]"..dial[i]
+					else
+					dial[i]="[effect:none][noskip][novoice]"..dial[i]
+				end
+				else
+				if dubbing==false then
+					dial[i]="[effect:shake][noskip][color:808080]"..dial[i]
+					else
+					dial[i]="[effect:shake][noskip][color:808080][novoice]"..dial[i]
+				end
+			end
+		end
+		
+		enemies[1].SetVar("currentdialogue", dial)
+		State("ENEMYDIALOGUE")
+end
+if Input.Confirm==1 and Player.absx>274 and Player.absx<387 and Player.absy<86 and Player.absy>54 and GetGlobal("charaisdead")>0 and knifereload==0 and knifestage<4  then
+	knifestage=knifestage+1
+	if knifestage<4 then
+		hpknifeone.rotation=knifestage*30
+		knifereload=45
+		else knifereload=240
+	end
+end
+if Selecting  then
+	if Input.Right==1 and Placex==2 then
+		if page==1 and itemamount>4 then
+			enemies[4].Call("Pager",2)
+			elseif page==2 then
+			if itemamount>8 then
+				enemies[4].Call("Pager",3)
+				else 
+				enemies[4].Call("Pager",1)
+			end
+			elseif page==3 then
+			enemies[4].Call("Pager",1)
+		end
+	end
+	if Input.Left==1 and Placex==1 then
+		if page==1 then
+			if itemamount>8 then
+				enemies[4].Call("Pager",3)
+				elseif itemamount>4 then
+				enemies[4].Call("Pager",2)
+			end
+			elseif page==2 then
+			enemies[4].Call("Pager",1)
+			elseif page==3 then
+			enemies[4].Call("Pager",2)
+		end
+	end
+	if itemamount>4 then
+		pageblank.sprite.Set(lang.."/Battle/"..page)
+	end
+	if Player.absx==65 then
+		Placex=1
+	end
+	if Player.absx==321 then
+		Placex=2
+	end
+	if Player.absy==160 then
+		Placey=1
+	end
+	if Player.absy==190 then
+		Placey=2
+	end
+	if itemamount>4 then
+		pageblank.sprite.Set(lang.."/Battle/"..page)
+	end
+	if Input.Cancel==1 then
+		if itemamount>4 then
+			pageblank.Remove()
+		end
+		Selecting=false
+		enemies[4].Call("SetActive",false)
+		enemies[1].Call("SetActive",true)
+		State("ACTIONSELECT")
+	end
+	if Input.Confirm==1 then
+		if itemamount>4 then
+			pageblank.Remove()
+		end
+		Selecting=false
+		useitem=true
+	end
+end
+if mercymenu==false then
+	elseif mercymenu==true then
+	State("ENEMYSELECT")
+	if Input.Confirm==1 then
+		enemies[3].Call("SetActive",false)
+		HandleSpare()
+		mercymenu=false
+	end
+	if Input.Cancel==1 then
+		mercymenu=false
+		enemies[3].Call("SetActive",false)
+		enemies[1].Call("SetActive",true)
+	end
+end
+if not GetGlobal("fightbegin") then
+	elseif GetGlobal("fightbegin")==true then
+	if not enctimer then
+		SetGlobal("facial_expression",19)
+		if wons==1 then
+			enemies[1].Call("LostKidFace",{"base","+"})
+		end
+		enctimer=0
+		overworldface.Remove()
+		SetMusic("none")
+		introinprogress=false
+		savex=fPlayer.x
+		savey=fPlayer.y
+		elseif enctimer==true then
+		else
+		enctimer=enctimer+1
+		if enctimer<23 and enctimer%7==1 then
+			Audio.PlaySound("BeginBattle2")
+			if enctimer==8 or enctimer==22 then
+				overworldfonebattle.sprite.alpha=1
+				fPlayer.sprite.SendToTop()
+				fPlayer.sprite.alpha=1
+				overworldfrisk.sprite.SendToBottom()
+				overworldchara.sprite.SendToBottom()
+				overworldfone1.sprite.SendToBottom()
+				overworldfone2.SendToBottom()
+				elseif enctimer==15 then
+				overworldfonebattle.sprite.alpha=0
+				fPlayer.sprite.SendToBottom()
+				fPlayer.sprite.alpha=0
+				overworldfone1.sprite.SendToTop()
+				overworldfone2.SendToTop()
+				overworldfrisk.sprite.SendToTop()
+				overworldchara.sprite.SendToTop()
+			end
+		end
+		if enctimer==30 then
+			overworldfone1.Remove()
+			overworldfone2.Remove()
+			overworldfone3.Remove()
+			overworldfonetop.Remove()
+			overworldfrisk.Remove()
+			overworldchara.Remove()
+		end
+		if enctimer==30 then
+			Audio.PlaySound("BeginBattle3")
+		end
+		if enctimer>30 and enctimer<119 then
+			fPlayer.sprite.SendToTop()
+			fPlayer.sprite.alpha=1
+		end
+		if enctimer>30 and enctimer<76 then
+			local Old=0.5+0.5*math.cos((enctimer-30)*math.pi/45)
+			fPlayer.MoveTo(savex*Old,savey*Old,true)
+		end
+		if enctimer>95 and enctimer<126 then
+			overworldfonebattle.sprite.alpha=1*(115-enctimer)/30
+		end
+		if enctimer==130 then
+				Player.MoveTo(fPlayer.x,fPlayer.y,true)
+				fPlayer.Remove()
+				enemies[5].Call("SetActive",false)
+				enemies[1].Call("SetActive",true)
+				local dial=""
+				if lang=="rus" then
+					comm="Последний актер на сцене!"
+					else
+					comm="The last actor is on the scene!"
+				end
+				if lang=="rus" then
+					if dubbing==true then
+						dial={"[noskip][func:DUB,prolog/17][w:3]На [w:1]улице [w:1]такой \nзамечательный день.","[noskip][func:DUB,prolog/18][w:1]Я чувствую запах \nкрови, \nбурлящей в моих[w:3] \nвенах.","[noskip][func:DUB,prolog/19][w:1]И даже если все мои \n[w:1]близкие [w:2]мертвы[waitall:5]...","[noskip][func:DUB,prolog/20][w:1]Мне всё ещё [w:1]есть \n[w:1]за что бороться.","[func:Peachy][noskip][func:DUB,prolog/21][w:5]Знаешь,[w:20] [func:normal]я[w:5] сочинила \nдля тебя [w:1]стих.","[noskip][func:Peachy][func:DUB,prolog/22][w:1]Он [waitall:2]начинается [waitall:1][w:3]вот \nтак:","[noskip][waitall:2][func:DUB,prolog/23][w:1][waitall:1]Чу[w:1]де[w:1]сн[w:1]ый[w:1] де[w:1]нёк[w:1] \nпо[w:1]дх[w:1]од[w:1]ит[w:1] к[w:1] ко[w:1]нцу[waitall:4][w:3]...","[noskip][func:DUB,prolog/24][waitall:2]И птички[waitall:1] [waitall:2]поют,[waitall:1][w:2]\n[waitall:2]им [waitall:1]ст[w:1]ра[w:1]х[w:2] не[w:1] к[w:1] лицу[waitall:4][w:3]...","[noskip][func:DUB,prolog/25][w:5]И [w:2]чувс[w:1]твуя[w:1] си[w:1]лу[w:1],\nч[w:1]то[w:1] тв[w:1]ое[w:1]й [w:1]не[w:1] б[w:1]ыл[w:1]а[waitall:4][w:3]...","[noskip][func:TakeKnife][func:head][effect:none][novoice][waitall:3][color:ff0000][func:DUB,prolog/26][w:4][waitall:1]СЕЙ[w:1]ЧАС[w:1] [waitall:1]ВЫ[w:1]ПЬЕ[w:1]ШЬ \n[waitall:2]ЧАШУ ИЗ БОЛИ\nДО [waitall:4][func:Devil,night]ДНА![w:10][next] "}
+						else
+						dial={"[noskip][func:DUB,prolog/17]На улице такой \nзамечательный день.","[noskip][func:DUB,prolog/18]Я чувствую запах \nкрови,[w:3] \nбурлящей в моих \nвенах.","[noskip][func:DUB,prolog/19]И даже если все мои \nблизкие мертвы[waitall:4][w:3]...","[noskip][func:DUB,prolog/20]Мне всё ещё есть \nза что бороться.","[func:Peachy][noskip][func:DUB,prolog/21]Знаешь,[w:12] [func:normal]я сочинила \nдля тебя стих.","[noskip][func:Peachy][func:DUB,prolog/22]Он начинается вот \nтак:","[noskip][waitall:2][func:DUB,prolog/23]Чудесный денёк \nподходит к концу[waitall:4][w:3]...","[noskip][func:DUB,prolog/24][waitall:2]И птички поют,[w:6]\nим страх не к лицу[waitall:4][w:3]...","[noskip][func:DUB,prolog/25]И чувствуя силу,[w:6]\nчто твоей не была[waitall:4][w:3]...","[noskip][func:TakeKnife][func:head][effect:none][novoice][color:ff0000][func:DUB,prolog/26]СЕЙЧАС ВЫПЬЕШЬ \n[waitall:2]ЧАШУ ИЗ БОЛИ\nДО [waitall:4][func:Devil,night]ДНА![w:10][next] "}
+					end
+					if quick==true then
+						dial={"[noskip][func:TakeKnife][func:head][effect:none][novoice][waitall:3][color:ff0000][func:DUB,prolog/26][w:4][waitall:1]СЕЙ[w:1]ЧАС[w:1] [waitall:1]ВЫ[w:1]ПЬЕ[w:1]ШЬ \n[waitall:2]ЧАШУ ИЗ БОЛИ\nДО [waitall:4][func:Devil,night]ДНА![w:10][next] "}
+					end
+					elseif lang=="eng" then
+					if quick==true then
+						dial={"[noskip][func:TakeKnife][func:head][effect:none][novoice][waitall:5]ДО [color:ff0000][func:Devil,night]ДНА![w:10][next] "}
+						else
+						dial={"[func:DUB,prolog/17][noskip]Bugün çok canlı \nbir [w:1]gün.","[func:DUB,prolog/18][noskip]Kanımın kaynadığını [waitall:2]\nhissedebiliyorum.","[func:DUB,prolog/19][noskip]Dostlarım artık \nyok olmuş [w:6]olsa bile[waitall:5]...","[func:DUB,prolog/20][noskip]Hala [waitall:2]sana karşı\n[waitall:1][w:7]çıkmak [speed:1.5]için bir[speed:1]\nnedenim [w:1]var.","[func:DUB,prolog/21][func:Peachy][noskip]Neredeyse \nunutuyordum,[w:15] [func:normal]\nSana bir şiir yazdım.","[func:DUB,prolog/22][noskip][func:Peachy][w:3]Şöyle [w:10]başlıyor \n[w:6]...","[func:DUB,prolog/23][noskip]Ha[w:1]ri[w:1]ka [w:1]bir gün[w:4] \ndaha bitiyor[waitall:4][w:3]...","[func:DUB,prolog/24][noskip]Kuşlar [w:4]hala \ncıvıldıyor,[w:5]\ntehlikeyi [w:1]göz ardı \nederek[waitall:4][w:3]...","[func:DUB,prolog/25][noskip]Ve sende bile \nolmayan \ngücü[w:7] \nhissediyorlar[waitall:4][w:3]...","[func:DUB,prolog/26][noskip][func:TakeKnife][func:head][effect:none][novoice][color:ff0000]HER [w:1]HARE[w:2]KE[w:1]TİN İÇİN [w:2]\nACI [w:1]ÇEK[w:1]MEYE[w:2]\n[waitall:2]HAZ[func:Devil,night]IR[w:5]LAN![w:20][next] "}
+					end
+				end
+				dial=EveryDial(dial,"[effect:twitch,1][noskip]","[novoice]")
+				globalstage="1"
+				if wons==1 then
+					nextwaves={"nothing"}
+					globalstage="6"
+					if lang=="rus" then
+						dial={"[func:LostKidFace,base_up,+][waitall:4][w:3]...[waitall:1][w:3]Я даже от страха \nсмерти забыла свою \nречь[waitall:4][w:3]...","[func:LostKidFace,base_left,+]Что-то там о пыли,[w:3] \nдне[waitall:4][w:3]...","[func:LostKidFace,base_close,-]Какая разница.","[func:LostKidFace,base,+]Слушай,[w:3] это \nочевидно, что я не \nсправлюсь,[w:3] раз уже \nоднажды проиграла.","[func:LostKidFace,confused,+]Это убийственная \nбессмыслица.[w:6] \nБуквально.","[func:LostKidFace,base_close,-]Поэтому вместо боя \nдавай поговорим.","[func:LostKidFace,base_left,+]Ну,[w:3] я буду говорить,[w:3] \nа ты уклоняться от \nнелепых потуг,[w:3] \nкоторые называют \nатаками.","[func:Achivement][func:SetMusic,lost][next] "}
+						comm="Занятно.[w:6]\nНесколько сюжетных поворотов моему шоу не помешают."
+						else
+						dial={"[func:LostKidFace,base_up,+][waitall:4][w:3]...[waitall:1][w:3]Uhm... \nAslında hiç \nrepliğimi unutmamıştım[waitall:4][w:3]...","[func:LostKidFace,base_left,+]Toz ve güneş ile \nalakalıydı[waitall:4][w:3]...","[func:LostKidFace,base_close,-]Her neyse.","[func:LostKidFace,base,+]Baksana,[w:3] zaten bir kere \nöldükten sonra \ntekrar sağ çıkamayacağım \nçok belli.","[func:LostKidFace,confused,+]Bu bir \nkısır döngü.[w:6] \nCidden.","[func:LostKidFace,base_close,-]Birazcık \nsohbet edelim.","[func:LostKidFace,base_left,+]Kısaca,[w:3] seninle konuşurken \no atak denilen \nmantıksız \nşeylerden \nkaçacaksın.","[func:Achivement][func:SetMusic,lost][next] "}
+						comm="Intriguing.[w:6] \nSome plot twist will be good addition to the show."
+					end
+					enemies[1].SetVar("dodge",false)
+					enemies[1].SetVar("block",false)
+					deadlyhit=true
+					evadelevel=6
+					FightGoes=false
+					if Achivements[4]=="0" then
+						dial[#dial]="[noskip][instant][novoice]"..dial[#dial-1].."[instant:stop][func:Achivement][w:90][func:SetMusic,lost][next] "
+					end
+					dial=EveryDial(dial,"[effect:none][noskip]","")
+				end
+				WriteSavio()
+				enemies[1].SetVar("currentdialogue",dial)
+				State("ENEMYDIALOGUE")
+				fPlayer.Remove()
+				SetGlobal("fightbegin",false)
+		end
+	end
+end
+if GetGlobal("CHECKED") and Input.Confirm==2 then
+	State("ACTIONSELECT")
+	SetGlobal("CHECKED",false)
+end
+if GetGlobal("charaisdead")==9 and sleep==true then
+	SetGlobal("charaisdead",10)
+	useknife=CreateProjectile("system/useknife"..lang,0,0)
+end
+if not GetGlobal("charaisdead") then
+	elseif GetGlobal("charaisdead")<7 then
+	if Player.hp>MaxHP then
+		Player.hp=MaxHP
+	end
+	hppoint.x=276+109*(Player.hp/MaxHP)/2
+	hppoint.Scale(109*Player.hp/MaxHP,1)	
+	br.SendToTop()
+	cr.SendToTop()
+	hpbar.SendToTop()
+	elseif GetGlobal("charaisdead")==7 then
+	hppoint.alpha=1
+	hpbar.alpha=1
+	if hpknife==false then
+		blanket=CreateSprite("system/"..color.."/endhpblanket")
+		blanket.x=330.5
+		blanket.y=70
+		hpknife=true
+		hpknifeone=CreateSprite("system/endhpbar")
+		hpknifeone.x=330.5
+		hpknifeone.y=70
+		hpknifeone.SendToTop()
+	end
+end
+if GetGlobal("phase1")==1 then
+		local face=overworldface
+	if not introtimer then
+		introtimer=0 
+		overworldfrisk.sprite.Set("overworld/friskstep")
+		overworldfrisk.sprite.Scale(2.5,2.5)
+		overworldface.sprite.alpha=0
+		elseif introtimer==true then
+		else introtimer=introtimer+1
+		if introtimer<21 then
+			overworldfrisk.Move(2,0)
+		end
+		if introtimer==21 then
+			overworldfrisk.sprite.Set("overworld/frisk")
+			overworldfrisk.sprite.Scale(2.5,2.5)
+		end
+		if introtimer==80 then
+			local dial=""
+			if lang=="rus" then
+				if dubbing==true then
+					dial={"[next] ","[func:face,yes][font:overworld][effect:twitch,1][func:NoMercy1][color:ffffff][func:DUB,prolog/9]*[waitall:5]...[waitall:3] Ясно.", "[func:DUB,prolog/10][w:4]*[effect:twitch,1][waitall:2]Хех[waitall:5]...[waitall:1][w:3]\n[func:Danger]Даже смешно [waitall:2]отчасти.", "[func:NoMercy1][waitall:5]...","[func:DUB,prolog/11][w:3]*Я не буду утруждать \nсебя [w:1]раз[w:1]ъяс[w:1]нен[w:1]ия[w:1]ми[waitall:1] терминов.","[noskip][func:DUB,prolog/12][w:6][waitall:1]*На [w:2]самом [w:2]деле,[w:10] ты и \nтак [w:1]их знаешь[waitall:5]...[waitall:1]\n[w:12][func:Danger1][waitall:1]Не [w:1]так [w:1]ли?=)[w:50][func:ph2][func:face,no][next] "}
+					else
+					dial={"[next] ","[func:face,yes][font:overworld][effect:twitch,1][func:NoMercy1][color:ffffff][func:DUB,prolog/9]*[waitall:4][w:3]... Ясно.", "[func:DUB,prolog/10]*[effect:twitch,1]Хех[waitall:4][w:3]...[waitall:1][w:3]\n[func:Danger]Даже смешно отчасти.", "[func:NoMercy1][waitall:4][w:3]...","[func:DUB,prolog/11]*Я не буду утруждать \nсебя разъяснениями терминов.","[noskip][func:DUB,prolog/12]*На самом деле,[w:3] ты и \nтак их знаешь[waitall:4][w:3]...[waitall:1]\n[w:12][func:Danger1]Не так ли?=)[w:50][func:ph2][func:face,no][next] "}
+				end
+				elseif lang=="eng" then
+				dial={"[next] ","[func:DUB,prolog/9][func:face,yes][font:overworld][effect:twitch,1][func:NoMercy1][color:ffffff]*[waitall:5]...[waitall:1] Oh, [w:8][waitall:2]anlıyorum.", "[func:DUB,prolog/10][effect:twitch,1]*Heh[waitall:5]...[waitall:1][w:5]\n[func:Danger]Bu [w:12]bir [w:1]şekilde [w:1]komik[w:4].", "[func:NoMercy1][waitall:5]...","[func:DUB,prolog/11]*[w:5]Sana terbiye kurallarını \nöğreterek kendimi \nyormayacağım.","[func:DUB,prolog/12][noskip]*[w:1]Zaten öğrenemezsin[waitall:5]...[waitall:1]\n[w:14][func:Danger1]Değil [w:3]mi? =)[w:50][func:ph2][func:face,no][next] "}
+			end
+			dial=EveryDial(dial,"[noskip][font:overworld][effect:twitch,1][color:ffffff]","[novoice]")
+			enemies[5].SetVar("currentdialogue",dial)
+			SetGlobal("phase1", 0)
+			introtimer=true
+			State("ENEMYDIALOGUE")
+		end
+	end
+end
+if GetGlobal("phase1")==2 then
+	local face=overworldface
+	if introtimer==true then
+		introtimer=0
+		overworldfrisk.sprite.Set("overworld/friskstep")
+		overworldfrisk.sprite.Scale(2.5,2.5)
+		overworldface.sprite.alpha=0
+		elseif introtimer==false then
+		else introtimer=introtimer+1
+		if introtimer<21 then
+			overworldfrisk.Move(2,0)
+		end
+		if introtimer==21 then
+			overworldfrisk.sprite.Set("overworld/frisk")
+			overworldfrisk.sprite.Scale(2.5,2.5)
+		end
+		if introtimer==80 then
+			local dial=""
+			if lang=="rus" then
+				if dubbing==true then
+					dial={"[func:face,yes][next] ","[effect:twitch,1][font:overworld][color:ffffff][func:NoMercy1][func:DUB,prolog/13][w:10]*вздох*","[func:NoMercy1][func:DUB,prolog/14][w:9]*Вечно тянуть момент \nневозможно.","[func:DUB,prolog/15][w:3]*И раз [w:1]мой мир обречён \n[w:2]опять [w:2]исчезнуть[waitall:5]...","[func:NoMercy1][func:DUB,prolog/16][w:2]*Я хотя бы попробую \nзаставить исчезнуть [w:5]\n[color:ff0000][waitall:2]тебя[color:ffffff].","[func:fightbegin][func:face,no][next] "}
+					else
+					dial={"[func:face,yes][next] ","[effect:twitch,1][font:overworld][color:ffffff][func:NoMercy1][func:DUB,prolog/13][waitall:2]*вздох*","[func:NoMercy1][func:DUB,prolog/14]*Вечно тянуть момент \nневозможно.","[func:DUB,prolog/15][w:3]*И раз мой мир обречён \nопять исчезнуть[waitall:4][w:3]...","[func:NoMercy1][func:DUB,prolog/16]*Я хотя бы попробую \nзаставить исчезнуть [w:3]\n[color:ff0000][waitall:2]тебя[color:ffffff].","[func:fightbegin][func:face,no][next] "}
+				end
+				elseif lang=="eng" then
+				dial={"[func:face,yes][next] ","[func:DUB,prolog/13][effect:twitch,1][font:overworld][color:ffffff][func:NoMercy1][w:9][waitall:2]*hüff*","[func:DUB,prolog/14][func:NoMercy1]*[w:9]Hiç bir şey [w:1]sonsuza kadar \n[w:1]sü[w:1]re[w:1]mez[w:2].","[func:DUB,prolog/15]*Ve dünyamın \nka[w:1]de[w:1]ri [w:9]toz olmak [w:1]ise[waitall:5]...","[func:DUB,prolog/16][func:NoMercy1]*[w:4]En azından [speed:1.25][color:ff0000][waitall:2]SENİ[speed:1][color:ffffff]\ntoz etmeyi [w:12]deneyeceğim[waitall:1][w:14].","[func:fightbegin][func:face,no][next] ","[func:fightbegin][func:face,no][next] "}
+			end
+			dial=EveryDial(dial,"[noskip][font:overworld][effect:twitch,1][color:ffffff]","[novoice]")
+			enemies[5].SetVar("currentdialogue",dial)
+			SetGlobal("phase1",0)
+			State("ENEMYDIALOGUE")
+		end
+	end
+end
+if not GetGlobal("curse") then
+	elseif GetGlobal("curse")>0 then
+	if GetGlobal("curse")>Player.hp and systemfight==false then
+		SetGlobal("curse",Player.hp)
+	end
+	cr.Scale(GetGlobal("curse")*109/MaxHP,1)
+	cr.alpha=1
+	local c=GetGlobal("curse")
+	if systemfight==true then
+		if Possessed==true then
+			system.color = cr.color
+       			num1.color = cr.color
+	       		num2.color = cr.color
+       			num3.color = cr.color
+		       	num4.color = cr.color
+			else
+			system.color={1,1,1}
+			num1.color={1,1,1}
+			num2.color={1,1,1}
+			num3.color={1,1,1}
+			num4.color={1,1,1}
+			local free=MaxHP-Player.hp
+			if c>free and Player.hp>1 then
+				Player.hp=Player.hp-1
+			end
+		end
+		else
+		system.color = {123/256,0,27/256}
+       		num1.color = {123/256,0,27/256}
+	       	num2.color = {123/256,0,27/256}
+       		num3.color = {123/256,0,27/256}
+	       	num4.color = {123/256,0,27/256}
+	end
+	system.alpha=1
+	num1.alpha=1
+	num2.alpha=1
+	local x=54.5-(109/MaxHP)*(c/2+cursedinteger*(MaxHP-Player.hp))
+	cr.MoveTo(330.5+x,70)
+	elseif GetGlobal("curse")==0 and GetGlobal("burn")==0 then
+        system.color = {1,1,1}
+        num1.color = {1,1,1}
+        num2.color = {1,1,1}
+        num3.color = {1,1,1}
+        num4.color = {1,1,1}
+	cr.alpha=0
+end
+
+alltimer = alltimer+1 --да, мы долго к этому шли
+if GetGlobal("judge") then
+	if systemfight==false then
+		if GetGlobal("curse")==Player.hp then
+			if cursedtime==0 then
+				State("NONE")
+				cursedtime=1
+				placestompx=Player.x
+				healthstomp=Player.hp
+				else cursedtime=cursedtime+1
+			end
+			Player.MoveTo(placestompx+(1+cursedtime/18)*math.sin(cursedtime*math.pi/6),Player.y,true)
+			if cursedtime%12==0 then
+				Audio.PlaySound("hurtsound")
+			end
+			if cursedtime%6==0 then
+				if cursedtime<180 then
+					local h=math.floor(healthstomp*(180-cursedtime)/180)
+					if h<1 then
+						h=1
+					end
+					Player.hp=h
+					SetGlobal("curse",h)
+					else Player.hp=1
+					SetGlobal("judge",false)
+					cursedtime=0
+					SetGlobal("curse",0)
+					SetGlobal("Playerisdead",true)
+				end
+			end
+			elseif GetGlobal("curse")>0 then
+			cursedtime=cursedtime+1
+			if cursedtime>40 then
+				SetGlobal("curse",0)
+				cr.Scale(0,1)
+				cr.alpha=1
+				cursedtime=0
+				SetGlobal("judge",false)
+				else cr.alpha=1-0.025*cursedtime
+			end
+			else SetGlobal("judge",false)
+		end
+		else
+		if Possessed and PossessedTime==0 then
+			SetGlobal("curse",MaxHP-Player.hp)
+			PossessedTime=31
+			State("NONE")
+			elseif Possessed==false and MyState=="NONE" then
+			State("NONE")
+			if ButtonUsed==1 then
+				Player.MoveToAbs(48,25,true)
+				elseif ButtonUsed==2 then
+				Player.MoveToAbs(202,25,true)
+				elseif ButtonUsed==3 then
+				Player.MoveToAbs(361,25,true)
+				elseif ButtonUsed==4 then
+				Player.MoveToAbs(515,25,true)
+				else
+				Player.MoveToAbs(320,25,true)
+			end
+			MyState="DownFight"
+			SetGlobal("curse",0)
+		end
+		SetGlobal("judge",false)
+	end
+end
+	if(Player.absy == 25) and GetCurrentState()=="ACTIONSELECT" then -- Сердечко игрока в нижнем ряду с кнопками.\
+		fightstage = 0
+		if(Player.absx == 48) then -- FIGHT
+			lastbutton = 1
+			SetGlobal("button",1)
+			if mercypoint==1 then
+				Player.MoveTo(Player.x-3,Player.y,true)
+			end
+		elseif(Player.absx == 202) then -- ACT  154 149 154
+			lastbutton = 2
+			SetGlobal("button",2)
+			if mercypoint==2 then
+				Player.MoveTo(Player.x-3,Player.y,true)
+			end
+		elseif(Player.absx == 361) then -- ITEM
+			lastbutton = 3
+			SetGlobal("button",3)
+			if mercypoint==3 then
+				Player.MoveTo(Player.x-3,Player.y,true)
+			end
+		elseif(Player.absx == 515) then -- MERCY
+			lastbutton = 4
+			--[[if systemfight==false then
+				Player.MoveTo(Player.x-3,Player.y,true)
+			end
+			if mercypoint==4 then
+				Player.MoveTo(Player.x-3,Player.y,true)
+			end]]
+			SetGlobal("button",2)
+		end
+		if lastbutton==3 and Input.Confirm==1 and enemies[4].GetVar("used")==false and systemfight==false and (GetGlobal("charaisdead")<2 or wons>0) then
+			if CharaIsRaging==true then
+				if MenuBullets==true then
+					MenuBullets=false
+					ButtonsTime=30
+					
+					else
+					State("NONE")
+				end
+				else
+				page=1
+				enemies[4].Call("Firstpage")
+				enemies[1].Call("SetActive",false)
+				enemies[2].Call("SetActive",false)
+				enemies[4].Call("SetActive",true)
+				Selecting=true
+				if itemamount>4 then
+					pageblank=CreateProjectile(lang.."/Battle/1",90,-35)
+				end
+				State("ACTMENU")
+			end
+		end
+		RedoBut(lastbutton)
+	end
+	if not quittimer then
+		AnimateChara()
+	end
+	if Input.Menu == 1   then
+		--[[
+			mtt=CreateProjectileAbs("empty",320,222,"Top")
+			mtt.sprite.Scale(3,3)
+			mtt.sprite.Set("1.2/MTT/calm")
+			mtt.sprite.alpha=1
+			local dialy={"[waitall:4][w:3]...[waitall:2][w:3][func:MTT,calm]Хм.","[func:MTT,Thought]Полагаю,[w:9] [func:MTT,NothingNew]мы вновь скоро встретимся.","[func:MTT,NotPlaying]И всё-таки мне интересно[waitall:4][w:3]...","[func:MTT,punishment]Что ты нашел в ней?[w:9] [func:MTT,Just]Она же просто самоуверенная истеричка.","[func:MTT,Afraid]Полагаю,[w:6] тебе просто нравится смотреть за её страданиями,[w:6] ха?","[func:MTT,NotPersonal]Хе-хе[waitall:4][w:3]...[waitall:2][w:3] [func:MTT,Bisiness]До встречи[waitall:4][w:3]...[waitall:2][w:3][func:MTT,saw1][func:SetMusic,none][w:10][func:Mttsaw] [func:MTT,Adraid][waitall:4]актёр."}
+			dialy=EveryDial(dialy,"[font:mtt][waitall:2][w:3][effect:twitch,1][noskip][color:ffffff]","")
+			Mett=CreateText(dialy,{80,420},480,"Top",-1)
+			Mett.progressmode="manual"
+			Mett.HideBubble()]]
+		
+		--MettaName=true
+		--comm="[func:state,NONE][color:8040ff][noskip]Прошу,[w:6] [waitall:2][func:Shake]ХВАТИТ![w:15][func:ENOUGH]"
+		--Achivements[9]="0"
+		--GotAchivement(9)
+		--PlayerHasPlayedThisGame=true
+		--WriteSavio()
+		--DoAllPellets()
+		--LostMercy=22
+		--ToHappyEnd=1
+		--ToHappyTitrs()
+		--NewAudio.SetPlayTime("CaP",130)
+		--Evrywhere=1
+		--wons=1
+		--FallingKnife.timer=1
+		--epilog=true
+		--enemies[1].Call("OnDeath")
+		--Quiting()
+		--SetGlobal("charaisdead", 12)
+		--State("NONE")
+		--MettaLost=0
+		--SetMusic("titres")
+		--PlaysIntro=true
+		--prog=60
+		--enemies[1].SetVar("dodge",false)
+		--evadelevel=6
+		--MettaName=true
+		--SetGlobal("progress",prog)
+		--enemies[1].Call("WON")
+		--rus=enemies[1].GetVar("currentdialogue")
+		--systemfight=true
+		--NewAudio.PlaySound("Hits","healsound",false)
+		--NewAudio.Stop("Hits")
+		--cr.color={0.5,0.25,1}
+		--cursedinteger=0
+		--epilog=true
+		--State("NONE")
+		--BattleDialog("[noskip][waitall:1]Ты победил![w:10]\nТы получил 0 М и 50000 ОП\nТвой УР вырос![func:Level20][w:1800]")
+		--State("NONE")
+		--State("ENEMYDIALOGUE")
+		--State("NONE")
+		--globalstage="4"
+		--prog=60
+		--LostMercy=22
+		--Titr1.phase=1
+		--MyState="NONE"
+		--Titr1.timer=-92
+		--wons=1
+		--Titr1.Buggy=CreateProjectileAbs("empty",320,240,"Top")
+		--State("ACTIONSELECT")
+		--deadlyhit=true
+	end
+if fighting==true then
+	fighttimer=fighttimer+1
+	if misstime==0 and slashtime<8870  then
+		else
+		if healthtime>0 then
+			healthtime=healthtime-1
+		end
+	end
+	local ch=chainsaw
+	if fighttimer==1 then
+		firsthp=enemies[1].GetVar("hp")
+	end
+	if misstime==1 then
+		local miss=CreateProjectileAbs("system/MISS"..lang,centerlegs+charalegs.x,120)
+		table.insert(damages,miss)
+	end
+	if fiststime%2==1  then
+		if fiststime==1  then
+			table.insert(pointers,pointer)
+			pointer=CreateProjectile("system/pointer",-273,0)
+			pointer.SetVar("time",0)
+			fightspeed=8
+			elseif fiststime==3 then
+			table.insert(pointers,pointer)
+			pointer=CreateProjectile("system/pointer",273,0)
+			pointer.SetVar("time",0)
+			fightspeed=12
+		end
+		fiststime=fiststime+1
+		if fiststime==6 then
+			table.insert(pointers,pointer)
+			slashtime=8800
+			canattack=false
+		end
+	end
+	if enemies[1].GetVar("dodge")==false and enemies[1].GetVar("block")==false then
+		Wounded(enemies[1].GetVar("hp"),firsthp)
+	end
+	enemyhp.x=-81+81/1500*enemies[1].GetVar("hp")
+	enemynohp.SendToTop()
+	enemyhp.SendToTop()
+	enemyhp.Scale(162*(enemies[1].GetVar("hp"))/1500,1)
+	enemynohp.x=2*distance2*math.sin(timestamp2*math.pi/6)+centerlegs+charalegs.x
+	if healthtime<21 then
+		local alp=math.sin(math.pi*healthtime/40)
+		enemyhp.alpha=alp
+		enemynohp.alpha=alp
+	end
+	if slashtime>0 then
+		slashtime=slashtime+1
+		if pointer.isactive and ch then
+			local time=pointer.GetVar("time")+1
+			pointer.SetVar("time",time)
+			if time%20==0 then
+				pointer.sprite.Set("system/pointer1")
+				elseif time%20==10 then
+				pointer.sprite.Set("system/pointer")
+			end
+		end
+	end
+	for i=1,#fists do
+		local s=fists[i]
+		if s.isactive then
+			local time=s.GetVar("time")+1
+			s.SetVar("time",time)
+			if s.GetVar("type")=="fists" then
+				if time%3==0 and time<34 then
+					s.sprite.Set("fists/"..time/3)
+					s.sprite.Scale(2.5,2.5)
+				end
+				if time==27 then
+					DealDamage(s.GetVar("damage"))
+				end
+				if time==38 then
+					s.Remove()
+				end
+				else
+				if time==1 then
+					if enemies[1].GetVar("dodge")==true then
+						if GetGlobal("evasion")==0 then
+							s.sprite.rotation=19+math.random(11)
+							elseif GetGlobal("evasion")==2 then
+							s.sprite.rotation=-(19+math.random(11))
+						end
+						else
+						s.sprite.rotation=math.random(41)-21
+					end
+					s.sprite.Scale(2,2)
+				end
+				if time==60 then
+					slashtime=8870
+				end
+				if time%10==0 and time<70 then
+					s.sprite.Set("chainsaw/"..time/10)
+					if time==64 then
+						s.SetVar("top",{s.x-s.sprite.width*s.sprite.xscale/2*math.sin(s.sprite.rotation*math.pi/180),s.y+s.sprite.height*s.sprite.yscale/2*math.cos(s.sprite.rotation*math.pi/180),s.sprite.width})
+					end
+					s.SetVar("NowBegin",3)
+					s.SetVar("NowDamage",0)
+					s.SetVar("firsthp",enemies[1].GetVar("hp"))
+					elseif time==58 or time==59 then
+					local tim=s.GetVar("times")
+					local dams=s.GetVar("damages")
+					if s.GetVar("CharaIsDead")==true then
+						local moment=s.GetVar("NowBegin")+1
+						s.SetVar("NowBegin",moment)
+						SetGlobal("facial_expression", 51)
+						if moment%4==0 and moment<41 then
+							local amm=moment/4
+							local shows=s.GetVar("numbery")
+							shows[11-amm].sprite.Set("system/damage/9")
+							shows[10+amm].sprite.Set("system/damage/9")
+							enemies[1].SetVar("hp",0)
+							Wounded(0)
+							WasHitted(1)
+							healthtime=120
+							enemyhp.alpha=1
+							enemynohp.alpha=1
+						end
+						if moment==4 then
+							standtime=0
+							standnow=5
+							standnew=5
+						end
+						Audio.PlaySound("hit")
+						if moment<43 then
+							s.SetVar("time",57)
+							else
+							local shows=s.GetVar("numbery")
+							for i=1,#shows do
+								table.insert(damages,shows[i])
+							end
+							s.SetVar("time",59)
+						end
+						elseif s.GetVar("isdamage")==false then
+						s.SetVar("time",59)
+						if prog==42 then
+							SetGlobal("facial_expression", 62)
+							DealDamage(1,false,"special1")
+							else
+							DealDamage(0,s.GetVar("why"))
+						end
+						elseif s.GetVar("CharaIsDead")==false then
+						local nowdamage=s.GetVar("nowdamage")
+						if tim%2==0 then
+							nowdamage=nowdamage+dams[tim/2]
+						end
+						if tim%4==0 then
+							if wons==0 or s.GetVar("bloods") then
+								DoBlood(1)
+							end
+						end
+						tim=tim-1
+						s.SetVar("times",tim)
+						local shows=s.GetVar("numbery")
+						if tim>0 then
+							s.SetVar("time",58)
+						end
+						local numbers=s.GetVar("numbers")
+						if time==59 then
+							timer1=0
+						end
+						if time==58 then
+							SetGlobal("facial_expression", 51)
+							standtime=0
+							standnow=5
+							standnew=5
+							for i=1,#shows do
+								table.insert(damages,shows[i])
+								shows[i].SetVar("time",-tim-1)
+							end
+						end
+						local newhp=s.GetVar("firsthp")-nowdamage
+						if newhp<0 then
+							newhp=0
+						end
+						healthtime=120
+						enemyhp.alpha=1
+						enemynohp.alpha=1
+						enemies[1].SetVar("hp",newhp)
+						Chainsaw(shows,nowdamage)
+						s.SetVar("nowdamage",nowdamage)
+						if tim%3==0 then
+							Audio.PlaySound("hit")
+						end
+						if tim%4==0 then
+							WasHitted(1)	
+						end
+					end
+					elseif time==70 then
+					s.Remove()
+				end
+			end
+		end
+	end
+
+	if misstime>0 then
+		misstime=misstime+1
+	end
+	if dodgetime>0 then
+		dodgetime=dodgetime+1
+		if TimeEvade(dodgetime)==true then
+			if GetGlobal("evasion")>-1 then
+				SetGlobal("evasion",GetGlobal("evasion")+1)
+				dodgetime=0
+				if prog==26 and wons==0 then
+					SetGlobal("facial_expression",45)
+				end
+			end
+		end
+	end
+	if fighttimer==1 then
+		numbers=0
+		target=1
+		notarget=2
+		if prog>43 or (prog==5 and wons==1) then
+			slash_x=5
+		end
+		fightspeed=5
+		targeting=CreateProjectile("system/target",0,0)
+		pointer=CreateProjectile("system/pointer",279,0)
+		pointer.SetVar("time",0)
+	end
+	if pointer.isactive and canattack==true then
+		if ch==true or fiststime==0 or fiststime==4 then
+			pointer.Move(-fightspeed,0)
+			elseif fiststime==2 then
+			pointer.Move(fightspeed,0)
+		end
+	end
+	if (pointer.x<-274 or pointer.x>274) and pointer.isactive and fighttimer>1 then
+		if misstime==0 and fiststime==0 then
+			misstime=1
+			canattack=false
+			elseif fiststime>0 then
+			slashtime=8870
+		end
+		fightspeed=0
+		pointer.Remove()
+	end
+	if pointer.isactive and pointer.x>-fightspeed-1 and pointer.x<fightspeed+1 and slashtime==0 and forcedfight==true and canattack==true  then
+		pointer.MoveTo(0,0)
+		chainsaw=true
+		if glitchedmercy>0 then
+			glitchedmercy=1000
+		end
+		if wons==1 and prog==35 then
+			DoSlash(10,fiststime)
+			else
+			DoSlash(1,fiststime)
+		end
+		dodgetime=1
+		canattack=false
+		if curmusic=="spare" or prog==26 then
+			SlowingDown=true
+		end
+	end
+	for i=1,#pointers do
+		if pointers[i].isactive then
+			if not pointers[i].GetVar("time") then
+				pointers[i].SetVar("time",0)
+			end
+			local time=pointers[i].GetVar("time")+1
+			pointers[i].SetVar("time",time)
+			if time<60 then
+				pointers[i].sprite.Scale(1+2*math.sin(time*math.pi/120),1+2*math.sin(time*math.pi/120))
+				pointers[i].sprite.alpha=1-math.sin(time*math.pi/120)
+				else
+				pointers[i].Remove()
+			end
+		end
+	end
+	if Input.Confirm==1 and fighttimer>1 and slashtime==0 and misstime==0 and forcedfight==false and canattack==true then
+		if curmusic=="spare" then
+			SlowingDown=true
+		end
+		if wons==1 and prog==35 then
+			DoSlash(10,fiststime)
+			else
+			DoSlash(10,fiststime)
+		end
+		if ch==true then
+			canattack=false
+			elseif fisttimes==4 then
+			canattack=false
+			fiststime=fiststime+1
+			else
+			fiststime=fiststime+1
+		end
+		if ch==true then
+			dodgetime=1
+			--slashtime=8750
+		end
+	end
+	if TimeEvade(slashtime)==true and enemies[1].GetVar("dodge")==true then
+		SetGlobal("evasion",GetGlobal("evasion")+1)
+	end
+	if slashtime>8999 or misstime>139 then
+		if slashtime==9000 and glitchedmercy==0 and systemfight==false then
+			prog=prog+1
+			attacked=true 
+			SetGlobal("progress",prog)
+			if (prog<44 and wons==0) or (wons==1 and prog<6) then
+				enemies[1].Call("HandleAttack")
+				elseif ( prog==44 and wons==0 ) or ( wons==1 and prog==6 ) then
+				enemies[1].Call("HandleAttack")
+				else
+				enemies[1].Call("HandleAttack")
+			end
+			elseif slashtime==9000 and systemfight==true and enemies[1].GetVar("hp")==0 then
+			SetMusic("none")
+			if lang=="rus" then
+				BattleDialog("[noskip][color:8040ff][waitall:4][w:3]...[waitall:1][w:3]Я же говорил.[w:6]\nУ тебя нет ни шанса,[w:3] дорогуша.[w:60][func:LostHadLost]")
+				else
+				BattleDialog("[noskip][color:8040ff][waitall:4][w:3]...[waitall:1][w:3]Dediğim gibi.[w:6]\nBir şansın yoktu,[w:3] tatlım.[w:60][func:LostHadLost]")
+			end
+		end
+		if misstime==140 and wons==1 and enemies[1].GetVar("LostGotMissed")==false then
+			enemies[1].SetVar("LostGotMissed",true)
+			if lang=="rus" then
+				enemies[1].SetVar("currentdialogue",{"[effect:none][waitall:4][w:3]...[waitall:1][w:3]Это какая-то \nшутка,[w:6] которую я \nне понимаю?","[next] "})
+				else
+				enemies[1].SetVar("currentdialogue",{"[effect:none][waitall:4][w:3]...[waitall:1][w:3]Is this some \njoke,[w:6] that I don`t \nunderstand?","[next] "})
+			end
+			elseif misstime==140 and wons==1 then
+			enemies[1].SetVar("currentdialogue","[next] ")
+		end
+		if evadelevel==5 then
+			truedamage=1
+		end
+		canattack=true
+		fighting=false
+		fighttimer=0
+		fightspeed=0
+		slashtime=0
+		misstime=0
+		dodgetime=0
+		pointers={}
+		numbers=0
+		healthtime=0
+		fiststime=0
+		pointer.Remove()
+		if enemies[1].GetVar("hp")>2 and glitchedmercy==0 then
+			State("ENEMYDIALOGUE")
+		end
+		if glitchedmercy==0 then
+			targeting.Remove()
+			else
+			targeting.sprite.color={0,0,0}
+		end
+		fists={}
+	end
+end
+for i=1,#damages do
+	local number=damages[i]
+	if number.isactive then
+		if not number.GetVar("time") then
+			number.SetVar("time",-1)
+		end
+		local time=number.GetVar("time")+1
+		number.SetVar("time",time)
+		if time>0 then
+			number.MoveTo(number.x,120+75*math.s
