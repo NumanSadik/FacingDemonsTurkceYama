@@ -1,4 +1,4 @@
-﻿--A Wild Chara Appears!
+--A Wild Chara Appears!
 require "Monsters/chara"
 music = "empty"
 autolinebreak = true
@@ -1041,7 +1041,7 @@ function FullIntro()
 				dial={"[noskip][func:face,yes][next] ","[effect:twitch,1][font:overworld][color:ffffff][func:Peachy][func:checkquick][func:DUB,prolog/1]*Вот мы и здесь.", "[func:normal][func:DUB,prolog/2]*С возвращением,[w:3] \nпартнёр.","[func:Peachy]*[waitall:4][w:3]...", "[func:DUB,prolog/3]*Ты почти завершил \nпредначертанное,[w:3] [func:normal]не так ли?", "[func:Interruption][w:1][func:DUB,prolog/4][func:normal1]*Просто[waitall:4][w:3]...[waitall:1][w:3] хотела убедиться.", "[func:Peachy]*[waitall:4][w:3]...", "[func:DUB,prolog/5]*Позволь задать тебе один \nвопрос.", "[func:normal][func:DUB,prolog/6]*Ты уверен,[w:3] что ты \nвыше последствий?","[func:Peachy][func:DUB,prolog/7]*Что любые твои деяния[waitall:4][w:3]..","[func:normal][noskip][func:DUB,prolog/8]*Останутся безнаказанными?[w:30][func:ph1][func:face,no][next] "}
 			end
 			elseif lang=="eng" then
-			dial={"[noskip][func:face,yes][next] ","[func:DUB,prolog/1][effect:twitch,1][font:overworld][color:ffffff][func:Peachy][func:checkquick]*[waitall:2][w:10]Yani, [waitall:1][w:10]sonunda [w:1]buradayız[w:3].", "[func:DUB,prolog/2][func:normal]*Tekrar hoşgeldin, \npartner.","[func:Peachy]*[waitall:5]...", "[func:DUB,prolog/3][w:3][speed:1.5]*neredeyse gö[w:1]rev[w:1]ini \n[speed:1]tamamladin,[w:12] [func:normal]", "[func:Interruption][w:1][func:DUB,prolog/4][func:normal1]*[w:2]Sadece [w:15]emin [w:1]olmak[w:1] istedim[w:1].", "[func:Peachy]*[waitall:6]...", "[func:DUB,prolog/5]*Bir şey[w:10] sormama [w:3]izin ver[w:5].", "[func:DUB,prolog/6][func:normal]*[w:2]Yaptğının [w:2],[w:5] kaderinden [speed:1.5]\nüstün [w:2]old [w:2][speed:1][w:2]uğu[w:1]mu[w:1]düşünüyorsun[w:4]?","[func:DUB,prolog/7][func:Peachy]*[w:3]Yaptıklarının [w:1]tepkisiz [waitall:2]\nkalamaz[waitall:3]...[w:30][func:ph1][func:face,no][next] "}
+			dial={"[noskip][func:face,yes][next] ","[func:DUB,prolog/1][effect:twitch,1][font:overworld][color:ffffff][func:Peachy][func:checkquick]*[waitall:2][w:10]Yani, [waitall:1][w:10]sonunda [w:1]buradayız[w:3].", "[func:DUB,prolog/2][func:normal]*Tekrar hoşgeldin, \npartner.","[func:Peachy]*[waitall:5]...", "[func:DUB,prolog/3][w:3][speed:1.5]*Neredeyse [w:1]görevini \n[speed:1]tamamladın.[w:12] [func:normal]", "[func:Interruption][w:1][func:DUB,prolog/4][func:normal1]*[w:2]Sadece [w:15]emin [w:1]olmak[w:1] istedim[w:1].", "[func:Peachy]*[waitall:6]...", "[func:DUB,prolog/5]*Bir şey[w:10] sormama [w:3]izin ver[w:5].", "[func:DUB,prolog/6][func:normal]*[w:2]Yaptğının[w:2],[w:5] kaderinden [speed:1.5]\nüstün [w:2][speed:1]olduğunu [w:1]mu \n[w:1]düşünüyorsun[w:4]?","[func:DUB,prolog/7][func:Peachy]*[w:3]Yaptıkların [w:1]tepkisiz [waitall:2]\nkalamaz[waitall:3]...[w:30][func:ph1][func:face,no][next] "}
 		end
 	end
 	dial=EveryDial(dial,"[effect:twitch,1][font:overworld][noskip][color:ffffff]","[novoice]")
@@ -2286,7 +2286,7 @@ if Titr2.phase>0 then
 			Titr2.step=1
 			elseif s==1 and t>1250 then
 			local n="Drendy"
-			local s="Co-Creator, programmer\n(Ae)"
+			local s="Ortak yapımcı, programlayıcı\n(Ae)"
 			if lang=="rus" then
 				s="Со-создатель, программист\n(Не хочет революцию, но хочет релиз)"
 			end
@@ -2294,7 +2294,7 @@ if Titr2.phase>0 then
 			Titr2.step=2
 			elseif s==2 and t>1500 then
 			local n="The Crystal Horse"
-			local s="Co-Creator, programmer\n(dua ediyor)"
+			local s="Ortak Ypaımcı, programlayıcı\n(dua ediyor)"
 			if lang=="rus" then
 				s="Со-создатель, программист\n(Цок-цокнулся в процессе)"
 			end
@@ -2332,7 +2332,7 @@ if Titr2.phase>0 then
 			elseif s==5 and t>2136 then
 			local s="Азриель,[w:3] хватит травить людей[waitall:4][w:3]..."
 			if lang=="eng" then
-				s="Asriel,[w:3] stop poisoning humans[waitall:4][w:3]..."
+				s="Asriel,[w:3] insanları zehirlemeyi bırak[waitall:4][w:3]..."
 			end
 			Titr2.txt1=CreateText("[font:overworld][noskip]"..s,{80,440},480,"Over",-1)
 			Titr2.txt1.HideBubble()
@@ -2391,7 +2391,7 @@ if Titr2.phase>0 then
 			if s==10 and t>3030 then
 				Titr2.step=11
 				local l="Toby Fox"
-				local n="For creating Undertale"
+				local n="Undertale'ı yarattığı için"
 				if lang=="rus" then
 					n="За создание Undertale"
 				end
@@ -2399,7 +2399,7 @@ if Titr2.phase>0 then
 				elseif s==11 and t>3060 then
 				Titr2.step=12
 				local l="Temmie Chang"
-				local n="For helping Toby Fox"
+				local n="Toby Fox'a yardım ettiği için"
 				if lang=="rus" then
 					n="За помощь Тоби Фоксу"
 				end
@@ -2407,7 +2407,7 @@ if Titr2.phase>0 then
 				elseif s==12 and t>3090 then
 				Titr2.step=13
 				local l="VoltraTheLively"
-				local n="For creating Storyshift"
+				local n="Storyshift'i oluşturduğu için"
 				if lang=="rus" then
 					n="За создание Storyshift"
 				end
@@ -2415,7 +2415,7 @@ if Titr2.phase>0 then
 				elseif s==13 and t>3120 then
 				Titr2.step=14
 				local l="RhenaudTheLukark"
-				local n="For creating CYF"
+				local n="CYF'i yarattığı için"
 				if lang=="rus" then
 					n="За создание CYF"
 				end
@@ -2423,7 +2423,7 @@ if Titr2.phase>0 then
 				elseif s==14 and t>3290 then
 				Titr2.step=15
 				local l="kae"
-				local n="For creating INSANTION"
+				local n="INSANTION'u yarattığı için"
 				if lang=="rus" then
 					n="За создание INSANTION"
 				end
@@ -2461,7 +2461,7 @@ if Titr2.phase>0 then
 			end
 			elseif s==19 and t>4010 then
 			local n="GeorgTime"
-			local s="Character's sprites\n(Fighting haters with eyebrows)"
+			local s="Karakter dokuları\n(Fighting haters with eyebrows)"
 			if lang=="rus" then
 				s="Спрайты персонажей\n(Отбивается от хейтеров бровями)"
 			end
@@ -2515,7 +2515,7 @@ if Titr2.phase>0 then
 			elseif s==24 and t>5190 then
 			local s="Т-тори[waitall:4][w:3]...[waitall:1][w:3] Простишь ли ты меня?"
 			if lang=="eng" then
-				s="T-Tori[waitall:4][w:3]...[waitall:1][w:3] may you forgive me?"
+				s="T-Tori[waitall:4][w:3]...[waitall:1][w:3] beni affedecek misin?"
 			end
 			Titr2.txt1=CreateText("[font:overworld][noskip][voice:v_fluffybuns]"..s,{80,440},480,"Over",-1)
 			Titr2.txt1.HideBubble()
@@ -2557,7 +2557,7 @@ if Titr2.phase>0 then
 			if s==27 and t>6030 then
 				Titr2.step=28
 				local l="Merg"
-				local n="For cherry videos"
+				local n="Kirazlı videoları için"
 				if lang=="rus" then
 					n="За вишневые видео"
 				end
@@ -2565,7 +2565,7 @@ if Titr2.phase>0 then
 				elseif s==28 and t>6060 then
 				Titr2.step=29
 				local l="Linx4"
-				local n="For expression"
+				local n="Tepkisi için"
 				if lang=="rus" then
 					n="За экспрессию"
 				end
@@ -2573,7 +2573,7 @@ if Titr2.phase>0 then
 				elseif s==29 and t>6090 then
 				Titr2.step=30
 				local l="Just A Dog"
-				local n="For bypassing 1.1.7"
+				local n="1.1.7'yi geçtiği için"
 				if lang=="rus" then
 					n="За первопроходство 1.1.7"
 				end
@@ -2581,7 +2581,7 @@ if Titr2.phase>0 then
 				elseif s==30 and t>6120 then
 				Titr2.step=31
 				local l="Necros"
-				local n="For nostalgia"
+				local n="Nostalji için"
 				if lang=="rus" then
 					n="За олдфажность"
 				end
@@ -2627,7 +2627,7 @@ if Titr2.phase>0 then
 			end
 			elseif s==36 and t>7010 then
 			local n="RSBlasnever"
-			local s="Promo-artist\n(Igniyo'nun parasını çalıyor)"
+			local s="Ön sanatçı\n(Igniyo'nun parasını çalıyor)"
 			if lang=="rus" then
 				s="Промо-художник\n(Крадет деньги у Игнитио)"
 			end
@@ -2635,15 +2635,15 @@ if Titr2.phase>0 then
 			Titr2.step=37
 			elseif s==37 and t>7260 then
 			local n="Alex Lomolom"
-			local s="Overworld ve Buton Spritelar\n(şu an ölüyor)"
+			local s="Overworld ve Buton Dokuları\n(şu an ölüyor)"
 			if lang=="rus" then
 				s="Спрайт оверворлда и меню битвы\n(Сейчас занят, он умирает)"
 			end
 			table.insert(Titr2.Posters,DoPoster(-1,"lom",n,s,7260))
 			Titr2.step=38
 			elseif s==38 and t>7510 then
-			local n="Mugmann, Numan, SHC, Yesil_51"
-			local s="Çevirmenler\n(Hepsine teşekkürler!)"
+			local n="Numan#6526, SHC, Yesil_51"
+			local s="Türkçe Çevirmenler\n(Hepsine teşekkürler!)"
 			if lang=="rus" then
 				s="Промо-художник\nМыш (кродетця)"
 			end
@@ -2706,7 +2706,7 @@ if Titr2.phase>0 then
 			if lang=="rus" then
 				dial=dial.."Английский голос Чары"
 				else
-				dial=dial.."English Chara's VO"
+				dial=dial.."İngilizce Chara Seslendirmeni"
 			end
 			T.txt1=CreateText("[novoice][instant][font:overworld]"..name,{0,200},240,"Top",-1)
 			T.txt1.progressmode="none"
@@ -2853,7 +2853,7 @@ if Titr2.phase>0 then
 					if lang=="rus" then
 						dial={"[font:overworld]Вообще-то,[w:6] я не люблю фотографироваться.[w:12] Но это фото будет моим любимым.[w:12]\nА ты что думаешь[waitall:4][w:3]...[waitall:1][w:12] Зеркальце?[w:30][func:AllGoesDarkOnceMore]"}
 						else
-						dial={"[font:overworld]Actually,[w:6] Fotoğrafımın çekilmesini sevmem.[w:12] fakat bu favorim olacak.[w:12] Ne düşünüyorsun[waitall:4][w:3]...[waitall:1][w:12] Ayna?[w:30][func:AllGoesDarkOnceMore]"}
+						dial={"[font:overworld]Aslında,[w:6] fotoğrafımın çekilmesini sevmem.[w:12] fakat bu favorim olacak.[w:12] Ne düşünüyorsun[waitall:4][w:3]...[waitall:1][w:12] Ayna?[w:30][func:AllGoesDarkOnceMore]"}
 					end
 					local t=CreateText(dial,{80,160},480,"Top",-1)
 					t.HideBubble()
@@ -2876,7 +2876,7 @@ if Titr2.phase>0 then
 				elseif time==270 then
 				local dial=""
 				if lang=="eng" then
-					dial="THE END"
+					dial="SON"
 					else
 					dial="КОНЕЦ"
 				end
@@ -3346,7 +3346,7 @@ if Titr1.phase>0 then
 			Titr1.Titrs[n].progressmode="none"
 			Titr1.Titrs[n].MoveTo(320-Titr1.Titrs[n].GetTextWidth()/2,390)
 			n=n+1
-			Titr1.Titrs[n]=CreateText(ForTitr1("Английский голос Чары","English Chara's VO",b),{0,0},480,"Top",-1)
+			Titr1.Titrs[n]=CreateText(ForTitr1("Английский голос Чары","İngilizce Chara Seslendirmeni",b),{0,0},480,"Top",-1)
 			Titr1.Titrs[n].HideBubble()
 			Titr1.Titrs[n].progressmode="none"
 			Titr1.Titrs[n].MoveTo(320-Titr1.Titrs[n].GetTextWidth()/2,360)
@@ -3356,7 +3356,7 @@ if Titr1.phase>0 then
 			Titr1.Titrs[n].progressmode="none"
 			Titr1.Titrs[n].MoveTo(320-Titr1.Titrs[n].GetTextWidth()/2,300)
 			n=n+1
-			Titr1.Titrs[n]=CreateText(ForTitr1("Русский голос Чары","Russian Chara's VO",b),{0,0},480,"Top",-1)
+			Titr1.Titrs[n]=CreateText(ForTitr1("Русский голос Чары","Rus Chara Seslendirmeni",b),{0,0},480,"Top",-1)
 			Titr1.Titrs[n].HideBubble()
 			Titr1.Titrs[n].progressmode="none"
 			Titr1.Titrs[n].MoveTo(320-Titr1.Titrs[n].GetTextWidth()/2,270)
@@ -3376,7 +3376,7 @@ if Titr1.phase>0 then
 			Titr1.Titrs[n].progressmode="none"
 			Titr1.Titrs[n].MoveTo(320-Titr1.Titrs[n].GetTextWidth()/2,120)
 			n=n+1
-			Titr1.Titrs[n]=CreateText(ForTitr1("Создатель музыки меню","Menu`s music creator",b),{0,0},480,"Top",-1)
+			Titr1.Titrs[n]=CreateText(ForTitr1("Создатель музыки меню","Menü müziği yapımcısı",b),{0,0},480,"Top",-1)
 			Titr1.Titrs[n].HideBubble()
 			Titr1.Titrs[n].progressmode="none"
 			Titr1.Titrs[n].MoveTo(320-Titr1.Titrs[n].GetTextWidth()/2,90)
@@ -4418,7 +4418,7 @@ if MenuBullets==true then
 								TrueKnifes[t].Remove()
 							end
 							TextObjects[7].Set("empty")
-							enemies[1].Call("HandleCustomCommand","INSPECT")
+							enemies[1].Call("HandleCustomCommand","İNCELE")
 							elseif i==4 then
 							for t=1,7 do
 								TextObjects[t].Set("empty")
@@ -4431,7 +4431,7 @@ if MenuBullets==true then
 								TrueKnifes[t].Remove()
 							end
 							TextObjects[7].Set("empty")
-							enemies[1].Call("HandleCustomCommand","PRAY")
+							enemies[1].Call("HandleCustomCommand","DUA ET")
 							elseif i==5 then
 							for t=3,5 do
 								TextObjects[t].SetVar("used",false)
@@ -5006,7 +5006,7 @@ if NoGameTime==false then
 					local names={"Начать","Опции","Дополнительно","Выйти"}
 					txt="[font:overworld][novoice][instant][speed:0.75]"..names[i]
 					elseif lang=="eng" then
-					local names={"Begin","Options","Extra","Exit"}
+					local names={"Başla","Ayarlar","Fazladan","Çıkış"}
 					txt="[font:overworld][novoice][instant][speed:0.75]"..names[i]
 				end
 				OverText[i]=CreateText(txt,{-240,310-(i-1)*82.5-8},480,"Top")
@@ -5116,7 +5116,7 @@ if OverMenuTime==false then
 				local names={"Начать","Опции","Дополнительно","Выйти"}
 				txt="[font:overworld][novoice][instant][speed:0.75]"..names[i]
 				elseif lang=="eng" then
-				local names={"Begin","Options","Extra","Exit"}
+				local names={"Başla","Ayarlar","Fazladan","Çıkış"}
 				txt="[font:overworld][novoice][instant][speed:0.75]"..names[i]
 			end
 			OverText[i]=CreateText(txt,{-240,310-(i-1)*82.5-8},480,"Top")
@@ -5269,7 +5269,7 @@ if MyState=="MENU" then
 				MyState="GlobalChoice"
 				local r={"Да", "Нет","Вы хотите начать с последнего сохранения?"}
 				if lang=="eng" then
-					r={"YES","NO","Do you want to start from the latest save?"}
+					r={"EVET","HAYIR","Son kayıttan başlamak ister misin?"}
 				end
 				GlobalChoiceCover=CreateProjectileAbs("system/globalstagecover",320,240,"Top")
 				GlobalChoiceCover.sprite.Scale(2,2)
@@ -5388,7 +5388,7 @@ if MyState=="MENU" then
 			if lang=="rus" then
 				m={"Опции", "Экстра"}
 				else
-				m={"Options","Extra"}
+				m={"Ayarlar","Fazladan"}
 			end
 			txt="[novoice][instant][font:overworld][color:ff2040]"..m[InState-1]
 			Changer.Exit=CreateProjectileAbs("system/settings_exit",117,600,"BelowBullet")
@@ -5413,7 +5413,7 @@ if MyState=="MENU" then
 					if lang=="rus" then
 						m={"Язык: [color:ff2040]РУССКИЙ","Озвучка: "..OnOff(dubbing),"Счётчик смертей: "..OnOff(ShowDeathCounter),"Сложность: "..Differ(diff),"Кровь: "..OnOff(blooding), "СТЕРЕТЬ прогресс"}
 						else
-						m={"Language: [color:ff2040]TÜRKÇE","Seslendirme: "..OnOff(dubbing),"Ölüm sayacı: "..OnOff(ShowDeathCounter),"Zorluk: "..Differ(diff),"Kan: "..OnOff(blooding),"ilerlemeyi SİL"}
+						m={"Dil: [color:ff2040]TÜRKÇE","Seslendirme: "..OnOff(dubbing),"Ölüm sayacı: "..OnOff(ShowDeathCounter),"Zorluk: "..Differ(diff),"Kan: "..OnOff(blooding),"İlerlemeyi SİL"}
 					end	
 					Changer.Texts[i]=CreateText("[font:overworld][instant][novoice]"..m[i],{160,360-(i-1)*30},480,"BelowBullet",-1)
 					if i==4 then
@@ -5432,7 +5432,7 @@ if MyState=="MENU" then
 				Changer.Texts[9].HideBubble()
 				Changer.Texts[9].progressmode="none"
 				MyTimer=-1
-				MyState="Options"
+				MyState="Ayarlar"
 				SaveInState=InState
 				InState=1
 				fPlayer.MoveToAbs(130,Changer.Texts[1].y+10)
@@ -5451,7 +5451,7 @@ if MyState=="MENU" then
 					if lang=="rus" then
 						m={"Музыка:","  "..NameMusic(songs[1]),"  "..NameMusic(songs[2]),"  "..NameMusic(songs[3]), "Достижения"}
 						else
-						m={"Music:","  "..NameMusic(songs[1]),"  "..NameMusic(songs[2]),"  "..NameMusic(songs[3]),"Achivements "}
+						m={"Müzik:","  "..NameMusic(songs[1]),"  "..NameMusic(songs[2]),"  "..NameMusic(songs[3]),"Başarımlar "}
 					end	
 					Changer.Texts[i]=CreateText("[font:overworld][instant][novoice]"..m[i],{160,360-(i-1)*30},480,"BelowBullet",-1)
 					Changer.Texts[i].HideBubble()
@@ -5684,7 +5684,7 @@ if MyState=="MENU" then
 		MenuExtras(5)
 		Audio.PlaySound("OverMenuConf")
 	end
-	elseif MyState=="Options" then
+	elseif MyState=="Ayarlar" then
 	if Input.Cancel==1 then
 		Audio.PlaySound("OverMenuConf")
 		if SaveDiff!=diff and globalstage!="0" and globalstage!="5" then
@@ -5761,13 +5761,13 @@ if MyState=="MENU" then
 				OverText[3].SetText("[font:overworld][instant][novoice]".."Дополнительно")
 				OverText[4].SetText("[font:overworld][instant][novoice]".."Выйти")
 				else
-				Changer.Texts[1].SetText("[font:overworld][instant][novoice]".."Dil: [color:ff2040]ENGLISH")
+				Changer.Texts[1].SetText("[font:overworld][instant][novoice]".."Dil: [color:ff2040]TÜRKÇE")
 				Changer.Texts[2].SetText("[font:overworld][instant][novoice]".."Seslendirme: "..OnOff(dubbing))
 				Changer.Texts[3].SetText("[font:overworld][instant][novoice]".."Ölüm sayacı: "..OnOff(ShowDeathCounter))
 				Changer.Texts[4].SetText("[font:overworld][instant][novoice]".."Zorluk: "..Differ(diff))
 				Changer.Texts[5].SetText("[font:overworld][instant][novoice]".."Kan: "..OnOff(blooding))
 				Changer.Texts[6].SetText("[font:overworld][instant][novoice]".."ilerlemeyi SİL")
-				Changer.Text.SetText("[font:overworld][instant][novoice][color:ff2040]Options")
+				Changer.Text.SetText("[font:overworld][instant][novoice][color:ff2040]Ayarlar")
 				Changer.Text.MoveTo(310-Changer.Text.GetTextWidth()/2,430)
 				OverText[1].SetText("[font:overworld][instant][novoice]".."Başla")
 				OverText[2].SetText("[font:overworld][instant][novoice]".."Ayarlar")
@@ -5862,7 +5862,7 @@ if MyState=="MENU" then
 				SavioWrite.Delete()
 				State("DONE")
 				else
-				MyState="Options"
+				MyState="Ayarlar"
 				Changer.Texts[7].SetText("")
 				Changer.Texts[8].SetText("")
 				Changer.Texts[9].SetText("")
@@ -5874,7 +5874,7 @@ if MyState=="MENU" then
 				MyTimer=-1
 				MyState="CHANGING"
 				else
-				MyState="Options"
+				MyState="Ayarlar"
 				Changer.Texts[7].SetText("")
 				Changer.Texts[8].SetText("")
 				Changer.Texts[9].SetText("")
@@ -6116,7 +6116,7 @@ if logotimer==true then
 			OverButtons[i].Remove()
 		end
 		COVER.Remove()
-		local words={"NOT [alpha:00]CANON","    CANON"}
+		local words={"CANON  [alpha:00]DEĞİL","    DEĞİL"}
 		if lang=="rus" then
 			words={"НЕ [alpha:00]КАНОН","   КАНОН"}
 		end
@@ -6537,13 +6537,13 @@ if deathtimer==false then
 			if lang=="rus" then
 				enemies[1].SetVar("commands",{"ПРОВЕРИТЬ", "МОЛИТВА"})
 				else
-				enemies[1].SetVar("commands",{"CHECK", "PRAY"})
+				enemies[1].SetVar("commands",{"GÖZLE", "DUA ET"})
 			end
 			else
 			if lang=="rus" then
 				enemies[1].SetVar("commands",{"ПРОВЕРИТЬ"})
 				else
-				enemies[1].SetVar("commands",{"CHECK"})
+				enemies[1].SetVar("commands",{"GÖZLE"})
 			end
 		end
 		SetGlobal("charaisdead",0)
@@ -7077,7 +7077,7 @@ if not GetGlobal("fightbegin") then
 					if quick==true then
 						dial={"[noskip][func:TakeKnife][func:head][effect:none][novoice][waitall:5]ДО [color:ff0000][func:Devil,night]ДНА![w:10][next] "}
 						else
-						dial={"[func:DUB,prolog/17][noskip]Bugün çok canlı \nbir [w:1]gün.","[func:DUB,prolog/18][noskip]Kaynayan [w:2]kanımın [w:1][waitall:2]kokusunu[waitall:1] [w:5]\nvücudumda [waitall:2]hissediyorum.","[func:DUB,prolog/19][noskip]Dostlarım artık \nyok olmuş [w:6]olsa bile[waitall:5]...","[func:DUB,prolog/20][noskip]Hala [waitall:2]sana karşı[waitall:1][w:7] çıkmak [speed:1.5]için bir[speed:1]\nnedenim[w:1]var.","[func:DUB,prolog/21][func:Peachy][noskip]Neredeyse unutuyordum,[w:15] [func:normal]Sana bir \nşiir yazdım.","[func:DUB,prolog/22][noskip][func:Peachy][w:3]Şöyle [w:10]başlıyor \n[w:6]...","[func:DUB,prolog/23][noskip]Ha[w:1]ri[w:1]ka[w:1]bir gün[w:4] \ndaha bitmek üzere[waitall:4][w:3]...","[func:DUB,prolog/24][noskip]Kuşlar [w:4]hala \ncıvıldıyor,[w:5]\nve tehlikeyi[w:1]göz ardı[w:1] ediyorlar[waitall:4][w:3]...","[func:DUB,prolog/25][noskip]Ve senin bile \nolmayan \ngücünü[w:7] \nhissediyorlar[waitall:4][w:3]...","[func:DUB,prolog/26][noskip][func:TakeKnife][func:head][effect:none][novoice][color:ff0000]HER [w:1]HA[w:1]RE[w:2]KE[w:1]TİN [w:1]İÇİB [w:2]\nACI [w:1]ÇEK[w:1]MEYE[w:2]\n[waitall:2]HAZ[func:Devil,night]IR[w:5]LAN![w:20][next] "}
+						dial={"[func:DUB,prolog/17][noskip]Bugün çok canlı \nbir [w:1]gün.","[func:DUB,prolog/18][noskip]Kanımın kaynadığını [waitall:2]\nhissedebiliyorum.","[func:DUB,prolog/19][noskip]Dostlarım artık \nyok olmuş [w:6]olsa bile[waitall:5]...","[func:DUB,prolog/20][noskip]Hala [waitall:2]sana karşı\n[waitall:1][w:7]çıkmak [speed:1.5]için bir[speed:1]\nnedenim [w:1]var.","[func:DUB,prolog/21][func:Peachy][noskip]Neredeyse \nunutuyordum,[w:15] [func:normal]\nSana bir şiir yazdım.","[func:DUB,prolog/22][noskip][func:Peachy][w:3]Şöyle [w:10]başlıyor \n[w:6]...","[func:DUB,prolog/23][noskip]Ha[w:1]ri[w:1]ka [w:1]bir gün[w:4] \ndaha bitiyor[waitall:4][w:3]...","[func:DUB,prolog/24][noskip]Kuşlar [w:4]hala \ncıvıldıyor,[w:5]\ntehlikeyi [w:1]göz ardı \nederek[waitall:4][w:3]...","[func:DUB,prolog/25][noskip]Ve sende bile \nolmayan \ngücü[w:7] \nhissediyorlar[waitall:4][w:3]...","[func:DUB,prolog/26][noskip][func:TakeKnife][func:head][effect:none][novoice][color:ff0000]HER [w:1]HARE[w:2]KE[w:1]TİN İÇİN [w:2]\nACI [w:1]ÇEK[w:1]MEYE[w:2]\n[waitall:2]HAZ[func:Devil,night]IR[w:5]LAN![w:20][next] "}
 					end
 				end
 				dial=EveryDial(dial,"[effect:twitch,1][noskip]","[novoice]")
@@ -7167,7 +7167,7 @@ if GetGlobal("phase1")==1 then
 					dial={"[next] ","[func:face,yes][font:overworld][effect:twitch,1][func:NoMercy1][color:ffffff][func:DUB,prolog/9]*[waitall:4][w:3]... Ясно.", "[func:DUB,prolog/10]*[effect:twitch,1]Хех[waitall:4][w:3]...[waitall:1][w:3]\n[func:Danger]Даже смешно отчасти.", "[func:NoMercy1][waitall:4][w:3]...","[func:DUB,prolog/11]*Я не буду утруждать \nсебя разъяснениями терминов.","[noskip][func:DUB,prolog/12]*На самом деле,[w:3] ты и \nтак их знаешь[waitall:4][w:3]...[waitall:1]\n[w:12][func:Danger1]Не так ли?=)[w:50][func:ph2][func:face,no][next] "}
 				end
 				elseif lang=="eng" then
-				dial={"[next] ","[func:DUB,prolog/9][func:face,yes][font:overworld][effect:twitch,1][func:NoMercy1][color:ffffff]*[waitall:5]...[waitall:1] Oh, [w:8][waitall:2]anlıyorum.", "[func:DUB,prolog/10][effect:twitch,1]*Heh[waitall:5]...[waitall:1][w:5]\n[func:Danger]Bu [w:12]bir [w:1]şekilde [w:1]komik[w:4].", "[func:NoMercy1][waitall:5]...","[func:DUB,prolog/11]*[w:5]Kendimi[waitall:2]sana [waitall:1][w:4]terbiye\n[speed:1.5]kuralları [speed:1]öğreterek [waitall:2]yormayacağım[w:3].","[func:DUB,prolog/12][noskip]*[w:1]Zaten[w:9] onları\nöğrenemezsin [w:1]biliyorsun[waitall:5]...[waitall:1]\n[w:14][func:Danger1]Değil [w:3]mi?=)[w:50][func:ph2][func:face,no][next] "}
+				dial={"[next] ","[func:DUB,prolog/9][func:face,yes][font:overworld][effect:twitch,1][func:NoMercy1][color:ffffff]*[waitall:5]...[waitall:1] Oh, [w:8][waitall:2]anlıyorum.", "[func:DUB,prolog/10][effect:twitch,1]*Heh[waitall:5]...[waitall:1][w:5]\n[func:Danger]Bu [w:12]bir [w:1]şekilde [w:1]komik[w:4].", "[func:NoMercy1][waitall:5]...","[func:DUB,prolog/11]*[w:5]Sana terbiye kurallarını \nöğreterek kendimi \nyormayacağım.","[func:DUB,prolog/12][noskip]*[w:1]Zaten öğrenemezsin[waitall:5]...[waitall:1]\n[w:14][func:Danger1]Değil [w:3]mi? =)[w:50][func:ph2][func:face,no][next] "}
 			end
 			dial=EveryDial(dial,"[noskip][font:overworld][effect:twitch,1][color:ffffff]","[novoice]")
 			enemies[5].SetVar("currentdialogue",dial)
@@ -7202,7 +7202,7 @@ if GetGlobal("phase1")==2 then
 					dial={"[func:face,yes][next] ","[effect:twitch,1][font:overworld][color:ffffff][func:NoMercy1][func:DUB,prolog/13][waitall:2]*вздох*","[func:NoMercy1][func:DUB,prolog/14]*Вечно тянуть момент \nневозможно.","[func:DUB,prolog/15][w:3]*И раз мой мир обречён \nопять исчезнуть[waitall:4][w:3]...","[func:NoMercy1][func:DUB,prolog/16]*Я хотя бы попробую \nзаставить исчезнуть [w:3]\n[color:ff0000][waitall:2]тебя[color:ffffff].","[func:fightbegin][func:face,no][next] "}
 				end
 				elseif lang=="eng" then
-				dial={"[func:face,yes][next] ","[func:DUB,prolog/13][effect:twitch,1][font:overworld][color:ffffff][func:NoMercy1][w:9][waitall:2]*hüff*","[func:DUB,prolog/14][func:NoMercy1]*[w:9]Hiç bir şey [w:1]sonsuza kadar \n[w:1]sü[w:1]re[w:1]mez[w:2].","[func:DUB,prolog/15]*Ve dünyamın \nka[w:1]de[w:1]ri [w:9]toz olmak [w:1]ise[waitall:5]...","[func:DUB,prolog/16][func:NoMercy1]*[w:4]En azından [speed:1.25][color:ff0000][waitall:2]SENİ[speed:1]\ntoz etmeyi  [w:12]deneyeceğim[waitall:1][w:14].","[func:fightbegin][func:face,no][next] ","[func:fightbegin][func:face,no][next] "}
+				dial={"[func:face,yes][next] ","[func:DUB,prolog/13][effect:twitch,1][font:overworld][color:ffffff][func:NoMercy1][w:9][waitall:2]*hüff*","[func:DUB,prolog/14][func:NoMercy1]*[w:9]Hiç bir şey [w:1]sonsuza kadar \n[w:1]sü[w:1]re[w:1]mez[w:2].","[func:DUB,prolog/15]*Ve dünyamın \nka[w:1]de[w:1]ri [w:9]toz olmak [w:1]ise[waitall:5]...","[func:DUB,prolog/16][func:NoMercy1]*[w:4]En azından [speed:1.25][color:ff0000][waitall:2]SENİ[speed:1][color:ffffff]\ntoz etmeyi [w:12]deneyeceğim[waitall:1][w:14].","[func:fightbegin][func:face,no][next] ","[func:fightbegin][func:face,no][next] "}
 			end
 			dial=EveryDial(dial,"[noskip][font:overworld][effect:twitch,1][color:ffffff]","[novoice]")
 			enemies[5].SetVar("currentdialogue",dial)
@@ -8196,7 +8196,7 @@ function HandleSpare()
 				comm="Я начинаю беспокоиться.[w:6] [color:8040ff]\nТы же не думаешь меня предать?"
 				t={"[func:head4]И опять[waitall:4][w:3]...[waitall:1][w:3]","Никогда не думала,[w:3]\n[func:sad]что буду надеяться\nна то,[w:3] что ты\nударишь.","[func:head4]Знаешь,[w:3] это же был\nриторический\nвопрос[waitall:4][w:3]...[waitall:1][w:3]","[func:Suprise1][speed:0.75]В чем мне резон\nщадить тебя?[w:8] [func:head]\nЯ же сказала,[w:4]\nя не дура,[w:4]\nчтобы верить тебе."}
 				else
-				comm="I am getting nervous now.[w:6] [color:8040ff]\nDid you decide to betray me?"
+				comm="Sinirlenmeye başlıyorum.[w:6] [color:8040ff]\nBana ihanet etmeye mi karar verdin?"
 				t={"[func:head4]Ve yine[waitall:4][w:3]...","Asla [func:sad]bana \nvurman için bekleyeceğimi \ndüşünmezdim.","[func:head4]Biliyorsun,[w:3] Merhamet \nhakkında \nkonuşmuştum[waitall:4][w:3]...","[func:Suprise1][speed:0.[w:6]75]Neden seni \nbağışlamam gereksin?[w:6][w:8][func:head] \nDaha önce dediğim gibi,[w:3] \nSana inanacak bir \nzavallı değilim."}
 			end
 			elseif mercy==3 then
@@ -8204,7 +8204,7 @@ function HandleSpare()
 				comm="[speed:0.75][color:8040ff]Даже не смей, дорогуша..."
 				t={"[func:head4]Хватит[waitall:4][w:3]...","Серьезно,[w:6] [func:Look]хватит.[w:12]\n[func:sad]Это уже действует\nмне на нервы.","[func:head4]Если бы ты\n[speed:0.75][w:3]действительно[speed:1][w:3]\nхотел что-то\nизменить,[w:3] [func:Suprise1]тебя бы\nздесь не было\nсейчас!","[func:NoMercy1]Я знаю, как это\nбывает.[w:6] [func:Think]Ты щадишь\nменя,[w:3] а я убиваю\nтебя.","[func:NoMercy1]А в конце концов[w:3]\nвсё возвращается на\nкруги своя,[w:3][speed:0.75] ничего\nне меняя[waitall:4][w:3]...","[func:head4]Тот,[w:3] кто стоит над\nнами всеми,[w:3] не\nпозволит тебе\nсоскочить,[w:3] [func:Suprise1]ты же\nпонимаешь это?","[func:head4]Зачем давать мне\nложную надежду,[w:3]\nпартнёр[waitall:4][w:3]...","[waitall:4][w:3]...[waitall:1][w:3][func:sad]Если это все ещё\nты,[w:3] конечно же[waitall:4][w:3]...","[func:Look][next] "}
 				else
-				comm="[speed:0.75][color:8040ff]Do not you dare, darling..."
+				comm="[speed:0.75][color:8040ff]Sakın cürret etme aşkım..."
 				t={"[func:head4]Git[waitall:4][w:3]...","Ciddiyim,[w:3] [func:Look]git artık.[w:6] [func:sad]\nÇoktan \nyoruldum bile.","[func:head4]Cidden [speed:0.[w:6]75][w:3]bir şeyi[speed:1][w:3] değiştirmek \nistiyorsan,[w:3] [func:Suprise1]\nşu an burda \nolmamalısın!","[func:NoMercy1]Nasıl çalıştığını biliyorujm.[w:6] [func:Think]\nBeni bağışlıyorsun ve \nsonra seni öldürüyorum.","[func:NoMercy1]Ve en sonunda \nhiç bir şey \ndeğişmiyor[waitall:4][w:3]...","[func:head4]Bu \ngerçekleşmeyece,[w:3] [func:Suprise1]bunu \nbiliyor musun?","[func:head4]Neden bana umut \nveriyorsun,[w:3] \npartner[waitall:4][w:3]?..","[waitall:4][w:3]...[waitall:1][w:3][func:sad]Eğer konuşan \nsen olsaydın,[w:3] tabiki[waitall:4][w:3]...","[func:Look][next] "}
 			end
 			elseif mercy==4 then
@@ -8813,7 +8813,7 @@ function DoAction(ingo)
 				dial=GiveRandom({{"[func:LostKidFace,hope_close,-]Мы почти сделали \nэто[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_determined,+] \nБудет трудно,[w:3] [func:LostKidFace,hope_cheers,+] но я \nверю в тебя.[w:6] [func:LostKidFace,hope_sobbing,+] \nКак Азриэль верил в \nтебя[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,hope_cheers,+]Ты был как часть \nмоей семьи для \nродителей[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_sobbing,+] \nЯ уверенa,[w:3] они \nгордились бы тобой \nсейчас![w:6]"},{"[func:LostKidFace,hope_close,-]Король и Папайрус \nсмогли тебя принять \nв прошлом[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_cheers,+] Смогут \nи сейчас.[w:6] [func:LostKidFace,hope_sobbing,+] Ты им как \nбрат,[w:3] который \nобъединяет их[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,hope_determined,+]Андайн и Альфис \nценили твою \nстойкость![w:6] \nНе дай их словам \nбыть напрасными,[w:3] \nпартнёр![w:6]"},{"[func:LostKidFace,hope_close,-]Я[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_cheers,+] Партнёр,[w:3] я не \nмогу представить \nсвой <дом> без \nтебя[waitall:4][w:3]...[waitall:1][w:3]","[func:LostKidFace,hope_sobbing,+]Давай исполним мою \nмечту вместе[waitall:4][w:3]...[waitall:1][w:3] \nНе сдавайся[waitall:4][w:3]...[waitall:1][w:3]"}})
 				else
 				BattleDialog(GiveRandom({"[color:8040ff]Çok inatçısın.[w:6] Ama ben de öyle kolay pes etmem.[w:6]","[color:8040ff]Benle eşit olmanı düşünemem.[w:6] Fakat yine[waitall:4][w:3]...[waitall:1][w:3] Sonunda kaybedeceksin.[w:6] \nBiliyorum.[w:6]","[color:8040ff]Kişiliğini yok edersem büyük bir oranda Kararlılık boşa gider.[w:6]","[color:8040ff]Ne kadar 1 LV'e yaklaşırsan,[w:3] seni ele geçirme şansım artar.[w:6] Seçeneklerini düşün.[w:6] "}))
-				dial=GiveRandom({{"[func:LostKidFace,hope_close,-]Bir sona \nyakınız[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_determined,+]\nBu zor olucak,[w:3] [func:LostKidFace,hope_cheers,+]fakat \nsana inanıyorum.[w:6] [func:LostKidFace,hope_sobbing,+]\nAsriel gibi.[w:6]"},{"[func:LostKidFace,hope_cheers,+]Toriel ve Asgore'a \nbir aile \ngibiydin[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_sobbing,+]\nEminim,[w:3] burda olsalardı \nsana \ngurulanırlardı![w:6]"},{"[func:LostKidFace,hope_close,-]Kral ve Papyrus \nseni kabul \nederdi[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_cheers,+]Seni \ndesteklerdiler.[w:6] ","[func:LostKidFace,hope_sobbing,+]Seni \nkendi kardeşleri \ngibi gördüler[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,hope_determined,+]Undyne ve Alphys \nkararlılığını \ntebrik etti![w:6] \nOnları \npişman etme,[w:3] \npartner![w:6]"},{"[func:LostKidFace,hope_close,-]B[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_cheers,+]Ben \ <home>imi sensin \ndüşünemem[waitall:4][w:3]...[waitall:1][w:3]","[func:LostKidFace,hope_sobbing,+]Hayalimi \ngerçekleştir[waitall:4][w:3]...[waitall:1][w:3] \nPes etme[waitall:4][w:3]...[waitall:1][w:3]"}})
+				dial=GiveRandom({{"[func:LostKidFace,hope_close,-]Bir sona \nyakınız[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_determined,+]\nBu zor olucak,[w:3] [func:LostKidFace,hope_cheers,+]fakat \nsana inanıyorum.[w:6] [func:LostKidFace,hope_sobbing,+]\nAsriel gibi.[w:6]"},{"[func:LostKidFace,hope_cheers,+]Toriel ve Asgore'a \nbir aile \ngibiydin[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_sobbing,+]\nEminim,[w:3] burda olsalardı \nsana \ngurulanırlardı![w:6]"},{"[func:LostKidFace,hope_close,-]Kral ve Papyrus \nseni kabul \nederdi[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_cheers,+]Seni \ndesteklerdiler.[w:6] ","[func:LostKidFace,hope_sobbing,+]Seni \nkendi kardeşleri \ngibi gördüler[waitall:4][w:3]...[waitall:1][w:3]"},{"[func:LostKidFace,hope_determined,+]Undyne ve Alphys \nkararlılığını \ntebrik etti![w:6] \nOnları \npişman etme,[w:3] \npartner![w:6]"},{"[func:LostKidFace,hope_close,-]B[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,hope_cheers,+]Ben \n <home>imi sensin \ndüşünemem[waitall:4][w:3]...[waitall:1][w:3]","[func:LostKidFace,hope_sobbing,+]Hayalimi \ngerçekleştir[waitall:4][w:3]...[waitall:1][w:3] \nPes etme[waitall:4][w:3]...[waitall:1][w:3]"}})
 			end
 		end
 		dial[#dial+1]="[noskip][func:LostKidFace,hope_base,+][next] "
@@ -8857,13 +8857,13 @@ function OnOff(ingo)
 		if lang=="rus" then
 			outgo="ВКЛ"
 			else
-			outgo="ON"
+			outgo="AÇIK"
 		end
 		else
 		if lang=="rus" then
 			outgo="ВЫКЛ"
 			else
-			outgo="OFF"
+			outgo="KAPALI"
 		end
 	end
 	return outgo
@@ -8905,7 +8905,7 @@ function ShowDiffer(ingo)
 		if lang=="rus" then
 			outgo="[color:ff00ff]Ваша вера вам окупилась"
 			else
-			outgo="[color:ff00ff]İnancını karşılığını aldın"
+			outgo="[color:ff00ff]İnancının karşılığını aldın"
 		end
 		elseif ingo==2 then
 		if lang=="rus" then
@@ -9196,7 +9196,7 @@ function ReadyGlobalSave(ingo)
 			enemies[1].SetVar("currentdialogue",{" [next] ","[effect:none][noskip][func:TakeKnife][func:head][effect:none][novoice][color:ff0000][func:DUB,prolog/26]СЕЙЧАС ВЫПЬЕШЬ \n[waitall:2]ЧАШУ ИЗ БОЛИ\nДО [waitall:4][func:Devil,night]ДНА![w:10]","[next] "})
 			comm="Последний актер на сцене!"
 			else
-			enemies[1].SetVar("currentdialogue",{" [next] ","[effect:none][func:DUB,prolog/26][noskip][func:TakeKnife][func:head][effect:none][novoice][color:ff0000]YAP[w:1]TIK[w:1]LAR[w:2]IN[w:1]IN[w:1] BE[w:2]\nDEL [w:1]İNİ [w:1]ÖDE[w:2]\n[waitall:2]ME [func:Devil,night]ZAM[w:5]ANI![w:20]","[next] "})
+			enemies[1].SetVar("currentdialogue",{" [next] ","[effect:none][func:DUB,prolog/26][noskip][func:TakeKnife][func:head][effect:none][novoice][color:ff0000]YAP[w:1]TIKLAR[w:2]ININ[w:1] \nBE[w:2]DEL[w:1]İNİ ÖDE[waitall:2]ME [func:Devil,night]\nZAM[w:5]ANI![w:20]","[next] "})
 			comm="Son aktör sahnede!"
 		end
 		elseif ingo=="2" then
@@ -9374,7 +9374,7 @@ function ReadyGlobalSave(ingo)
 		if lang=="rus" then
 			comm="Это кажется интересным.[w:6]\nДавай не спешить,[w:3] дорогуша.[w:6] Пусть выговорится."
 			else
-			comm="This seems interesting.[w:6]\Acele etmeyelim,[w:3] tatlım.[w:6] konuşmasına iizn ver."
+			comm="This seems interesting.[w:6]\nAcele etmeyelim,[w:3] tatlım.[w:6] konuşmasına iizn ver."
 		end
 		SetGlobal("facial_expression",60)
 	end
@@ -9383,13 +9383,13 @@ function ReadyGlobalSave(ingo)
 		if lang=="rus" then
 			command={"ПРОВЕРИТЬ", "МОЛИТВА"}
 			else
-			command={"INSPECT","PRAY"}
+			command={"İNCELE","DUA ET"}
 		end
 		else
 		if lang=="rus" then
 			command={"ПРОВЕРИТЬ"}
 			else
-			command={"INSPECT"}
+			command={"İNCELE"}
 		end
 	end
 	enemies[1].SetVar("commands",command)
