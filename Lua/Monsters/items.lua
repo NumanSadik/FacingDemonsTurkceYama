@@ -264,15 +264,15 @@ function CursedWater()
 	end
 	if number[7]==true and names[7]=="KUTS SU" then
 		names[7]="LANE SU"
-		elseif number[8]==true and names[8]=="KUTS SU"" then
+		elseif number[8]==true and names[8]=="KUTS SU" then
 		names[8]="LANE SU"
-		elseif number[9]==true and names[9]=="KUTS SU"" then
+		elseif number[9]==true and names[9]=="KUTS SU" then
 		names[9]="LANE SU"
-		elseif number[10]==true and names[10]=="KUTS SU"" then
+		elseif number[10]==true and names[10]=="KUTS SU" then
 		names[10]="LANE SU"
-		elseif number[11]==true and names[11]=="KUTS SU"" then
+		elseif number[11]==true and names[11]=="KUTS SU" then
 		names[11]="LANE SU"
-		elseif number[12]==true and names[12]=="KUTS SU"" then
+		elseif number[12]==true and names[12]=="KUTS SU" then
 		names[12]="LANE SU"
 	end
 	Reasign()
