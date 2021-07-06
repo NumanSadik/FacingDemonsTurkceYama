@@ -1,9 +1,9 @@
-﻿save1={"ДОМ ЛАЗ","ПАУ ПОН","ПАУ ПОН","ЧЕРЕП ЧАЙ"}
+save1={"ДОМ ЛАЗ","ПАУ ПОН","ПАУ ПОН","ЧЕРЕП ЧАЙ"}
 save2={"ЧЕРЕП ЧАЙ","КУС СНЕГ","СВЯТ ВОД","СВЯТ ВОД"}
 save3={"СВЯТ ВОД","СВЯТ ВОД","СВЯТ ВОД","СВЯТ ВОД"}
 names={"ДОМ ЛАЗ","ПАУ ПОН","ПАУ ПОН","ЧЕРЕП ЧАЙ","ЧЕРЕП ЧАЙ","КУС СНЕГ","СВЯТ ВОД","СВЯТ ВОД","СВЯТ ВОД","СВЯТ ВОД","СВЯТ ВОД","СВЯТ ВОД"}
 rus={"ДОМ ЛАЗ","ПАУ ПОН","ПАУ ПОН","ЧЕРЕП ЧАЙ","ЧЕРЕП ЧАЙ","КУС СНЕГ","СВЯТ ВОД","СВЯТ ВОД","СВЯТ ВОД","СВЯТ ВОД","СВЯТ ВОД","СВЯТ ВОД"}
-eng={"MAD LAS","SPI DON","SPI DON","TUR TEA","TUR TEA","SNOW PIE","HOL WAT","HOL WAT","HOL WAT","HOL WAT","HOL WAT","HOL WAT"}
+eng={"YAP LAZ","ÖRÜ DON","ÖRÜ DON","KAP ÇAY","KAP ÇAY","KAR PARÇ","KUTS SU","KUTS SU","KUTS SU","KUTS SU","KUTS SU","KUTS SU"}
 
 commands = save1
 page=1
@@ -68,7 +68,7 @@ function Recharge()
 		if Encounter.GetVar("lang")=="rus" then
 			names[i]="СВЯТ ВОД"
 			else
-			names[i]="HOL WAT"
+			names[i]="KUTS SU"
 		end
 	end
 	Reasign()
@@ -101,7 +101,7 @@ function HandleCustomCommand(command)
 		if Encounter.GetVar("lang")=="rus" then
 			BattleDialog("Прекрати,[w:3] актёр.[w:6]\nПредметы не казённые.[w:6] Она не стоит их использования.")
 			else
-			BattleDialog("Stop right here,[w:3] actor.[w:6]\nItems worth too much for this pitty trash named human.")
+			BattleDialog("Burada dur,[w:3] aktör.[w:6]\nİnsan adındaki çöplük için bu eşyalar çok değerli.")
 		end
 		elseif Encounter.GetVar("eated")==false then
 		Encounter.SetVar("itemamount",Encounter.GetVar("itemamount")-1)
@@ -164,40 +164,40 @@ function HandleCustomCommand(command)
 					n=true
 				end
 			end
-			elseif command=="MAD LAS" then
+			elseif command=="YAP LAZ" then
 			SetGlobal("facial_expression",65)
-			BattleDialog({"You ate the Home-Made Lasagna[waitall:4][w:3]...[waitall:1][w:3]\nChara looks at you with disdain.","Energy overwhelms you!","[func:RestoreFace][next]"})
+			BattleDialog({"Ev Yapımı Lazanyayı yedin[waitall:4][w:3]...[waitall:1][w:3]\nChara sana küçümseyerek bakıyor.","Enerji seni bunaltıyor!","[func:RestoreFace][next]"})
 			Encounter.SetVar("quiche",true)
 			Encounter.SetVar("quichehp",Player.hp)
 			Encounter.SetVar("eated",true)
 			number[1]=false
-			elseif command=="SPI DON" then
-			BattleDialog({"You ate Spider Donut[waitall:4][w:3]...[waitall:1][w:3]\nTastes like spiders[waitall:4][w:3]...[waitall:1][w:3] Looks like too, though.","Invulnerability has been increased!"})
+			elseif command=="ÖRÜ DON" then
+			BattleDialog({"Örümcek Donatını yedin[waitall:4][w:3]...[waitall:1][w:3]\nTadı örümcek gibi[waitall:4][w:3]...[waitall:1][w:3] Çok benziyor ama.","Sağlamlığın arttı!"})
 			Encounter.SetVar("ghostresistance",true)
 			Encounter.SetVar("eated",true)
 			if number[2]==true then
 				number[2]=false
 				else number[3]=false
 			end
-			elseif command=="TUR TEA" then
-			BattleDialog({"You drank Turtle Tea[waitall:4][w:3]...[waitall:1][w:3]\nDoes my brain seem to start working 100%?","I feel faster."})
+			elseif command=="KAP ÇAY" then
+			BattleDialog({"Kaplumbağa Çayını içtin[waitall:4][w:3]...[waitall:1][w:3]\nBeynim %100 çalışmaya başlıyor gibimi görünüyor?","Daha hızlı hissediyorum."})
 			Encounter.SetVar("eated",true)
 			Encounter.SetVar("movefast",true)
 			if number[4]==true then
 				number[4]=false
 				else number[5]=false
 			end
-			elseif command=="SNOW PIE" then
-			BattleDialog({"You ate Snowman Piece[waitall:4][w:3]...[waitall:1][w:3]\nSadly,[w:3] his adventure is over for ours to continue.","We are not afraid of burns now."})
+			elseif command=="KAR PARÇ" then
+			BattleDialog({"Kardan Adam Parçasını yedin[waitall:4][w:3]...[waitall:1][w:3]\nNe yazık ki,[w:3] bizimkinin devam etmesi için onun macerası sona erdi.","Artık yanıklardan korkmuyoruz."})
 			Encounter.SetVar("burnresistance",true)
 			number[6]=false
 			Encounter.SetVar("eated",true)
-			elseif command=="HOL WAT" then
-			local curse="Why is it needed at all?"
+			elseif command=="KUTS SU" then
+			local curse="Neden herşey gerekli?"
 			if Encounter.GetVar("prog")>52 then
-				curse="The curse was slowed down."
+				curse="Lanet yavaşladı."
 			end
-			BattleDialog({"You drank Holy Water[waitall:4][w:3]...[waitall:1][w:3]\nIt seems to be not very useful for ghosts[waitall:4][w:3]...[waitall:1][w:3]",curse})
+			BattleDialog({"Kutsal Suyu içtin[waitall:4][w:3]...[waitall:1][w:3]\nHayaletler için pek kullanışlı değil gibi[waitall:4][w:3]...[waitall:1][w:3]",curse})
 			if Player.hp>10 then
 				Player.Hurt(10,0)
 				else Player.Hurt(Player.hp-1)
@@ -211,8 +211,8 @@ function HandleCustomCommand(command)
 					n=true
 				end
 			end
-			elseif command=="CUR WAT" then
-			BattleDialog({"You drank Cursed Water[waitall:4][w:3]...[waitall:1][w:3]\nI wonder who cursed it.","Recovered 10 HP."})	
+			elseif command=="LANE SU" then
+			BattleDialog({"Lanetli Suyu içtin[waitall:4][w:3]...[waitall:1][w:3]\nKimin lanetlediğini merak ediyorum","10 CAN yenilendi."})	
 			Player.Heal(10)
 			local n=false
 			Encounter.SetVar("eated",true)
@@ -236,7 +236,7 @@ function HandleCustomCommand(command)
 		if Encounter.GetVar("lang")=="rus" then
 			BattleDialog({"Вы не можете использовать \nдва предмета за ход."})
 			else
-			BattleDialog({"You can`t use two items\nin one turn."})
+			BattleDialog({"Bir turda iki eşya\nkullanamazsın."})
 		end
 	end
 	Reasign()
@@ -262,18 +262,18 @@ function CursedWater()
 		elseif number[12]==true and names[12]=="СВЯТ ВОД" then
 		names[12]="ПРОК ВОД"
 	end
-	if number[7]==true and names[7]=="HOL WAT" then
-		names[7]="CUR WAT"
-		elseif number[8]==true and names[8]=="HOL WAT" then
-		names[8]="CUR WAT"
-		elseif number[9]==true and names[9]=="HOL WAT" then
-		names[9]="CUR WAT"
-		elseif number[10]==true and names[10]=="HOL WAT" then
-		names[10]="CUR WAT"
-		elseif number[11]==true and names[11]=="HOL WAT" then
-		names[11]="CUR WAT"
-		elseif number[12]==true and names[12]=="HOL WAT" then
-		names[12]="CUR WAT"
+	if number[7]==true and names[7]=="KUTS SU" then
+		names[7]="LANE SU"
+		elseif number[8]==true and names[8]=="KUTS SU"" then
+		names[8]="LANE SU"
+		elseif number[9]==true and names[9]=="KUTS SU"" then
+		names[9]="LANE SU"
+		elseif number[10]==true and names[10]=="KUTS SU"" then
+		names[10]="LANE SU"
+		elseif number[11]==true and names[11]=="KUTS SU"" then
+		names[11]="LANE SU"
+		elseif number[12]==true and names[12]=="KUTS SU"" then
+		names[12]="LANE SU"
 	end
 	Reasign()
 end
