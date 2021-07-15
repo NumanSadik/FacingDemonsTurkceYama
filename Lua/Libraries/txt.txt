@@ -1,0 +1,16 @@
+
+require "Libraries/Playermove"
+require "Libraries/hurt"
+
+HurtUpd()
+Moving()
+
+KnifeHurt(1)
+
+LongHurt(damage,time)
+
+battlesprites={}
+table.insert(battlesprites,paps)
+
+Effects(burn,1)
+Effects(curse,1)

@@ -36,7 +36,7 @@ function Interruption()
 		Encounter.SetVar("MyState","ToLostKidChoice")
 		local c={"Прервать Чару", "Молчать"}
 		if Encounter.GetVar("lang")=="eng" then
-			c={"Interrupt Chara","Do nothing"}
+			c={"Chara'yı yarıda kes","Hiçbir şey yapma"}
 		end
 		local text1=CreateText("[instant][font:overworld]"..c[1],{120,380},160,"Top",-1)
 		text1.HideBubble()

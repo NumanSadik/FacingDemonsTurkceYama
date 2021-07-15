@@ -2040,7 +2040,7 @@ if MenuBullets==true then
 								TrueKnifes[t].Remove()
 							end
 							TextObjects[7].Set("empty")
-							enemies[1].Call("HandleCustomCommand","CHECK")
+							enemies[1].Call("HandleCustomCommand","GÖZLE")
 							elseif i==4 then
 							for t=1,7 do
 								TextObjects[t].Set("empty")
@@ -2053,7 +2053,7 @@ if MenuBullets==true then
 								TrueKnifes[t].Remove()
 							end
 							TextObjects[7].Set("empty")
-							enemies[1].Call("HandleCustomCommand","PRAY")
+							enemies[1].Call("HandleCustomCommand","DUA ET")
 							elseif i==5 then
 							for t=3,5 do
 								TextObjects[t].SetVar("used",false)
@@ -2353,7 +2353,7 @@ if MyState=="MENU" then
 			ArrowLeft.sprite.alpha=1
 			InState=1
 			MenuOptions(1)
-			MyState="Options"
+			MyState="Ayarlar"
 			elseif InState==3 then
 			Audio.PlaySound("OverMenuConf")
 			quittimer=1
@@ -2363,7 +2363,7 @@ if MyState=="MENU" then
 			OutBlack.sprite.alpha=0
 		end
 	end
-	elseif MyState=="Options" then
+	elseif MyState=="Ayarlar" then
 	if Input.Right==1 and InState>0 then
 		InState=InState-1
 		Audio.PlaySound("OverMenuMove")
@@ -3239,13 +3239,13 @@ if not deathtimer then
 			if lang=="rus" then
 				enemies[1].SetVar("commands",{"ПРОВЕРИТЬ", "МОЛИТВА"})
 				else
-				enemies[1].SetVar("commands",{"CHECK", "PRAY"})
+				enemies[1].SetVar("commands",{"GÖZLE", "DUA ET"})
 			end
 			else
 			if lang=="rus" then
 				enemies[1].SetVar("commands",{"ПРОВЕРИТЬ"})
 				else
-				enemies[1].SetVar("commands",{"CHECK"})
+				enemies[1].SetVar("commands",{"GÖZLE"})
 			end
 		end
 		SetGlobal("charaisdead",0)
