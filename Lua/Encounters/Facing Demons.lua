@@ -3908,6 +3908,9 @@ if FadedChara==1 then
 	for i=1,#dial do
 		dial[i]="[noskip][novoice][voice:uidial]"..dial[i]
 	end
+
+	--G.,A.,M.,E .,H.,U.,N.,T.,E.,R.,S
+
 	BattleDialogue(dial)
 	elseif FadedChara==9 then
 	FadedChara=10
@@ -4063,6 +4066,9 @@ if SlowingDown==true then
 		SetMusic("none")
 	end
 end
+
+--Game hunters çeviri ekibi
+
 if #Dings>0 then
 	count=0
 	for i=1,#Dings do
