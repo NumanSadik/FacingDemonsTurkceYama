@@ -1,4 +1,4 @@
-﻿--A Wild Chara Appears!
+--A Wild Chara Appears!
 require "Monsters/chara"
 music = "empty"
 autolinebreak = true
@@ -45,7 +45,7 @@ MenuBullets=false
 quickwave={"phase1/nicetomeetya"}
 --quickwave={"k_4"}
 unescape=false
-Inventory.AddCustomItems({"Ketchup", "Spaghetti", "Chocolate", "Raw pie", "Sushi", "Ramen","Ketchdown"}, {0, 0, 0, 0, 0, 0, 0, 0, 0})
+Inventory.AddCustomItems({"Ketçap", "Spaghetti", "Çikolata", "Raw pie", "Sushi", "Ramen","Ketchdown"}, {0, 0, 0, 0, 0, 0, 0, 0, 0})
 ingoprog=0
 goneto=0
 savex=0
@@ -235,7 +235,7 @@ lowmusicvolume=1
 KnifedButton=false
 PlayerGotsKilled=0
 AllMusics={"night","wound","stri","last","prolog","blood","theme","finale","menu","chainsaw","insane","spare","Not Forget","fires","devil","lost","SAVE1","SAVE2","insa","CaP","star","reunion"}
-cursetext={"Я не врач, но я констатирую смерть.","Well, you were cursed to death. Horrific indeed."}
+cursetext={"Я не врач, но я констатирую смерть.","Peki, ölümüne lanetlendin. Gerçekten de korunç."}
 canflee=false
 spawn=false
 IsTalk=false
@@ -5694,8 +5694,8 @@ if MyState=="MENU" then
 				Changer.Texts[9].SetText("[font:overworld][instant][novoice]ДА")
 				else
 				Changer.Texts[7].SetText("[font:overworld][instant][novoice][color:ff2010]Zoruluk değişimi ilerlemeni siler.\nEmin misin?")
-				Changer.Texts[8].SetText("[font:overworld][instant][novoice]NO")
-				Changer.Texts[9].SetText("[font:overworld][instant][novoice]YES")
+				Changer.Texts[8].SetText("[font:overworld][instant][novoice]HAYIR")
+				Changer.Texts[9].SetText("[font:overworld][instant][novoice]EVET")
 			end
 			Changer.Texts[8].MoveTo(260-Changer.Texts[8].GetTextWidth()/2,60)
 			Changer.Texts[9].MoveTo(370-Changer.Texts[9].GetTextWidth()/2,60)
@@ -5727,8 +5727,8 @@ if MyState=="MENU" then
 					Changer.Texts[9].SetText("[font:overworld][instant][novoice]ДА")
 					else
 					Changer.Texts[7].SetText("[font:overworld][instant][novoice][color:ff2010]Zorluk değişimi ilerlemeni siler.\nEmin misin?")
-					Changer.Texts[8].SetText("[font:overworld][instant][novoice]NO")
-					Changer.Texts[9].SetText("[font:overworld][instant][novoice]YES")
+					Changer.Texts[8].SetText("[font:overworld][instant][novoice]HAYIR")
+					Changer.Texts[9].SetText("[font:overworld][instant][novoice]EVET")
 				end
 				Changer.Texts[8].MoveTo(260-Changer.Texts[8].GetTextWidth()/2,60)
 				Changer.Texts[9].MoveTo(370-Changer.Texts[9].GetTextWidth()/2,60)
@@ -6449,8 +6449,8 @@ if not GetGlobal("choicen") or GetGlobal("choicen")==false then
 		end
 	end
 	elseif GetGlobal("choicen")==1 then
-	local yea="YES"
-	local noa="NO"
+	local yea="HAYIR"
+	local noa="EVET"
 	if lang=="rus" then
 		yea="ДА"
 		noa="НЕТ"
@@ -9188,7 +9188,7 @@ function ReadyGlobalSave(ingo)
 	wavetimer=9999999999
 	enemies[1].Call("SetActive",true)
 	if ingo=="1" then
-		prog=0
+		prog=1
 		SetGlobal("facial_expression",22)
 		enemies[1].Call("HandleAttack")
 		nextwaves={"phase1/nicetomeetya"}
@@ -9218,7 +9218,7 @@ function ReadyGlobalSave(ingo)
 			enemies[1].SetVar("currentdialogue",{" [next] ","[effect:none][func:Devil]Так что давай не \nбудем отступать от \nнеё.","[next] "})
 			comm="Чара разочарована в вас."
 			else
-			comm="Chara seems disappointed in you."
+			comm="Chara hayal kırıklığına uğramış gibi."
 			enemies[1].SetVar("currentdialogue",{" [next] ","[effect:none][func:Devil]Dikkatimiz \ndağılmasın.","[next] "})
 		end
 		elseif ingo=="3" then
@@ -9231,7 +9231,7 @@ function ReadyGlobalSave(ingo)
 			enemies[1].SetVar("currentdialogue",{" [next] ","[effect:none][func:Bloodshed][func:trigered]Да начнется \nкровопролитие!!","[next] "})
 			comm="Значит,[w:3] она хочет сыграть по-взрослому[waitall:4][w:3]...[waitall:1][w:3] \nХорошо,[w:3] папик."
 			else
-			comm="So she wants to play hard[waitall:4][w:3]...[waitall:1][w:3] \nOkay,[w:3] daddy."
+			comm="Demek sert oynamak istiyor[waitall:4][w:3]...[waitall:1][w:3] \nTamam,[w:3] babam."
 			enemies[1].SetVar("currentdialogue",{" [next] ","[effect:none][func:Bloodshed][func:trigered]Katliam \nbaşlasın!!","[next] "})
 		end
 		SetGlobal("pray",4)
