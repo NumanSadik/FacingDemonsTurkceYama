@@ -14,7 +14,7 @@ function Lang(ingo)
 	if ingo=="rus" then
 		name="ПОЩАДА"
 		else
-		name="SPARE"
+		name="BAĞIŞLA"
 	end
 end
 

@@ -587,7 +587,7 @@ function FaceCheck()
 				if lang=="rus" then
 					enemies[1].SetVar("currentdialogue",{"[noskip][effect:rotate][speed:0.75]У меня все ещё \nесть силы дать \nтебе отпор![w:15] ", "[effect:none][noskip][func:NoMercy1]Если я и не \nчеловек,[w:3] и не \nмонстр[waitall:4][w:3]...[waitall:1][w:3]","[func:angry]Тогда мне,[w:3] как \nДемону,[w:3] положено \nдраться до \nпоследней капли \nкрови!", "Я положу тебе \nконец,[waitall:2][w:3][func:GiveCurse]проклятая \nкровь!"})
 					else
-					enemies[1].SetVar("currentdialogue",{"[noskip][effect:rotate][speed:0.75]I still have powers \nto resist you![w:15] ", "[effect:none][noskip][func:NoMercy1]If I'm neither human \nnor monster[waitall:4][w:3]...[waitall:1][w:3] ","[func:angry]Then,[w:3] as a Demon,[w:3] \nI should fight 'til \nlast drop of my \nblood!", "I will end you,[waitall:2][w:3]\n[func:GiveCurse]cursed blood!"})
+					enemies[1].SetVar("currentdialogue",{"[noskip][effect:rotate][speed:0.75]Hala sana karşı \ndirenebileceğim \ngüçlerim var![w:15] ", "[effect:none][noskip][func:NoMercy1]Eğer bir insan yada \ncanavar değilsem[waitall:4][w:3]...[waitall:1][w:3] ","[func:angry]O zaman,[w:3] bir şeytan \nolarak,[w:3] \nKanımın son damlasına \nkadar savaşmalıyım!", "Seni bitireceğim,[waitall:2][w:3]\n[func:GiveCurse]lanet olası şey!"})
 				end
 				State("ENEMYDIALOGUE")
 				SetFace("/chara/angry",104,"angry","angry",true)
