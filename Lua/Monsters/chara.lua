@@ -1446,35 +1446,35 @@ function MercyLostChild(ingo)
 	if ingo==1 then
 		nrus={"[func:LostKidFace,base_close,-]Пусть ты и убил \nменя однажды[waitall:4][w:3]...", "[func:LostKidFace,base_left,+]Сейчас ты \nпредпочитаешь \nменя игнорировать?",  "[func:LostKidFace,base,+]Неужели я наконец \nтебе наскучила?[w:9] [func:LostKidFace,confused,+] \nИли же наоборот?",  "[func:LostKidFace,base_up,+]Наконец-то в моей \nжизни появился для \nтебя смысл?","[func:LostKidFace,base,+][next]"}
 		rus="Точно подмечено."
-		neng={"[func:LostKidFace,base_close,-]Beni bir kere öldürmene rağmen[waitall:4][w:3]...", "[func:LostKidFace,base_left,+]Şimdi bana zarar vermiyor musun?", "[func:LostKidFace,base,+]Did you already grew \nbored of me? [func:LostKidFace,confused,+]\nOr on opposite?", "[func:LostKidFace,base_up,+]Did my life finally \ncost something \nfor you?","[func:LostKidFace,base,+][next]"}
-		eng="Clever point."
+		neng={"[func:LostKidFace,base_close,-]Beni bir kere \nöldürmene rağmen[waitall:4][w:3]...", "[func:LostKidFace,base_left,+]Şimdi bana zarar \nvermiyor musun?", "[func:LostKidFace,base,+]Bundan sıkılmaya mı \nbaşladın? [func:LostKidFace,confused,+]\nYada başka bir şey mi?", "[func:LostKidFace,base_up,+]Hayatım sonunda \nsenin için bir değer mi kazandı?","[func:LostKidFace,base,+][next]"}
+		eng="Çok zekisin."
 		wav={"phase child/k_3"}
 		elseif ingo==2 then
-		neng={"[func:LostKidFace,base_left,+][waitall:4][w:3]...[waitall:1][w:3]I don't speak to \nyou,[w:3] partner.[w:6]", "[func:LostKidFace,base,+]I am talking to the \none pulling the \nstrings here.[w:6]", "[func:LostKidFace,angry,+]You're watching us,[w:3] \naren't you? \nDisturbing our \npeaceful life.[w:6]","[func:LostKidFace,base,+][next]"}
-		eng="Must have guessed[waitall:4][w:3]...[waitall:1][w:3] \nOf course,[w:3] she knew you're not the only one in control."
+		neng={"[func:LostKidFace,base_left,+][waitall:4][w:3]...[waitall:1][w:3]Seninle \nkonuşmuyorum,[w:3] \nortak.[w:6]", "[func:LostKidFace,base,+]Buraya yazıları \ndöken kişi ile konuşuyorum.[w:6]", "[func:LostKidFace,angry,+]Bizi izliyorsun,[w:3] \ndeğil mi? \nBarışçıl yaşamımıza \nkarışıyorsun.[w:6]","[func:LostKidFace,base,+][next]"}
+		eng="Tahmin etmeliydim[waitall:4][w:3]...[waitall:1][w:3] \nElbette,[w:3] kontrolün sadece sende olmadığını biliyor."
 		wav={"phase child/BeFast"}
 		nrus={"[func:LostKidFace,base_left,+][waitall:4][w:3]...[waitall:1][w:3]Я не к тебе \nобращаюсь,[w:6] партнёр.[w:9]", "[func:LostKidFace,base,+]Я говорю с тем,[w:6] кто \nдергает за ниточки.[w:9]", "[func:LostKidFace,angry,+]Ты ведь следишь за \nнами.[w:9] \nМешаешь нам жить \nспокойно.[w:9]", "[func:LostKidFace,base,+][next]"}
 		rus="Должен был догадаться[waitall:4][w:3]...[waitall:1][w:3] \nКонечно,[w:3] она в курсе,[w:3] что не ты здесь главный."
 		elseif ingo==3 then
-		neng={"[func:LostKidFace,base_close,-]Whathever[waitall:4][w:3]...", "[func:LostKidFace,confused,+]Everything is \nmeaningless now.[w:6]", "[func:LostKidFace,base_close,-]All my efforts[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,base,+]lead \nto my end.[w:6]", "[func:LostKidFace,base_left,+]You see,[w:3] you've \nsaved in the moment \nof my powers \nawakening.[w:6]", "[func:LostKidFace,base_close,-]So when you \nreturned[waitall:4][w:3]...", "[func:LostKidFace,base,+]I remembered my \ndeath as well.[w:6]"}
-		eng="So that's how her power works[waitall:4][w:3]...[waitall:1][w:3]\nCurious."
+		neng={"[func:LostKidFace,base_close,-]Herneyse[waitall:4][w:3]...", "[func:LostKidFace,confused,+]Şu an her şey \nanlamsız.[w:6]", "[func:LostKidFace,base_close,-][func:LostKidFace,base,+]Önderliğimdeki tüm \nemeklerim[waitall:4][w:3]...[w:6]", "[func:LostKidFace,base_left,+]Görüyorsun,[w:3] güçlerim \nuyanırken biraz zaman kazandırdın.[w:6]", "[func:LostKidFace,base_close,-]Yani, ne zaman \ndöndün[waitall:4][w:3]...", "[func:LostKidFace,base,+]Ölümümü dahi \nhatırlıyorum.[w:6]"}
+		eng="Yani güçleri bu şekilde mi çalışıyor[waitall:4][w:3]...[waitall:1][w:3]\nMerak uyandırıcı."
 		wav={"phase child/rain"}
 		nrus={"[func:LostKidFace,base_close,-]Как бы то ни было[waitall:4][w:3]...",  "[func:LostKidFace,confused,+]Ничего больше не \nимеет смысл.",  "[func:LostKidFace,base_close,-]Все мои старания[waitall:4][w:3]...[waitall:1][w:3][func:LostKidFace,base,+] \nКончатся моей \nсмертью.", "[func:LostKidFace,base_left,+]Видишь ли,[w:6] твое \nсохранение \nприходится именно \nна момент \nпробуждения моих \nсил.", "[func:LostKidFace,base_close,-]Поэтому сейчас,[w:6] \nкогда ты вернулся[waitall:4][w:3]...", "[func:LostKidFace,base,+]Я вспомнила,[w:6] как \nты меня убил."}
 		rus="Вот так,[w:3] значит,[w:3] работают её силы[waitall:4][w:3]...[waitall:1][w:3]\nЛюбопытно."
 		elseif ingo==4 then
-		neng={"[func:LostKidFace,base_left,+]I haven't so much \ntime to think about \nmy death.[w:6]", "[func:LostKidFace,confused,+]To be completely \nhonest,[w:3] it even \nwasn't me.[w:6]", "[func:LostKidFace,base_left,+]It was other Chara.[w:6] [func:LostKidFace,base,+]\nFrom previous world \nyou have already \ndestroyed.[w:6]", "[func:LostKidFace,base_close,-]And every time other \nCharas dies,[w:3] you \nmove to the next \nworld.[w:6]", "[func:LostKidFace,base_left,+]In fact[waitall:4][w:3]...[waitall:1][w:3] I will share \ntheir destiny once."}
-		eng="Hm,[w:3] sounds good.[w:6] \nI need to get name for such script[waitall:4][w:3]..."
+		neng={"[func:LostKidFace,base_left,+]Ölümümü düşünmek için \npek fazla zamanım yok.[w:6]", "[func:LostKidFace,confused,+]Tamamen dürüst \nolmam gerekirse,[w:3] o ben bile değildim.[w:6]", "[func:LostKidFace,base_left,+]O başka bir Chara'ydı.[w:6] [func:LostKidFace,base,+]\nÇoktan yok ettiğin \nönceki bir dünyadan.[w:6]", "[func:LostKidFace,base_close,-]Ve her bir Chara \nöldüğünde,[w:3] sonraki dünyaya geçiyorsun.[w:6]", "[func:LostKidFace,base_left,+]Sonuçta[waitall:4][w:3]...[waitall:1][w:3] \nOnlar ile aynı kaderi bir kere paylaşacağım."}
+		eng="Hımm,[w:3] kulağa güzel geliyor.[w:6] \nBu senaryo için bir isim bulmalıyım[waitall:4][w:3]..."
 		wav={"phase child/stoplights"}
 		rus="Хм,[w:3] звучит.[w:6] \nНадо подумать над названием для такой пьесы[waitall:4][w:3]...[waitall:1][w:3]"
 		nrus={"[func:LostKidFace,base_left,+]У меня не было \nмного времени,[w:6] \nчтобы обдумать \nмою смерть.",  "[func:LostKidFace,confused,+]Если уж совсем \nчестно,[w:6] это даже \nбыла не я.",  "[func:LostKidFace,base_left,+]Это была другая \nЧара.[w:9] [func:LostKidFace,base,+]Из прошлого \nмира, который ты \nокончательно сломал.", "[func:LostKidFace,base_close,-]И каждый раз как \nЧара умирает, ты \nпереходишь в новый \nмир.",  "[func:LostKidFace,base_left,+]Формально[waitall:4][w:3]...[waitall:1][w:3] Та же \nучасть [func:LostKidFace,base,+] ждёт и меня."}
 		elseif ingo==5 then
-		neng={"[func:LostKidFace,base_close,-]I didn't think about \nit before[waitall:4][w:3]...", "[func:LostKidFace,base,+]But sooner I end my \nexistance,[w:3] the \nbetter it will be.[w:6]", "[func:LostKidFace,confused,+]I am not that Chara \nwho could stop you.[w:6]", "[func:LostKidFace,base_close,-]And when I die,[w:3] I will \nno longer exist.[w:6]", "I will no longer feel \nthat pain in the \nchest[waitall:4][w:3]..."}
-		eng="[color:8040ff]Try it."
+		neng={"[func:LostKidFace,base_close,-]Bunu daha önce hiç düşünmemiştim[waitall:4][w:3]...", "[func:LostKidFace,base,+]Yakında yaşamım \nson bulacak,[w:3] bu daha iyi olacak.[w:6]", "[func:LostKidFace,confused,+]Seni durdurabilecek \nChara ben değilim.[w:6]", "[func:LostKidFace,base_close,-]Ve öldüğüm zaman,[w:3] \nyok olacağım.[w:6]", "Göğsümdeki bu acıyı \ndaha fazla hissetmeyeceğim[waitall:4][w:3]..."}
+		eng="[color:8040ff]Bunu dene."
 		wav={"phase child/brave"}
 		rus="[color:8040ff]Попробуем это."
 		nrus={"[func:LostKidFace,base_close,-]Раньше об этом я \nне думала[waitall:4][w:3]...",  "[func:LostKidFace,base,+]Но чем раньше я \nпрекращу свое \nсуществование,[w:6] \nтем лучше.",  "[func:LostKidFace,confused,+]Я ведь не та Чара,[w:6] \nчто способна тебя \nодолеть.",  "[func:LostKidFace,base_close,-]А когда я умру,[w:6] \nя перестану \nсуществовать.",  "[func:LostKidFace,crying,+]Перестану \nиспытывать эту \nболь в груди[waitall:4][w:3]..."}
 		elseif ingo==6 then
-		neng={"[func:LostKidFace,sobbing_close,-]If you wonder[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,base,+]I \nhave nothing left \nfor you.[w:6]", "[func:LostKidFace,base_left,+]All cards are on the\ntable now.[w:6]", "My powers.[w:6] \nMy attacks.[w:6] [func:LostKidFace,base_close,-]\nMy feelings.[w:6]", "[func:LostKidFace,base,+]Just kill me.[w:6] And skip \nthe formalities.[w:6]"}
+		neng={"[func:LostKidFace,sobbing_close,-]Eğer merak \nediyorsan[waitall:4][w:3]...[waitall:1][w:3] [func:LostKidFace,base,+]Sana verebileceğim hiçbir şeyim kalmadı.[w:6]", "[func:LostKidFace,base_left,+]Şu an herşey ortada.[w:6]", "Güçlerim.[w:6] \nSaldırılarım.[w:6] [func:LostKidFace,base_close,-]\nDuygularım.[w:6]", "[func:LostKidFace,base,+]Sadece öldür beni.[w:6] \nVe tüm bunları atla.[w:6]"}
 		eng="So soon?[w:6] \nI am a little disappointed."
 		Encounter.SetVar("FightGoes",false)
 		rus="Так быстро?[w:12] \nЯ даже разочарован отчасти[waitall:4][w:3]...[waitall:1][w:3]"
