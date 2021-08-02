@@ -1,4 +1,4 @@
-﻿--A Wild Chara Appears!
+--A Wild Chara Appears!
 require "Monsters/chara"
 music = "empty"
 autolinebreak = true
