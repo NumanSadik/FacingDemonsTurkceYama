@@ -193,7 +193,7 @@ function HandleCustomCommand(command)
 			number[6]=false
 			Encounter.SetVar("eated",true)
 			elseif command=="KUTS SU" then
-			local curse="Neden herşey gerekli?"
+			local curse="Neden her şey gerekli?"
 			if Encounter.GetVar("prog")>52 then
 				curse="Lanet yavaşladı."
 			end
