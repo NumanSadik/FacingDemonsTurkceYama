@@ -883,7 +883,7 @@ function HandleAttack()
 	elseif GetGlobal("progress")==22 then
 		nrus={"[func:NoMercy1]Твой порок - \n[func:head]неутолимый голод.", "Ты жаждешь всё \nбольше и больше.", "Твоя жадность \nпоглощает собой \nвесь мир.", "[func:Think]Для тебя нет \n<чужого>.[waitall:1][w:6] [func:head]\nЕсть лишь [waitall:2][w:1]<мое>", "[func:NoMercy1]И именно поэтому \nты раз за разом \nуничтожаешь всё,[w:3] \nчто мне дорого.", "[func:head]Ты ненасытен."}
 		neng={"[func:NoMercy1]Kötülüğe [func:head]açsın.", "Daha fazlasını \nistiyorsun.", "Bencilliğin tüm \ndünyayı yiyip \nbitiriyor.", "[func:Think]Senin için orada \n<başkaları> yok,[waitall:1][w:3] [func:head]ama[waitall:2] \n<benim> var[waitall:1],[w:3] değil mi?", "[func:NoMercy1]Ve bu sevdiğim her \nşeyi ardarda yok \netmenin sebebi.", "[func:head]Açgözlüsün."}
-		engcom="Tüm bu açlık muhabbeti beni gerçekten açıktırdı[waitall:4][w:3]..."
+		engcom="Tüm bu açlık muhabbeti beni gerçekten acıktırdı[waitall:4][w:3]..."
 		ruscom="После этой тирады захотелось \rперекусить[waitall:4][w:3]..."
 		wav={"phase1/SoulOfHunger"}
 	elseif GetGlobal("progress") == 23 then
