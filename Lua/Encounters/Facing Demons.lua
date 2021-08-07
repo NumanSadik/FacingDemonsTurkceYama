@@ -3613,6 +3613,14 @@ if Titr1.phase>0 then
 			Titr1.Titrs[n].HideBubble()
 			Titr1.Titrs[n].progressmode="none"
 			n=n+1
+			Titr1.Titrs[n]=CreateText(ForTitr1("Avranik","Sidar bagwell#3127",a),{120,75},640,"Top",-1)
+			Titr1.Titrs[n].HideBubble()
+			Titr1.Titrs[n].progressmode="none"
+			n=n+1
+			Titr1.Titrs[n]=CreateText(ForTitr1("За вдохновение","Hata ayıklamaya yardım ettiği için"),{120,45},640,"Top",-1)
+			Titr1.Titrs[n].HideBubble()
+			Titr1.Titrs[n].progressmode="none"
+			n=n+1
 			Titr1.OverCover=CreateProjectileAbs("overworld/beforebattle",320,240,"Top")
 			Titr1.OverCover.sprite.alpha=0
 			Titr1.Titrs[n]=CreateText(ForTitr1("Особые благодарности","Özel Teşekkürler"),{0,0},480,"Top",-1)
@@ -8219,7 +8227,7 @@ function HandleSpare()
 				t={"[func:Peachy]Хорошо.","[func:mercy]Я вижу в твоих\nглазах смирение и\nрешительность.","[func:sad]Как бы странно это\nни звучало[waitall:4][w:3]...","[func:mercy]Я хочу дать тебе\nшанс.[w:6] [func:Peachy]Но меня нельзя\nзадобрить просто\nпощадой.","[func:mercy]Нужно сделать\nчто-то большее.[w:6]\nОсвободить меня от\nэтого цикла смертей.","[func:Peachy]Этот мир обречен,[w:3]\nдаже если я отпущу\nтебя с миром.[w:6]\nПоэтому я здесь.","Чтобы дать этому\nмиру шанс[waitall:4][w:3]...[waitall:1][w:3]\n[func:head4]Один из нас должен\nумереть.","[func:Suprise1]Понимаешь?","[func:head4]Я даю тебе\nпоследний шанс.[w:6]\nЯ вижу тебя\nнасквозь.[w:9]\nТвои намерения.","[func:Suprise1]Я знаю,[w:3] чего ты\nхочешь достичь.","[func:QuietMusic][func:head4]Так что просто\nпродолжай\nсражаться.","[func:NoMercy1]Третьего нам не\nдано."}
 				else
 				comm="[color:8040ff]Dinle[waitall:4][w:3]...[waitall:1][w:3] Bunu bir kere daha [w:3]yaparsan[waitall:1][w:3] \nBunu yaptığına pişman ederim.[w:6]"
-				t={"[func:Peachy]Pekala.","[func:mercy]Gözlerinde \nkararlılığını \ngörüyorum.","[func:sad]Garip olsa da[waitall:4][w:3]...","[func:mercy]Sana bir şans \nvermek istiyorum.[w:6] [func:Peachy]\nFakat sadece beni \nbağışlayarak \ndüzelemezsin.","[func:mercy]Daha büyük bir \nşey yapmalısın.[w:6] \nBeni bu soykırım \nselselesinde bırak.","[func:Peachy]Sen bir savaş \nolmadan ölsen bile \nbu dünya yok olacak.[w:6] \nİşte bu yüzden \nburayadayım.","Bu dünyaya yeni \nbir umut olmak için[waitall:4][w:3]...[waitall:1][w:3] [func:head4]\nBirimiz ölmeli.","[func:Suprise1]Anladın?","[func:head4]Sana son bir \nşans veriyorum.[w:6] \nYaptıklarını biliyorum.[w:6] \nHer öldürüşün.","[func:Suprise1]Ne yapmaya \nçalıştığını biliyorum.","[func:QuietMusic][func:head4]Sadece savaşmaya \ndevam et.","[func:NoMercy1]Bunun ortası yok."}
+				t={"[func:Peachy]Pekala.","[func:mercy]Gözlerinde \nkararlılığını \ngörüyorum.","[func:sad]Garip olsa da[waitall:4][w:3]...","[func:mercy]Sana bir şans \nvermek istiyorum.[w:6] [func:Peachy]\nFakat sadece beni \nbağışlayarak \ndüzelemezsin.","[func:mercy]Daha büyük bir \nşey yapmalısın.[w:6] \nBeni bu soykırım \nselselesinde bırak.","[func:Peachy]Sen bir savaş \nolmadan ölsen bile \nbu dünya yok olacak.[w:6] \nİşte bu yüzden \nburadayım.","Bu dünyaya yeni \nbir umut olmak için[waitall:4][w:3]...[waitall:1][w:3] [func:head4]\nBirimiz ölmeli.","[func:Suprise1]Anladın?","[func:head4]Sana son bir \nşans veriyorum.[w:6] \nYaptıklarını biliyorum.[w:6] \nHer öldürüşün.","[func:Suprise1]Ne yapmaya \nçalıştığını biliyorum.","[func:QuietMusic][func:head4]Sadece savaşmaya \ndevam et.","[func:NoMercy1]Bunun ortası yok."}
 			end
 			elseif mercy==5 then
 			glitchedmercy=1
