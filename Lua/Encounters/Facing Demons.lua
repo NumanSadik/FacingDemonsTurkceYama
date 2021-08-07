@@ -9695,7 +9695,7 @@ function TryThis1()
 	if lang=="rus" then
 		comm=comm.."Попробуем это."
 		else
-		comm=comm.."Try this."
+		comm=comm.."Bunu dene."
 	end
 end
 
