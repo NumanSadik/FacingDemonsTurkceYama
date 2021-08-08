@@ -553,6 +553,12 @@
         <rect x="300" y="109" w="7" h="11"/>
         <border x="0" y="3" z="0" w="0"/>
     </sprite>
+    <sprite name="â">
+        <rect x="254" y="94" w="8" h="11"/>
+    </sprite>
+    <sprite name="û">
+        <rect x="267" y="94" w="7" h="11"/>
+    </sprite>
 
 </spritesheet>
 </font>

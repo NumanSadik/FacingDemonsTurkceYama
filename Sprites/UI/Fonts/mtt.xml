@@ -562,6 +562,12 @@
         <rect x="286" y="47" w="12" h="24"/>
 		<border x="0" y="6" z="0" w="0"/>
     </sprite>
+	<sprite name="â">
+        <rect x="158" y="52" w="12" h="20"/>
+    </sprite>
+	<sprite name="û">
+        <rect x="142" y="52" w="12" h="20"/>
+    </sprite>
 
 </spritesheet>
 </font>

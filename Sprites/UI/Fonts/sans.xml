@@ -336,5 +336,11 @@
     <sprite name="ü">
         <rect x="155" y="49" w="6" h="10"/>
     </sprite>
+    <sprite name="â">
+        <rect x="163" y="49" w="6" h="10"/>
+    </sprite>
+    <sprite name="û">
+        <rect x="171" y="49" w="6" h="10"/>
+    </sprite>
 </spritesheet>
 </font>
