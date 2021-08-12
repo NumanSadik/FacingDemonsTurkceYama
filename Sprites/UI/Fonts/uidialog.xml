@@ -22,7 +22,7 @@
         <rect x="141" y="4" w="12" h="24"/>
     </sprite>
     <sprite name="space">
-        <rect x="135" y="35" w="16" h="18"/>
+        <rect x="40" y="40" w="16" h="18"/>
     </sprite>
     <sprite name="!">
         <rect x="480" y="118" w="8" h="18"/>

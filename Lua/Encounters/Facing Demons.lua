@@ -8907,7 +8907,7 @@ function Differ(ingo)
 		if lang=="rus" then
 			outgo="[color:ff0000]Тебя поимели"
 			else
-			outgo="[color:ff0000]Potalanmış"
+			outgo="[color:ff0000]Ananı bile siker"
 		end
 	end
 	return outgo
@@ -9210,7 +9210,7 @@ function ReadyGlobalSave(ingo)
 			enemies[1].SetVar("currentdialogue",{" [next] ","[effect:none][noskip][func:TakeKnife][func:head][effect:none][novoice][color:ff0000][func:DUB,prolog/26]СЕЙЧАС ВЫПЬЕШЬ \n[waitall:2]ЧАШУ ИЗ БОЛИ\nДО [waitall:4][func:Devil,night]ДНА![w:10]","[next] "})
 			comm="Последний актер на сцене!"
 			else
-			enemies[1].SetVar("currentdialogue",{" [next] ","[effect:none][func:DUB,prolog/26][noskip][func:TakeKnife][func:head][effect:none][novoice][color:ff0000]YAP[w:1]TIKLAR[w:2]ININ[w:1] \nBE[w:2]DEL[w:1]İNİ ÖDE[waitall:2]ME [func:Devil,night]\nZAMANI![w:20]","[next] "})
+			enemies[1].SetVar("currentdialogue",{" [next] ","[effect:none][func:DUB,prolog/26][noskip][func:TakeKnife][func:head][effect:none][novoice][color:ff0000]HER [w:1]HARE[w:2]KE[w:1]TİN İÇİN [w:2]\nACI [w:1]ÇEK[w:1]MEYE[w:2]\n[waitall:2]HAZ[func:Devil,night]IR[w:5]LAN![w:20]","[next] "})
 			comm="Son aktör sahnede!"
 		end
 		elseif ingo=="2" then
