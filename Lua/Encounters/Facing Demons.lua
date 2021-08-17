@@ -3054,13 +3054,13 @@ if Titr1.phase>0 then
 				if lang=="rus" then
 					string={"[func:Dub,buggy/1/1][func:BoogyLook,closedeyes]Значит,[w:3] таков конец твоей истории?","[func:Dub,buggy/1/2]В смысле[waitall:4][w:3]...[speed:0.75][w:3] [func:BoogyLook,question]Ты доволен тем,[w:3] что получил?[w:6] [func:BoogyLook,cocky]Или это очередная посредственная постановка?","[func:Dub,buggy/1/3][func:BoogyLook,down]В прошлом мы были не разлей вода[waitall:4][w:3]...[speed:0.75][w:3] [color:8040ff]Метта.","[func:Dub,buggy/1/4][func:BoogyLook,question]Что изменилось?","[func:Titr1NextPhase][next] "}
 					else
-					string={"[func:Dub,buggy/1/1][func:BoogyLook,closedeyes]Yani,[w:3] istediğin son bu muydu?","[func:Dub,buggy/1/2]Demek istediğim[waitall:4][w:3]...[speed:0.75][w:3] [func:BoogyLook,question]Aldığından tatmin oldu mu?[w:6] [func:BoogyLook,cocky]Yada tüm bunlar senin için sadece bir oyun muydu?","[func:Dub,buggy/1/3][func:BoogyLook,down]Eskiden hiç ayrılmazdık[waitall:4][w:3]...[speed:0.75][w:3][color:8040ff]Metta[color:ffffff].","[func:Dub,buggy/1/4][func:BoogyLook,question]Ne değişti?","[func:Titr1NextPhase][next] "}
+					string={"[func:Dub,buggy/1/1][func:BoogyLook,closedeyes]Yani,[w:3] istediğin son bu muydu?","[func:Dub,buggy/1/2]Demek istediğim[waitall:4][w:3]...[speed:0.75][w:3] [func:BoogyLook,question]Tatmin oldun mu?[w:6] [func:BoogyLook,cocky]Yada tüm bunlar senin için sadece bir oyun muydu?","[func:Dub,buggy/1/3][func:BoogyLook,down]Eskiden hiç ayrılmazdık[waitall:4][w:3]...[speed:0.75][w:3][color:8040ff]Metta[color:ffffff].","[func:Dub,buggy/1/4][func:BoogyLook,question]Ne değişti?","[func:Titr1NextPhase][next] "}
 				end
 				else
 				if lang=="rus" then
 					string={"[func:Dub,buggy/5/1][func:BoogyLook,sad]Я ведь просил,[w:6] не втягивать меня в это снова[waitall:4][w:6]...[speed:0.75][w:6]","[func:Dub,buggy/5/2][func:BoogyLook,sarcastic]Но,[w:6] видимо,[w:6] я тебе необходим.[w:6]","[func:Dub,buggy/5/3][func:BoogyLook,joking]Неужели ты настолько ранимый,[w:6] кузен?[w:6]","[func:Titr1NextPhase][next] "}
 					else
-					string={"[func:Dub,buggy/5/1][func:BoogyLook,sad]Beni çıkarman için sana yalvardım,[w:3] değil mi?[w:6] ","[func:Dub,buggy/5/2][func:BoogyLook,sarcastic]Ama görünüyor ki bana ihtiyacın var[waitall:4][w:3]...[w:15]","[func:Dub,buggy/5/3][func:BoogyLook,joking]Cidden mi,[w:3] kuzen?[w:6] ","[func:Titr1NextPhase][next] "}
+					string={"[func:Dub,buggy/5/1][func:BoogyLook,sad]Beni çıkarman için sana yalvardım,[w:3] değil mi?[w:6] ","[func:Dub,buggy/5/2][func:BoogyLook,sarcastic]Ama öyle görünüyor ki bana ihtiyacın var[waitall:4][w:3]...[w:15]","[func:Dub,buggy/5/3][func:BoogyLook,joking]Cidden mi,[w:3] kuzen?[w:6] ","[func:Titr1NextPhase][next] "}
 				end
 			end
 			if dubbing==true then
@@ -3145,7 +3145,7 @@ if Titr1.phase>0 then
 				if lang=="rus" then
 					string={"[func:Dub,buggy/2/1][func:BoogyLook,dissapointed]Ты всегда любил драму.[w:6] Жил ею.[w:6] Жаждал её.","[func:Dub,buggy/2/2][func:BoogyLook,closedeyes]Но стоит мне представить,[w:3] как ради этой драмы ты готов убить даже меня[waitall:4][w:3]...[speed:0.75][w:3]","[func:Dub,buggy/2/3][func:BoogyLook,base]Я больше не вижу смысла в том,[w:3] чтобы тебя развлекать.","[func:Titr1NextPhase][next] "}
 					else
-					string={"[func:Dub,buggy/2/1][func:BoogyLook,dissapointed]Dramalara hastaydın.[w:6] Onlara epey hevesliydin,[w:3] neredeyse kaderin gibiydi.","[func:Dub,buggy/2/2][func:BoogyLook,closedeyes]Fakat beni drama için öldürmen \naklıma gelince[waitall:4][w:3]...[speed:0.75][w:3]","[func:Dub,buggy/2/3][func:BoogyLook,base]Artık seni tatmin etmek için bir neden göremiyorum.","[func:Titr1NextPhase][next] "}
+					string={"[func:Dub,buggy/2/1][func:BoogyLook,dissapointed]Dramalara hastaydın.[w:6] Onlara epey hevesliydin,[w:3] neredeyse kaderin gibiydiler.","[func:Dub,buggy/2/2][func:BoogyLook,closedeyes]Fakat beni drama için öldürmen \naklıma gelince[waitall:4][w:3]...[speed:0.75][w:3]","[func:Dub,buggy/2/3][func:BoogyLook,base]Artık seni tatmin etmek için bir neden göremiyorum.","[func:Titr1NextPhase][next] "}
 
 				end
 				else
@@ -3416,7 +3416,7 @@ if Titr1.phase>0 then
 						string[#string-1]="[func:Dub,buggy/8/3][func:BoogyLook,dissapointed]Задумайся.[w:12] [func:BoogyLook,closedeyes]Поговорим об этом[waitall:4][w:8]...[speed:0.75][w:8] [speed:0.5][func:BoogyLook,death][novoice][voice:lowbuggy]при следующей встрече.[w:10]"
 					end
 					else
-					string={"[func:Dub,buggy/8/1][func:BoogyLook,base]Neyse boşver[waitall:4][w:3]...[speed:0.75][w:9] [func:BoogyLook,uncertain]Sadece ölmeden önce eskileri hatırlamak istedim.[w:6] ","[func:Dub,buggy/8/2][func:BoogyLook,confused]Ama bunu biraz düşün,[w:12] sende o kutu gibisin, değil mi?[w:16] [func:BoogyLook,closedeyes]Biliyorsun[waitall:4][w:6]...[speed:0.75][w:9]","[func:Dub,buggy/8/3][func:BoogyLook,joking]Bu dünyanın nasıl çalıştığını.[w:12] \nVe kimin kuklaları yönettiğini.[w:9] ","[func:Dub,buggy/8/4][func:BoogyLook,dissapointed]Bunu biraz düşün.[w:18] [func:BoogyLook,closedeyes]Bunu tartışabilirdik[waitall:4][w:6]...[speed:0.75][w:9][novoice][voice:lowbuggy][func:BoogyLook,death][speed:0.5] Bir daha ki buluşmamızda~[w:12]","[func:Titr1NextPhase][next] "}
+					string={"[func:Dub,buggy/8/1][func:BoogyLook,base]Neyse boşver[waitall:4][w:3]...[speed:0.75][w:9] [func:BoogyLook,uncertain]Sadece ölmeden önce eskileri hatırlamak istedim.[w:6] ","[func:Dub,buggy/8/2][func:BoogyLook,confused]Ama bunu biraz düşün,[w:12] sende o kutu gibisin, değil mi?[w:16] [func:BoogyLook,closedeyes]Biliyorsun[waitall:4][w:6]...[speed:0.75][w:9]","[func:Dub,buggy/8/3][func:BoogyLook,joking]Bu dünyanın nasıl çalıştığını.[w:12] \nVe kimin kuklaları oynattığını.[w:9] ","[func:Dub,buggy/8/4][func:BoogyLook,dissapointed]Bunu biraz düşün.[w:18] [func:BoogyLook,closedeyes]Bunu tartışabilirdik[waitall:4][w:6]...[speed:0.75][w:9][novoice][voice:lowbuggy][func:BoogyLook,death][speed:0.5] Bir daha ki buluşmamızda~[w:12]","[func:Titr1NextPhase][next] "}
 				end
 			end
 			if dubbing==true then
