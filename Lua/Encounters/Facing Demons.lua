@@ -8887,7 +8887,7 @@ function Differ(ingo)
 	local outgo=""
 	if ingo==1 then
 		if lang=="rus" then
-			outgo="[color:ff00ff]Верующий"
+			outgo="[color:ff00ff]İnanan"
 			else
 			outgo="[color:ff00ff]Sadık"
 		end
