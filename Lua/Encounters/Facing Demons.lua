@@ -5707,7 +5707,7 @@ if MyState=="MENU" then
 				Changer.Texts[8].SetText("[font:overworld][instant][novoice]НЕТ")
 				Changer.Texts[9].SetText("[font:overworld][instant][novoice]ДА")
 				else
-				Changer.Texts[7].SetText("[font:overworld][instant][novoice][color:ff2010]Zoruluk değişimi ilerlemeni siler.\nEmin misin?")
+				Changer.Texts[7].SetText("[font:overworld][instant][novoice][color:ff2010]Zorluk değişimi ilerlemeni siler.\nEmin misin?")
 				Changer.Texts[8].SetText("[font:overworld][instant][novoice]HAYIR")
 				Changer.Texts[9].SetText("[font:overworld][instant][novoice]EVET")
 			end
