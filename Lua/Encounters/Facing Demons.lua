@@ -2220,7 +2220,7 @@ if Titr2.phase>0 then
 			end
 			if t>624 then
 				Titr2.step=2
-				local l="By IGB Team"
+				local l="IGB team Tarafından"
 				if lang=="rus" then
 					l="Сделано командой IGB"
 				end
@@ -9664,7 +9664,7 @@ function HappyCharaMeal13()
 	if lang=="rus" then
 		dial={"[func:CharaDownFaces,hope_base]* Это будет наше первое обещание.","[func:CharaDownFaces,hope_smile]* Впереди нас ждет ещё много обещаний,[w:3] но давай никогда не забывать об этом одном.","* Давай пообещаем[waitall:4][w:3]...[waitall:1][w:3] [func:CharaDownFaces,hope_cheers]Что никогда не бросим это будущее,[w:3] что создали?","[func:CharaDownFaces,hope_close]* В последний миг[waitall:4][w:3]...[waitall:1][w:3] [func:CharaDownFaces,hope_cheers]Я хочу знать,[w:3] что спасла тех,[w:3] кого люблю.","[func:CharaDownFaces,hope_close]* Мой дом.[w:6] Мою семью.[w:6] Моих друзей.","[func:LowerMusic][w:30][func:CharaDownFaces,hope_deathsmile]* И тебя.[w:30][func:ToHappyTitrs][w:600][next] "}
 		else
-		dial={"[func:CharaDownFaces,hope_base]* Bunun ilk sözümüz olmasına izin ver.","[func:CharaDownFaces,hope_smile]* Gelecekte onlardan pek çok olacak,[w:3] ama şimdi bunu unutmayalım.[w:6]","* Hadi söz verelim[waitall:4][w:3]...[waitall:1][w:3] [func:CharaDownFaces,hope_cheers]Yarattığımız gelecekten asla vazgeçmeyeceğiz?","[func:CharaDownFaces,hope_close]* Sonunda[waitall:4][w:3]...[waitall:1][w:3] [func:CharaDownFaces,hope_cheers]\nSevdiklerimi kurtardığımı bilmek istiyorum.[w:6]","[func:CharaDownFaces,hope_close]* Evim.[w:6] \nAilem.[w:6] \nArkadaşlarım.[w:6]","[func:LowerMusic][w:30][func:CharaDownFaces,hope_deathsmile]* Ve sen.[w:30][func:ToHappyTitrs][w:70][next] "}
+		dial={"[func:CharaDownFaces,hope_base]* Bunun ilk sözümüz olmasına izin ver.","[func:CharaDownFaces,hope_smile]* Gelecekte onlardan pek çok olacak,[w:3] ama şimdi bunu unutmayalım.[w:6]","* Hadi söz verelim[waitall:4][w:3]...[waitall:1][w:3] [func:CharaDownFaces,hope_cheers]Yarattığımız gelecekten asla vazgeçmeyeceğiz?","[func:CharaDownFaces,hope_close]* Sonunda[waitall:4][w:3]...[waitall:1][w:3] [func:CharaDownFaces,hope_cheers]\nSevdiklerimi kurtardığımı bilmek istiyorum.[w:6]","[func:CharaDownFaces,hope_close]* Evim.[w:6] \nAilem.[w:6] \nArkadaşlarım.[w:6]","[func:LowerMusic][w:30][func:CharaDownFaces,hope_deathsmile]* Ve sen.[w:30][func:ToHappyTitrs][w:600][next] "}
 	end
 	for i=1,#dial do
 		dial[i]="[noskip][font:overworld]"..dial[i]
