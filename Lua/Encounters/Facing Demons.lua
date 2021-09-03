@@ -3054,7 +3054,7 @@ if Titr1.phase>0 then
 				if lang=="rus" then
 					string={"[func:Dub,buggy/1/1][func:BoogyLook,closedeyes]Значит,[w:3] таков конец твоей истории?","[func:Dub,buggy/1/2]В смысле[waitall:4][w:3]...[speed:0.75][w:3] [func:BoogyLook,question]Ты доволен тем,[w:3] что получил?[w:6] [func:BoogyLook,cocky]Или это очередная посредственная постановка?","[func:Dub,buggy/1/3][func:BoogyLook,down]В прошлом мы были не разлей вода[waitall:4][w:3]...[speed:0.75][w:3] [color:8040ff]Метта.","[func:Dub,buggy/1/4][func:BoogyLook,question]Что изменилось?","[func:Titr1NextPhase][next] "}
 					else
-					string={"[func:Dub,buggy/1/1][func:BoogyLook,closedeyes]Yani,[w:3] istediğin son bu muydu?","[func:Dub,buggy/1/2]Demek istediğim[waitall:4][w:3]...[speed:0.75][w:3] [func:BoogyLook,question]Tatmin oldun mu?[w:6] [func:BoogyLook,cocky]Yada tüm bunlar senin için sadece bir oyun muydu?","[func:Dub,buggy/1/3][func:BoogyLook,down]Eskiden hiç ayrılmazdık[waitall:4][w:3]...[speed:0.75][w:3][color:8040ff]Metta[color:ffffff].","[func:Dub,buggy/1/4][func:BoogyLook,question]Ne değişti?","[func:Titr1NextPhase][next] "}
+					string={"[func:Dub,buggy/1/1][func:BoogyLook,closedeyes]Yani,[w:15] istediğin son bu muydu?","[func:Dub,buggy/1/2]Demek istediğim[waitall:4][w:3]...[speed:0.75][w:3] [func:BoogyLook,question]Tatmin oldun mu?[w:6] [func:BoogyLook,cocky]Yada tüm bunlar senin için sadece bir oyun muydu?","[func:Dub,buggy/1/3][func:BoogyLook,down]Eskiden hiç ayrılmazdık[waitall:4][w:3]...[speed:0.75][w:3][color:8040ff]Metta[color:ffffff].","[func:Dub,buggy/1/4][func:BoogyLook,question]Ne değişti?","[func:Titr1NextPhase][next] "}
 				end
 				else
 				if lang=="rus" then
