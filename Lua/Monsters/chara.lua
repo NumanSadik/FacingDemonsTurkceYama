@@ -976,7 +976,7 @@ function HandleAttack()
 		wav={"phase1/sans3"}
 	elseif GetGlobal("progress") == 36 then
 		nrus={"[func:head]А ведь он[waitall:4][w:3]...[waitall:1][w:3] [func:NoMercy1]Он \nведь даже не \nподозревает.", "[func:Think]Сидит в тронном \nзале, ожидает \nчеловека[waitall:4][w:3]...", "С которым у него \nдолжен пройти бой \nза 'судьбу' монстров", "[func:NoMercy1]Знал бы он, что на \nсамом деле \nпроисходит[waitall:4][w:3]...", "[func:Final_7]Это был бы слишком \nсильный удар для \nнего[waitall:4][w:3]...","[func:head][next]"}
-		neng={"[func:head]Ve o[waitall:4][w:3]...[waitall:1][w:3] [func:NoMercy1]\nOnun halen neler \nolduğundan \nhaberi yok.", "[func:Think]Taht odasında bir \ninsanın gelmesini \nbekliyor[waitall:4][w:3]...", "Canavarların \n'kaderini' \nbelirleyecek o \nsavaşın gelmesini \nbekliyor.", "[func:NoMercy1]Ortada karar \nverilebilecek bir şey \nolmaması ne kadar da \nacınası[waitall:4][w:3]...", "[func:Final_7]Onun için çok sert bir \nvuruş olurdu[waitall:4][w:3]...","[func:head][next]"}
+		neng={"[func:head]Ve o[waitall:4][w:3]...[waitall:1][w:3] [func:NoMercy1]\nOnun hâlâ neler \nolduğundan \nhaberi yok.", "[func:Think]Taht odasında bir \ninsanın gelmesini \nbekliyor[waitall:4][w:3]...", "Canavarların \n'kaderini' \nbelirleyecek o \nsavaşın gelmesini \nbekliyor.", "[func:NoMercy1]Ortada karar \nverilebilecek bir şey \nolmaması ne kadar da \nacınası[waitall:4][w:3]...", "[func:Final_7]Onun için çok sert bir \nvuruş olurdu[waitall:4][w:3]...","[func:head][next]"}
 		engcom="Atağımızın ne kadar sert olacağını düşünseydi onun için daha iyi olurdu.[waitall:4][w:3]...[waitall:1][w:3]"
 		ruscom="Лучше бы подумала о том,[w:3] каким сильным будет наш удар по ней[waitall:4][w:3]...[waitall:1][w:3]"
 		wav={"phase1/sansnew"}

@@ -1041,7 +1041,7 @@ function FullIntro()
 				dial={"[noskip][func:face,yes][next] ","[effect:twitch,1][font:overworld][color:ffffff][func:Peachy][func:checkquick][func:DUB,prolog/1]*Вот мы и здесь.", "[func:normal][func:DUB,prolog/2]*С возвращением,[w:3] \nпартнёр.","[func:Peachy]*[waitall:4][w:3]...", "[func:DUB,prolog/3]*Ты почти завершил \nпредначертанное,[w:3] [func:normal]не так ли?", "[func:Interruption][w:1][func:DUB,prolog/4][func:normal1]*Просто[waitall:4][w:3]...[waitall:1][w:3] хотела убедиться.", "[func:Peachy]*[waitall:4][w:3]...", "[func:DUB,prolog/5]*Позволь задать тебе один \nвопрос.", "[func:normal][func:DUB,prolog/6]*Ты уверен,[w:3] что ты \nвыше последствий?","[func:Peachy][func:DUB,prolog/7]*Что любые твои деяния[waitall:4][w:3]..","[func:normal][noskip][func:DUB,prolog/8]*Останутся безнаказанными?[w:30][func:ph1][func:face,no][next] "}
 			end
 			elseif lang=="eng" then
-			dial={"[noskip][func:face,yes][next] ","[func:DUB,prolog/1][effect:twitch,1][font:overworld][color:ffffff][func:Peachy][func:checkquick]*[waitall:2][w:10]Yani, [waitall:1][w:10]buradayız[w:3].", "[func:DUB,prolog/2][func:normal]*Tekrar hoş geldin, \nortak.","[func:Peachy]*[waitall:5]...", "[func:DUB,prolog/3][w:3][speed:1.5]*Neredeyse [w:1]görevini \n[speed:1]tamamladın,[w:12] değil mi?[func:normal]", "[func:Interruption][w:1][func:DUB,prolog/4][func:normal1]*[w:2]Sadece, [w:15]emin [w:1]olmak[w:1] istedim[w:1].", "[func:Peachy]*[waitall:6]...", "[func:DUB,prolog/5]*Bir şey sormama izin ver[w:5].", "[func:DUB,prolog/6][func:normal]*[w:2]Kendinin[w:2],[w:5] sonuçlardan [speed:1.5]\nüstün [w:2][speed:1]olduğunu [w:1]mu \n[w:1]düşünüyorsun[w:4]?","[func:DUB,prolog/7][func:Peachy]*[w:3]Tüm [w:1]o yaptıkların[waitall:3]...[w:30][func:ph1][func:face,no][next] "}
+			dial={"[noskip][func:face,yes][next] ","[func:DUB,prolog/1][effect:twitch,1][font:overworld][color:ffffff][func:Peachy][func:checkquick]*[waitall:2][w:10]Yani, [waitall:1][w:10]buradayız[w:3].", "[func:DUB,prolog/2][func:normal]*Tekrar hoş geldin, \nortak.","[func:Peachy]*[waitall:5]...", "[func:DUB,prolog/3][w:3][speed:1.5]*Neredeyse [w:1]görevini \n[speed:1]tamamladın,[w:12] değil mi?[func:normal]", "[func:Interruption][w:1][func:DUB,prolog/4][func:normal1]*[w:2]Sadece emin olmak istedim.", "[func:Peachy]*[waitall:6]...", "[func:DUB,prolog/5]*Bir şey sormama izin ver[w:5].", "[func:DUB,prolog/6][func:normal]*[w:2]Kendinin[w:2],[w:5] sonuçlardan [speed:1.5]\nüstün [w:2][speed:1]olduğunu [w:1]mu \ndüşünüyorsun[w:4]?","[func:DUB,prolog/7][func:Peachy]*[w:3]Tüm [w:1]o yaptıklarının[waitall:3]...","[func:Peachy]*...[w:3][func:DUB,prolog/8]Cezasız kalacağını mı?[w:30][func:ph1][func:face,no][next] "}
 		end
 	end
 	dial=EveryDial(dial,"[effect:twitch,1][font:overworld][noskip][color:ffffff]","[novoice]")
@@ -3552,14 +3552,6 @@ if Titr1.phase>0 then
 			Titr1.Titrs[n].progressmode="none"
 			n=n+1
 			Titr1.Titrs[n]=CreateText(ForTitr1("За создание Megaloglamour","Eşyalar"),{120,195},480,"Top",-1)
-			Titr1.Titrs[n].HideBubble()
-			Titr1.Titrs[n].progressmode="none"
-			n=n+1
-			Titr1.Titrs[n]=CreateText(ForTitr1("BotanicSage","! SHCᶜᵃˡᵖ but Fresh!Ink#3401",a),{120,165},640,"Top",-1)
-			Titr1.Titrs[n].HideBubble()
-			Titr1.Titrs[n].progressmode="none"
-			n=n+1
-			Titr1.Titrs[n]=CreateText(ForTitr1("За создание Waters Of Megalovania","Ana dosya"),{120,135},480,"Top",-1)
 			Titr1.Titrs[n].HideBubble()
 			Titr1.Titrs[n].progressmode="none"
 			n=n+1
@@ -7091,7 +7083,7 @@ if not GetGlobal("fightbegin") then
 					if quick==true then
 						dial={"[noskip][func:TakeKnife][func:head][effect:none][novoice][waitall:5]ДО [color:ff0000][func:Devil,night]ДНА![w:10][next] "}
 						else
-						dial={"[func:DUB,prolog/17][noskip]Bugün çok canlı \nbir [w:1]gün.","[func:DUB,prolog/18][noskip]Kanımın kaynadığını \nhissedebiliyorum.","[func:DUB,prolog/19][noskip]Dostlarım artık \nyok olmuş olsalar \nbile[waitall:5]...","[func:DUB,prolog/20][noskip]Hala sana karşı\nçıkmak için bir \nsebebim var.","[func:DUB,prolog/21][func:Peachy][noskip]Neredeyse \nunutuyordum,[w:15] [func:normal]\nsana bir şiir yazdım.","[func:DUB,prolog/22][noskip][func:Peachy][w:3]Şöyle başlıyor \n[w:6]...","[func:DUB,prolog/23][noskip]Ha[w:1]ri[w:1]ka [w:1]bir gün[w:4] \ndaha bitiyor[waitall:4][w:3]...","[func:DUB,prolog/24][noskip]Kuşlar hala \ncıvıldıyor,[w:10] [w:1]\ntehlikeyi göz ardı \nederek[waitall:4][w:3]...","[func:DUB,prolog/25][noskip]Ve senin bile \nolmayan gücü[w:7] \nhissederek[waitall:4][w:3]...","[func:DUB,prolog/26][noskip][func:TakeKnife][func:head][effect:none][novoice][color:ff0000]HER [w:1]HARE[w:2]KE[w:1]TİN İÇİN [w:2]\nACI [w:1]ÇEK[w:1]MEYE[w:2]\n[waitall:2]HAZ[func:Devil,night]IR[w:5]LAN![w:20][next] "}
+						dial={"[func:DUB,prolog/17][noskip]Bugün çok canlı \nbir [w:1]gün.","[func:DUB,prolog/18][noskip]Kanımın kaynadığını [w:15]\nhissedebiliyorum.","[func:DUB,prolog/19][noskip]Dostlarım[w:10] artık \nyok olmuş olsalar \nbile[waitall:5]...","[func:DUB,prolog/20][noskip]Hala sana karşı\nçıkmak için bir \nsebebim var.","[func:DUB,prolog/21][func:Peachy][noskip]Neredeyse \nunutuyordum,[w:7] [func:normal]\nsana bir şiir yazdım.","[func:DUB,prolog/22][noskip][func:Peachy][w:3]Şöyle başlıyor \n[w:6]...","[func:DUB,prolog/23][noskip]Ha[w:1]ri[w:1]ka [w:1]bir gün \ndaha bitiyor[waitall:4][w:3]...","[func:DUB,prolog/24][noskip]Kuşlar hala \ncıvıldıyor,[w:10] [w:1]\ntehlikeyi göz ardı \nederek[waitall:4][w:3]...","[func:DUB,prolog/25][noskip]Ve senin bile \nolmayan gücü \nhissederek[waitall:4][w:3]...","[func:DUB,prolog/26][noskip][func:TakeKnife][func:head][effect:none][novoice][color:ff0000]HER HAREKETİN İÇİN \nACI ÇEKMEYE\nHAZ[func:Devil,night]IRLAN![w:20][next] "}
 					end
 				end
 				dial=EveryDial(dial,"[effect:twitch,1][noskip]","[novoice]")
@@ -7216,7 +7208,7 @@ if GetGlobal("phase1")==2 then
 					dial={"[func:face,yes][next] ","[effect:twitch,1][font:overworld][color:ffffff][func:NoMercy1][func:DUB,prolog/13][waitall:2]*вздох*","[func:NoMercy1][func:DUB,prolog/14]*Вечно тянуть момент \nневозможно.","[func:DUB,prolog/15][w:3]*И раз мой мир обречён \nопять исчезнуть[waitall:4][w:3]...","[func:NoMercy1][func:DUB,prolog/16]*Я хотя бы попробую \nзаставить исчезнуть [w:3]\n[color:ff0000][waitall:2]тебя[color:ffffff].","[func:fightbegin][func:face,no][next] "}
 				end
 				elseif lang=="eng" then
-				dial={"[func:face,yes][next] ","[func:DUB,prolog/13][effect:twitch,1][font:overworld][color:ffffff][func:NoMercy1][w:9][waitall:2]*hüff*","[func:NoMercy1]*[func:DUB,prolog/14][w:9]Hiçbir şey [w:1]sonsuza kadar \n[w:1]sü[w:1]re[w:1]mez[w:2].","[func:DUB,prolog/15]*Ve dünyamın ka[w:1]de[w:1]ri [w:9]\ntoz olmak [w:1]ise[waitall:5]...","[func:DUB,prolog/16][func:NoMercy1]*[w:4]En azından [speed:1.25][color:ff0000][waitall:2]SENİ[speed:1][color:ffffff][waitall:5] \n[waitall:1]toz etmeyi deneyeceğim[waitall:1][w:14].","[func:fightbegin][func:face,no][next] ","[func:fightbegin][func:face,no][next] "}
+				dial={"[func:face,yes][next] ","[func:DUB,prolog/13][effect:twitch,1][font:overworld][color:ffffff][func:NoMercy1][w:9][waitall:2]*hüff*","[func:NoMercy1]*[func:DUB,prolog/14][w:9]Hiçbir şey [w:1]sonsuza kadar \nsürmez[w:2].","[func:DUB,prolog/15]*Ve dünyamın kaderi \ntoz olmaksa[waitall:5]...","[func:DUB,prolog/16][func:NoMercy1]*[w:4]En azından [color:ff0000]SENİ[color:ffffff] \ntoz etmeyi deneyeceğim[waitall:1][w:14].","[func:fightbegin][func:face,no][next] ","[func:fightbegin][func:face,no][next] "}
 			end
 			dial=EveryDial(dial,"[noskip][font:overworld][effect:twitch,1][color:ffffff]","[novoice]")
 			enemies[5].SetVar("currentdialogue",dial)
@@ -9210,7 +9202,7 @@ function ReadyGlobalSave(ingo)
 			enemies[1].SetVar("currentdialogue",{" [next] ","[effect:none][noskip][func:TakeKnife][func:head][effect:none][novoice][color:ff0000][func:DUB,prolog/26]СЕЙЧАС ВЫПЬЕШЬ \n[waitall:2]ЧАШУ ИЗ БОЛИ\nДО [waitall:4][func:Devil,night]ДНА![w:10]","[next] "})
 			comm="Последний актер на сцене!"
 			else
-			enemies[1].SetVar("currentdialogue",{" [next] ","[effect:none][func:DUB,prolog/26][noskip][func:TakeKnife][func:head][effect:none][novoice][color:ff0000]HER [w:1]HARE[w:2]KE[w:1]TİN İÇİN [w:2]\nACI [w:1]ÇEK[w:1]MEYE[w:2]\n[waitall:2]HAZ[func:Devil,night]IR[w:5]LAN![w:20]","[next] "})
+			enemies[1].SetVar("currentdialogue",{" [next] ","[effect:none][func:DUB,prolog/26][noskip][func:TakeKnife][func:head][effect:none][novoice][color:ff0000]HER HAREKETİN İÇİN \nACI ÇEKMEYE\nHAZ[func:Devil,night]IRLAN![w:20]","[next] "})
 			comm="Son aktör sahnede!"
 		end
 		elseif ingo=="2" then
